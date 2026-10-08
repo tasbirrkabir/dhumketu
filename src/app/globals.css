@@ -2,9 +2,9 @@
 @import "tw-animate-css";
 
 /*
-  DhumketuX — "Quiet Aerospace" design tokens (REDESIGN.md §2–§4).
-  Light-first paper system + cinematic night movements + one signal red.
-  Typography does the hierarchy; no boxes, no grids, no glow.
+  DhumketuX — "Mission Control Cinema" design tokens.
+  Dark space-first surfaces + engine-fire ember accent + cinematic imagery.
+  Built to feel like a living aerospace program — not a printed page.
 */
 @theme inline {
   --color-background: var(--background);
@@ -26,20 +26,20 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Quiet Aerospace palette */
-  --color-paper: var(--paper);
-  --color-paper-2: var(--paper-2);
-  --color-ink: var(--ink);
-  --color-ink-2: var(--ink-2);
-  --color-ink-3: var(--ink-3);
-  --color-line: var(--line);
+  /* Core palette */
+  --color-void: var(--void);
   --color-night: var(--night);
   --color-night-2: var(--night-2);
   --color-chalk: var(--chalk);
   --color-chalk-2: var(--chalk-2);
-  --color-night-line: var(--night-line);
-  --color-signal: var(--signal);
+  --color-chalk-3: var(--chalk-3);
+  --color-edge: var(--edge);
+  --color-edge-strong: var(--edge-strong);
+  --color-ember: var(--ember);
+  --color-amber: var(--amber);
   --color-go: var(--go);
+  --color-hold: var(--hold);
+  --color-future: var(--future);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, "SFMono-Regular", monospace;
@@ -47,40 +47,40 @@
 }
 
 :root {
-  --paper: #fafaf9;
-  --paper-2: #f2f2ee;
-  --ink: #141412;
-  --ink-2: #6f6f68;
-  --ink-3: #9a9a92;
-  --line: rgba(20, 20, 18, 0.14);
-  --night: #0a0a09;
-  --night-2: #141412;
-  --chalk: #f5f5f1;
-  --chalk-2: #a3a39b;
-  --night-line: rgba(245, 245, 241, 0.16);
-  --signal: #d0342c;
-  --go: #0e7a4f;
+  --void: #060607;
+  --night: #0b0b0d;
+  --night-2: #121215;
+  --chalk: #f4f2ed;
+  --chalk-2: #a9a79f;
+  --chalk-3: #71706a;
+  --edge: rgba(244, 242, 237, 0.09);
+  --edge-strong: rgba(244, 242, 237, 0.18);
+  --ember: #ff5a2c;
+  --amber: #ffb25b;
+  --go: #35c283;
+  --hold: #e0b341;
+  --future: #8f8d86;
 
-  /* shadcn tokens mapped to the paper system */
-  --background: var(--paper);
-  --foreground: var(--ink);
-  --card: #ffffff;
-  --card-foreground: var(--ink);
-  --popover: #ffffff;
-  --popover-foreground: var(--ink);
-  --primary: var(--ink);
-  --primary-foreground: var(--paper);
-  --secondary: var(--paper-2);
-  --secondary-foreground: var(--ink);
-  --muted: var(--paper-2);
-  --muted-foreground: var(--ink-2);
-  --accent: var(--paper-2);
-  --accent-foreground: var(--ink);
-  --destructive: var(--signal);
-  --border: var(--line);
-  --input: var(--line);
-  --ring: rgba(20, 20, 18, 0.4);
-  --radius: 0;
+  /* shadcn tokens mapped to the dark system */
+  --background: var(--void);
+  --foreground: var(--chalk);
+  --card: #101013;
+  --card-foreground: var(--chalk);
+  --popover: #101013;
+  --popover-foreground: var(--chalk);
+  --primary: var(--chalk);
+  --primary-foreground: var(--void);
+  --secondary: var(--night-2);
+  --secondary-foreground: var(--chalk);
+  --muted: var(--night-2);
+  --muted-foreground: var(--chalk-2);
+  --accent: var(--night-2);
+  --accent-foreground: var(--chalk);
+  --destructive: #ff453a;
+  --border: var(--edge);
+  --input: var(--edge);
+  --ring: rgba(255, 90, 44, 0.5);
+  --radius: 0.75rem;
 }
 
 * {
@@ -100,14 +100,14 @@ html {
 }
 
 body {
-  background-color: var(--paper);
-  color: var(--ink);
+  background-color: var(--void);
+  color: var(--chalk);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: clip;
 }
 
-/* Display type — Inter, Apple-style tracking and line-height */
+/* Display type — Inter, Apple-style tracking */
 .qa-display {
   letter-spacing: -0.038em;
   line-height: 1.02;
@@ -137,6 +137,14 @@ body {
   letter-spacing: -0.015em;
 }
 
+/* Ember gradient text — hero accent words & key figures */
+.text-ember-gradient {
+  background: linear-gradient(100deg, var(--ember) 0%, var(--amber) 55%, #ffd9a0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Ghost numerals — oversized outlined section markers */
 .qa-ghost {
   position: absolute;
@@ -145,29 +153,61 @@ body {
   letter-spacing: -0.04em;
   line-height: 0.8;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(20, 20, 18, 0.09);
+  -webkit-text-stroke: 1.5px rgba(244, 242, 237, 0.10);
   user-select: none;
   pointer-events: none;
 }
-.night .qa-ghost,
-.night-voice .qa-ghost {
-  -webkit-text-stroke-color: rgba(245, 245, 241, 0.12);
-}
 
-/* Ember glow — soft radial warmth for night movements (echoes engine fire) */
+/* Glow — engine-fire warmth for night panels */
 .glow-ember {
   position: absolute;
   border-radius: 9999px;
-  filter: blur(90px);
-  background: radial-gradient(closest-side, rgba(208, 52, 44, 0.16), transparent 72%);
+  filter: blur(100px);
+  background: radial-gradient(closest-side, rgba(255, 90, 44, 0.22), transparent 72%);
+  pointer-events: none;
+}
+.glow-amber {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  background: radial-gradient(closest-side, rgba(255, 178, 91, 0.14), transparent 72%);
   pointer-events: none;
 }
 .glow-chalk {
   position: absolute;
   border-radius: 9999px;
   filter: blur(100px);
-  background: radial-gradient(closest-side, rgba(245, 245, 241, 0.08), transparent 72%);
+  background: radial-gradient(closest-side, rgba(244, 242, 237, 0.08), transparent 72%);
   pointer-events: none;
+}
+
+/* Starfield — faint specks for deep-space panels */
+.starfield {
+  background-image:
+    radial-gradient(1px 1px at 22% 18%, rgba(244, 242, 237, 0.55) 50%, transparent 51%),
+    radial-gradient(1px 1px at 68% 34%, rgba(244, 242, 237, 0.35) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 84% 12%, rgba(255, 178, 91, 0.4) 50%, transparent 51%),
+    radial-gradient(1px 1px at 41% 62%, rgba(244, 242, 237, 0.28) 50%, transparent 51%),
+    radial-gradient(1px 1px at 12% 78%, rgba(244, 242, 237, 0.4) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 57% 86%, rgba(255, 178, 91, 0.3) 50%, transparent 51%),
+    radial-gradient(1px 1px at 91% 64%, rgba(244, 242, 237, 0.32) 50%, transparent 51%),
+    radial-gradient(1px 1px at 33% 40%, rgba(244, 242, 237, 0.22) 50%, transparent 51%);
+  background-size: 640px 640px;
+  background-repeat: repeat;
+}
+
+/* Glass surface — the standard panel */
+.glass {
+  background: rgba(244, 242, 237, 0.04);
+  border: 1px solid rgba(244, 242, 237, 0.09);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.glass-strong {
+  background: rgba(244, 242, 237, 0.07);
+  border: 1px solid rgba(244, 242, 237, 0.13);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 /* Quiet image treatment — slow zoom on hover, restrained */
@@ -178,12 +218,22 @@ body {
   transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1), filter 1.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .img-quiet:hover img {
-  transform: scale(1.025);
+  transform: scale(1.035);
+}
+
+/* Card lift — glass cards rise gently on hover */
+.card-lift {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  border-color: rgba(244, 242, 237, 0.2);
+  background: rgba(244, 242, 237, 0.055);
 }
 
 /* Focus */
 :where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--signal);
+  outline: 2px solid var(--ember);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -192,20 +242,14 @@ body {
 @supports (scrollbar-width: thin) {
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(20, 20, 18, 0.24) transparent;
+    scrollbar-color: rgba(244, 242, 237, 0.22) transparent;
   }
 }
 
 /* Selection */
 ::selection {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.night ::selection,
-.night-voice ::selection {
-  background: var(--chalk);
-  color: var(--night);
+  background: var(--ember);
+  color: #fff7ef;
 }
 
 /* Skip link */
@@ -243,6 +287,36 @@ body {
   transform-origin: left;
 }
 
+/* Marquee — milestone ticker */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee-scroll 42s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Slow pulse for live indicators */
+@keyframes ember-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+.pulse-ember {
+  animation: ember-pulse 2.4s ease-in-out infinite;
+}
+
 /* Reduced motion — global guard */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -251,5 +325,8 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  .marquee-track {
+    animation: none !important;
   }
 }

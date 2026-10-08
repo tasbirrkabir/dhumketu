@@ -109,8 +109,8 @@ export function SiteHeader() {
 
   const closeAll = () => setMenu(null);
 
-  const dark = scrolled; // night hero everywhere → transparent chalk at top, paper after scroll
-  const linkTone = dark ? "text-ink" : "text-chalk";
+  const dark = scrolled; // transparent over hero at top → glass void after scroll
+  const linkTone = dark ? "text-chalk" : "text-chalk";
   const active = (prefixes: string[]) => prefixes.some((p) => pathname === p || pathname.startsWith(p + "/") || pathname.startsWith(p + "#"));
 
   const items: {
@@ -133,7 +133,7 @@ export function SiteHeader() {
         aria-label="Site"
         className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,border-color,backdrop-filter] duration-500 ${
           dark
-            ? "border-b border-line bg-paper/90 text-ink backdrop-blur-xl"
+            ? "border-b border-edge bg-void/85 text-chalk backdrop-blur-xl"
             : "border-b border-transparent bg-transparent text-chalk"
         }`}
       >
@@ -153,12 +153,8 @@ export function SiteHeader() {
                   href={item.href}
                   className={`text-[0.9375rem] font-medium transition-colors ${
                     item.activePrefixes && active(item.activePrefixes)
-                      ? dark
-                        ? "text-ink"
-                        : "text-chalk"
-                      : dark
-                        ? "text-ink-2 hover:text-ink"
-                        : "text-chalk-2 hover:text-chalk"
+                      ? "text-chalk"
+                      : "text-chalk-2 hover:text-chalk"
                   }`}
                 >
                   {item.label}
@@ -173,12 +169,8 @@ export function SiteHeader() {
                   onMouseEnter={() => openWith(item.key as Exclude<MenuKey, null>)}
                   className={`inline-flex items-center gap-1 text-[0.9375rem] font-medium transition-colors ${
                     (item.activePrefixes && active(item.activePrefixes)) || menu === item.key
-                      ? dark
-                        ? "text-ink"
-                        : "text-chalk"
-                      : dark
-                        ? "text-ink-2 hover:text-ink"
-                        : "text-chalk-2 hover:text-chalk"
+                      ? "text-chalk"
+                      : "text-chalk-2 hover:text-chalk"
                   }`}
                 >
                   {item.label}
@@ -191,11 +183,7 @@ export function SiteHeader() {
             )}
             <Link
               href="/contact"
-              className={`group inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-[0.9375rem] font-medium transition-colors ${
-                dark
-                  ? "border-ink/25 text-ink hover:border-ink"
-                  : "border-chalk/30 text-chalk hover:border-chalk"
-              }`}
+              className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(255,90,44,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(255,90,44,0.55)] hover:brightness-110"
             >
               Book a Launch
               <ArrowUpRight
@@ -229,7 +217,7 @@ export function SiteHeader() {
               onMouseEnter={() => openWith(menu)}
               onMouseLeave={scheduleClose}
               className={`absolute inset-x-0 top-full hidden border-b backdrop-blur-2xl lg:block ${
-                dark ? "border-line bg-paper/95" : "border-night-line bg-night/90"
+                "border-edge bg-void/95"
               }`}
             >
               <div className="mx-auto w-full max-w-[1180px] px-5 py-10 sm:px-8 lg:px-12">
@@ -237,18 +225,14 @@ export function SiteHeader() {
                   <div className="grid grid-cols-4 gap-10">
                     {AEROSPACE_COLUMNS.map((col) => (
                       <div key={col.title}>
-                        <p className={`text-xs font-medium uppercase tracking-[0.08em] ${dark ? "text-ink-3" : "text-chalk-2/80"}`}>
-                          {col.title}
-                        </p>
+                        <p className="text-xs font-medium uppercase tracking-[0.08em] text-chalk-3">{col.title}</p>
                         <ul className="mt-4 space-y-2.5">
                           {bySlug(col.slugs).map((p) => (
                             <li key={p.slug}>
                               <Link
                                 href={slug(p.slug)}
                                 onClick={closeAll}
-                                className={`group inline-flex items-center gap-2 text-[0.9375rem] font-medium transition-colors ${
-                                  dark ? "text-ink hover:text-ink-2" : "text-chalk hover:text-chalk-2"
-                                }`}
+                                className="group inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk transition-colors hover:text-amber"
                               >
                                 {p.name}
                                 <ArrowRight
@@ -261,23 +245,21 @@ export function SiteHeader() {
                         </ul>
                       </div>
                     ))}
-                    <div className={`border-l pl-10 ${dark ? "border-line" : "border-night-line"}`}>
-                      <p className={`text-xs font-medium uppercase tracking-[0.08em] ${dark ? "text-ink-3" : "text-chalk-2/80"}`}>
-                        Explore
-                      </p>
+                    <div className="border-l border-edge pl-10">
+                      <p className="text-xs font-medium uppercase tracking-[0.08em] text-chalk-3">Explore</p>
                       <ul className="mt-4 space-y-2.5">
                         <li>
-                          <Link href="/work" onClick={closeAll} className={`qa-link text-[0.9375rem] font-medium ${dark ? "text-ink" : "text-chalk"}`}>
+                          <Link href="/work" onClick={closeAll} className="qa-link text-[0.9375rem] font-medium text-chalk">
                             All projects
                           </Link>
                         </li>
                         <li>
-                          <Link href="/technology" onClick={closeAll} className={`qa-link text-[0.9375rem] font-medium ${dark ? "text-ink" : "text-chalk"}`}>
+                          <Link href="/technology" onClick={closeAll} className="qa-link text-[0.9375rem] font-medium text-chalk">
                             Technological capabilities
                           </Link>
                         </li>
                       </ul>
-                      <p className={`mt-8 max-w-[24ch] text-sm leading-relaxed ${dark ? "text-ink-2" : "text-chalk-2"}`}>
+                      <p className="mt-8 max-w-[24ch] text-sm leading-relaxed text-chalk-2">
                         {projects.length} systems — from the first engine tested in Bangladesh to future launch vehicles.
                       </p>
                     </div>
@@ -292,26 +274,26 @@ export function SiteHeader() {
                           <Link
                             href={l.href}
                             onClick={closeAll}
-                            className={`qa-link text-lg font-medium ${dark ? "text-ink" : "text-chalk"}`}
+                            className="qa-link text-lg font-medium text-chalk transition-colors hover:text-amber"
                           >
                             {l.label}
                           </Link>
                         </li>
                       ))}
                     </ul>
-                    <div className={`self-end border-l pl-10 ${dark ? "border-line" : "border-night-line"}`}>
+                    <div className="self-end border-l border-edge pl-10">
                       {menu === "programs" && (
-                        <p className={`max-w-[36ch] text-sm leading-relaxed ${dark ? "text-ink-2" : "text-chalk-2"}`}>
+                        <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
                           {programs.dbf.partners.join(" · ")} — a real aerospace pipeline for university teams, from proposal to national fly-off.
                         </p>
                       )}
                       {menu === "company" && (
-                        <p className={`max-w-[36ch] text-sm leading-relaxed ${dark ? "text-ink-2" : "text-chalk-2"}`}>
+                        <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
                           {projects.length} systems, 50+ people, one national mission — aerospace from Bangladesh, on the public record.
                         </p>
                       )}
                       {menu === "media" && (
-                        <p className={`max-w-[36ch] text-sm leading-relaxed ${dark ? "text-ink-2" : "text-chalk-2"}`}>
+                        <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
                           National television, press and the DhumketuX archive — every milestone documented at the source.
                         </p>
                       )}
@@ -338,7 +320,7 @@ export function SiteHeader() {
             exit={reduced ? { opacity: 0 } : { opacity: 0, y: -12 }}
             transition={{ duration: 0.35, ease: EASE }}
           >
-            <div className="sticky top-0 z-10 flex h-16 items-center justify-between border-b border-night-line bg-night px-5 sm:px-8">
+            <div className="sticky top-0 z-10 flex h-16 items-center justify-between border-b border-edge bg-night px-5 sm:px-8">
               <span className="text-[1.0625rem] font-semibold tracking-[-0.02em]">DhumketuX</span>
               <button
                 type="button"
@@ -426,7 +408,7 @@ export function SiteHeader() {
                 </ul>
               </MobileGroup>
 
-              <div className="mt-12 border-t border-night-line pt-8">
+              <div className="mt-12 border-t border-edge pt-8">
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
@@ -457,7 +439,7 @@ function MobileLink({
     <Link
       href={href}
       onClick={onNavigate}
-      className="block border-b border-night-line py-4 text-[1.75rem] font-semibold tracking-[-0.03em] text-chalk"
+      className="block border-b border-edge py-4 text-[1.75rem] font-semibold tracking-[-0.03em] text-chalk"
     >
       {label}
     </Link>
@@ -476,7 +458,7 @@ function MobileGroup({
   children: React.ReactNode;
 }) {
   return (
-    <div className="border-b border-night-line">
+    <div className="border-b border-edge">
       <button
         type="button"
         onClick={onToggle}

@@ -1,36 +1,84 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { getProject, projects } from "@/content/projects";
+import { getProject, projects, statusMeta, type DxStatus } from "@/content/projects";
 import { Container, SectionIntro } from "@/components/primitives/section";
-import { Reveal, ImageReveal } from "@/components/primitives/reveal";
+import { Reveal } from "@/components/primitives/reveal";
+import { StatusDot } from "@/components/primitives/ui-bits";
 
 /**
- * FLAGSHIP WORK — one project at a time, presented editorially.
- * Minimalism rule per project: name → ONE sentence → one quiet fact line →
- * (image). No fact grids, no category badges, no storytelling paragraphs.
- * Facts are source-controlled from src/content/projects.ts.
+ * FLAGSHIP WORK — image-led feature cards.
+ * Large cinematic card (Bidrohi) → duo (Agni Bina typographic + Boson real
+ * engine fire) → wide render panel (Nazrul 01). Every card links into its
+ * /work detail page. Facts are source-controlled from src/content/projects.ts.
  */
 
-/** One quiet line: "Label value · Label value · Label value" */
-function FactLine({ items, night }: { items: { label: string; value: string }[]; night: boolean }) {
+function firstFacts(project: ReturnType<typeof getProject>) {
+  return (project?.metrics ?? []).slice(0, 3).map(({ label, value }) => ({ label, value }));
+}
+
+function FactLine({ items }: { items: { label: string; value: string }[] }) {
   if (!items.length) return null;
   return (
-    <p className={`text-sm ${night ? "text-chalk-2" : "text-ink-2"}`}>
+    <p className="text-sm text-chalk-2">
       {items.map((m, i) => (
         <span key={m.label}>
           {i > 0 && <span className="mx-2.5 opacity-40" aria-hidden="true">·</span>}
           <span className="opacity-70">{m.label}</span>{" "}
-          <span className={`font-medium ${night ? "text-chalk" : "text-ink"}`}>{m.value}</span>
+          <span className="qa-data font-medium text-chalk">{m.value}</span>
         </span>
       ))}
     </p>
   );
 }
 
-/** First three metrics only — a fact line, not a table. */
-function firstFacts(project: ReturnType<typeof getProject>) {
-  return (project?.metrics ?? []).slice(0, 3).map(({ label, value }) => ({ label, value }));
+export function StatusChip({ status }: { status: DxStatus }) {
+  const meta = statusMeta[status];
+  return (
+    <span className="glass inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs text-chalk-2">
+      <StatusDot tone={meta.tone} />
+      {meta.label}
+    </span>
+  );
+}
+
+function CardShell({
+  href,
+  index,
+  name,
+  status,
+  children,
+  className = "",
+}: {
+  href: string;
+  index: string;
+  name: string;
+  status: DxStatus;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className={`group card-lift relative flex flex-col overflow-hidden rounded-3xl border border-edge bg-night-2 ${className}`}
+    >
+      {/* Title bar — index, name, status */}
+      <div className="relative z-20 flex items-start justify-between gap-4 p-6 pb-0 sm:p-8 sm:pb-0">
+        <div>
+          <p className="qa-data text-xs uppercase tracking-[0.16em] text-chalk-3">{index}</p>
+          <h3 className="qa-display mt-2 flex items-center gap-3 text-[clamp(1.7rem,3.4vw,2.5rem)] text-chalk">
+            {name}
+            <ArrowUpRight
+              className="h-[0.55em] w-[0.55em] shrink-0 text-amber opacity-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100"
+              aria-hidden="true"
+            />
+          </h3>
+        </div>
+        <StatusChip status={status} />
+      </div>
+      {children}
+    </Link>
+  );
 }
 
 export function Flagship() {
@@ -40,169 +88,161 @@ export function Flagship() {
   const nazrul = getProject("nazrul-01");
 
   return (
-    <section id="work" aria-label="Flagship work" className="scroll-mt-16">
-      {/* Section opener on paper — statement only */}
-      <div className="bg-paper pb-16 pt-10 sm:pb-24 lg:pb-32">
-        <Container>
-          <SectionIntro statement="The path to orbit runs through engines, vehicles and proof." />
-        </Container>
-      </div>
+    <section id="work" aria-label="Flagship work" className="scroll-mt-16 bg-void pb-20 pt-8 sm:pb-28">
+      <Container>
+        <SectionIntro
+          kicker="Flagship programs"
+          statement="The path to orbit runs through engines, vehicles and proof."
+        />
 
-      {/* 01 — Bidrohi SR · night */}
-      <article aria-label="Bidrohi SR" className="night relative overflow-hidden bg-night py-24 text-chalk sm:py-32 lg:py-40">
-        <div className="glow-ember right-[-12%] top-[10%] h-[420px] w-[520px]" aria-hidden="true" />
-        <Container>
+        <div className="mt-14 grid gap-5 lg:mt-16">
+          {/* 01 — Bidrohi SR · full-width cinematic */}
           <Reveal>
-            <p className="qa-data text-sm text-chalk-2">01</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">
-              <Link href="/work/bidrohi-sr" className="group inline-flex items-baseline gap-4 transition-colors hover:text-chalk-2">
-                Bidrohi SR
-                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
-              </Link>
-            </h3>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
-              Bangladesh&rsquo;s first commercial sub-orbital space rocket — named after
-              Kazi Nazrul Islam&rsquo;s poem, &ldquo;the rebel&rdquo;.
-            </p>
-            <div className="mt-8">
-              <FactLine night items={firstFacts(bidrohi)} />
-            </div>
-          </Reveal>
-
-          <ImageReveal className="mt-14 sm:mt-16">
-            <figure>
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+            <CardShell
+              href="/work/bidrohi-sr"
+              index="01"
+              name="Bidrohi SR"
+              status={bidrohi?.status ?? "development"}
+              className="img-quiet"
+            >
+              <figure className="relative mt-6 aspect-[16/10] w-full sm:aspect-[21/9]">
                 <Image
                   src="/media/team-launch-rail.jpg"
                   alt="DhumketuX team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh"
                   fill
-                  sizes="(max-width: 768px) 100vw, 1180px"
-                  className="object-cover"
+                  sizes="(max-width: 1180px) 100vw, 1180px"
+                  className="object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
                 />
+                <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-night-2 via-transparent to-void/30" />
+                <figcaption className="absolute bottom-4 right-5 text-[11px] text-chalk-2/80">
+                  The team with the Bidrohi rocket on its launch rail — Mymensingh
+                </figcaption>
+              </figure>
+              <div className="p-6 sm:p-8">
+                <p className="max-w-2xl text-lg leading-relaxed text-chalk-2">
+                  Bangladesh&rsquo;s first commercial sub-orbital space rocket — named after
+                  Kazi Nazrul Islam&rsquo;s poem, &ldquo;the rebel&rdquo;.
+                </p>
+                <div className="mt-5">
+                  <FactLine items={firstFacts(bidrohi)} />
+                </div>
               </div>
-              <figcaption className="mt-3 text-xs text-chalk-2/90">
-                The team with the Bidrohi rocket on its launch rail — Mymensingh
-              </figcaption>
-            </figure>
-          </ImageReveal>
-        </Container>
-      </article>
-
-      {/* 02 — Agni Bina · paper, one typographic moment */}
-      <article aria-label="Agni Bina" className="bg-paper py-24 sm:py-32 lg:py-40">
-        <Container>
-          <Reveal>
-            <p className="qa-data text-sm text-ink-3">02</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">
-              <Link href="/work/agni-bina" className="group inline-flex items-baseline gap-4 transition-colors hover:text-ink-2">
-                Agni Bina
-                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
-              </Link>
-            </h3>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-2">
-              A 120+ kilonewton solid booster, built in Bangladesh for the Bidrohi
-              vehicle.
-            </p>
-            <div className="mt-8">
-              <FactLine night={false} items={firstFacts(agni)} />
-            </div>
+            </CardShell>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <p
-              className="qa-display mt-16 text-[clamp(3.5rem,11vw,9rem)] text-ink sm:mt-20"
-              aria-label="120 plus kilonewtons of thrust"
+          {/* 02 + 03 — duo */}
+          <div className="grid gap-5 lg:grid-cols-2">
+            <Reveal>
+              {/* Agni Bina — typographic power card */}
+              <CardShell
+                href="/work/agni-bina"
+                index="02"
+                name="Agni Bina"
+                status={agni?.status ?? "development"}
+                className="h-full"
+              >
+                <div aria-hidden="true" className="starfield absolute inset-0 opacity-60" />
+                <div className="glow-ember right-[-20%] top-[16%] h-[300px] w-[380px]" aria-hidden="true" />
+                <div className="relative z-10 flex flex-1 items-center justify-center px-6 py-14 sm:px-8">
+                  <p className="qa-display text-center text-[clamp(3.2rem,7vw,5.5rem)]" aria-label="120 plus kilonewtons of thrust">
+                    <span className="text-ember-gradient">120+</span>
+                    <span className="text-chalk-2">&thinsp;kN</span>
+                  </p>
+                </div>
+                <div className="relative z-10 border-t border-edge p-6 sm:p-8">
+                  <p className="max-w-xl text-base leading-relaxed text-chalk-2">
+                    A 120+ kilonewton solid booster, built in Bangladesh for the Bidrohi
+                    vehicle.
+                  </p>
+                  <div className="mt-4">
+                    <FactLine items={firstFacts(agni)} />
+                  </div>
+                </div>
+              </CardShell>
+            </Reveal>
+
+            <Reveal delay={0.08}>
+              {/* Boson — real engine fire */}
+              <CardShell
+                href="/work/boson"
+                index="03"
+                name="Boson"
+                status={boson?.status ?? "development"}
+                className="img-quiet h-full"
+              >
+                <figure className="relative mt-6 aspect-[16/10] w-full">
+                  <Image
+                    src="/media/engine-static-fire-test.jpg"
+                    alt="Static fire test of a DhumketuX liquid rocket engine at night"
+                    fill
+                    sizes="(max-width: 1180px) 100vw, 590px"
+                    className="object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
+                  />
+                  <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-night-2 via-transparent to-void/20" />
+                </figure>
+                <div className="p-6 sm:p-8">
+                  <p className="max-w-xl text-base leading-relaxed text-chalk-2">
+                    A liquid rocket engine for autonomous rocket landing — LOX + kerosene,
+                    named after the physicist Satyendra Nath Bose.
+                  </p>
+                  <div className="mt-4">
+                    <FactLine items={firstFacts(boson)} />
+                  </div>
+                </div>
+              </CardShell>
+            </Reveal>
+          </div>
+
+          {/* 04 — Nazrul 01 · official render on deep night */}
+          <Reveal>
+            <CardShell
+              href="/work/nazrul-01"
+              index="04"
+              name="Nazrul 01"
+              status={nazrul?.status ?? "concept"}
+              className="bg-night"
             >
-              120+&thinsp;<span className="text-ink-3">kN</span>
-            </p>
-            <p className="mt-3 text-sm text-ink-2">
-              Target thrust of the Agni Bina booster
-            </p>
-          </Reveal>
-        </Container>
-      </article>
-
-      {/* 03 — Boson · night */}
-      <article aria-label="Boson" className="night relative overflow-hidden bg-night py-24 text-chalk sm:py-32 lg:py-40">
-        <div className="glow-chalk left-[-10%] bottom-[0%] h-[380px] w-[520px]" aria-hidden="true" />
-        <Container>
-          <Reveal>
-            <p className="qa-data text-sm text-chalk-2">03</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">
-              <Link href="/work/boson" className="group inline-flex items-baseline gap-4 transition-colors hover:text-chalk-2">
-                Boson
-                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
-              </Link>
-            </h3>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
-              A liquid rocket engine for autonomous rocket landing — LOX + kerosene,
-              named after the physicist Satyendra Nath Bose.
-            </p>
-            <div className="mt-8">
-              <FactLine night items={firstFacts(boson)} />
-            </div>
-          </Reveal>
-        </Container>
-      </article>
-
-      {/* 04 — Nazrul 01 · paper + official render on black */}
-      <article aria-label="Nazrul 01" className="bg-paper py-24 sm:py-32 lg:py-40">
-        <Container>
-          <Reveal>
-            <p className="qa-data text-sm text-ink-3">04</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">
-              <Link href="/work/nazrul-01" className="group inline-flex items-baseline gap-4 transition-colors hover:text-ink-2">
-                Nazrul 01
-                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
-              </Link>
-            </h3>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-2">
-              A small satellite launch vehicle concept — dedicated launch capability
-              for microsats and CubeSats.
-            </p>
-            <div className="mt-8">
-              <FactLine night={false} items={firstFacts(nazrul)} />
-            </div>
-          </Reveal>
-
-          <ImageReveal className="mt-14 sm:mt-16">
-            <figure>
-              <div className="night-voice relative aspect-[4/5] w-full overflow-hidden bg-night sm:aspect-[16/9]">
+              <div className="starfield absolute inset-0 opacity-70" aria-hidden="true" />
+              <div className="glow-chalk left-1/2 top-[14%] h-[300px] w-[520px] -translate-x-1/2" aria-hidden="true" />
+              <div className="relative z-10 night-voice mx-auto flex aspect-[16/10] w-full max-w-3xl items-center justify-center px-8 pt-8 sm:pt-10">
                 <Image
                   src="/media/nazrul-sslv-render.png"
-                  alt="Official render of the DhumketuX Nazrul-01 small satellite launch vehicle — white two-stage rocket with Bangladeshi flag markings"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 1180px"
-                  className="object-contain"
+                  alt="Official render of the DhumketuX Nazrul-01 small satellite launch vehicle"
+                  width={720}
+                  height={900}
+                  sizes="(max-width: 1180px) 90vw, 720px"
+                  className="max-h-full w-auto object-contain"
                 />
               </div>
-              <figcaption className="mt-3 text-xs text-ink-3">
-                Official vehicle render — DhumketuX
-              </figcaption>
-            </figure>
-          </ImageReveal>
-        </Container>
-      </article>
+              <div className="relative z-10 flex flex-wrap items-baseline justify-between gap-3 p-6 sm:p-8">
+                <p className="max-w-2xl text-lg leading-relaxed text-chalk-2">
+                  A small satellite launch vehicle concept — dedicated launch capability
+                  for microsats and CubeSats.
+                </p>
+                <p className="text-[11px] text-chalk-3">Official vehicle render — DhumketuX</p>
+              </div>
+            </CardShell>
+          </Reveal>
+        </div>
+      </Container>
 
       {/* Index link — the full catalog lives on /work */}
-      <div className="border-t border-line bg-paper">
-        <Container>
-          <Reveal>
-            <Link
-              href="/work"
-              className="group flex items-baseline justify-between gap-6 py-10 sm:py-12"
-            >
-              <span className="text-xl font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-ink-2 sm:text-2xl">
-                {projects.length} systems, one engineering culture
-              </span>
-              <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-ink-2 transition-colors group-hover:text-ink">
-                View all projects
-                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
-              </span>
-            </Link>
-          </Reveal>
-        </Container>
-      </div>
+      <Container>
+        <Reveal>
+          <Link
+            href="/work"
+            className="group mt-12 flex items-baseline justify-between gap-6 rounded-2xl border border-edge bg-night-2 px-6 py-6 transition-colors hover:border-edge-strong sm:px-8"
+          >
+            <span className="text-xl font-semibold tracking-[-0.02em] text-chalk sm:text-2xl">
+              {projects.length} systems, one engineering culture
+            </span>
+            <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-amber">
+              View all projects
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+            </span>
+          </Link>
+        </Reveal>
+      </Container>
     </section>
   );
 }

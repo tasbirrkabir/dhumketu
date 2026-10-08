@@ -88,6 +88,54 @@
       "originalSource": "DhumketuX",
       "type": "render",
       "alt": "Concept render of a DhumketuX electric VTOL passenger aircraft over a city skyline"
+    },
+    {
+      "file": "concept-night-launch.jpg",
+      "title": "Concept atmosphere — night lift-off (AI-generated)",
+      "sourceUrl": "generated in-repo (z-ai image)",
+      "originalSource": "AI concept art",
+      "type": "generated-concept",
+      "alt": "Concept art of a small rocket lifting off at night with an orange flame trail over palm trees"
+    },
+    {
+      "file": "concept-rocket-dusk.jpg",
+      "title": "Concept atmosphere — vehicle on pad at dusk (AI-generated)",
+      "sourceUrl": "generated in-repo (z-ai image)",
+      "originalSource": "AI concept art",
+      "type": "generated-concept",
+      "alt": "Concept art of an experimental rocket on a launch rail at dusk with an amber horizon"
+    },
+    {
+      "file": "concept-engine-fire.jpg",
+      "title": "Concept atmosphere — engine plume close-up (AI-generated)",
+      "sourceUrl": "generated in-repo (z-ai image)",
+      "originalSource": "AI concept art",
+      "type": "generated-concept",
+      "alt": "Concept art of a rocket engine exhaust plume with shock diamonds at night"
+    },
+    {
+      "file": "concept-orbit-dawn.jpg",
+      "title": "Concept atmosphere — satellite over orbital dawn (AI-generated)",
+      "sourceUrl": "generated in-repo (z-ai image)",
+      "originalSource": "AI concept art",
+      "type": "generated-concept",
+      "alt": "Concept art of a satellite above Earth at orbital sunrise with city lights below"
+    },
+    {
+      "file": "concept-students-workshop.jpg",
+      "title": "Concept atmosphere — student engineers building (AI-generated)",
+      "sourceUrl": "generated in-repo (z-ai image)",
+      "originalSource": "AI concept art",
+      "type": "generated-concept",
+      "alt": "Concept art of students assembling a rocket airframe under warm workshop lamps"
+    },
+    {
+      "file": "concept-mission-control.jpg",
+      "title": "Concept atmosphere — mission control (AI-generated)",
+      "sourceUrl": "generated in-repo (z-ai image)",
+      "originalSource": "AI concept art",
+      "type": "generated-concept",
+      "alt": "Concept art of a dark mission control room with amber telemetry screens"
     }
   ]
 }

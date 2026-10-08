@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { programs } from "@/content/team";
 import { Shell } from "@/components/layout/shell";
-import { PageHero } from "@/components/primitives/page-hero";
+import { CinematicHero } from "@/components/primitives/page-hero";
 import { Container } from "@/components/primitives/section";
 import { Reveal } from "@/components/primitives/reveal";
+import { CtaBand } from "@/components/primitives/ui-bits";
 
 export const metadata: Metadata = {
   title: "Programs — DhumketuX",
@@ -14,31 +15,36 @@ export const metadata: Metadata = {
 export default function ProgramsPage() {
   return (
     <Shell>
-      <PageHero
-        index="DBF"
+      <CinematicHero
+        image="/media/concept-students-workshop.jpg"
+        alt=""
+        kicker="Programs · DBF"
         title="Design, build, fly."
         accent="The national pipeline."
         lede={`Together with ${programs.dbf.partners.slice(1).join(" and ")}, the "Design, Build, Fly" program gives university teams a real aerospace pipeline — from proposal to national fly-off.`}
+        caption="Concept art — illustrative of student engineering work."
       />
 
       {/* DBF tracks */}
-      <section id="dbf" aria-label="DBF tracks" className="scroll-mt-16 border-t border-line bg-paper py-24 sm:py-32">
+      <section id="dbf" aria-label="DBF tracks" className="scroll-mt-16 bg-void py-24 sm:py-32">
         <Container>
           <Reveal>
-            <h2 className="qa-statement max-w-3xl text-[clamp(1.7rem,3.6vw,2.75rem)] text-ink">
+            <h2 className="qa-statement max-w-3xl text-[clamp(1.7rem,3.6vw,2.75rem)] text-chalk">
               Three tracks. Real missions.
             </h2>
           </Reveal>
 
-          <div className="mt-16 grid gap-12 sm:mt-20 sm:grid-cols-3 sm:gap-8">
+          <div className="mt-16 grid gap-5 sm:mt-20 sm:grid-cols-3">
             {programs.dbf.tracks.map((t, i) => (
-              <Reveal key={t.id} delay={0.08 + i * 0.06}>
-                <div className="border-t border-ink/25 pt-6">
-                  <p className="qa-data text-sm text-ink-3">0{i + 1}</p>
-                  <h3 className="mt-3 text-xl font-semibold tracking-[-0.015em] text-ink">
+              <Reveal key={t.id} delay={0.08 + i * 0.06} className="h-full">
+                <div className="card-lift h-full rounded-3xl border border-edge bg-night-2 p-6 sm:p-7">
+                  <p className="qa-data text-xs uppercase tracking-[0.16em] text-amber">
+                    0{i + 1}
+                  </p>
+                  <h3 className="qa-display mt-4 text-xl text-chalk sm:text-[1.35rem]">
                     {t.title}
                   </h3>
-                  <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-2">{t.body}</p>
+                  <p className="mt-3 text-[0.9375rem] leading-relaxed text-chalk-2">{t.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -46,16 +52,19 @@ export default function ProgramsPage() {
 
           {/* Journey */}
           <Reveal delay={0.1}>
-            <div className="mt-24 border-t border-ink/25 pt-10 sm:mt-28">
-              <h3 className="text-sm font-medium uppercase tracking-[0.08em] text-ink-3">
+            <div className="mt-24 sm:mt-28">
+              <h3 className="qa-data text-xs font-medium uppercase tracking-[0.18em] text-chalk-3">
                 The journey
               </h3>
-              <ol className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-5">
+              <ol className="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
                 {programs.dbf.journey.map((j) => (
-                  <li key={j.step}>
-                    <p className="qa-data text-sm text-ink-3">{j.step}</p>
-                    <p className="mt-2 text-[0.9375rem] font-medium text-ink">{j.title}</p>
-                    <p className="mt-1.5 text-sm leading-relaxed text-ink-2">{j.body}</p>
+                  <li
+                    key={j.step}
+                    className="card-lift rounded-2xl border border-edge bg-night-2 p-5"
+                  >
+                    <p className="qa-data text-xs text-amber">{j.step}</p>
+                    <p className="mt-3 text-[0.9375rem] font-medium text-chalk">{j.title}</p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-chalk-2">{j.body}</p>
                   </li>
                 ))}
               </ol>
@@ -64,13 +73,16 @@ export default function ProgramsPage() {
 
           {/* Safety */}
           <Reveal delay={0.12}>
-            <div className="mt-20 border-t border-ink/25 pt-10">
-              <h3 className="text-sm font-medium uppercase tracking-[0.08em] text-ink-3">
+            <div className="mt-20">
+              <h3 className="qa-data text-xs font-medium uppercase tracking-[0.18em] text-chalk-3">
                 Safety &amp; integrity
               </h3>
-              <ul className="mt-8 grid gap-8 sm:grid-cols-3">
+              <ul className="mt-8 grid gap-4 sm:grid-cols-3">
                 {programs.dbf.safety.map((s) => (
-                  <li key={s} className="border-t border-line pt-4 text-[0.9375rem] leading-relaxed text-ink-2">
+                  <li
+                    key={s}
+                    className="glass rounded-2xl p-5 text-[0.9375rem] leading-relaxed text-chalk-2"
+                  >
                     {s}
                   </li>
                 ))}
@@ -81,52 +93,66 @@ export default function ProgramsPage() {
       </section>
 
       {/* Student programs */}
-      <section id="student" aria-label="Student programs" className="scroll-mt-16 border-t border-line bg-paper-2 py-24 sm:py-32">
+      <section
+        id="student"
+        aria-label="Student programs"
+        className="scroll-mt-16 border-t border-edge bg-night py-24 sm:py-32"
+      >
         <Container>
           <Reveal>
-            <h2 className="qa-statement max-w-3xl text-[clamp(1.7rem,3.6vw,2.75rem)] text-ink">
+            <h2 className="qa-statement max-w-3xl text-[clamp(1.7rem,3.6vw,2.75rem)] text-chalk">
               Student programs.
             </h2>
           </Reveal>
 
-          <ul className="mt-14 grid gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {programs.studentPrograms.map((p, i) => (
-              <Reveal as="li" key={p.title} delay={Math.min(i * 0.04, 0.16)}>
-                <div className="border-t border-line py-5">
-                  <span className="text-[0.9375rem] font-medium text-ink">{p.title}</span>
-                  <span className="mt-1 block text-sm text-ink-2">{p.note}</span>
+              <Reveal as="li" key={p.title} delay={Math.min(i * 0.04, 0.16)} className="h-full">
+                <div className="card-lift h-full rounded-2xl border border-edge bg-night-2 p-5 sm:p-6">
+                  <span className="text-[0.9375rem] font-medium text-chalk">{p.title}</span>
+                  <span className="mt-1.5 block text-sm text-chalk-2">{p.note}</span>
                 </div>
               </Reveal>
             ))}
-            <li aria-hidden="true" className="hidden border-t border-line sm:block" />
-            <li aria-hidden="true" className="hidden border-t border-line lg:block" />
           </ul>
         </Container>
       </section>
 
       {/* Community platforms */}
-      <section id="community" aria-label="Community platforms" className="scroll-mt-16 border-t border-line bg-paper py-24 sm:py-32">
+      <section
+        id="community"
+        aria-label="Community platforms"
+        className="scroll-mt-16 border-t border-edge bg-void py-24 sm:py-32"
+      >
         <Container>
           <Reveal>
-            <h2 className="qa-statement max-w-3xl text-[clamp(1.7rem,3.6vw,2.75rem)] text-ink">
+            <h2 className="qa-statement max-w-3xl text-[clamp(1.7rem,3.6vw,2.75rem)] text-chalk">
               A movement, not just a company.
             </h2>
           </Reveal>
 
-          <ul className="mt-14 grid gap-x-12 gap-y-1 sm:grid-cols-2">
+          <ul className="mt-14 grid gap-4 sm:grid-cols-2">
             {programs.communityPlatforms.map((name, i) => (
-              <Reveal as="li" key={name} delay={Math.min(i * 0.03, 0.14)}>
-                <div className="flex items-baseline gap-5 border-t border-line py-4">
-                  <span className="qa-data text-sm text-ink-3">
+              <Reveal as="li" key={name} delay={Math.min(i * 0.03, 0.14)} className="h-full">
+                <div className="flex h-full items-center gap-5 rounded-2xl border border-edge bg-night-2 p-5">
+                  <span className="qa-data text-sm text-chalk-3">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="text-[0.9375rem] font-medium text-ink sm:text-base">{name}</span>
+                  <span className="text-[0.9375rem] font-medium text-chalk sm:text-base">{name}</span>
                 </div>
               </Reveal>
             ))}
           </ul>
         </Container>
       </section>
+
+      <CtaBand
+        kicker="Get involved"
+        title="Join the national"
+        accent="pipeline."
+        copy="Universities, student teams and community platforms — bring your team into Design, Build, Fly or partner on the programs around it."
+        primary={{ href: "/contact", label: "Start a conversation" }}
+      />
     </Shell>
   );
 }

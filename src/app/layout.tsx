@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fafaf9",
+  themeColor: "#060607",
   width: "device-width",
   initialScale: 1,
 };
@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable} font-sans antialiased bg-paper text-ink`}
+        className={`${inter.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable} font-sans antialiased bg-void text-chalk`}
       >
         {children}
       </body>

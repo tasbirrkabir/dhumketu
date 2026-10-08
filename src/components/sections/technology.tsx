@@ -1,56 +1,87 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { capabilityStack } from "@/content/capabilities";
 import { Container, SectionIntro } from "@/components/primitives/section";
-import { Reveal } from "@/components/primitives/reveal";
+import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
- * TECHNOLOGY (home preview) — the stack as quiet editorial rows,
- * first six capabilities, then a route into the full page.
+ * TECHNOLOGY — split layout: sticky concept-engine image on the left,
+ * capability stack as hover-reactive rows on the right. Rows carry index,
+ * title and one-line summary; deep detail lives on /technology.
  */
 export function Technology() {
-  const preview = capabilityStack.slice(0, 6);
-
   return (
-    <section
-      id="technology"
-      aria-label="Technology"
-      className="scroll-mt-16 border-t border-line bg-paper py-28 sm:py-40 lg:py-48"
-    >
+    <section aria-label="Technology" className="relative overflow-hidden bg-night py-24 text-chalk sm:py-32 lg:py-40">
+      <div className="glow-ember left-[-12%] top-[6%] h-[420px] w-[560px]" aria-hidden="true" />
       <Container>
-        <SectionIntro statement="One engineering stack — from raw propellant to mission data." />
-
-        <div className="mt-20 sm:mt-28">
-          <ul>
-            {preview.map((c, i) => (
-              <Reveal as="li" key={c.id} delay={Math.min(i * 0.03, 0.18)}>
-                <div
-                  className={`grid grid-cols-[2.5rem_1fr] items-baseline gap-x-4 border-t border-line py-7 sm:grid-cols-[4rem_1fr] sm:gap-x-8 sm:py-9 ${
-                    i === preview.length - 1 ? "border-b" : ""
-                  }`}
-                >
-                  <span className="qa-data text-sm text-ink-3">{c.index}</span>
-                  <h3 className="text-2xl font-semibold tracking-[-0.02em] text-ink sm:text-3xl">
-                    {c.title}
-                  </h3>
-                </div>
-              </Reveal>
-            ))}
-          </ul>
-        </div>
-
-        <Reveal delay={0.1}>
-          <Link
-            href="/technology"
-            className="group mt-10 inline-flex items-center gap-2 text-[0.9375rem] font-medium text-ink"
-          >
-            All {capabilityStack.length} capabilities
-            <ArrowUpRight
-              className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-              aria-hidden="true"
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
+          {/* Sticky image column */}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <SectionIntro
+              kicker="Technology"
+              statement="Eight disciplines, one test-driven engineering culture."
             />
-          </Link>
-        </Reveal>
+            <ImageReveal className="mt-10">
+              <figure>
+                <div className="img-quiet relative aspect-[4/3] w-full overflow-hidden rounded-3xl border border-edge">
+                  <Image
+                    src="/media/concept-engine-fire.jpg"
+                    alt="Concept art of a rocket engine exhaust plume with shock diamonds at night"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 460px"
+                    className="object-cover"
+                  />
+                  <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-void/50 via-transparent to-transparent" />
+                </div>
+                <figcaption className="mt-3 text-[11px] text-chalk-3">
+                  Concept art — illustrative of a static-fire plume, not a documented test photograph.
+                </figcaption>
+              </figure>
+            </ImageReveal>
+          </div>
+
+          {/* Capability rows */}
+          <div>
+            <ul className="border-t border-edge">
+              {capabilityStack.map((c, i) => (
+                <li key={c.id}>
+                  <Reveal delay={Math.min(i * 0.04, 0.24)}>
+                    <Link
+                      href={`/technology#${c.id}`}
+                      className="group flex items-baseline gap-5 border-b border-edge py-5 transition-colors hover:border-edge-strong sm:items-center sm:gap-7"
+                    >
+                      <span className="qa-data w-8 shrink-0 text-sm text-chalk-3 transition-colors group-hover:text-amber">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block text-lg font-semibold tracking-[-0.015em] text-chalk transition-colors group-hover:text-amber sm:text-xl">
+                          {c.title}
+                        </span>
+                        <span className="mt-1 block text-sm leading-relaxed text-chalk-2">
+                          {c.summary}
+                        </span>
+                      </span>
+                      <ArrowUpRight
+                        className="ml-auto h-4 w-4 shrink-0 self-center text-chalk-3 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-amber group-hover:opacity-100"
+                        aria-hidden="true"
+                      />
+                    </Link>
+                  </Reveal>
+                </li>
+              ))}
+            </ul>
+            <Reveal delay={0.1}>
+              <Link
+                href="/technology"
+                className="group mt-8 inline-flex items-center gap-2 rounded-full border border-edge-strong px-6 py-3 text-[0.9375rem] font-medium text-chalk transition-colors hover:border-chalk-2"
+              >
+                All technological capabilities
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+              </Link>
+            </Reveal>
+          </div>
+        </div>
       </Container>
     </section>
   );
