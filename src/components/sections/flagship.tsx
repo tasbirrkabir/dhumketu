@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { getProject } from "@/content/projects";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { getProject, projects } from "@/content/projects";
 import { Container, SectionIntro } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
@@ -47,11 +49,17 @@ export function Flagship() {
       </div>
 
       {/* 01 — Bidrohi SR · night */}
-      <article aria-label="Bidrohi SR" className="night bg-night py-24 text-chalk sm:py-32 lg:py-40">
+      <article aria-label="Bidrohi SR" className="night relative overflow-hidden bg-night py-24 text-chalk sm:py-32 lg:py-40">
+        <div className="glow-ember right-[-12%] top-[10%] h-[420px] w-[520px]" aria-hidden="true" />
         <Container>
           <Reveal>
             <p className="qa-data text-sm text-chalk-2">01</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">Bidrohi SR</h3>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">
+              <Link href="/work/bidrohi-sr" className="group inline-flex items-baseline gap-4 transition-colors hover:text-chalk-2">
+                Bidrohi SR
+                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
+              </Link>
+            </h3>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
               Bangladesh&rsquo;s first commercial sub-orbital space rocket — named after
               Kazi Nazrul Islam&rsquo;s poem, &ldquo;the rebel&rdquo;.
@@ -85,7 +93,12 @@ export function Flagship() {
         <Container>
           <Reveal>
             <p className="qa-data text-sm text-ink-3">02</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">Agni Bina</h3>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">
+              <Link href="/work/agni-bina" className="group inline-flex items-baseline gap-4 transition-colors hover:text-ink-2">
+                Agni Bina
+                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
+              </Link>
+            </h3>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-2">
               A 120+ kilonewton solid booster, built in Bangladesh for the Bidrohi
               vehicle.
@@ -110,11 +123,17 @@ export function Flagship() {
       </article>
 
       {/* 03 — Boson · night */}
-      <article aria-label="Boson" className="night bg-night py-24 text-chalk sm:py-32 lg:py-40">
+      <article aria-label="Boson" className="night relative overflow-hidden bg-night py-24 text-chalk sm:py-32 lg:py-40">
+        <div className="glow-chalk left-[-10%] bottom-[0%] h-[380px] w-[520px]" aria-hidden="true" />
         <Container>
           <Reveal>
             <p className="qa-data text-sm text-chalk-2">03</p>
-            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">Boson</h3>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">
+              <Link href="/work/boson" className="group inline-flex items-baseline gap-4 transition-colors hover:text-chalk-2">
+                Boson
+                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
+              </Link>
+            </h3>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
               A liquid rocket engine for autonomous rocket landing — LOX + kerosene,
               named after the physicist Satyendra Nath Bose.
@@ -132,7 +151,10 @@ export function Flagship() {
           <Reveal>
             <p className="qa-data text-sm text-ink-3">04</p>
             <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">
-              Nazrul 01
+              <Link href="/work/nazrul-01" className="group inline-flex items-baseline gap-4 transition-colors hover:text-ink-2">
+                Nazrul 01
+                <ArrowUpRight className="h-[0.5em] w-[0.5em] self-center opacity-0 transition-opacity duration-300 group-hover:opacity-70" aria-hidden="true" />
+              </Link>
             </h3>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-2">
               A small satellite launch vehicle concept — dedicated launch capability
@@ -161,6 +183,26 @@ export function Flagship() {
           </ImageReveal>
         </Container>
       </article>
+
+      {/* Index link — the full catalog lives on /work */}
+      <div className="border-t border-line bg-paper">
+        <Container>
+          <Reveal>
+            <Link
+              href="/work"
+              className="group flex items-baseline justify-between gap-6 py-10 sm:py-12"
+            >
+              <span className="text-xl font-semibold tracking-[-0.02em] text-ink transition-colors group-hover:text-ink-2 sm:text-2xl">
+                {projects.length} systems, one engineering culture
+              </span>
+              <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-ink-2 transition-colors group-hover:text-ink">
+                View all projects
+                <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+              </span>
+            </Link>
+          </Reveal>
+        </Container>
+      </div>
     </section>
   );
 }

@@ -2,6 +2,7 @@ import { Reveal } from "@/components/primitives/reveal";
 import { Container } from "@/components/primitives/section";
 import { org } from "@/content/org";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 /**
  * FINAL CTA — the closing night movement.
@@ -27,8 +28,8 @@ export function FinalCta() {
 
         <Reveal delay={0.16}>
           <div className="mt-12 flex flex-wrap items-center gap-x-9 gap-y-4">
-            <a
-              href="mailto:xdhumketu@gmail.com?subject=Collaboration%20Proposal"
+            <Link
+              href="/contact"
               className="group inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk"
             >
               Propose a collaboration
@@ -36,19 +37,19 @@ export function FinalCta() {
                 className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                 aria-hidden="true"
               />
-            </a>
-            <a
-              href="mailto:xdhumketu@gmail.com?subject=Sponsorship"
+            </Link>
+            <Link
+              href="/contact#book"
               className="inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk-2 transition-colors hover:text-chalk"
             >
-              Become a sponsor
-            </a>
-            <a
-              href="mailto:xdhumketu@gmail.com?subject=Careers"
+              Book a launch
+            </Link>
+            <Link
+              href="/contact#careers"
               className="inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk-2 transition-colors hover:text-chalk"
             >
               Explore careers
-            </a>
+            </Link>
           </div>
         </Reveal>
 

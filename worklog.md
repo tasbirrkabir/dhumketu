@@ -92,3 +92,25 @@ Stage Summary:
 - The site now reads as Apple-minimal: one dominant idea per screen, no eyebrows, no paragraph grids, hairline structure, generous whitespace
 - Knowledge preserved: all facts remain in src/content/* modules (single source of truth); homepage shows the quiet layer
 - Captures: research/audit/min-*.png, mob-*.png (mobile menu + navigation verified)
+
+---
+Task ID: rebuild-3
+Agent: Z.ai Code (main)
+Task: Multipage rebuild + richer UI + main-site-mirroring dropdown nav. User feedback: "eto simple ui? eww aro shundor koro and multipage koro and main website e dekho nav e koto kisu ase dropdown e" (too simple — make it more beautiful, multipage, mirror main site's nav with dropdowns).
+
+Work Log:
+- Crawled nav from research/home.txt (live site JS-gated): full dhumketux.com menu tree — Home / Aerospace▾ (Launch Vehicle, Satellite, R&D Technology, Aviation — ~20 hardware pages) / Services / About Us▾ (Media, Team, Investments, Careers, Vision, History, Collaborations, Social Responsibilities, Capabilities, Policy, Contact) / Our Programs▾ (communities + student programs) / Shop / Book A Launch
+- IA mapped onto sourced content: 15 projects in projects.ts cover every hardware dropdown item
+- NEW ROUTES: /work (grouped catalog, status dots: tested=go/development=signal/concept=future=ink-3, provenance legend) · /work/[slug] ×15 (night hero w/ ghost catalog number + serif Bangla name, detail prose, metrics sidebar, per-project real media map, related links, static params+metadata) · /technology (all 8 capabilities with summaries + points restored) · /programs (DBF tracks/journey/safety + student programs + 8 community platforms) · /vision (full pillars with bodies+points, Bangladesh vision, responsible space, Space Center, 2035/2040 roadmap) · /company (team with FULL bios restored, milestones timeline, collaborations, policy/core values + ethics + safety, social responsibilities) · /media (news/articles/social with summaries) · /contact (direct contact, Book a Launch night panel, 5 engage routes)
+- NAV rebuilt mirroring main site: Aerospace mega-panel (4 cols: Launch Vehicles/Propulsion & Systems/Aviation/Explore, hover+click+Escape, aria-expanded/haspopup) + Programs/Company/Media dropdowns + "Book a Launch" CTA pill; mobile = full-screen night menu with accordions
+- BEAUTY elevation: Instrument Serif added (qa-serif italic accent words in heroes — "aerospace", "orbital media", "20+ universities"), qa-ghost outlined ghost numerals (15/01/DBF/404…), glow-ember/glow-chalk radial glows on night sections, img-quiet hover zoom, richer night footer with 4-column sitemap
+- Homepage now curated: Hero(serif) → Intro → Flagship(4 linked projects + "15 systems" index row) → Technology preview(6) → Vision preview → People strip → CTA; full depth moved to interior pages
+- New content module src/content/policy.ts (sourced from /our-policy/ + /social-responsibilities/: 7 core values, ethics/compliance, safety, 4 responsibility blocks)
+- Shell component (header+footer per page); PageHero primitive; obsolete sections removed (milestones/programs/media became pages); not-found redesigned w/ ghost 404
+- Fixes during verification: react-hooks/set-state-in-effect lint error (removed route-change effect; close via link clicks/Escape), dev server restart, "Fourteen"→dynamic count, data-scroll-behavior="smooth" on html
+- Verified: all 9 route types render 200 + complete; mega panel + dropdowns open (desktop), mobile menu → Aerospace accordion → Boson deep-link lands /work/boson; no horizontal overflow (390/1440); console clean; footer sitemap + provenance lines render; lint clean
+
+Stage Summary:
+- Site is now multipage (15 project pages + 7 section pages) with dhumketux.com's full nav richness in dropdowns, and a more beautiful editorial system (serif accents, ghost numerals, ember glows, hover zooms) while keeping the quiet premium base
+- All dropdown nav items resolve to real sourced pages; every fact still traceable to dhumketux.com
+- Captures: research/audit/mp-*.png, pg-*.png, mob2-*.png

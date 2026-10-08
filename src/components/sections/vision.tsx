@@ -1,29 +1,29 @@
 import Image from "next/image";
-import {
-  visionPillars,
-  visionBangladesh,
-} from "@/content/vision";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { visionPillars } from "@/content/vision";
 import { Container } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
- * VISION — night movement. One giant statement, three future pillar NAMES,
- * a Bangla line, and the official fairing render as quiet atmosphere.
- * Minimalism rule: pillars are titles only — the statement carries the story.
- * All future-facing content is explicitly marked (DECISIONS.md D-003).
+ * VISION (home preview) — one giant statement, three future pillar names,
+ * the official fairing render, then a route into the full vision page.
  */
 export function Vision() {
   return (
     <section
       id="vision"
       aria-label="Vision"
-      className="night scroll-mt-16 bg-night py-28 text-chalk sm:py-40 lg:py-48"
+      className="night relative scroll-mt-16 overflow-hidden bg-night py-28 text-chalk sm:py-40 lg:py-48"
     >
+      <div className="glow-ember right-[-10%] top-[20%] h-[420px] w-[560px]" aria-hidden="true" />
+
       <Container>
         <Reveal>
           <h2 className="qa-display max-w-4xl text-[clamp(2.4rem,6.4vw,5.25rem)] text-chalk">
-            The next chapter: constellations, connectivity and responsible orbital
-            media — from Bangladesh.
+            The next chapter: constellations, connectivity and responsible{" "}
+            <span className="qa-serif font-normal text-chalk-2">orbital media</span> —
+            from Bangladesh.
           </h2>
         </Reveal>
 
@@ -33,7 +33,6 @@ export function Vision() {
           </p>
         </Reveal>
 
-        {/* Pillar names only — one quiet row */}
         <Reveal delay={0.16}>
           <ul className="mt-20 grid gap-8 border-t border-night-line pt-10 sm:grid-cols-3">
             {visionPillars.map((p) => (
@@ -44,21 +43,9 @@ export function Vision() {
           </ul>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <figure className="mt-20 border-l-2 border-night-line pl-6 sm:pl-8">
-            <blockquote className="max-w-3xl text-lg leading-relaxed text-chalk-2 sm:text-xl">
-              {visionBangladesh.bn}
-            </blockquote>
-            <figcaption className="mt-4 text-sm text-chalk-2/80">
-              Our dream for Bangladesh — space data, internet and branding, operated
-              from Bangladesh.
-            </figcaption>
-          </figure>
-        </Reveal>
-
         <ImageReveal className="mt-20 sm:mt-28">
           <figure>
-            <div className="relative aspect-[16/9] w-full overflow-hidden sm:aspect-[21/9]">
+            <div className="img-quiet relative aspect-[16/9] w-full sm:aspect-[21/9]">
               <Image
                 src="/media/fairing-deployment-render.png"
                 alt="Official render of a DhumketuX payload fairing separating in flight, exposing a small satellite above Earth"
@@ -72,6 +59,19 @@ export function Vision() {
             </figcaption>
           </figure>
         </ImageReveal>
+
+        <Reveal delay={0.1}>
+          <Link
+            href="/vision"
+            className="group mt-14 inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk"
+          >
+            The full vision
+            <ArrowUpRight
+              className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              aria-hidden="true"
+            />
+          </Link>
+        </Reveal>
       </Container>
     </section>
   );

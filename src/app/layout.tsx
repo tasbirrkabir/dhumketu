@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, IBM_Plex_Mono } from "next/font/google";
+import { Inter, IBM_Plex_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -12,6 +12,14 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-ibm-plex-mono",
   subsets: ["latin"],
   weight: ["400", "500"],
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -49,9 +57,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${ibmPlexMono.variable} font-sans antialiased bg-paper text-ink`}
+        className={`${inter.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable} font-sans antialiased bg-paper text-ink`}
       >
         {children}
       </body>

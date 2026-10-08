@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { advisors, teamFacts } from "@/content/team";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { teamFacts } from "@/content/team";
 import { Container } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
- * PEOPLE — portrait, one statement, names. Nothing else.
- * Minimalism rule: people are presented as people (portrait + photo),
- * advisors as one-line names — no bio paragraphs.
+ * PEOPLE (home strip) — portrait, statement, one documentary photograph,
+ * then a route into the full company page.
  */
 export function People() {
   return (
@@ -19,7 +20,7 @@ export function People() {
         <div className="grid gap-14 md:grid-cols-12 md:gap-8">
           <Reveal className="md:col-span-5 lg:col-span-4">
             <figure>
-              <div className="relative aspect-[4/5] w-full overflow-hidden">
+              <div className="img-quiet relative aspect-[4/5] w-full">
                 <Image
                   src="/media/founder-nahiyan-al-rahman.jpg"
                   alt="Portrait of Nahiyan Al Rahman, founder of DhumketuX"
@@ -37,7 +38,8 @@ export function People() {
           <div className="md:col-span-7 lg:col-span-7 lg:col-start-6">
             <Reveal>
               <h2 className="qa-statement text-[clamp(1.9rem,4.5vw,3.25rem)] text-ink">
-                {teamFacts.size} engineers and researchers, across 20+ universities.
+                {teamFacts.size} engineers and researchers, across{" "}
+                <span className="qa-serif font-normal text-ink-2">20+ universities</span>.
               </h2>
             </Reveal>
 
@@ -49,24 +51,23 @@ export function People() {
             </Reveal>
 
             <Reveal delay={0.14}>
-              <ul className="mt-14 border-t border-line pt-8">
-                {advisors.map((a) => (
-                  <li
-                    key={a.name}
-                    className="border-b border-line py-4 text-[0.9375rem] last:border-0"
-                  >
-                    <span className="font-medium text-ink">{a.name}</span>
-                    <span className="text-ink-2"> — {a.role}</span>
-                  </li>
-                ))}
-              </ul>
+              <Link
+                href="/company#team"
+                className="group mt-10 inline-flex items-center gap-2 text-[0.9375rem] font-medium text-ink"
+              >
+                Meet the team
+                <ArrowUpRight
+                  className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  aria-hidden="true"
+                />
+              </Link>
             </Reveal>
           </div>
         </div>
 
         <ImageReveal className="mt-24 sm:mt-32">
           <figure>
-            <div className="relative aspect-[16/9] w-full overflow-hidden sm:aspect-[21/9]">
+            <div className="img-quiet relative aspect-[16/9] w-full sm:aspect-[21/9]">
               <Image
                 src="/media/team-rocket-library.jpg"
                 alt="DhumketuX team in branded hoodies around a DhumketuX rocket on a launch rail in front of the Mymensingh library building"
