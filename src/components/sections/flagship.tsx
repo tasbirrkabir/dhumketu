@@ -7,7 +7,7 @@ import { Reveal } from "@/components/primitives/reveal";
 import { StatusDot } from "@/components/primitives/ui-bits";
 
 /**
- * FLAGSHIP WORK — image-led feature cards.
+ * FLAGSHIP WORK: image-led feature cards.
  * Large cinematic card (Bidrohi) → duo (Agni Bina typographic + Boson real
  * engine fire) → wide render panel (Nazrul 01). Every card links into its
  * /work detail page. Facts are source-controlled from src/content/projects.ts.
@@ -62,7 +62,7 @@ function CardShell({
       href={href}
       className={`group card-lift relative flex flex-col overflow-hidden rounded-3xl border border-edge bg-night-2 ${className}`}
     >
-      {/* Title bar — index, name, status */}
+      {/* Title bar: index, name, status */}
       <div className="relative z-20 flex items-start justify-between gap-4 p-6 pb-0 sm:p-8 sm:pb-0">
         <div>
           <p className="qa-data text-xs uppercase tracking-[0.16em] text-chalk-3">{index}</p>
@@ -91,12 +91,11 @@ export function Flagship() {
     <section id="work" aria-label="Flagship work" className="scroll-mt-16 bg-void pb-20 pt-8 sm:pb-28">
       <Container>
         <SectionIntro
-          kicker="Flagship programs"
           statement="The path to orbit runs through engines, vehicles and proof."
         />
 
         <div className="mt-14 grid gap-5 lg:mt-16">
-          {/* 01 — Bidrohi SR · full-width cinematic */}
+          {/* 01: Bidrohi SR · full-width cinematic */}
           <Reveal>
             <CardShell
               href="/work/bidrohi-sr"
@@ -115,12 +114,12 @@ export function Flagship() {
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-night-2 via-transparent to-void/30" />
                 <figcaption className="absolute bottom-4 right-5 text-[11px] text-chalk-2/80">
-                  The team with the Bidrohi rocket on its launch rail — Mymensingh
+                  The team with the Bidrohi rocket on its launch rail, Mymensingh
                 </figcaption>
               </figure>
               <div className="p-6 sm:p-8">
                 <p className="max-w-2xl text-lg leading-relaxed text-chalk-2">
-                  Bangladesh&rsquo;s first commercial sub-orbital space rocket — named after
+                  Bangladesh&rsquo;s first commercial sub-orbital space rocket, named after
                   Kazi Nazrul Islam&rsquo;s poem, &ldquo;the rebel&rdquo;.
                 </p>
                 <div className="mt-5">
@@ -130,10 +129,10 @@ export function Flagship() {
             </CardShell>
           </Reveal>
 
-          {/* 02 + 03 — duo */}
+          {/* 02 + 03: duo */}
           <div className="grid gap-5 lg:grid-cols-2">
             <Reveal>
-              {/* Agni Bina — typographic power card */}
+              {/* Agni Bina: typographic power card */}
               <CardShell
                 href="/work/agni-bina"
                 index="02"
@@ -162,7 +161,7 @@ export function Flagship() {
             </Reveal>
 
             <Reveal delay={0.08}>
-              {/* Boson — real engine fire */}
+              {/* Boson: real engine fire */}
               <CardShell
                 href="/work/boson"
                 index="03"
@@ -182,7 +181,7 @@ export function Flagship() {
                 </figure>
                 <div className="p-6 sm:p-8">
                   <p className="max-w-xl text-base leading-relaxed text-chalk-2">
-                    A liquid rocket engine for autonomous rocket landing — LOX + kerosene,
+                    A liquid rocket engine for autonomous rocket landing: LOX + kerosene,
                     named after the physicist Satyendra Nath Bose.
                   </p>
                   <div className="mt-4">
@@ -193,7 +192,7 @@ export function Flagship() {
             </Reveal>
           </div>
 
-          {/* 04 — Nazrul 01 · official render on deep night */}
+          {/* 04: Nazrul 01 · official render on deep night */}
           <Reveal>
             <CardShell
               href="/work/nazrul-01"
@@ -216,17 +215,17 @@ export function Flagship() {
               </div>
               <div className="relative z-10 flex flex-wrap items-baseline justify-between gap-3 p-6 sm:p-8">
                 <p className="max-w-2xl text-lg leading-relaxed text-chalk-2">
-                  A small satellite launch vehicle concept — dedicated launch capability
+                  A small satellite launch vehicle concept: dedicated launch capability
                   for microsats and CubeSats.
                 </p>
-                <p className="text-[11px] text-chalk-3">Official vehicle render — DhumketuX</p>
+                <p className="text-[11px] text-chalk-3">Official vehicle render · DhumketuX</p>
               </div>
             </CardShell>
           </Reveal>
         </div>
       </Container>
 
-      {/* Index link — the full catalog lives on /work */}
+      {/* Index link: the full catalog lives on /work */}
       <Container>
         <Reveal>
           <Link

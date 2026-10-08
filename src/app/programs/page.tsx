@@ -7,9 +7,9 @@ import { Reveal } from "@/components/primitives/reveal";
 import { CtaBand } from "@/components/primitives/ui-bits";
 
 export const metadata: Metadata = {
-  title: "Programs — DhumketuX",
+  title: "Programs · DhumketuX",
   description:
-    "Design, Build, Fly — the national pipeline. DBF tracks, the program journey, student programs and community platforms, with BAXRC and Rocketry Bangladesh.",
+    "Design, Build, Fly: the national pipeline. DBF tracks, the program journey, student programs and community platforms, with BAXRC and Rocketry Bangladesh.",
 };
 
 export default function ProgramsPage() {
@@ -18,11 +18,10 @@ export default function ProgramsPage() {
       <CinematicHero
         image="/media/concept-students-workshop.jpg"
         alt=""
-        kicker="Programs · DBF"
         title="Design, build, fly."
         accent="The national pipeline."
-        lede={`Together with ${programs.dbf.partners.slice(1).join(" and ")}, the "Design, Build, Fly" program gives university teams a real aerospace pipeline — from proposal to national fly-off.`}
-        caption="Concept art — illustrative of student engineering work."
+        lede={`Together with ${programs.dbf.partners.slice(1).join(" and ")}, the "Design, Build, Fly" program gives university teams a real aerospace pipeline from proposal to national fly-off.`}
+        caption="Concept art, illustrative of student engineering work."
       />
 
       {/* DBF tracks */}
@@ -147,11 +146,10 @@ export default function ProgramsPage() {
       </section>
 
       <CtaBand
-        kicker="Get involved"
         title="Join the national"
         accent="pipeline."
-        copy="Universities, student teams and community platforms — bring your team into Design, Build, Fly or partner on the programs around it."
-        primary={{ href: "/contact", label: "Start a conversation" }}
+        copy="Universities, student teams and community platforms: bring your team into Design, Build, Fly or partner on the programs around it."
+        primary={{ href: "/contact#form", label: "Start a conversation" }}
       />
     </Shell>
   );

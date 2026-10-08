@@ -1,5 +1,5 @@
 /**
- * Team — source: https://dhumketux.com/our-team/
+ * Team: source: https://dhumketux.com/our-team/
  * Only published roles/bios are used. Claims preserved as published.
  */
 
@@ -14,7 +14,7 @@ export const leadership: DxPerson[] = [
   {
     name: "Nahiyan Al Rahman",
     role: "Founder & CEO · Propulsion & System Architect",
-    bio: "A pioneering figure in indigenous aerospace technology, with degrees in electrical & electronics engineering and space systems engineering from Aviation and Aerospace University, Bangladesh (AAUB). Has advanced rocket technology and uncrewed systems through his lab, Alpha Science Lab. His resilience and vision — praised by Homer Hickam — have earned international recognition and notable awards.",
+    bio: "A pioneering figure in indigenous aerospace technology, with degrees in electrical & electronics engineering and space systems engineering from Aviation and Aerospace University, Bangladesh (AAUB). Has advanced rocket technology and uncrewed systems through his lab, Alpha Science Lab. His resilience and vision, praised by Homer Hickam, have earned international recognition and notable awards.",
     category: "leadership",
   },
 ] as const;
@@ -23,7 +23,7 @@ export const advisors: DxPerson[] = [
   {
     name: "Prof. Saidur Rahman",
     role: "Academic Advisor",
-    bio: "A world top-1% scientist — Distinguished Research Professor and Head of RCNMET at Sunway University. 500+ publications, 70,000 citations, h-index 134, and a Highly Cited Researcher (2014–2021). Formerly at KFUPM and University of Malaya; leads breakthroughs in nanomaterials, energy technology and solar-thermal innovation.",
+    bio: "A world top-1% scientist, Distinguished Research Professor and Head of RCNMET at Sunway University. 500+ publications, 70,000 citations, h-index 134, and a Highly Cited Researcher (2014-2021). Formerly at KFUPM and University of Malaya; leads breakthroughs in nanomaterials, energy technology and solar-thermal innovation.",
     category: "advisor",
   },
   {
@@ -40,16 +40,16 @@ export const advisors: DxPerson[] = [
   },
 ] as const;
 
-/** Team composition — source: https://dhumketux.com/our-team/ */
+/** Team composition: source: https://dhumketux.com/our-team/ */
 export const teamFacts = {
   size: "50+",
-  universities: "20+ top universities in Bangladesh — including BUET, KUET, RUET, CUET",
+  universities: "20+ top universities in Bangladesh, including BUET, KUET, RUET, CUET",
   international:
-    "30% of members are graduates and researchers from internationally renowned universities across the USA, Europe, Russia, China and Japan — united by their Bangladeshi roots",
-  movement: "One Sky, One Dream — a national space movement",
+    "30% of members are graduates and researchers from internationally renowned universities across the USA, Europe, Russia, China and Japan, united by their Bangladeshi roots",
+  movement: "One Sky, One Dream, a national space movement",
 } as const;
 
-/** Programs & community platforms — source: https://dhumketux.com/ homepage + /design-build-fly-program/ */
+/** Programs & community platforms: source: https://dhumketux.com/ homepage + /design-build-fly-program/ */
 export const programs = {
   dbf: {
     name: "“Design, Build, Fly”",
@@ -68,7 +68,7 @@ export const programs = {
       {
         id: "cansat",
         title: "CanSat & Mini-Satellite Track",
-        body: "Build CanSat or mini-satellite payloads for rocket, drone or balloon deployment. Learn mission design, sensing, telemetry and data analysis — the ideal entry point to the Student Satellite Program.",
+        body: "Build CanSat or mini-satellite payloads for rocket, drone or balloon deployment. Learn mission design, sensing, telemetry and data analysis, the ideal entry point to the Student Satellite Program.",
       },
     ],
     journey: [
@@ -79,8 +79,8 @@ export const programs = {
       { step: "05", title: "Reporting & Awards", body: "Teams submit final reports and data. Awards recognize design excellence, innovation, safety and teamwork." },
     ],
     safety: [
-      "Education-only, non-weaponized — all flights are for learning and research under strict safety and ethics policies.",
-      "No aerospace chemicals or propellants are handed over — all energetic operations are managed directly by DhumketuX.",
+      "Education-only, non-weaponized: all flights are for learning and research under strict safety and ethics policies.",
+      "No aerospace chemicals or propellants are handed over: all energetic operations are managed directly by DhumketuX.",
       "Teams sign NDAs; core system IP remains with Dhumketu Exploration Technologies Ltd.",
     ],
   },
@@ -97,7 +97,7 @@ export const programs = {
   studentPrograms: [
     { title: "Student Virtual Lab", note: "Open lab access for student experiments" },
     { title: "DhumketuX Internship Program", note: "Project-based internships & trainee engineer tracks" },
-    { title: "Campus–Industry Collaboration", note: "Co-created labs and innovation cells with universities" },
+    { title: "Campus-Industry Collaboration", note: "Co-created labs and innovation cells with universities" },
     { title: "Student Rocket Program", note: "Hands-on rocketry for student teams" },
     { title: "Student Satellite Program", note: "CANSAT-to-CubeSat pathway" },
     { title: "Student Startup Business", note: "Supporting student-led ventures" },

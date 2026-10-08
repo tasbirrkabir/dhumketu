@@ -1,5 +1,5 @@
 /**
- * Capability system — source: https://dhumketux.com/technological-capabilities/
+ * Capability system: source: https://dhumketux.com/technological-capabilities/
  * Presented as the engineering stack per PRD §6 Section 04.
  */
 
@@ -29,7 +29,7 @@ export const capabilityStack: Capability[] = [
     index: "02",
     title: "Propulsion & Test Infrastructure",
     summary:
-      "Solid and liquid propulsion development supported by dedicated static-test infrastructure — the foundation proven by the Red Chili series.",
+      "Solid and liquid propulsion development supported by dedicated static-test infrastructure, the foundation proven by the Red Chili series.",
     points: [
       "Pressure and temperature data acquisition for performance analysis",
       "Real-time test visualization and structured test campaigns",
@@ -53,7 +53,7 @@ export const capabilityStack: Capability[] = [
     index: "04",
     title: "Avionics, Guidance & Embedded Systems",
     summary:
-      "Flight computers, embedded firmware and sensor stacks — the nervous system of DhumketuX rockets and UAVs.",
+      "Flight computers, embedded firmware and sensor stacks, the nervous system of DhumketuX rockets and UAVs.",
     points: [
       "IMU, GNSS, barometer and magnetometer integration",
       "Sensor fusion, actuator control, health & fault-detection logic",
@@ -101,7 +101,7 @@ export const capabilityStack: Capability[] = [
     index: "08",
     title: "Test, Validation & Quality",
     summary:
-      "Testing is central to the engineering culture — every test is a structured learning opportunity.",
+      "Testing is central to the engineering culture: every test is a structured learning opportunity.",
     points: [
       "Static thrust runs, structural fit checks, sensor calibration",
       "Incremental flight-test levels with go/no-go criteria",

@@ -6,7 +6,7 @@ import { Container, SectionIntro } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
- * TECHNOLOGY — split layout: sticky concept-engine image on the left,
+ * TECHNOLOGY: split layout: sticky concept-engine image on the left,
  * capability stack as hover-reactive rows on the right. Rows carry index,
  * title and one-line summary; deep detail lives on /technology.
  */
@@ -19,7 +19,6 @@ export function Technology() {
           {/* Sticky image column */}
           <div className="lg:sticky lg:top-24 lg:self-start">
             <SectionIntro
-              kicker="Technology"
               statement="Eight disciplines, one test-driven engineering culture."
             />
             <ImageReveal className="mt-10">
@@ -35,7 +34,7 @@ export function Technology() {
                   <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-void/50 via-transparent to-transparent" />
                 </div>
                 <figcaption className="mt-3 text-[11px] text-chalk-3">
-                  Concept art — illustrative of a static-fire plume, not a documented test photograph.
+                  Concept art, illustrative of a static-fire plume, not a documented test photograph.
                 </figcaption>
               </figure>
             </ImageReveal>

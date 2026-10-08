@@ -9,7 +9,7 @@ import { People } from "@/components/sections/people";
 import { FinalCta } from "@/components/sections/final-cta";
 
 /**
- * DhumketuX — homepage. A cinematic film: full-viewport night-launch hero →
+ * DhumketuX: homepage. A cinematic film: full-viewport night-launch hero →
  * milestone ticker → counters → flagship image cards → technology split →
  * orbital vision band → people → conversion panel. Full depth lives on
  * /work, /technology, /programs, /vision, /company, /media, /contact.

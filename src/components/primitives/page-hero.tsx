@@ -8,15 +8,14 @@ import type { ReactNode } from "react";
 import { Reveal } from "./reveal";
 
 /**
- * CinematicHero — full-bleed image hero for interior pages.
- * Parallax image under gradient scrims, mono kicker with ember dash,
- * oversized display title with optional serif-accent line, lede,
- * optional glass chips, honest image caption, scroll cue.
+ * CinematicHero: full-bleed image hero for interior pages.
+ * Parallax image under gradient scrims, oversized display title with
+ * optional serif-accent line, lede, optional glass chips, honest image
+ * caption and scroll cue.
  */
 export function CinematicHero({
   image,
   alt,
-  kicker,
   title,
   accent,
   lede,
@@ -27,7 +26,6 @@ export function CinematicHero({
 }: {
   image: string;
   alt: string;
-  kicker: string;
   title: string;
   /** Optional italic serif line shown under the title */
   accent?: string;
@@ -62,7 +60,7 @@ export function CinematicHero({
         <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
       </motion.div>
 
-      {/* Scrims — legibility from any viewport */}
+      {/* Scrims: legibility from any viewport */}
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-void/80 via-void/35 to-void" />
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-void/70 via-transparent to-void/30" />
 
@@ -73,13 +71,7 @@ export function CinematicHero({
         }`}
       >
         <Reveal>
-          <p className="flex items-center gap-3 text-sm font-medium text-amber">
-            <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b]" />
-            <span className="qa-data uppercase tracking-[0.18em]">{kicker}</span>
-          </p>
-        </Reveal>
-        <Reveal delay={0.08}>
-          <h1 className="qa-display mt-5 max-w-[14ch] text-[clamp(2.7rem,6.8vw,5.75rem)] text-chalk">
+          <h1 className="qa-display max-w-[14ch] text-[clamp(2.7rem,6.8vw,5.75rem)] text-chalk">
             {title}
             {accent ? (
               <>

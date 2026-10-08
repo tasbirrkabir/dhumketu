@@ -6,9 +6,9 @@ import { Container } from "@/components/primitives/section";
 import { Reveal } from "@/components/primitives/reveal";
 
 export const metadata: Metadata = {
-  title: "Technological Capabilities — DhumketuX",
+  title: "Technological Capabilities · DhumketuX",
   description:
-    "One engineering stack — rocket systems, propulsion, UAV autonomy, avionics, telemetry, simulation, materials and test — developed in-house and tested in Bangladesh.",
+    "One engineering stack: rocket systems, propulsion, UAV autonomy, avionics, telemetry, simulation, materials and test, developed in-house and tested in Bangladesh.",
 };
 
 export default function TechnologyPage() {
@@ -17,11 +17,10 @@ export default function TechnologyPage() {
       <CinematicHero
         image="/media/concept-engine-fire.jpg"
         alt=""
-        kicker="Capabilities · 08"
         title="Technological capabilities."
         accent="From raw propellant to mission data."
-        lede="Every system is developed in-house and tested in Bangladesh — rockets, propulsion, avionics, autonomy and the ground segment that ties them together."
-        caption="Concept art — illustrative of a static-fire plume, not a documented test photograph."
+        lede="Every system is developed in-house and tested in Bangladesh: rockets, propulsion, avionics, autonomy and the ground segment that ties them together."
+        caption="Concept art, illustrative of a static-fire plume, not a documented test photograph."
       />
 
       <section aria-label="Capability stack" className="bg-void py-24 sm:py-32">

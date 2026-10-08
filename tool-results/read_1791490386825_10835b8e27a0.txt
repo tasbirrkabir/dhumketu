@@ -1,0 +1,209 @@
+     1→/home/z/my-project/src/content/projects.ts:54:      "Bangladesh's first commercial sub-orbital space rocket — a sub-orbital vehicle concept named after Kazi Nazrul Islam's poem “Bidrohi”.",
+     2→/home/z/my-project/src/content/projects.ts:73:      "120+ kN solid rocket booster built for the Bidrohi rocket — a tribute to Kazi Nazrul Islam and a symbol of self-reliant aerospace power.",
+     3→/home/z/my-project/src/content/projects.ts:92:      "Next-generation liquid rocket engine for autonomous rocket landing systems — LOX + Kerosene, built for the reusable Revolation V1 vehicle.",
+     4→/home/z/my-project/src/content/projects.ts:94:      "The Boson Engine is DhumketuX's next-generation liquid rocket engine, purpose-built for autonomous rocket landing systems and manned spaceflight missions. Drawing inspiration from physicist Satyendra Nath Bose, the high-efficiency engine is being designed around reusability, control, and sustainability — with a stated 1.5+ kN thrust class, LOX + Kerosene propellants, and bipropellant/tripropellant configuration. Target integration platform: the Revolation V1 reusable rocket.",
+     5→/home/z/my-project/src/content/projects.ts:112:      "35 kN-class liquid engine designed to power Small Satellite Launch Vehicles and scale to cluster configurations — the core engine for the Nazrul series.",
+     6→/home/z/my-project/src/content/projects.ts:114:      "Named after the great scholar Ibn Khaldun, this 35 kN class engine is designed to power Small Satellite Launch Vehicles (SSLVs) and scale up to cluster engine configurations. With high-thrust performance and reliability targets, it supports both commercial and scientific space missions — from microsat and CubeSat deployment to future high-capacity launch systems. Early-stage project with approximately 15% of work done.",
+     7→/home/z/my-project/src/content/projects.ts:132:      "Rocket designed to gather critical atmospheric data — a tribute to the Bangla Language Movement of 1952.",
+     8→/home/z/my-project/src/content/projects.ts:151:      "High-performance solid rocket booster engineered for Mesosphere missions — 15+ kN of thrust for the Ekushey rocket.",
+     9→/home/z/my-project/src/content/projects.ts:161:    originNote: "“Proloy” — Bengali for thunderbolt",
+    10→/home/z/my-project/src/content/projects.ts:171:      "Bangladesh's first rocket engines — the Red Chili series proved indigenous solid propulsion with 35+ static tests.",
+    11→/home/z/my-project/src/content/projects.ts:173:      "Red Chili 01, tested in 2021, became Bangladesh's first-ever rocket engine — an innovative solid-propellant motor designed for low-altitude science missions. Following its success, Red Chili 02 was developed with increased 5 kN thrust for stratospheric and educational payload launches. The series is documented as the first rocket engine developed and statically tested in Bangladesh.",
+    12→/home/z/my-project/src/content/projects.ts:191:      "The first rocket launch in Bangladesh history — flown by the DhumketuX Junior Team from the Brahmaputra char, Mymensingh.",
+    13→/home/z/my-project/src/content/projects.ts:193:      "On 7 February 2023, the DhumketuX Junior Team launched Putimach 01 (পুটিমাছ ০১) from the Brahmaputra char in Mymensingh, reaching roughly 1 km altitude at a 75° launch angle — widely remembered as the first recorded rocket launch in Bangladesh.",
+    14→/home/z/my-project/src/content/projects.ts:211:      "Reusable rocket platform for vertical takeoff and vertical landing (VTVL) — powered by the Boson liquid engine.",
+    15→/home/z/my-project/src/content/projects.ts:213:      "Revolation V1 is DhumketuX's reusable rocket platform, designed around vertical takeoff and vertical landing with the Boson liquid engine — supporting autonomous landing systems, suborbital demonstrators and reentry-capable payload missions.",
+    16→/home/z/my-project/src/content/projects.ts:229:      "Small Satellite Launch Vehicle — pioneering Bangladesh's space future with innovative small-satellite launch technology.",
+    17→/home/z/my-project/src/content/projects.ts:231:      "Nazrul 01 is DhumketuX's Small Satellite Launch Vehicle (SSLV) concept, planned around the Ibn Khaldun liquid engine to provide dedicated launch capability for microsats and CubeSats — extending toward cluster-engine configurations for larger missions.",
+    18→/home/z/my-project/src/content/projects.ts:248:      "A formation of small satellites acting as “pixels” in orbit — creating temporary, responsibly-managed patterns and messages in the sky.",
+    19→/home/z/my-project/src/content/projects.ts:250:      "The Space Billboard Project is DhumketuX's flagship long-term initiative: a formation of small satellites acting as “pixels” in orbit, creating temporary patterns and messages in the sky. The goal is a responsible space-billboard platform for global and Asian brands, with strict control over visibility, brightness and orbital safety — including high-precision formation flying, scheduled visibility windows, and compliance with international space guidelines.",
+    20→/home/z/my-project/src/content/projects.ts:266:      "Fixed-wing and multirotor platforms for real missions — Choroi DX (delivery), Bee 0.1 (swarm), Krishian TX (agriculture) and FireFly TX (firefighting).",
+    21→/home/z/my-project/src/content/projects.ts:285:      "Aircraft and VTOL development — Bluebird Ultralight, SkyBlade X1 and SkyBlade Xero prototype.",
+    22→/home/z/my-project/src/content/projects.ts:287:      "DhumketuX's aviation program spans the Bluebird Ultralight aircraft, the SkyBlade X1 VTOL drone and the SkyBlade Xero prototype — exploring electric fixed-wing and VTOL configurations for regional mobility and mission applications.",
+    23→/home/z/my-project/src/content/projects.ts:303:      "From CANSAT to CubeSat and MicroSat — foundational satellite capabilities built through student missions and ground-segment work.",
+    24→/home/z/my-project/src/content/projects.ts:321:      "Human capsule and space tourism concept — the team's stated long-term goal is human spaceflight within 2040.",
+    25→/home/z/my-project/src/content/projects.ts:323:      "DhumketuX's stated long-term roadmap targets suborbital flight within 2035 and sending humans to space within 2040. The human capsule concept represents the first stage of this ambition — a crewed spacecraft study within the organization's future systems portfolio. These are goals, not current capabilities.",
+    26→/home/z/my-project/src/content/capabilities.ts:2: * Capability system — source: https://dhumketux.com/technological-capabilities/
+    27→/home/z/my-project/src/content/capabilities.ts:32:      "Solid and liquid propulsion development supported by dedicated static-test infrastructure — the foundation proven by the Red Chili series.",
+    28→/home/z/my-project/src/content/capabilities.ts:56:      "Flight computers, embedded firmware and sensor stacks — the nervous system of DhumketuX rockets and UAVs.",
+    29→/home/z/my-project/src/content/capabilities.ts:104:      "Testing is central to the engineering culture — every test is a structured learning opportunity.",
+    30→/home/z/my-project/src/content/policy.ts:2: * Policy & core values + social responsibilities — source:
+    31→/home/z/my-project/src/content/policy.ts:15:  "Engineering with integrity, safety and responsibility. DhumketuX is building long-term capability in rocketry, UAVs, satellite-related systems, avionics and mission software from Bangladesh — guided by policies that prioritize safety, ethics, responsible technology use and national capacity building.";
+    32→/home/z/my-project/src/content/policy.ts:46:    body: "We work in multidisciplinary teams and treat each other with respect — no ego, no discrimination, just shared focus on building high-quality systems.",
+    33→/home/z/my-project/src/content/policy.ts:58:    body: "Respect for all applicable laws and regulations of Bangladesh — working with relevant authorities and institutions where needed.",
+    34→/home/z/my-project/src/content/policy.ts:66:    body: "Zero tolerance for unethical shortcuts or hidden deals. Structured processes for collaborations and procurement — selection based on merit, work ethic and fit.",
+    35→/home/z/my-project/src/content/policy.ts:81:    body: "Logging of tests, anomalies, near-misses and incidents — root cause analysis and corrective measures, with procedures updated from lessons learned.",
+    36→/home/z/my-project/src/content/policy.ts:92:    body: "Structured industrial training, internships and trainee engineer tracks — with real responsibilities on meaningful modules and mentorship from experienced engineers.",
+    37→/home/z/my-project/src/content/policy.ts:96:    body: "Safety, law, NDA and ethical use of technology ahead of shortcuts. DhumketuX does not sell or supply aerospace chemicals to third parties — such work is performed only under DhumketuX lead, infrastructure and conditions.",
+    38→/home/z/my-project/src/content/policy.ts:100:    body: "Engaging schools, campuses and communities across Bangladesh — not only a few major institutions — to help build a culture around technology, not just a company.",
+    39→/home/z/my-project/src/content/team.ts:2: * Team — source: https://dhumketux.com/our-team/
+    40→/home/z/my-project/src/content/team.ts:17:    bio: "A pioneering figure in indigenous aerospace technology, with degrees in electrical & electronics engineering and space systems engineering from Aviation and Aerospace University, Bangladesh (AAUB). Has advanced rocket technology and uncrewed systems through his lab, Alpha Science Lab. His resilience and vision — praised by Homer Hickam — have earned international recognition and notable awards.",
+    41→/home/z/my-project/src/content/team.ts:26:    bio: "A world top-1% scientist — Distinguished Research Professor and Head of RCNMET at Sunway University. 500+ publications, 70,000 citations, h-index 134, and a Highly Cited Researcher (2014–2021). Formerly at KFUPM and University of Malaya; leads breakthroughs in nanomaterials, energy technology and solar-thermal innovation.",
+    42→/home/z/my-project/src/content/team.ts:43:/** Team composition — source: https://dhumketux.com/our-team/ */
+    43→/home/z/my-project/src/content/team.ts:46:  universities: "20+ top universities in Bangladesh — including BUET, KUET, RUET, CUET",
+    44→/home/z/my-project/src/content/team.ts:48:    "30% of members are graduates and researchers from internationally renowned universities across the USA, Europe, Russia, China and Japan — united by their Bangladeshi roots",
+    45→/home/z/my-project/src/content/team.ts:49:  movement: "One Sky, One Dream — a national space movement",
+    46→/home/z/my-project/src/content/team.ts:52:/** Programs & community platforms — source: https://dhumketux.com/ homepage + /design-build-fly-program/ */
+    47→/home/z/my-project/src/content/team.ts:71:        body: "Build CanSat or mini-satellite payloads for rocket, drone or balloon deployment. Learn mission design, sensing, telemetry and data analysis — the ideal entry point to the Student Satellite Program.",
+    48→/home/z/my-project/src/content/team.ts:82:      "Education-only, non-weaponized — all flights are for learning and research under strict safety and ethics policies.",
+    49→/home/z/my-project/src/content/team.ts:83:      "No aerospace chemicals or propellants are handed over — all energetic operations are managed directly by DhumketuX.",
+    50→/home/z/my-project/src/content/vision.ts:2: * Vision — source: https://dhumketux.com/vision/
+    51→/home/z/my-project/src/content/vision.ts:15:  "Our long-term vision is clear: build space billboard, Earth observation and space-based internet constellations from Bangladesh and Asia that serve global customers — connecting people, data and brands through responsible, sustainable space infrastructure.";
+    52→/home/z/my-project/src/content/vision.ts:22:    body: "A formation of small satellites acting as “pixels” in orbit — creating temporary patterns and messages in the sky. A responsible orbital-media platform for global and Asian brands, with strict control over visibility, brightness and orbital safety.",
+    53→/home/z/my-project/src/content/vision.ts:33:    body: "Small satellite constellations providing frequent coverage over key Asian geographies, coastal regions and global economic corridors — delivering not just pictures, but analytics and insights-as-a-service.",
+    54→/home/z/my-project/src/content/vision.ts:44:    body: "Regional LEO connectivity constellations extending high-speed internet to remote, coastal and disaster-prone areas — especially across Asia — while supporting maritime and aviation connectivity.",
+    55→/home/z/my-project/src/content/vision.ts:55:  body: "While the markets are global and Asian, the engineering and mission-design roots are firmly in Bangladesh — building real satellite hardware, software and operations from here, and creating high-skilled jobs in aerospace, electronics, software, AI and data science.",
+    56→/home/z/my-project/src/content/vision.ts:61:  bn: "বাংলাদেশের জন্য আমাদের স্বপ্ন: নিজের স্যাটেলাইট কনস্টেলেশন দিয়ে বন্যা–ঘূর্ণিঝড়–কৃষি–নগর পরিকল্পনার ডাটা, দূরবর্তী অঞ্চলে ইন্টারনেট আর বিশ্বব্যাপী ব্র্যান্ডিং প্ল্যাটফর্ম — সবকিছুই যেন বাংলাদেশ থেকে পরিচালিত হয়।",
+    57→/home/z/my-project/src/content/vision.ts:84:  body: "Proposed by Nahiyan Al Rahman, Founder & CEO of DhumketuX, the Bangladesh Space Center is envisioned as a national hub for aerospace research, education and innovation — with a student & general sector and an academic & research sector, positioning Bangladesh as a rising space power.",
+    58→/home/z/my-project/src/content/vision.ts:86:    "Student & General Sector — inspiring young minds, building a skilled generation ready for space and science",
+    59→/home/z/my-project/src/content/vision.ts:87:    "Academic & Research Sector — bringing together universities, scientists and engineers to push the boundaries of aerospace technology",
+    60→/home/z/my-project/src/content/vision.ts:92:  suborbital: "Suborbital — within 2035",
+    61→/home/z/my-project/src/content/vision.ts:93:  human: "Human spaceflight — within 2040",
+    62→/home/z/my-project/src/content/vision.ts:97:/** Collaboration routes — source: https://dhumketux.com/collaborations/ + homepage */
+    63→/home/z/my-project/src/content/vision.ts:103:    body: "Universities, industry, agencies and international partners — joint R&D, labs, test infrastructure and mission software built together.",
+    64→/home/z/my-project/src/content/vision.ts:111:    body: "Sponsor the rocket mission or the Solar Sail Billboard Project — with global visibility, media coverage and recognition as a leader in space innovation.",
+    65→/home/z/my-project/src/content/vision.ts:127:    body: "Internships, industrial training and trainee engineer tracks — project-based contributions with real hardware, labs and mentorship.",
+    66→/home/z/my-project/src/content/vision.ts:135:    body: "Engineers, scientists, designers and entrepreneurs — work on real aerospace systems from inside Bangladesh.",
+    67→/home/z/my-project/src/content/vision.ts:144:    body: "Rockets, UAVs, satellite tools, test systems and mission software developed in the same ecosystem — not slideware.",
+    68→/home/z/my-project/src/content/vision.ts:148:    body: "Focused on Bangladesh, built to global expectations — meaningful impact in South Asia with a technology-first approach.",
+    69→/home/z/my-project/src/content/vision.ts:156:    body: "A sustainable aerospace and space-tech ecosystem — not one-off publicity projects.",
+    70→/home/z/my-project/src/content/articles.ts:2: * Media & articles — source: https://dhumketux.com/ homepage "Articles & News"
+    71→/home/z/my-project/src/content/articles.ts:24:      "Putimach 01 (পুটিমাছ ০১) lifts off from the Brahmaputra char, Mymensingh — roughly 1 km altitude at a 75° launch angle, remembered as the first rocket launch in Bangladesh history.",
+    72→/home/z/my-project/src/content/articles.ts:32:    title: "DhumketuX wins Bangladesh's first rocketry challenge — A2i Innovation Competition 2022",
+    73→/home/z/my-project/src/content/articles.ts:34:      "The team took victory in the Rocketry and Invention categories of Bangladesh's first-ever A2i Innovation Competition — a landmark for the nation's space technology landscape.",
+    74→/home/z/my-project/src/content/articles.ts:41:    title: "DhumketuX represents Bangladesh at the global space stage — IISS Singapore 2025",
+    75→/home/z/my-project/src/content/articles.ts:51:    title: "The rocket “Dhumketu X 21” is ready for launch — Somoy TV, Mymensingh",
+    76→/home/z/my-project/src/content/articles.ts:53:      "National television coverage of the Ekushey-21 rocket ahead of launch — documenting the vehicle's readiness at the Mymensingh site.",
+    77→/home/z/my-project/src/content/articles.ts:60:    title: "বাংলাদেশে প্রথমবারের মত তৈরি হলো রকেট — Ekhon TV",
+    78→/home/z/my-project/src/content/articles.ts:62:      "Bangla-language national coverage: “For the first time in Bangladesh, a rocket has been built” — the Bidrohi space rocket story from Mymensingh.",
+    79→/home/z/my-project/src/content/articles.ts:71:      "From the 1.5 kN Red Chili 01 — Bangladesh's first rocket engine — to the 5 kN Red Chili 02, the solid-propulsion program logged 35+ firings across 2021–2023.",
+    80→/home/z/my-project/src/content/milestones.ts:2: * Milestone timeline — source: https://dhumketux.com/history/ §9 Timeline of Milestones.
+    81→/home/z/my-project/src/content/milestones.ts:21:    body: "Student-led projects, small labs, DIY rockets and RC platforms laid the cultural foundation — hands-on, curious, documentation-focused. The core culture was born here: build → test → document → improve.",
+    82→/home/z/my-project/src/content/milestones.ts:45:    body: "DhumketuX wins Bangladesh's 1st Rocketry Challenge under the A2i Innovation 2022 competition — a historic national recognition for the team.",
+    83→/home/z/my-project/src/content/milestones.ts:52:    title: "Putimach 01 — first rocket launch in Bangladesh history",
+    84→/home/z/my-project/src/content/milestones.ts:53:    body: "The DhumketuX Junior Team launches Putimach 01 (পুটিমাছ ০১) from the Brahmaputra char, Mymensingh — reaching roughly 1 km altitude at a 75° launch angle. Widely remembered as the first recorded rocket launch in Bangladesh.",
+    85→/home/z/my-project/src/content/milestones.ts:69:    body: "DhumketuX represents Bangladesh at IISS Singapore 2025 — a key milestone in international visibility — while developing new sounding rockets, advanced UAVs and satellite-related ground/data systems.",
+    86→/home/z/my-project/src/content/org.ts:2: * DhumketuX — organization-level facts.
+    87→/home/z/my-project/src/content/org.ts:10:  meaning: "Dhumketu — comet, in Bangla.",
+    88→/home/z/my-project/src/content/org.ts:15:    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh. It develops small satellite launch vehicles, rocket propulsion, UAVs, satellite-related systems and mission technologies — working toward space access that is affordable, environmentally responsible and globally competitive.",
+    89→/home/z/my-project/src/components/sections/people.tsx:9: * PEOPLE — founder portrait + the national-movement statement + advisors
+    90→/home/z/my-project/src/components/sections/people.tsx:32:                Nahiyan Al Rahman — Founder, DhumketuX
+    91→/home/z/my-project/src/components/sections/people.tsx:41:              statement={`${teamFacts.size} engineers and researchers — a national space movement built by students.`}
+    92→/home/z/my-project/src/components/sections/people.tsx:89:              The team with a DhumketuX rocket — Mymensingh
+    93→/home/z/my-project/src/components/sections/ticker.tsx:5: * TICKER — sourced milestones from dhumketux.com/history running as a
+    94→/home/z/my-project/src/components/sections/intro.tsx:7: * INTRODUCTION — one statement, one quiet line, four live counters
+    95→/home/z/my-project/src/components/sections/intro.tsx:17:            DhumketuX is a commercial civilian space company from Bangladesh —
+    96→/home/z/my-project/src/components/primitives/ui-bits.tsx:11: * StatusDot — small status indicator: live (go), active (hold/amber), planned (future).
+    97→/home/z/my-project/src/components/primitives/ui-bits.tsx:25: * Counter — animated numeral. Parses "50+", "250+", "2018" and counts
+    98→/home/z/my-project/src/components/primitives/ui-bits.tsx:57: * Marquee — infinite horizontal ticker of sourced milestones.
+    99→/home/z/my-project/src/components/primitives/ui-bits.tsx:88: * ArrowLink — editorial link with the signature hover arrow.
+   100→/home/z/my-project/src/components/primitives/ui-bits.tsx:118: * CtaBand — closing conversion panel: image or glow backdrop under glass,
+   101→/home/z/my-project/src/components/primitives/page-hero.tsx:11: * CinematicHero — full-bleed image hero for interior pages.
+   102→/home/z/my-project/src/components/primitives/page-hero.tsx:65:      {/* Scrims — legibility from any viewport */}
+   103→/home/z/my-project/src/components/sections/final-cta.tsx:4: * FINAL CTA — mission-control concept backdrop, gradient conversion panel.
+   104→/home/z/my-project/src/components/sections/final-cta.tsx:14:      copy="Partners, universities, students and talent — build with us from Bangladesh."
+   105→/home/z/my-project/src/components/sections/final-cta.tsx:17:      caption="Backdrop: concept art — illustrative of a mission control environment."
+   106→/home/z/my-project/src/components/sections/hero.tsx:12: * HERO — full-viewport cinematic opening.
+   107→/home/z/my-project/src/components/sections/hero.tsx:129:      {/* Bottom bar — scroll cue + honest caption */}
+   108→/home/z/my-project/src/components/sections/hero.tsx:145:          Concept visualization of a Bidrohi-class lift-off — illustrative art, not an
+   109→/home/z/my-project/src/components/layout/site-header.tsx:20: * Primary navigation — mirrors the real dhumketux.com menu tree
+   110→/home/z/my-project/src/components/layout/site-header.tsx:41:  { label: "Design, Build, Fly — DBF Program", href: "/programs#dbf" },
+   111→/home/z/my-project/src/components/layout/site-header.tsx:208:        {/* ——— Desktop dropdown panels ——— */}
+   112→/home/z/my-project/src/components/layout/site-header.tsx:263:                        {projects.length} systems — from the first engine tested in Bangladesh to future launch vehicles.
+   113→/home/z/my-project/src/components/layout/site-header.tsx:287:                          {programs.dbf.partners.join(" · ")} — a real aerospace pipeline for university teams, from proposal to national fly-off.
+   114→/home/z/my-project/src/components/layout/site-header.tsx:292:                          {projects.length} systems, 50+ people, one national mission — aerospace from Bangladesh, on the public record.
+   115→/home/z/my-project/src/components/layout/site-header.tsx:297:                          National television, press and the DhumketuX archive — every milestone documented at the source.
+   116→/home/z/my-project/src/components/layout/site-header.tsx:309:      {/* ——— Mobile full-screen menu ——— */}
+   117→/home/z/my-project/src/components/layout/site-footer.tsx:6: * Night footer — ember gradient seam, ghost wordmark, full sitemap,
+   118→/home/z/my-project/src/components/layout/site-footer.tsx:24:        {/* Top row — identity + CTA */}
+   119→/home/z/my-project/src/components/layout/site-footer.tsx:131:          <p>Concept redesign prepared for DhumketuX — not the official DhumketuX website.</p>
+   120→/home/z/my-project/src/components/sections/flagship.tsx:10: * FLAGSHIP WORK — image-led feature cards.
+   121→/home/z/my-project/src/components/sections/flagship.tsx:65:      {/* Title bar — index, name, status */}
+   122→/home/z/my-project/src/components/sections/flagship.tsx:99:          {/* 01 — Bidrohi SR · full-width cinematic */}
+   123→/home/z/my-project/src/components/sections/flagship.tsx:118:                  The team with the Bidrohi rocket on its launch rail — Mymensingh
+   124→/home/z/my-project/src/components/sections/flagship.tsx:123:                  Bangladesh&rsquo;s first commercial sub-orbital space rocket — named after
+   125→/home/z/my-project/src/components/sections/flagship.tsx:133:          {/* 02 + 03 — duo */}
+   126→/home/z/my-project/src/components/sections/flagship.tsx:136:              {/* Agni Bina — typographic power card */}
+   127→/home/z/my-project/src/components/sections/flagship.tsx:165:              {/* Boson — real engine fire */}
+   128→/home/z/my-project/src/components/sections/flagship.tsx:185:                    A liquid rocket engine for autonomous rocket landing — LOX + kerosene,
+   129→/home/z/my-project/src/components/sections/flagship.tsx:196:          {/* 04 — Nazrul 01 · official render on deep night */}
+   130→/home/z/my-project/src/components/sections/flagship.tsx:219:                  A small satellite launch vehicle concept — dedicated launch capability
+   131→/home/z/my-project/src/components/sections/flagship.tsx:222:                <p className="text-[11px] text-chalk-3">Official vehicle render — DhumketuX</p>
+   132→/home/z/my-project/src/components/sections/flagship.tsx:229:      {/* Index link — the full catalog lives on /work */}
+   133→/home/z/my-project/src/app/globals.css:5:  DhumketuX — "Mission Control Cinema" design tokens.
+   134→/home/z/my-project/src/app/globals.css:7:  Built to feel like a living aerospace program — not a printed page.
+   135→/home/z/my-project/src/app/globals.css:110:/* Display type — Inter, Apple-style tracking */
+   136→/home/z/my-project/src/app/globals.css:125:/* Technical numerals — the only place mono appears */
+   137→/home/z/my-project/src/app/globals.css:132:/* Editorial serif accent — select words in heroes only */
+   138→/home/z/my-project/src/app/globals.css:140:/* Ember gradient text — hero accent words & key figures */
+   139→/home/z/my-project/src/app/globals.css:148:/* Ghost numerals — oversized outlined section markers */
+   140→/home/z/my-project/src/app/globals.css:161:/* Glow — engine-fire warmth for night panels */
+   141→/home/z/my-project/src/app/globals.css:184:/* Starfield — faint specks for deep-space panels */
+   142→/home/z/my-project/src/app/globals.css:199:/* Glass surface — the standard panel */
+   143→/home/z/my-project/src/app/globals.css:213:/* Quiet image treatment — slow zoom on hover, restrained */
+   144→/home/z/my-project/src/app/globals.css:224:/* Card lift — glass cards rise gently on hover */
+   145→/home/z/my-project/src/app/globals.css:290:/* Marquee — milestone ticker */
+   146→/home/z/my-project/src/app/globals.css:320:/* Reduced motion — global guard */
+   147→/home/z/my-project/src/app/media/page.tsx:11:  title: "Media — DhumketuX",
+   148→/home/z/my-project/src/app/media/page.tsx:13:    "Space articles, media news and social media — Bangladesh's first private aerospace organization documented across national media.",
+   149→/home/z/my-project/src/app/media/page.tsx:29:        caption="DhumketuX team with the Bidrohi rocket on its launch rail — Mymensingh"
+   150→/home/z/my-project/src/app/page.tsx:12: * DhumketuX — homepage. A cinematic film: full-viewport night-launch hero →
+   151→/home/z/my-project/src/app/technology/page.tsx:9:  title: "Technological Capabilities — DhumketuX",
+   152→/home/z/my-project/src/app/technology/page.tsx:11:    "One engineering stack — rocket systems, propulsion, UAV autonomy, avionics, telemetry, simulation, materials and test — developed in-house and tested in Bangladesh.",
+   153→/home/z/my-project/src/app/technology/page.tsx:23:        lede="Every system is developed in-house and tested in Bangladesh — rockets, propulsion, avionics, autonomy and the ground segment that ties them together."
+   154→/home/z/my-project/src/app/technology/page.tsx:24:        caption="Concept art — illustrative of a static-fire plume, not a documented test photograph."
+   155→/home/z/my-project/src/app/not-found.tsx:5: * 404 — lost in space. Deep-night panel, ghost numeral, way home.
+   156→/home/z/my-project/src/app/not-found.tsx:26:          The page you requested does not exist — but the mission continues.
+   157→/home/z/my-project/src/app/work/page.tsx:12:  title: "Projects — DhumketuX",
+   158→/home/z/my-project/src/app/work/page.tsx:14:    "The full DhumketuX catalog: launch vehicles, solid and liquid propulsion, reusable systems, satellites and aviation — every figure sourced from dhumketux.com.",
+   159→/home/z/my-project/src/app/work/page.tsx:43:        lede="Launch vehicles, propulsion, reusable systems, satellites and aviation — developed in Bangladesh, documented on the public record."
+   160→/home/z/my-project/src/app/work/page.tsx:44:        caption="Concept art — illustrative pad scene, not a DhumketuX photograph."
+   161→/home/z/my-project/src/app/work/page.tsx:117:        copy="Sounding rocket campaigns, payload launches and test services — propose a mission and the team will respond with feasibility and range requirements."
+   162→/home/z/my-project/src/app/work/[slug]/page.tsx:17:    caption: "The team with the Bidrohi rocket on its launch rail — Mymensingh",
+   163→/home/z/my-project/src/app/work/[slug]/page.tsx:22:    caption: "DhumketuX propulsion test campaign — static fire at the test stand",
+   164→/home/z/my-project/src/app/work/[slug]/page.tsx:26:    alt: "Official render of the DhumketuX Nazrul-01 small satellite launch vehicle — white two-stage rocket with Bangladeshi flag markings",
+   165→/home/z/my-project/src/app/work/[slug]/page.tsx:27:    caption: "Official vehicle render — DhumketuX",
+   166→/home/z/my-project/src/app/work/[slug]/page.tsx:33:    caption: "Payload fairing deployment — official render, DhumketuX",
+   167→/home/z/my-project/src/app/work/[slug]/page.tsx:38: * Schematic — abstract line-art glyph for projects without real media.
+   168→/home/z/my-project/src/app/work/[slug]/page.tsx:151:  if (!project) return { title: "Project — DhumketuX" };
+   169→/home/z/my-project/src/app/work/[slug]/page.tsx:153:    title: `${project.name} — DhumketuX`,
+   170→/home/z/my-project/src/app/work/[slug]/page.tsx:176:      {/* Hero — night */}
+   171→/home/z/my-project/src/app/work/[slug]/page.tsx:236:      {/* Body — void */}
+   172→/home/z/my-project/src/app/work/[slug]/page.tsx:302:                    Schematic illustration — simplified geometry, not an engineering drawing
+   173→/home/z/my-project/src/app/work/[slug]/page.tsx:311:      {/* Related + CTA — night */}
+   174→/home/z/my-project/src/app/layout.tsx:28:  title: "DhumketuX — Building aerospace from Bangladesh",
+   175→/home/z/my-project/src/app/layout.tsx:30:    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh — developing rockets, propulsion, UAVs, satellite-related systems and mission technologies.",
+   176→/home/z/my-project/src/app/layout.tsx:32:    title: "DhumketuX — Building aerospace from Bangladesh",
+   177→/home/z/my-project/src/app/layout.tsx:41:    title: "DhumketuX — Building aerospace from Bangladesh",
+   178→/home/z/my-project/src/app/contact/page.tsx:11:  title: "Contact — DhumketuX",
+   179→/home/z/my-project/src/app/contact/page.tsx:13:    "Book a launch, propose a collaboration, start a university program, join as a student or explore careers — contact Dhumketu Exploration Technologies Limited.",
+   180→/home/z/my-project/src/app/contact/page.tsx:25:        lede="One team, one inbox — reach DhumketuX directly for launches, collaborations, programs and careers."
+   181→/home/z/my-project/src/app/contact/page.tsx:26:        caption="Concept art — illustrative mission control environment."
+   182→/home/z/my-project/src/app/contact/page.tsx:82:                  Sounding rocket campaigns, payload launches and test services —
+   183→/home/z/my-project/src/app/programs/page.tsx:10:  title: "Programs — DhumketuX",
+   184→/home/z/my-project/src/app/programs/page.tsx:12:    "Design, Build, Fly — the national pipeline. DBF tracks, the program journey, student programs and community platforms, with BAXRC and Rocketry Bangladesh.",
+   185→/home/z/my-project/src/app/programs/page.tsx:24:        lede={`Together with ${programs.dbf.partners.slice(1).join(" and ")}, the "Design, Build, Fly" program gives university teams a real aerospace pipeline — from proposal to national fly-off.`}
+   186→/home/z/my-project/src/app/programs/page.tsx:25:        caption="Concept art — illustrative of student engineering work."
+   187→/home/z/my-project/src/app/programs/page.tsx:153:        copy="Universities, student teams and community platforms — bring your team into Design, Build, Fly or partner on the programs around it."
+   188→/home/z/my-project/src/app/vision/page.tsx:17:  title: "Vision — DhumketuX",
+   189→/home/z/my-project/src/app/vision/page.tsx:19:    "The next chapter: space billboard and orbital media, Earth observation constellations and space-based internet — long-term ambitions from Bangladesh, marked as future vision.",
+   190→/home/z/my-project/src/app/vision/page.tsx:31:        lede="Our long-term vision: build space billboard, Earth observation and space-based internet constellations from Bangladesh and Asia that serve global customers — responsibly and sustainably."
+   191→/home/z/my-project/src/app/vision/page.tsx:32:        caption="Concept art — illustrative of an orbital dawn over Bangladesh."
+   192→/home/z/my-project/src/app/vision/page.tsx:44:              Future vision — not current capabilities.
+   193→/home/z/my-project/src/app/vision/page.tsx:79:                Our dream for Bangladesh — space data, internet and branding, operated
+   194→/home/z/my-project/src/app/vision/page.tsx:101:                Payload fairing deployment — official render, DhumketuX
+   195→/home/z/my-project/src/app/company/page.tsx:19:  title: "Company — DhumketuX",
+   196→/home/z/my-project/src/app/company/page.tsx:35:        lede={`${teamFacts.size} engineers and researchers across 20+ universities in Bangladesh — including BUET, KUET, RUET and CUET — with graduates and researchers from the USA, Europe, Russia, China and Japan.`}
+   197→/home/z/my-project/src/app/company/page.tsx:36:        caption="DhumketuX team with a rocket — Mymensingh (dhumketux.com)"
+   198→/home/z/my-project/src/app/company/page.tsx:39:      {/* ——— Team & leadership ——— */}
+   199→/home/z/my-project/src/app/company/page.tsx:65:                  {founder.name} — {founder.role}
+   200→/home/z/my-project/src/app/company/page.tsx:89:                        <span className="font-normal text-chalk-2"> — {a.role}</span>
+   201→/home/z/my-project/src/app/company/page.tsx:115:                The DhumketuX team — Mymensingh, Bangladesh
+   202→/home/z/my-project/src/app/company/page.tsx:122:      {/* ——— History ——— */}
+   203→/home/z/my-project/src/app/company/page.tsx:169:                            a2i Rocketry Innovation Challenge 2022 — winner
+   204→/home/z/my-project/src/app/company/page.tsx:182:      {/* ——— Collaborations ——— */}
+   205→/home/z/my-project/src/app/company/page.tsx:208:      {/* ——— Policy & core values ——— */}
+   206→/home/z/my-project/src/app/company/page.tsx:269:      {/* ——— Social responsibilities ——— */}
+   207→/home/z/my-project/src/components/sections/vision.tsx:12: * VISION — full-bleed orbital-dawn band with parallax, giant statement,
+   208→/home/z/my-project/src/components/sections/technology.tsx:9: * TECHNOLOGY — split layout: sticky concept-engine image on the left,
+   209→/home/z/my-project/src/components/sections/technology.tsx:38:                  Concept art — illustrative of a static-fire plume, not a documented test photograph.

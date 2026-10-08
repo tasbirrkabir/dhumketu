@@ -8,7 +8,7 @@ import { ArrowUpRight } from "lucide-react";
 import { EASE } from "./reveal";
 
 /**
- * StatusDot — small status indicator: live (go), active (hold/amber), planned (future).
+ * StatusDot: small status indicator: live (go), active (hold/amber), planned (future).
  */
 export function StatusDot({ tone }: { tone: "live" | "active" | "planned" }) {
   const color =
@@ -22,7 +22,7 @@ export function StatusDot({ tone }: { tone: "live" | "active" | "planned" }) {
 }
 
 /**
- * Counter — animated numeral. Parses "50+", "250+", "2018" and counts
+ * Counter: animated numeral. Parses "50+", "250+", "2018" and counts
  * the numeric part up on first view; suffix/prefix preserved.
  */
 export function Counter({ value, className = "" }: { value: string; className?: string }) {
@@ -54,7 +54,7 @@ export function Counter({ value, className = "" }: { value: string; className?: 
 }
 
 /**
- * Marquee — infinite horizontal ticker of sourced milestones.
+ * Marquee: infinite horizontal ticker of sourced milestones.
  * Pauses on hover; static under reduced motion (CSS guard).
  */
 export function Marquee({ items }: { items: { year: string; title: string }[] }) {
@@ -85,7 +85,7 @@ export function Marquee({ items }: { items: { year: string; title: string }[] })
 }
 
 /**
- * ArrowLink — editorial link with the signature hover arrow.
+ * ArrowLink: editorial link with the signature hover arrow.
  */
 export function ArrowLink({
   href,
@@ -115,13 +115,12 @@ export function ArrowLink({
 }
 
 /**
- * CtaBand — closing conversion panel: image or glow backdrop under glass,
+ * CtaBand: closing conversion panel: image or glow backdrop under glass,
  * oversized title with serif accent, primary gradient + secondary ghost buttons.
  */
 export function CtaBand({
   image,
   imageAlt = "",
-  kicker,
   title,
   accent,
   copy,
@@ -131,7 +130,6 @@ export function CtaBand({
 }: {
   image?: string;
   imageAlt?: string;
-  kicker: string;
   title: string;
   accent?: string;
   copy: string;
@@ -164,10 +162,6 @@ export function CtaBand({
         <div aria-hidden="true" className="glow-ember left-[10%] top-[-30%] h-[300px] w-[480px]" />
 
         <div className="relative z-10 flex flex-col items-start gap-8 px-6 py-14 sm:px-12 sm:py-20">
-          <p className="flex items-center gap-3 text-sm font-medium text-amber">
-            <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b]" />
-            <span className="qa-data uppercase tracking-[0.18em]">{kicker}</span>
-          </p>
           <h2 className="qa-display max-w-[16ch] text-[clamp(2.2rem,5.4vw,4.25rem)] text-chalk">
             {title}
             {accent ? <span className="qa-serif font-normal text-ember-gradient"> {accent}</span> : null}

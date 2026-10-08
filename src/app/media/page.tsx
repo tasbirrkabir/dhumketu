@@ -8,9 +8,9 @@ import { Reveal } from "@/components/primitives/reveal";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Media — DhumketuX",
+  title: "Media · DhumketuX",
   description:
-    "Space articles, media news and social media — Bangladesh's first private aerospace organization documented across national media.",
+    "Space articles, media news and social media: Bangladesh's first private aerospace organization documented across national media.",
 };
 
 export default function MediaPage() {
@@ -22,11 +22,10 @@ export default function MediaPage() {
       <CinematicHero
         image="/media/team-launch-rail.jpg"
         alt=""
-        kicker="Media · 6"
         title="Documented in public."
         accent="National media & the archive."
         lede={mediaNote}
-        caption="DhumketuX team with the Bidrohi rocket on its launch rail — Mymensingh"
+        caption="DhumketuX team with the Bidrohi rocket on its launch rail, Mymensingh"
       />
 
       {/* Media news */}

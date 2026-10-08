@@ -14,9 +14,9 @@ import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 import { StatusDot, Counter } from "@/components/primitives/ui-bits";
 
 export const metadata: Metadata = {
-  title: "Vision — DhumketuX",
+  title: "Vision · DhumketuX",
   description:
-    "The next chapter: space billboard and orbital media, Earth observation constellations and space-based internet — long-term ambitions from Bangladesh, marked as future vision.",
+    "The next chapter: space billboard and orbital media, Earth observation constellations and space-based internet. Long-term ambitions from Bangladesh, marked as future vision.",
 };
 
 export default function VisionPage() {
@@ -25,11 +25,10 @@ export default function VisionPage() {
       <CinematicHero
         image="/media/concept-orbit-dawn.jpg"
         alt=""
-        kicker="Vision · 03"
         title="The next chapter."
         accent="Constellations, connectivity, orbital media."
-        lede="Our long-term vision: build space billboard, Earth observation and space-based internet constellations from Bangladesh and Asia that serve global customers — responsibly and sustainably."
-        caption="Concept art — illustrative of an orbital dawn over Bangladesh."
+        lede="Our long-term vision: build space billboard, Earth observation and space-based internet constellations from Bangladesh and Asia that serve global customers, responsibly and sustainably."
+        caption="Concept art, illustrative of an orbital dawn over Bangladesh."
       />
 
       {/* Future pillars */}
@@ -41,7 +40,7 @@ export default function VisionPage() {
           <Reveal>
             <p className="glass inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-sm font-medium text-amber">
               <StatusDot tone="planned" />
-              Future vision — not current capabilities.
+              Future vision, not current capabilities.
             </p>
           </Reveal>
 
@@ -76,7 +75,7 @@ export default function VisionPage() {
                 {visionBangladesh.bn}
               </blockquote>
               <figcaption className="relative mt-5 text-sm text-chalk-2/80">
-                Our dream for Bangladesh — space data, internet and branding, operated
+                Our dream for Bangladesh: space data, internet and branding, operated
                 from Bangladesh.
               </figcaption>
             </figure>
@@ -98,7 +97,7 @@ export default function VisionPage() {
                 />
               </div>
               <figcaption className="mt-3 text-xs text-chalk-3">
-                Payload fairing deployment — official render, DhumketuX
+                Payload fairing deployment · official render, DhumketuX
               </figcaption>
             </figure>
           </ImageReveal>

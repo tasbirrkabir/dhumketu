@@ -9,9 +9,9 @@ import { Reveal } from "@/components/primitives/reveal";
 import { StatusDot, CtaBand } from "@/components/primitives/ui-bits";
 
 export const metadata: Metadata = {
-  title: "Projects — DhumketuX",
+  title: "Projects · DhumketuX",
   description:
-    "The full DhumketuX catalog: launch vehicles, solid and liquid propulsion, reusable systems, satellites and aviation — every figure sourced from dhumketux.com.",
+    "The full DhumketuX catalog: launch vehicles, solid and liquid propulsion, reusable systems, satellites and aviation. Every figure sourced from dhumketux.com.",
 };
 
 const GROUPS: { title: string; categories: DxProject["category"][] }[] = [
@@ -37,11 +37,10 @@ export default function WorkPage() {
       <CinematicHero
         image="/media/concept-rocket-dusk.jpg"
         alt=""
-        kicker="Project catalog"
         title="The full catalog."
         accent={`${projects.length} systems, one engineering culture.`}
-        lede="Launch vehicles, propulsion, reusable systems, satellites and aviation — developed in Bangladesh, documented on the public record."
-        caption="Concept art — illustrative pad scene, not a DhumketuX photograph."
+        lede="Launch vehicles, propulsion, reusable systems, satellites and aviation, developed in Bangladesh and documented on the public record."
+        caption="Concept art, illustrative pad scene, not a DhumketuX photograph."
       />
 
       {GROUPS.map((group) => {
@@ -55,10 +54,10 @@ export default function WorkPage() {
           >
             <Container>
               <Reveal>
-                <h2 className="flex items-center gap-3 text-sm font-medium text-amber">
-                  <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b]" />
-                  <span className="qa-data uppercase tracking-[0.18em]">
-                    {group.title} · {items.length}
+                <h2 className="qa-display flex flex-wrap items-baseline gap-x-4 gap-y-1 text-[clamp(1.55rem,3.2vw,2.4rem)] text-chalk">
+                  {group.title}
+                  <span className="qa-data text-sm font-normal uppercase tracking-[0.14em] text-chalk-3">
+                    {items.length} {items.length === 1 ? "system" : "systems"}
                   </span>
                 </h2>
               </Reveal>
@@ -111,11 +110,10 @@ export default function WorkPage() {
       </section>
 
       <CtaBand
-        kicker="Book a launch"
         title="Have a mission"
         accent="in mind?"
-        copy="Sounding rocket campaigns, payload launches and test services — propose a mission and the team will respond with feasibility and range requirements."
-        primary={{ href: "/contact", label: "Book a Launch" }}
+        copy="Sounding rocket campaigns, payload launches and test services: propose a mission and the team will respond with feasibility and range requirements."
+        primary={{ href: "/contact#form", label: "Book a Launch" }}
       />
     </Shell>
   );

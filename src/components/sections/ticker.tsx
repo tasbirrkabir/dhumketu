@@ -2,7 +2,7 @@ import { milestones } from "@/content/milestones";
 import { Marquee } from "@/components/primitives/ui-bits";
 
 /**
- * TICKER — sourced milestones from dhumketux.com/history running as a
+ * TICKER: sourced milestones from dhumketux.com/history running as a
  * quiet infinite band. Proof of momentum, at a glance.
  */
 export function Ticker() {

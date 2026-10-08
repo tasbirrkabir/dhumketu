@@ -1,5 +1,5 @@
 /**
- * DhumketuX — organization-level facts.
+ * DhumketuX: organization-level facts.
  * Every value is traceable to a page on https://dhumketux.com (captured 2026-02).
  * Unverifiable items are marked with a neutral fallback in the UI.
  */
@@ -7,12 +7,12 @@
 export const org = {
   legalName: "Dhumketu Exploration Technologies Limited",
   shortName: "DhumketuX",
-  meaning: "Dhumketu — comet, in Bangla.",
+  meaning: "Dhumketu, “comet” in Bangla.",
   tagline: "An Aerospace Research & Development Company of South Asia",
   founded: 2018,
   founder: "Nahiyan Al Rahman",
   description:
-    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh. It develops small satellite launch vehicles, rocket propulsion, UAVs, satellite-related systems and mission technologies — working toward space access that is affordable, environmentally responsible and globally competitive.",
+    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh. It develops small satellite launch vehicles, rocket propulsion, UAVs, satellite-related systems and mission technologies, working toward space access that is affordable, environmentally responsible and globally competitive.",
   stats: [
     { label: "Founded", value: "2018", source: "https://dhumketux.com/" },
     { label: "Team", value: "50+", source: "https://dhumketux.com/" },

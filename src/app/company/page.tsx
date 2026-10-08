@@ -16,7 +16,7 @@ import { Container } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 export const metadata: Metadata = {
-  title: "Company — DhumketuX",
+  title: "Company · DhumketuX",
   description:
     "Team & leadership, history, collaborations, policy and core values, and social responsibilities of Dhumketu Exploration Technologies Limited.",
 };
@@ -29,14 +29,13 @@ export default function CompanyPage() {
       <CinematicHero
         image="/media/team-rocket-library.jpg"
         alt=""
-        kicker="Company · 50+"
         title="The company."
         accent="One Sky, One Dream."
-        lede={`${teamFacts.size} engineers and researchers across 20+ universities in Bangladesh — including BUET, KUET, RUET and CUET — with graduates and researchers from the USA, Europe, Russia, China and Japan.`}
-        caption="DhumketuX team with a rocket — Mymensingh (dhumketux.com)"
+        lede={`${teamFacts.size} engineers and researchers across 20+ universities in Bangladesh, including BUET, KUET, RUET and CUET, with graduates and researchers from the USA, Europe, Russia, China and Japan.`}
+        caption="DhumketuX team with a rocket, Mymensingh (dhumketux.com)"
       />
 
-      {/* ——— Team & leadership ——— */}
+      {/* Team & leadership */}
       <section id="team" aria-label="Team and leadership" className="scroll-mt-16 bg-void py-24 sm:py-32">
         <Container>
           <Reveal>
@@ -62,7 +61,7 @@ export default function CompanyPage() {
                   />
                 </div>
                 <figcaption className="mt-3 text-xs text-chalk-3">
-                  {founder.name} — {founder.role}
+                  {founder.name} · {founder.role}
                 </figcaption>
               </figure>
             </Reveal>
@@ -86,7 +85,7 @@ export default function CompanyPage() {
                     >
                       <p className="text-[0.9375rem] font-medium text-chalk">
                         {a.name}
-                        <span className="font-normal text-chalk-2"> — {a.role}</span>
+                        <span className="font-normal text-chalk-2">, {a.role}</span>
                       </p>
                       <p className="mt-2 text-sm leading-relaxed text-chalk-2">{a.bio}</p>
                     </li>
@@ -112,14 +111,14 @@ export default function CompanyPage() {
                 />
               </div>
               <figcaption className="mt-3 text-xs text-chalk-3">
-                The DhumketuX team — Mymensingh, Bangladesh
+                The DhumketuX team, Mymensingh, Bangladesh
               </figcaption>
             </figure>
           </ImageReveal>
         </Container>
       </section>
 
-      {/* ——— History ——— */}
+      {/* History */}
       <section
         id="history"
         aria-label="History"
@@ -166,7 +165,7 @@ export default function CompanyPage() {
                             />
                           </div>
                           <figcaption className="mt-3 text-xs text-chalk-3">
-                            a2i Rocketry Innovation Challenge 2022 — winner
+                            a2i Rocketry Innovation Challenge 2022 winner
                           </figcaption>
                         </figure>
                       </ImageReveal>
@@ -179,7 +178,7 @@ export default function CompanyPage() {
         </Container>
       </section>
 
-      {/* ——— Collaborations ——— */}
+      {/* Collaborations */}
       <section
         id="collaborations"
         aria-label="Collaborations"
@@ -205,7 +204,7 @@ export default function CompanyPage() {
         </Container>
       </section>
 
-      {/* ——— Policy & core values ——— */}
+      {/* Policy & core values */}
       <section
         id="values"
         aria-label="Policy and core values"
@@ -266,7 +265,7 @@ export default function CompanyPage() {
         </Container>
       </section>
 
-      {/* ——— Social responsibilities ——— */}
+      {/* Social responsibilities */}
       <section
         id="responsibility"
         aria-label="Social responsibilities"

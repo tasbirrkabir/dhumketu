@@ -6,7 +6,7 @@ import { Container, SectionIntro } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
- * PEOPLE — founder portrait + the national-movement statement + advisors
+ * PEOPLE: founder portrait + the national-movement statement + advisors
  * as one-line entries + wide team photograph. Depth lives on /company.
  */
 export function People() {
@@ -29,7 +29,7 @@ export function People() {
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-void/60 via-transparent to-transparent" />
               </div>
               <figcaption className="mt-3 text-[11px] text-chalk-3">
-                Nahiyan Al Rahman — Founder, DhumketuX
+                Nahiyan Al Rahman · Founder, DhumketuX
               </figcaption>
             </figure>
           </ImageReveal>
@@ -37,8 +37,7 @@ export function People() {
           {/* Statement + advisors */}
           <div>
             <SectionIntro
-              kicker="People"
-              statement={`${teamFacts.size} engineers and researchers — a national space movement built by students.`}
+              statement={`${teamFacts.size} engineers and researchers: a national space movement built by students.`}
             />
             <Reveal delay={0.1}>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
@@ -86,7 +85,7 @@ export function People() {
               <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-void/45 via-transparent to-transparent" />
             </div>
             <figcaption className="mt-3 text-[11px] text-chalk-3">
-              The team with a DhumketuX rocket — Mymensingh
+              The team with a DhumketuX rocket, Mymensingh
             </figcaption>
           </figure>
         </ImageReveal>

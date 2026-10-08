@@ -4,7 +4,7 @@ import { Reveal } from "@/components/primitives/reveal";
 import { Counter } from "@/components/primitives/ui-bits";
 
 /**
- * INTRODUCTION — one statement, one quiet line, four live counters
+ * INTRODUCTION: one statement, one quiet line, four live counters
  * on glass cards. The numbers carry the section.
  */
 export function Intro() {
@@ -14,7 +14,7 @@ export function Intro() {
       <Container>
         <Reveal>
           <p className="max-w-4xl text-[clamp(1.5rem,3vw,2.375rem)] leading-[1.35] tracking-[-0.015em] text-chalk">
-            DhumketuX is a commercial civilian space company from Bangladesh —
+            DhumketuX is a commercial civilian space company from Bangladesh:
             <span className="text-chalk-2">
               {" "}
               rockets, propulsion, UAVs and satellite systems, built for affordable and

@@ -3,7 +3,7 @@ import { org } from "@/content/org";
 import { projects } from "@/content/projects";
 
 /**
- * Night footer — ember gradient seam, ghost wordmark, full sitemap,
+ * Night footer: ember gradient seam, ghost wordmark, full sitemap,
  * and the honesty line (concept redesign + provenance).
  */
 export function SiteFooter() {
@@ -21,7 +21,7 @@ export function SiteFooter() {
       <div className="glow-ember bottom-[-40%] left-1/2 h-[420px] w-[820px] -translate-x-1/2" aria-hidden="true" />
 
       <div className="relative mx-auto w-full max-w-[1180px] px-5 pb-10 pt-16 sm:px-8 lg:px-12 lg:pt-24">
-        {/* Top row — identity + CTA */}
+        {/* Top row: identity + CTA */}
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-lg font-semibold tracking-[-0.02em] text-chalk">
@@ -128,7 +128,7 @@ export function SiteFooter() {
         </p>
 
         <div className="flex flex-col gap-2 border-t border-edge py-6 text-xs leading-relaxed text-chalk-3 sm:flex-row sm:items-center sm:justify-between">
-          <p>Concept redesign prepared for DhumketuX — not the official DhumketuX website.</p>
+          <p>Concept redesign prepared for DhumketuX, not the official DhumketuX website.</p>
           <p>Figures sourced from dhumketux.com.</p>
         </div>
       </div>

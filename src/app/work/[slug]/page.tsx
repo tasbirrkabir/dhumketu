@@ -14,28 +14,28 @@ const MEDIA: Record<string, { src: string; alt: string; caption: string; contain
   "bidrohi-sr": {
     src: "/media/team-launch-rail.jpg",
     alt: "DhumketuX team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh",
-    caption: "The team with the Bidrohi rocket on its launch rail — Mymensingh",
+    caption: "The team with the Bidrohi rocket on its launch rail, Mymensingh",
   },
   "agni-bina": {
     src: "/media/engine-static-fire-test.jpg",
     alt: "Static fire test of a DhumketuX liquid rocket engine at night, flame extending across the test stand",
-    caption: "DhumketuX propulsion test campaign — static fire at the test stand",
+    caption: "DhumketuX propulsion test campaign, static fire at the test stand",
   },
   "nazrul-01": {
     src: "/media/nazrul-sslv-render.png",
-    alt: "Official render of the DhumketuX Nazrul-01 small satellite launch vehicle — white two-stage rocket with Bangladeshi flag markings",
-    caption: "Official vehicle render — DhumketuX",
+    alt: "Official render of the DhumketuX Nazrul-01 small satellite launch vehicle, white two-stage rocket with Bangladeshi flag markings",
+    caption: "Official vehicle render · DhumketuX",
     contain: true,
   },
   "space-billboard": {
     src: "/media/fairing-deployment-render.png",
     alt: "Official render of a DhumketuX payload fairing separating in flight, exposing a small satellite above Earth",
-    caption: "Payload fairing deployment — official render, DhumketuX",
+    caption: "Payload fairing deployment · official render, DhumketuX",
   },
 };
 
 /**
- * Schematic — abstract line-art glyph for projects without real media.
+ * Schematic: abstract line-art glyph for projects without real media.
  * Deliberately simplified geometry (clearly illustrative, never presented
  * as hardware documentation or photography).
  */
@@ -148,9 +148,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
-  if (!project) return { title: "Project — DhumketuX" };
+  if (!project) return { title: "Project · DhumketuX" };
   return {
-    title: `${project.name} — DhumketuX`,
+    title: `${project.name} · DhumketuX`,
     description: project.summary,
   };
 }
@@ -173,7 +173,7 @@ export default async function ProjectPage({
 
   return (
     <Shell>
-      {/* Hero — night */}
+      {/* Hero: night */}
       <section
         aria-label={project.name}
         className="relative overflow-hidden bg-night pb-24 pt-36 text-chalk sm:pb-32 sm:pt-44"
@@ -233,7 +233,7 @@ export default async function ProjectPage({
         </Container>
       </section>
 
-      {/* Body — void */}
+      {/* Body: void */}
       <section aria-label="About the project" className="bg-void py-24 sm:py-32">
         <Container>
           <div className="grid gap-14 md:grid-cols-12">
@@ -299,7 +299,7 @@ export default async function ProjectPage({
                     <Schematic variant={project.diagram} />
                   </div>
                   <figcaption className="absolute bottom-4 right-6 z-10 text-[11px] text-chalk-3">
-                    Schematic illustration — simplified geometry, not an engineering drawing
+                    Schematic illustration, simplified geometry, not an engineering drawing
                   </figcaption>
                 </div>
               </figure>
@@ -308,7 +308,7 @@ export default async function ProjectPage({
         </Container>
       </section>
 
-      {/* Related + CTA — night */}
+      {/* Related + CTA: night */}
       <section aria-label="Related projects" className="border-t border-edge bg-night py-24 text-chalk sm:py-32">
         <Container>
           <Reveal>

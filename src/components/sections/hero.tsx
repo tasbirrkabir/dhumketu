@@ -9,7 +9,7 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 /**
- * HERO — full-viewport cinematic opening.
+ * HERO: full-viewport cinematic opening.
  * Concept night-launch image with parallax under layered scrims,
  * oversized display headline with serif + ember accents, glass stat
  * chips, gradient CTA, honest concept-art caption and scroll cue.
@@ -53,18 +53,6 @@ export function Hero() {
         style={reduced ? undefined : { opacity: fade }}
         className="relative z-10 mx-auto flex w-full max-w-[1180px] flex-1 flex-col justify-end px-5 pb-16 pt-32 sm:px-8 sm:pb-20 lg:px-12"
       >
-        <motion.p
-          initial={reduced ? false : { opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
-          className="flex items-center gap-3 text-sm font-medium text-amber"
-        >
-          <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b]" />
-          <span className="qa-data uppercase tracking-[0.18em]">
-            Dhumketu Exploration Technologies Ltd · Est. 2018
-          </span>
-        </motion.p>
-
         <motion.h1
           initial={reduced ? false : { opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -126,7 +114,7 @@ export function Hero() {
         </motion.ul>
       </motion.div>
 
-      {/* Bottom bar — scroll cue + honest caption */}
+      {/* Bottom bar: scroll cue + honest caption */}
       <motion.div
         initial={reduced ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -142,7 +130,7 @@ export function Hero() {
           <span className="qa-data text-xs uppercase tracking-[0.16em]">Scroll</span>
         </motion.div>
         <p className="max-w-[52ch] text-right text-[11px] leading-relaxed text-chalk-3">
-          Concept visualization of a Bidrohi-class lift-off — illustrative art, not an
+          Concept visualization of a Bidrohi-class lift-off, illustrative art, not an
           actual DhumketuX launch photograph.
         </p>
       </motion.div>

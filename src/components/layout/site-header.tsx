@@ -17,7 +17,7 @@ const bySlug = (list: string[]) =>
     .filter((p): p is (typeof projects)[number] => Boolean(p));
 
 /**
- * Primary navigation — mirrors the real dhumketux.com menu tree
+ * Primary navigation: mirrors the real dhumketux.com menu tree
  * (Aerospace / Programs / About-Company / Media) reorganized into
  * two patterns: a full-width mega panel (Aerospace) and compact
  * dropdown panels (Programs, Company, Media).
@@ -38,7 +38,7 @@ const AEROSPACE_COLUMNS: { title: string; slugs: string[] }[] = [
 ];
 
 const PROGRAM_LINKS = [
-  { label: "Design, Build, Fly — DBF Program", href: "/programs#dbf" },
+  { label: "Design, Build, Fly (DBF Program)", href: "/programs#dbf" },
   { label: "Student Rocket Program", href: "/programs#student" },
   { label: "Student Satellite Program", href: "/programs#student" },
   { label: "Internship & Virtual Lab", href: "/programs#student" },
@@ -182,7 +182,7 @@ export function SiteHeader() {
               ),
             )}
             <Link
-              href="/contact"
+              href="/contact#form"
               className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(255,90,44,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(255,90,44,0.55)] hover:brightness-110"
             >
               Book a Launch
@@ -205,7 +205,7 @@ export function SiteHeader() {
           </button>
         </div>
 
-        {/* ——— Desktop dropdown panels ——— */}
+        {/* Desktop dropdown panels */}
         <AnimatePresence>
           {menu && (
             <motion.div
@@ -260,7 +260,7 @@ export function SiteHeader() {
                         </li>
                       </ul>
                       <p className="mt-8 max-w-[24ch] text-sm leading-relaxed text-chalk-2">
-                        {projects.length} systems — from the first engine tested in Bangladesh to future launch vehicles.
+                        {projects.length} systems, from the first engine tested in Bangladesh to future launch vehicles.
                       </p>
                     </div>
                   </div>
@@ -284,17 +284,17 @@ export function SiteHeader() {
                     <div className="self-end border-l border-edge pl-10">
                       {menu === "programs" && (
                         <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
-                          {programs.dbf.partners.join(" · ")} — a real aerospace pipeline for university teams, from proposal to national fly-off.
+                          {programs.dbf.partners.join(" · ")}: a real aerospace pipeline for university teams, from proposal to national fly-off.
                         </p>
                       )}
                       {menu === "company" && (
                         <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
-                          {projects.length} systems, 50+ people, one national mission — aerospace from Bangladesh, on the public record.
+                          {projects.length} systems, 50+ people, one national mission: aerospace from Bangladesh, on the public record.
                         </p>
                       )}
                       {menu === "media" && (
                         <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
-                          National television, press and the DhumketuX archive — every milestone documented at the source.
+                          National television, press and the DhumketuX archive: every milestone documented at the source.
                         </p>
                       )}
                     </div>
@@ -306,7 +306,7 @@ export function SiteHeader() {
         </AnimatePresence>
       </header>
 
-      {/* ——— Mobile full-screen menu ——— */}
+      {/* Mobile full-screen menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -410,7 +410,7 @@ export function SiteHeader() {
 
               <div className="mt-12 border-t border-edge pt-8">
                 <Link
-                  href="/contact"
+                  href="/contact#form"
                   onClick={() => setMobileOpen(false)}
                   className="inline-flex items-center gap-2 text-lg font-medium text-chalk"
                 >

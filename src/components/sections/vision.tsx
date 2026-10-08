@@ -9,7 +9,7 @@ import { visionPillars } from "@/content/vision";
 import { EASE } from "@/components/primitives/reveal";
 
 /**
- * VISION — full-bleed orbital-dawn band with parallax, giant statement,
+ * VISION: full-bleed orbital-dawn band with parallax, giant statement,
  * the three pillars as glass chips and the honest future-work disclaimer.
  */
 export function Vision() {
@@ -40,17 +40,6 @@ export function Vision() {
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-void/60 via-transparent to-transparent" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1180px] flex-1 flex-col justify-end px-5 py-24 sm:px-8 sm:py-32 lg:px-12">
-        <motion.p
-          initial={reduced ? false : { opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.7, ease: EASE }}
-          className="flex items-center gap-3 text-sm font-medium text-amber"
-        >
-          <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b]" />
-          <span className="qa-data uppercase tracking-[0.18em]">Vision</span>
-        </motion.p>
-
         <motion.h2
           initial={reduced ? false : { opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}
