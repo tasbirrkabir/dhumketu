@@ -1,0 +1,238 @@
+URL: https://dhumketux.com/student-virtual-lab/
+Student virtual lab
+Skip to content
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Menu
+ Explore
+ DhumketuX Campus–Industry Collaboration Program
+ Student Virtual Lab – Aerospace Virtual Labs
+ A cloud-based aerospace engineering lab for rockets, UAVs, CubeSats and CanSats — built for universities, BAXRC and Rocketry Bangladesh to design, simulate and plan real missions under NDA and safety-first policies.
+ Request University Access
+ Learn How the Virtual Lab Works
+ 10+
+ Aerospace Virtual Labs
+ 150+
+ Simulations, Missions & Projects
+ 24/7
+ Cloud Access
+ Who Is the Student Virtual Lab For?
+ MoU Partner Universities
+ Full, structured access for official project teams
+ Department-approved teams (EEE, CSE, ME, AE, CE, etc.).
+ Faculty supervisor / PI is mandatory.
+ Mapped to rocket, UAV, CubeSat or CanSat project tracks.
+ Other Universities
+ Join via community & conditional access
+ Participate through Rocketry Bangladesh + BAXRC.
+ Mandatory NDA and collaboration policy acceptance.
+ Focus on simulation, mission software, and design tasks.
+ International Advisors
+ Global collaboration in a secure environment
+ Co-supervise projects and capstones remotely.
+ Join design reviews and research discussions.
+ Operate under MoUs, NDAs and export-safe scopes.
+ Featured Aerospace Virtual Labs
+ Online · Rocket Lab
+ Rocket Propulsion & Launch Systems Virtual Lab
+ Simulate trajectories, payload integration and launch windows for sounding rockets and small launch systems using realistic conditions and constraints.
+ 30+ missions and scenarios.
+ Python/Matlab-style trajectory toolsets.
+ Range safety and launch constraint exercises.
+ Online · UAV & VTOL Lab
+ UAV & VTOL Systems Virtual Lab
+ Design and virtually test fixed-wing, multirotor and VTOL systems for mapping, logistics and experimental missions with realistic flight dynamics.
+ Mission planners and guidance models.
+ Autopilot tuning and path-planning exercises.
+ Log-style data for analysis and reporting.
+ Online · Satellite & CanSat Labs
+ Student CubeSat & CanSat Mission Labs
+ Design CubeSat and CanSat missions, build power and link budgets, and prepare mission documentation aligned with real CubeSat standards.
+ Orbital and pass prediction exercises.
+ Payload definition and data-handling plans.
+ CanSat mission preparation with Rocketry Bangladesh.
+ Online · Avionics & Data Lab
+ Avionics, GNC & Telemetry Virtual Lab
+ Work with simulated sensor data, telemetry frames and mission logic for rockets, UAVs and satellites, all in a safe, fully virtual environment.
+ Packet design and error-checking exercises.
+ Data visualization and anomaly detection tasks.
+ Health monitoring and safety-logic simulations.
+ Collaboration, Safety & IP Rules
+ To protect students, universities, collaborators and active missions, the Student Virtual Lab operates under strict NDA, safety and intellectual property policies.
+ NDA Mandatory: All participants must sign NDAs before accessing design files, datasets or internal documents.
+ No Chemical Supply: DhumketuX does not sell or provide aerospace chemicals to any institution or student.
+ Virtual Only for Propulsion: Rocket propulsion work is limited to design, simulation and documentation in this lab.
+ IP Ownership: Platform-level IP, mission architecture and core technologies remain with Dhumketu Exploration Technologies Ltd. (DhumketuX).
+ What Students & Universities Gain
+ Real-world aerospace project experience under industry guidance.
+ Structured pathway into DhumketuX internships and BAXRC research roles.
+ Strong portfolios for higher studies, scholarships and careers.
+ Visibility through selected DhumketuX / BAXRC demo days and outreach.
+ How to Join the Student Virtual Lab
+ Whether you are a department head, faculty member or student leader, you can start the collaboration process and bring aerospace virtual labs to your campus.
+ For Universities
+ Email DhumketuX with your university, department and preferred track (Rocket / UAV / CubeSat / CanSat).
+ Review and sign the MoU and NDA templates shared by DhumketuX / BAXRC.
+ Nominate faculty supervisors and student teams, then start your first virtual lab project.
+ For Students
+ If your university has an MoU, contact your department coordinator or PI.
+ If not, join Rocketry Bangladesh & BAXRC community tracks and begin as a virtual contributor.
+ Use your virtual lab work as a bridge to future DhumketuX internships and research roles.
+ Email: xdhumketu@gmail.com
+ A Historic Victory for DhumketuX
+ DhumketuX has made the nation proud by winning the Rocketry and Invention categories in Bangladesh’s first-ever A2i Innovation Competition 2022! This groundbreaking achievement marks a major milestone for Bangladesh’s space technology and innovation landscape.
+ Why This Matters
+ This win not only showcases the potential of Bangladeshi innovators but also paves the way for a brighter future in space technology and advanced research. DhumketuX’s success is proof that the sky is NOT the limit!
+ See Achievement
+ Sponsors
+ Become a Sponsor 
+ Partner with DhumketuX to sponsor the Rocket Mission or Solar Sail Billboard Project. Gain global visibility, extensive media coverage, and recognition as a leader in space innovation, branding, and exploration. Contact: xdhumketu@gmail.com.
+ Join Our Team
+ Your skills, our mission
+ Be part of the future of space technology! Join DhumketuX in this exciting student-led mission, and contribute to the world of nanosatellite technology, advancing space exploration, innovation, and global collaboration together.
+ Donate Us
+ Support the Mission 
+ Help make history with DhumketuX! Your donation supports the Rocket Mission, space education, and innovative technologies like the Solar Sail Billboard. Inspire youth, promote science, and support Bangladesh’s space legacy. Donate today and join our mission!
+ Planning to launch your products?
+ Do not hesitate to reach out. Just fill in the contact form here and we’ll be sure to reply as fast as possible.
+ follow us
+ Facebook-f
+ Linkedin-in
+ Youtube
+DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
++880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil

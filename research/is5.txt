@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX Space Billboard satellite render Bangladesh"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "DhumketuX Space Billboard satellite render Bangladesh",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b4facc2e6888.png",
+      "caption": "",
+      "source": "",
+      "original_width": "2048px",
+      "original_height": "1152px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0d426384faa4.png",
+      "caption": "",
+      "source": "",
+      "original_width": "1696px",
+      "original_height": "1696px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/19e67726611f.png",
+      "caption": "",
+      "source": "",
+      "original_width": "1500px",
+      "original_height": "750px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/012e7c6fef22.png",
+      "caption": "",
+      "source": "",
+      "original_width": "2084px",
+      "original_height": "2084px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c01f4c91756c.jpg",
+      "caption": "",
+      "source": "",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a3210ccf9ad0.png",
+      "caption": "",
+      "source": "",
+      "original_width": "1224px",
+      "original_height": "792px"
+    }
+  ]
+}

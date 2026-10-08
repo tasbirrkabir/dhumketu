@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX drone UAV SkyBlade Bangladesh"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "DhumketuX drone UAV SkyBlade Bangladesh",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5f17481dc82a.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f4cdd26e443d.jpeg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1024px",
+      "original_height": "768px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c01f4c91756c.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7b7e83196a81.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2ea047468224.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1224px",
+      "original_height": "792px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5061d0888696.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    }
+  ]
+}

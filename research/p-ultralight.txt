@@ -1,0 +1,182 @@
+URL: https://dhumketux.com/ultralight-aircraft/
+ultralight aircraft 
+Skip to content
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Menu
+ Model: Bluebird Ultralight Electric Plane
+ The Bluebird is a cutting-edge two-seater ultralight electric plane designed for eco-conscious aviation enthusiasts, pilot training, and recreational flying. Its unique configuration, powered by 10 electric motors, ensures exceptional reliability, performance, and a smooth flying experience. The Bluebird combines sleek aerodynamic design with state-of-the-art electric propulsion technology, setting a new benchmark for ultralight aviation.
+ The Bluebird features a 10-motor distributed propulsion system for enhanced safety and smoother power distribution. Its high-capacity lithium-ion or solid-state batteries offer rapid charging and modular design for easy maintenance. The lightweight carbon composite structure optimizes energy use, while distributed motor placement improves efficiency. Near-silent electric motors reduce noise and ensure zero-emission operation, making it eco-friendly. The plane includes a ballistic recovery parachute system (BRS) for safety and multiple motors for reliability. Advanced avionics with GPS, autopilot, and energy monitoring ensure ease of use. Low operating costs come from minimal maintenance and reduced energy expenses, with potential for renewable energy charging.
+ Key Specifications:
+Seats: 2-person (pilot + passenger/student)
+Motorization: 10 electric motors (distributed propulsion system for enhanced safety and efficiency)
+Applications: Instructional, recreational, and eco-friendly flying
+Length: 6.5 meters (21’03”)
+Height: 1.9 meters (6’02”)
+Wingspan: 10.7 meters (35’01”)
+Wing Surface Area: 9.5 m² (102.3 ft²)
+ Performance:
+Empty Weight: 290 kg (638 lb)
+Maximum Take-off Weight: 600 kg (1,323 lb)
+Battery Capacity: Advanced modular battery packs with a range of 200–400 km (124–248 miles), depending on flight conditions.
+Power Consumption: ~25 kWh per hour of flight (equivalent to the combined output of the 10 motors).
+Maximum Speed: 200 km/h (124 mph).
+Cruise Speed: 150–180 km/h (93–112 mph).
+Stall Speed: 65 km/h (40 mph).
+Rate of Climb: 7 m/s (23 ft/s).
+ Project Progress: Abandon Duo to Funding Cut 
+ Work done
+ 37%
+ Fund Needed
+ If any investor wants to invest us, contact us at Xdhumketu@gmail.com
+ Story of This Project 
+ The Journey of Bluebird: A Dream that Took Flight in Spirit
+The story of Bluebird, DhumketuX’s first ultralight electric aircraft prototype, is one of ambition, resilience, and lessons learned. Born out of a passion for innovation, this project not only marked the beginning of DhumketuX but also laid the foundation for the organization’s eventual groundbreaking achievements in aerospace.
+The Humble Beginnings
+In 2015, the dream of building an electric aircraft took root as a university student project. Fueled by enthusiasm and the vision of a sustainable future, a group of determined students began sketching the design of Bluebird. By 2017, the design was complete, and the project transitioned from paper to reality in 2018.
+To fund the construction, the team relied on personal savings from tuition earnings and contributions from friends and well-wishers. With limited resources but boundless energy, they started building the aircraft at Alpha Science Lab, an institution that would become central to Bluebird’s story.
+Challenges and the Halt
+Progress was steady but slow. By 2019, the project had reached 37% completion. However, the ambitious endeavor faced its greatest challenge: a lack of funds. Without adequate financial support, the project came to a halt, leaving the partially built Bluebird grounded.
+Despite the setback, Bluebird’s unfinished body and parts remain preserved at Alpha Science Lab, a testament to the team’s early ingenuity and determination. Today, they stand as an inspiration to future innovators, a reminder of the dreams that spark change.
+ A New Direction
+The halt of Bluebird was not the end but a turning point. The team behind DhumketuX shifted their focus to rocketry, a decision that would transform the aerospace landscape in Bangladesh. This pivot not only revitalized the organization but also redefined its trajectory, enabling it to achieve groundbreaking milestones in space exploration.
+Legacy of Bluebird
+Though Bluebird never soared the skies, its legacy is profound. It represents the beginning of DhumketuX’s journey, a chapter filled with perseverance and hard-earned lessons. The project ignited the spirit of innovation that continues to drive DhumketuX forward, reminding us that even unrealized dreams can set the stage for monumental success.
+Bluebird’s story is a celebration of bold ambition, the resilience to overcome obstacles, and the determination to pursue a vision, no matter how challenging the journey.
+DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
++880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil

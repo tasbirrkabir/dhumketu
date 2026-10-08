@@ -1,0 +1,93 @@
+{
+  "note": "Authentic DhumketuX visual assets for the redesign concept. Every file originates from a DhumketuX-controlled source (dhumketux.com uploads, DhumketuX-published media) surfaced via public web image search. No third-party hardware imagery is presented as DhumketuX hardware. Renders published by DhumketuX are labeled as renders.",
+  "assets": [
+    {
+      "file": "nazrul-sslv-render.png",
+      "title": "Nazrul-01 SSLV — official vehicle render",
+      "sourceUrl": "https://dhumketux.com/nazrul-01-sslv/",
+      "originalSource": "DhumketuX",
+      "type": "render",
+      "alt": "DhumketuX Nazrul-01 small satellite launch vehicle render, white two-stage rocket with Bangladeshi flag markings"
+    },
+    {
+      "file": "fairing-deployment-render.png",
+      "title": "Payload fairing separation render",
+      "sourceUrl": "https://dhumketux.com/nazrul-01-sslv/",
+      "originalSource": "DhumketuX",
+      "type": "render",
+      "alt": "Render of a DhumketuX payload fairing separating in flight, exposing a small satellite above Earth"
+    },
+    {
+      "file": "engine-static-fire-test.jpg",
+      "title": "Liquid engine static fire test with thrust trace",
+      "sourceUrl": "https://dhumketux.com/liquid-propulsion/",
+      "originalSource": "DhumketuX",
+      "type": "photograph",
+      "alt": "Static fire test of a DhumketuX liquid rocket engine at night with a thrust measurement trace overlaid"
+    },
+    {
+      "file": "team-launch-rail.jpg",
+      "title": "DhumketuX team with Bidrohi rocket on launch rail",
+      "sourceUrl": "https://dhumketux.com/",
+      "originalSource": "dhumketux.com",
+      "type": "photograph",
+      "alt": "DhumketuX team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh"
+    },
+    {
+      "file": "team-rocket-library.jpg",
+      "title": "DhumketuX team with rocket, Mymensingh",
+      "sourceUrl": "https://dhumketux.com/our-team/",
+      "originalSource": "The Business Standard (DhumketuX team photo)",
+      "type": "photograph",
+      "alt": "DhumketuX team in branded hoodies around a DhumketuX rocket on a launch rail in front of the Mymensingh library building"
+    },
+    {
+      "file": "founder-nahiyan-al-rahman.jpg",
+      "title": "Nahiyan Al Rahman — founder portrait",
+      "sourceUrl": "https://dhumketux.com/our-team/",
+      "originalSource": "DhumketuX",
+      "type": "photograph",
+      "alt": "Portrait of Nahiyan Al Rahman, founder of DhumketuX"
+    },
+    {
+      "file": "a2i-award-2022.jpg",
+      "title": "a2i Rocketry Innovation Challenge 2022 — winner",
+      "sourceUrl": "https://dhumketux.com/history/",
+      "originalSource": "dhumketux.com",
+      "type": "photograph",
+      "alt": "Nahiyan Al Rahman Oli receiving the winner award at Bangladesh's a2i Rocketry Innovation Challenge 2022"
+    },
+    {
+      "file": "cansat-render.png",
+      "title": "CanSat — electronics render",
+      "sourceUrl": "https://dhumketux.com/cansat/",
+      "originalSource": "DhumketuX",
+      "type": "render",
+      "alt": "Render of the DhumketuX CanSat cylindrical electronics stack with exposed circuit boards"
+    },
+    {
+      "file": "cubesat-render.png",
+      "title": "Bangla 01 CubeSat render",
+      "sourceUrl": "https://dhumketux.com/cube-satellite/",
+      "originalSource": "DhumketuX",
+      "type": "render",
+      "alt": "Render of the DhumketuX Bangla 01 1U CubeSat with body-mounted solar panels"
+    },
+    {
+      "file": "delivery-drone-render.jpg",
+      "title": "Delivery UAV render",
+      "sourceUrl": "https://dhumketux.com/drone/",
+      "originalSource": "DhumketuX",
+      "type": "render",
+      "alt": "Render of a DhumketuX quadcopter delivery drone carrying a cargo box"
+    },
+    {
+      "file": "vtol-concept-render.jpg",
+      "title": "VTOL passenger aircraft concept",
+      "sourceUrl": "https://dhumketux.com/drone/",
+      "originalSource": "DhumketuX",
+      "type": "render",
+      "alt": "Concept render of a DhumketuX electric VTOL passenger aircraft over a city skyline"
+    }
+  ]
+}

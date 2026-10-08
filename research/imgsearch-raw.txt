@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX Bidrohi rocket Bangladesh"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "DhumketuX Bidrohi rocket Bangladesh",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/60e5d8c56855.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/95d92ac91787.jpg",
+      "caption": "",
+      "source": "LinkedIn",
+      "original_width": "800px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bf26d19fc803.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/2ea047468224.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1224px",
+      "original_height": "792px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/21dc0649b72d.jpg",
+      "caption": "",
+      "source": "Daily Times Of Bangladesh",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f304c789d36b.jpg",
+      "caption": "",
+      "source": "DefenceHub | Global Military & Security Forum",
+      "original_width": "1280px",
+      "original_height": "720px"
+    }
+  ]
+}

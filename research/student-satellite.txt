@@ -1,0 +1,244 @@
+URL: https://dhumketux.com/student-satellite-program/
+Student Satellite Program
+Skip to content
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Menu
+ Student Satellite Program
+ CubeSat & CanSat pathways for school, college, and university students to design, build, and launch real satellites with DhumketuX.
+ In collaboration with Rocketry Bangladesh Community & Bangladesh Aerospace Exploration & Research Center (BAXRC).
+ Apply as a Student Team
+ Launch Your Sat to Space
+ Program Overview
+ The DhumketuX Student Satellite Program gives school, college, and university teams a complete journey from classroom concept to flight-ready hardware. Teams design, build, test, and prepare their own CubeSat or CanSat projects under industry-style quality standards, with the opportunity to fly on a DhumketuX rocket.
+ All missions are educational and non-weaponized, with clear policies for safety, NDA, and responsible data use. The program is designed as a real-world training ground for the next generation of satellite and space systems engineers.
+ Ecosystem Partners
+ 🚀 Rocketry Bangladesh Community – student rocketry & CanSat collaboration
+ 🛰️ Bangladesh Aerospace Exploration & Research Center (BAXRC) – research, governance & lab alignment
+ 🌍 Dhumketu Exploration Technologies Ltd. (DhumketuX) – launch systems, standards & mission integration
+ All activities are coordinated to support safe, high-impact STEM learning and real flight opportunities.
+ National Competition
+ “Launch Your Sat to Space”
+ As the flagship initiative of the Student Satellite Program, “Launch Your Sat to Space” is a national competition inviting school, college, and university teams to design and build flight-ready student satellites.
+ 🎯 5 Student CubeSats
+ In the initial phase, up to 5 student-built CubeSat satellites will be selected as payloads on DhumketuX rockets. These missions will be created by teams from schools, colleges, and universities across Bangladesh.
+ The selected CubeSats will offer valuable data for research and education, promote STEM engagement, and give young engineers real experience in contributing to space exploration.
+ 📋 Selection & Readiness
+ Open to school, college, and university teams across Bangladesh.
+ Judged on mission concept, engineering quality, safety, documentation, and educational value.
+ Final launch approval depends on passing DhumketuX technical, safety, and regulatory reviews.
+ Program Tracks
+ Track 1
+ High School – CanSat & Beginner CubeSat
+ Simple, robust structures tested with basic drop tests.
+ Short-range communication (1–5 km) to a ground station.
+ Safe power systems (battery/solar) tested for ~6 hours.
+ Basic environmental checks (0–40°C, humidity tolerance).
+ Fundamental sensors (temperature, light, pressure) with basic data logging.
+ Strong teams can later evolve toward a 1U CubeSat model and may be considered for future "Launch Your Sat to Space" cycles.
+ Track 2
+ College & University – 1U CubeSat
+ Standard 1U CubeSat (10 × 10 × 10 cm; up to ~1.33 kg).
+ Structural and vibration tests for launch survivability.
+ Long-range communication (10–20 km, mission dependent).
+ Power management for ~24 hours with power-saving modes.
+ Thermal and environmental tests (typically -10°C to 50°C; low-pressure if available).
+ Autonomous data handling (collection, storage, transmission with error checking).
+ Optional attitude control (reaction wheels, magnetorquers) for advanced missions.
+ Teams from this track are the primary candidates for the 5 sponsored CubeSat launch slots under "Launch Your Sat to Space".
+ Quality & Safety Requirements
+ To protect the rocket, other payloads, and all teams involved, every student satellite must comply with defined quality and safety standards. These are adjusted by track but follow the same core philosophy: if it is not safe or not tested, it does not fly.
+ Structural Tests: Drop tests (school) and vibration tests (college/university) with no loose or broken parts.
+ Communication Tests: Verified data link over the required distance (1–5 km for school, 10–20 km for university).
+ Power Tests: Continuous operation tests (≈6 hours for school; ≈24 hours for university) with stable supply.
+ Thermal & Environment: Functionality across defined temperature ranges and basic humidity/low-pressure tests.
+ Data Handling: Sensors must collect meaningful data and demonstrate storage/transmission reliability.
+ Deployment Safety: Satellite mounting and deployment mechanisms must not pose any risk to the rocket or other payloads.
+ EMI Awareness: Electromagnetic emissions must not interfere with vehicle systems or other satellites.
+ Documentation: All tests and results must be documented and submitted for DhumketuX review.
+ Additional Launch Options for Universities
+ Beyond the 5 sponsored student CubeSat slots through “Launch Your Sat to Space”, universities may also request independent CubeSat launch opportunities.
+ Additional satellites outside the 5 selected student CubeSats are treated as custom launch services.
+ A launch service fee will apply, based on payload mass, mission profile, integration complexity, and regulatory overhead.
+ All such missions still follow the same safety, NDA, and quality standards as student missions.
+ Every mission remains strictly educational, non-weaponized, and compliant with national and international regulations.
+ Universities interested in paid launch slots outside the competition can contact DhumketuX with the subject line: “Student Satellite – Independent Launch Request – [University Name]”.
+ NDA & Data Protection
+ All participating teams sign a Non-Disclosure Agreement (NDA) to protect both student designs and DhumketuX systems. Design files, schematics, software and test reports are treated as confidential and are only used for:
+ Technical review and feedback.
+ Safety and quality verification before launch.
+ Internal learning to improve future education missions.
+ Detailed designs are not published or shared externally without written consent from the team or institution, except where limited disclosure is required by law or regulation.
+ Intellectual Property (IP)
+ By default, the core design IP of each student satellite remains with the team and/or its institution (subject to their internal policies). DhumketuX may request a non-exclusive internal research license to:
+ Analyze performance and failures.
+ Improve testing standards and education content.
+ Refine future editions of the Student Satellite Program.
+ Any broader reuse, publication, or commercialization involving student designs will be covered by separate written agreements with the teams and institutions involved.
+ Why Join the Student Satellite Program?
+ 🛰️ Hands-on Space Mission Experience
+ Work through the entire lifecycle of a satellite project: concept, design, testing, integration, and launch.
+ 📡 Expert Mentorship
+ Get feedback from DhumketuX engineers and ecosystem partners on electronics, structures, software, and test plans.
+ 🏅 Certificates & Recognition
+ Earn official recognition from DhumketuX for your contribution to mission design, testing, and launch readiness.
+ 🚀 Launch Opportunities
+ Up to 5 student CubeSat missions will be selected for sponsored launch opportunities through “Launch Your Sat to Space”. Additional paid launch options are available for universities outside these 5 slots.
+ 📚 Career & Academic Boost
+ Real satellite mission experience strengthens scholarship applications, MS/PhD admissions, and job prospects in aerospace, electronics, and software.
+ 🤝 Networking & Community
+ Connect with DhumketuX, Rocketry Bangladesh, BAXRC, and other student teams across the country to build a long-term aerospace network.
+ Who Can Apply?
+ High Schools: With at least one supervising teacher or coordinator.
+ Colleges & Universities: With a supervising faculty member.
+ Multidisciplinary Teams: EEE, CSE, ME, AE, Physics and other relevant fields are encouraged.
+ Priority is given to teams that demonstrate strong documentation habits, clear learning objectives, and willingness to follow the full testing and review process.
+ ⚠️ Important: DhumketuX does not sell or provide aerospace chemicals to any student, team, or institution. All missions are conducted under strict safety and compliance rules using approved materials and processes.
+ How to Join
+ Step 1 – Form a Team: 4–15 members with defined roles (structure, electronics, software, tests, documentation).
+ Step 2 – Secure a Supervisor: Teacher (school) or faculty advisor (college/university).
+ Step 3 – Prepare a Concept Note: Mission name, objectives, architecture (CanSat / 1U CubeSat), available labs and tools.
+ Step 4 – Contact DhumketuX: Use the official website contact form and mention “Student Satellite Program – [Institution Name]”.
+ Step 5 – Onboarding: NDA & formalities, quality briefing, and a milestone-based timeline to reach flight readiness or competition submission.
+ Contact DhumketuX
+ Built on Collaboration
+ The Student Satellite Program and “Launch Your Sat to Space” are part of a long-term ecosystem connecting DhumketuX, Rocketry Bangladesh Community, BAXRC, and academic institutions to create a true satellite and space engineering pipeline.
+ If you are a student, teacher, or department head who wants to see your campus build and fly a satellite, this is your starting point. Join us and help write the next chapter of space innovation with DhumketuX.
+ Start Your Student Satellite Journey
+DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
++880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil

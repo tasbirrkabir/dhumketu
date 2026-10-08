@@ -1,0 +1,68 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX Putimach 01 first rocket launch Mymensingh Bangladesh"
+✅ Got 8 images
+{
+  "success": true,
+  "query": "DhumketuX Putimach 01 first rocket launch Mymensingh Bangladesh",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bf26d19fc803.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ffd92dbb5234.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1000px",
+      "original_height": "1001px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5061d0888696.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/386be936a4d1.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b5e0e57a5703.jpeg",
+      "caption": "",
+      "source": "The Business Standard",
+      "original_width": "899px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ee568112f5bf.jpg",
+      "caption": "",
+      "source": "The Business Standard",
+      "original_width": "1600px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c90ade43168a.jpg",
+      "caption": "",
+      "source": "The Business Standard",
+      "original_width": "1600px",
+      "original_height": "789px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8320809bbace.jpg",
+      "caption": "",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    }
+  ]
+}

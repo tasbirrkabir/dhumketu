@@ -1,0 +1,68 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX team aerospace Bangladesh Nahiyan Al Rahman"
+✅ Got 8 images
+{
+  "success": true,
+  "query": "DhumketuX team aerospace Bangladesh Nahiyan Al Rahman",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/322fbbfc69cd.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "851px",
+      "original_height": "1064px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ffd92dbb5234.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1000px",
+      "original_height": "1001px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/21dc0649b72d.jpg",
+      "caption": "",
+      "source": "Daily Times Of Bangladesh",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/386be936a4d1.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a076854c671d.png",
+      "caption": "",
+      "source": "Dhaka University",
+      "original_width": "1392px",
+      "original_height": "919px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8c123503a6b3.jpg",
+      "caption": "",
+      "source": "LinkedIn",
+      "original_width": "720px",
+      "original_height": "1280px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b6293515ad2b.jpg",
+      "caption": "",
+      "source": "LinkedIn",
+      "original_width": "800px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ea8cbf38de96.jpg",
+      "caption": "",
+      "source": "LinkedIn",
+      "original_width": "800px",
+      "original_height": "1000px"
+    }
+  ]
+}

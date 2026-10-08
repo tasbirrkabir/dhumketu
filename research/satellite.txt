@@ -1,0 +1,224 @@
+URL: https://dhumketux.com/satellite/
+Satellite
+Skip to content
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Menu
+ EXPLORE
+ Cube Satellite
+ Why CubeSat “Bangla 01” Matters:
+Affordable Space Technology: CubeSats like Bangla 01 offer cost-effective ways for nations to participate in space exploration without the hefty price tags of traditional satellite systems.
+Boosting Bangladesh’s Technological Advancement: This project highlights Bangladesh’s strides in technology, innovation, and space research, positioning the country as a rising player in the global space race.
+A Step Towards Future Space Missions: Bangla 01 is just the beginning. DhumketuX is already planning future CubeSat missions to expand on the capabilities and applications initiated by this historic launch.
+Launch Vehicle: BidrohiRocket
+The BidrohiRocket, a suborbital rocket developed by DhumketuX, is the dedicated launch vehicle for the Bangla 01 CubeSat mission. With its capability to reach the Kármán line (100 km above sea level), BidrohiRocket represents Bangladesh’s leap into commercial spaceflight. This historic mission will not only carry Bangla 01 into space but also pave the way for future aerospace innovations from Bangladesh.
+Join the Journey with DhumketuX: Stay tuned for updates as we progress toward the launch of Bangla 01. DhumketuX invites students, researchers, and commercial partners to collaborate and contribute to this monumental project. Together, we can reach for the stars and showcase the technological prowess of Bangladesh on the world stage.
+ CubeSat "Bangla 01" – DhumketuX's Pioneer Satellite Mission
+ Mission Overview: DhumketuX proudly introduces its first CubeSat, Bangla 01, a groundbreaking step in Bangladesh’s space technology journey. This small yet powerful satellite is designed for cutting-edge scientific research, technological innovation, and national pride, symbolizing Bangladesh’s growing presence in the space industry.
+Key Features of Bangla 01 CubeSat:
+Size and Structure:
+CubeSat Type: 1U
+Dimensions: 10 cm x 10 cm x 10 cm
+Weight: Approx. 1.33 kg
+Mission Objectives:
+Earth Observation: Capturing high-resolution images for climate monitoring, agricultural insights, and disaster management.
+Communication Technology Testing: Bangla 01 will test new communication protocols designed to improve data transmission in nanosatellites.
+Scientific Data Collection: Gather atmospheric data to support research in environmental monitoring and space weather analysis.
+Launch and Orbit:
+Launch Vehicle: The CubeSat Bangla 01 will be launched aboard BidrohiRocket, DhumketuX’s suborbital space rocket designed for reaching the Kármán line.
+Launch Date: 2025/26
+Orbit: Low Earth Orbit (LEO), ensuring optimal coverage for Bangladesh and nearby regions.
+Operational Lifespan: Estimated at 12-18 months.
+Innovative Technology:
+Bangla 01 features advanced solar panels, miniaturized sensors, and energy-efficient components, making it a highly capable nanosatellite. Its innovative systems allow for real-time data transmission back to Earth, ensuring constant monitoring and updates.
+Educational and Research Impact:
+As a part of DhumketuX’s mission to inspire the next generation of scientists and engineers, Bangla 01 is an excellent platform for university partnerships and research initiatives. It offers students and researchers hands-on experience in satellite technology, promoting STEM education and innovation in Bangladesh.
+National Pride and Global Recognition:
+The launch of Bangla 01 signifies a major milestone for Bangladesh in space exploration. It aims to bring international recognition to Bangladesh’s growing space capabilities, fostering opportunities for future collaborations and investments in the aerospace sector.
+ Project Progress
+ 85%
+ Micro Satellite
+ Micro Satellite "Bijoy" – Pioneering Bangladesh's Space Exploration
+ Mission Overview: DhumketuX is proud to announce the upcoming launch of Bijoy, a revolutionary micro satellite designed to elevate Bangladesh’s capabilities in space exploration and technological innovation. Set to launch in 2027, Bijoy is a symbol of the nation’s progress in aerospace technology and a bold step towards advancing scientific research, environmental monitoring, and communication systems.
+Key Features of Bijoy Micro Satellite:
+Size and Structure:
+Satellite Type: Micro satellite
+Dimensions: 50 cm x 50 cm x 50 cm
+Weight: Approx. 100 kg
+Mission Objectives:
+Earth Observation: Bijoy will provide advanced remote sensing data, including high-resolution images for agricultural analysis, urban development planning, and natural disaster management.
+Communication Enhancement: The satellite will test and deploy improved communication protocols to enhance Bangladesh’s space-based data transmission capabilities.
+Climate and Environmental Monitoring: Bijoy is equipped with sensors to collect crucial atmospheric and environmental data, helping in weather forecasting and climate change studies.
+Launch and Orbit:
+Launch Vehicle: Bijoy will be launched aboard the SSLV Nazrul 01, a dedicated small satellite launch vehicle named after the iconic Bangladeshi poet Kazi Nazrul Islam.
+Launch Date: Scheduled for 2027
+Launch Location: Bangladesh
+Orbit: Low Earth Orbit (LEO), with a target altitude of 500-600 km to ensure optimal coverage for global data collection and communication.
+Operational Lifespan: Estimated at 5-7 years.
+Innovative Technology:
+Bijoy is outfitted with cutting-edge technologies, including solar panels, multispectral imaging sensors, and advanced onboard computers for autonomous operation. It has real-time communication links, allowing continuous data transmission to Earth and supporting critical research and applications.
+Educational and Research Impact:
+Bijoy will serve as a key resource for universities, research institutes, and government organizations in Bangladesh. It offers valuable data for scientific studies and provides a platform for academic collaboration in fields like space science, environmental studies, and satellite communication.
+National Pride and Global Impact:
+As Bangladesh’s first micro satellite, Bijoy embodies national pride and technological progress. It positions Bangladesh as a leader in space innovation within South Asia, promoting international collaboration and contributing to global space research.
+Why Micro Satellite “Bijoy” Matters:
+Strengthening Space Infrastructure: Bijoy is a crucial part of DhumketuX’s vision to develop a robust space infrastructure for Bangladesh. This satellite will enable the country to gather and utilize space-based data for national development.
+A Leap Toward Technological Sovereignty: By developing and launching its own satellites, Bangladesh is moving towards greater self-reliance in space technology, reducing dependence on external partners for data collection and communication services.
+Fostering Global Collaborations: Bijoy opens the door for international partnerships, inviting other countries and institutions to collaborate on space research, data-sharing, and joint missions.
+Launch Vehicle: SSLV Nazrul 01
+The SSLV Nazrul 01 is Bangladesh’s first small satellite launch vehicle, specifically designed for micro and nano satellites like Bijoy. The vehicle is named in honor of Kazi Nazrul Islam, the national poet of Bangladesh, reflecting the spirit of rebellion and innovation that drives DhumketuX’s aerospace missions. The SSLV Nazrul 01 will play a vital role in launching Bijoy into Low Earth Orbit, marking a new era of independent satellite launches from Bangladesh.
+Join the Mission with DhumketuX: As we prepare for the historic launch of Bijoy in 2027, DhumketuX invites collaborators, sponsors, and research institutions to be part of this milestone project. This mission represents a significant leap forward in Bangladesh’s space ambitions, and we are excited to bring our nation closer to the stars.
+ Project Progress
+ 20%
+ Project stratosphere
+ High-Altitude Weather Balloon (HAWB)
+ HAWB Project
+ The Stratosphere Weather Balloon Project represents an ambitious and innovative endeavor aimed at exploring and understanding the dynamic and complex atmospheric conditions in the stratosphere. This project leverages the use of high-altitude weather balloons as a platform for collecting valuable data and conducting experiments that contribute to our knowledge of Earth’s upper atmosphere.
+landscape imaging
+Atmospheric Research
+Technology Development
+Educational Outreach
+ To Join This Project
+ Apply Now
+ Project Progress
+ 20%
+ Funded By Sponsors 
+ Help Us To Make Things Possible
+ DONATE US
+DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
++880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil

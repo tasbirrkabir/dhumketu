@@ -1,0 +1,239 @@
+URL: https://dhumketux.com/our-policy/
+Our Policy and Core Values
+Skip to content
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Home
+Aerospace
+ Launch Vehicle
+ Bayanno
+ Ekushey 21
+ Bidrohi SR
+ Nazrul -01 SSLV
+ Space Billboard
+ Reusable Rocket
+ Satellite
+ CANSAT
+ Cube Satellite
+ Micro Satellite
+ Weather Balloon
+ R & D Technology
+ Sub-systems
+ Solid Propulsion
+ Liquid Propulsion
+ Thrusters
+ Test Launch – 1st Rocket
+Aviation
+ Drone
+ VTOL Manned Drone
+ SkyBlade Xero Prototype
+ SkyBlade X4 VTOL Drone
+ Cargo Airship
+ ultralight aircraft 
+ Helicopter
+Services
+About Us
+ Media
+ Space Articles
+ Media News
+ Our Social Media
+ Donate Our Programs
+ Team & Leadership
+ Investments opportunities
+ Careers
+ Vision
+ History
+ Collaborations
+ Social Responsibilities
+ Technological Capabilities
+ Our Policy and Core Values
+ Contact Us
+Our Programs
+ Our Community Platforms
+ DhumketuX Community
+ DhumketuX Community – Junior Team
+ Rocketry Community Bangladesh
+ Campus TechTalks
+ FPGA & VLSI Community Bangladesh
+ Advance Robotics “ROS & ROS2” Community Bangladesh
+ VTOL Drone Community Bangladesh
+ Bangladesh Aerospace & Aviation Association (BAAA)
+ Bangladesh Aerospace Exploration & Research Center (BAXRC)
+ Student virtual lab
+ 🔍 Find Your Name
+ DhumketuX Internship Program
+ Campus-Industry Collaboration
+ Student Rocket Program
+ Student Satellite Program
+ “Design, Build, Fly” DBF Program
+ Donate Students Program
+ Student Startup Business
+Shop
+ Book A Launch 
+ Menu
+ 📜 Our Policy & Core Values · DhumketuX
+ Engineering with Integrity, Safety and Responsibility
+ Dhumketu Exploration Technologies Ltd. (DhumketuX) is building long-term capability in rocketry, UAVs, satellite-related systems, avionics and mission software from Bangladesh. Our work is guided by clear policies and core values that prioritize safety, ethics, responsible technology use and national capacity building.
+ This page outlines how we think about safety, confidentiality, collaboration, student engagement and the responsible use of high-impact technologies.
+ 1. Our Core Values
+ Our core values are not slogans—they are filters for everyday decisions at DhumketuX, from small design choices to long-term partnerships.
+ 🔎 Integrity & Transparency
+ Honest communication, realistic claims and traceable decisions. We avoid exaggeration and let data, documentation and results speak for themselves.
+ ⚠️ Safety First
+ No test, schedule or publicity is more important than safety. Every team member has the right to stop a test if something looks or feels unsafe.
+ 🛠️ Engineering Excellence & Discipline
+ We focus on systems that work reliably in the real world: strong fundamentals, iterative improvement and a documentation-first mindset.
+ 📚 Learning, Curiosity & Humility
+ We learn from experiments, tests and mistakes. Questions are welcome, feedback is valued and better ideas can come from anyone on the team.
+ 🇧🇩 National Capacity Building
+ We see DhumketuX as part of a wider ecosystem: building skills, tools and know-how inside Bangladesh through projects, labs and structured programs.
+ 🤝 Respect & Collaboration
+ We work in multidisciplinary teams and treat each other with respect—no ego, no discrimination, just shared focus on building high-quality systems.
+ 🌍 Responsibility & Sustainability
+ We think long-term about the impact of our technologies, minimizing unnecessary risk and waste while designing systems that can be maintained and upgraded.
+ 2. Ethics, Compliance & Governance
+ Because we work with high-impact technologies, DhumketuX follows strict ethics and compliance standards covering law, NDA, intellectual property and fair practice.
+ ⚖️ Legal & Regulatory Compliance
+ Respect for all applicable laws and regulations of Bangladesh.
+ Working with relevant authorities and institutions where needed.
+ Updating internal practices as policies and rules evolve.
+ 🔐 NDA, Confidentiality & IP
+ Many projects require signed Non-Disclosure Agreements (NDA).
+ Internal designs, test data, code and documents are not shared externally without written approval.
+ Intellectual property (IP) ownership is defined clearly in contracts, MoUs or project agreements.
+ 🧭 Anti-Corruption & Fair Practice
+ Zero tolerance for unethical shortcuts or hidden deals.
+ Structured processes for collaborations and procurement.
+ Selection based on merit, work ethic and fit—not politics or favoritism.
+ 3. Safety & Risk Management Policy
+ With rocketry, high-energy tests, UAVs and electronics, safety is not optional. It is built into how we plan, test and operate.
+ 🛡️ Safety Principles
+ No experiment is worth risking life or long-term health.
+ Any team member can call a stop if they see something unsafe.
+ Safety is prioritized over timelines or publicity.
+ 🏭 Labs, Workshops & Test Sites
+ Written procedures and checklists for critical operations.
+ Mandatory use of appropriate personal protective equipment (PPE).
+ Controlled access to high-risk areas during sensitive tests.
+ 📘 Documentation & Incident Learning
+ Logging of tests, anomalies, near-misses and incidents.
+ Root cause analysis and corrective measures when issues arise.
+ Continuous updating of procedures based on lessons learned.
+ 4. Research, Learning & Student Engagement Policy
+ DhumketuX actively works with students, interns and young engineers through structured programs that focus on learning, contribution and real-world exposure.
+ 4.1 Fair Access & Clear Expectations
+ Transparent communication about program structure, duration and workload.
+ Focus on meaningful tasks, not just observation or symbolic work.
+ Clear understanding of how each participant’s work fits into larger projects.
+ 4.2 Certificates & Experience Records
+ To protect the value of DhumketuX certifications, we maintain strict conditions on completion and verification.
+ Certificates (industrial training, internship, trainee engineer and other tracks) are issued only when:
+ The candidate has completed the full agreed timeline.
+ Attendance, participation and basic documentation are verified.
+ Minimum assigned tasks and contributions are completed.
+ If someone does not complete the terms, conditions or time period, their internship or training may be automatically cancelled and no certificate will be issued.
+ All participants must fully respect NDA obligations and confidentiality rules.
+ 4.3 Academic Integrity
+ No tolerance for plagiarism in reports, code, designs or presentations.
+ Participants are encouraged to use proper citations and honest reporting of results.
+ We value original thinking, careful validation and clear explanation over superficial speed.
+ 5. Responsible Use of Technology
+ Rocketry, UAVs and satellite-related systems can create enormous value—but they must be used carefully and responsibly. DhumketuX is committed to positive and compliant applications.
+ Focusing on applications that support research, connectivity, science, education and long-term national capability.
+ Avoiding reckless or unregulated deployment of advanced technologies.
+ Ensuring that any external use of DhumketuX technology is properly documented, approved and aligned with our policies.
+ 6. Materials & Aerospace Chemicals Policy
+ Handling aerospace-related materials and chemicals requires strict safety, compliance and leadership oversight.
+ NB: DhumketuX does not sell or provide any aerospace chemicals to external companies, teams or individuals.
+ All aerospace-related chemicals and sensitive materials are managed internally under controlled conditions.
+ Most projects are executed under DhumketuX leadership and our conditions, with strict procedures for safety and compliance.
+ We do not support informal, unregulated or unsafe use of advanced materials or processes.
+ 7. Collaboration, Partnerships & Transparency
+ DhumketuX works with universities, research groups and organizations under clear written understandings that protect safety, confidentiality and intellectual property.
+ Use of MoUs or project agreements that define scope, responsibilities and boundaries.
+ Transparent communication of goals, limitations and realistic timelines.
+ Co-designing programs, labs or training modules that align with our core capabilities.
+ 8. Decision-Making Framework
+ Every major decision at DhumketuX passes through two filters:
+ Is it technically sound?
+Do we understand the physics, engineering and risks? Do we have the necessary skills, tools and resources?
+ Is it aligned with our values and policies?
+Is it safe, compliant, ethical and positive for the long-term ecosystem we are trying to build?
+ If either answer is “no”, we stop, rethink or redesign before moving forward.
+ 9. Reporting Concerns & Getting in Touch
+ If you are part of a DhumketuX project, a collaborator, a student or an external partner and you have questions or concerns about our policies, you are encouraged to reach out.
+ Email: xdhumketu@gmail.com
+ Website: www.dhumketux.com
+ Please mention: your name, role (student, collaborator, team member, etc.) and a short description of your question, concern or proposal.
+ 📧 Email xdhumketu@gmail.com
+ 🌐 Visit Main Website
+DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
++880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil

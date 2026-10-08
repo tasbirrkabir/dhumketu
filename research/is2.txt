@@ -1,0 +1,68 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX Bayanno Ekushey rocket Bangladesh aerospace"
+✅ Got 8 images
+{
+  "success": true,
+  "query": "DhumketuX Bayanno Ekushey rocket Bangladesh aerospace",
+  "count": 8,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bf26d19fc803.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/72adf1e3639b.png",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1513px",
+      "original_height": "851px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/012e7c6fef22.png",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "2084px",
+      "original_height": "2084px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/386be936a4d1.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b4facc2e6888.png",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "2048px",
+      "original_height": "1152px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5f17481dc82a.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5061d0888696.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/f4cdd26e443d.jpeg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1024px",
+      "original_height": "768px"
+    }
+  ]
+}

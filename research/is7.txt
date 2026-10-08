@@ -1,0 +1,54 @@
+🚀 Initializing Z-AI SDK...
+🔎 Searching images: "DhumketuX rocket engine propulsion Red Chili Boson"
+✅ Got 6 images
+{
+  "success": true,
+  "query": "DhumketuX rocket engine propulsion Red Chili Boson",
+  "count": 6,
+  "ranked": false,
+  "captioned_count": 0,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6ba9ba3a7e9c.jpg",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/8fdc7e0d6c93.png",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "768px",
+      "original_height": "1536px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c01f4c91756c.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7b7e83196a81.jpg",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/386be936a4d1.png",
+      "caption": "",
+      "source": "dhumketux.com",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a3210ccf9ad0.png",
+      "caption": "",
+      "source": "DhumketuX",
+      "original_width": "1224px",
+      "original_height": "792px"
+    }
+  ]
+}
