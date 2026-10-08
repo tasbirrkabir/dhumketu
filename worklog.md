@@ -68,3 +68,27 @@ Stage Summary:
 - Difference from old build (acceptance): light-first vs dark-only, Inter editorial vs Space Grotesk+mono labels, film narrative vs HUD section stack, editorial features vs card grid+dialog, hairlines/whitespace vs bordered cards/grids, no yellow anywhere
 - New captures: research/rebuild-*.png (desktop hero/intro/bidrohi/agni/nazrul-fixed/tech/mile/vision/people/programs/end, mobile hero/menu/bidrohi/end, tablet, 404)
 - Design authority now: REDESIGN.md (supersedes DESIGN-SYSTEM.md §2)
+
+---
+Task ID: rebuild-2
+Agent: Z.ai Code (main)
+Task: HARD MINIMALISM PASS on the rebuilt DhumketuX concept site. User feedback: "i said minimalist design" — the rebuild-1 result was still too dense (paragraphs everywhere, eyebrow micro-labels, multi-column text grids, 18.7k px page).
+
+Work Log:
+- Full-page audit via agent-browser (8 scroll captures + section/image inventory) identified the density offenders: 4–5-line advisor bios, 4-line vision pillar paragraphs, eyebrow labels (MILESTONES/MEDIA/P-01...), 3-column paragraph grids, intro paragraphs on every section
+- SectionIntro primitive: removed eyebrow entirely — the statement IS the section marker (heading level 2, still accessible)
+- intro.tsx: single column, statement trimmed to 2 sentences, kept the 4 quiet stats; removed eyebrow + 12-col grid
+- flagship.tsx: each project now = index → name → ONE sentence → one inline fact line ("Label value · Label value · Label value", first 3 metrics) → image; killed all 4-col fact grids; kept the 120+ kN typographic moment
+- technology.tsx: rows are index + title ONLY (2xl/3xl titles, hairline rows) — no summaries
+- milestones.tsx: dropped intro paragraph; year/title/body rows kept (compact editorial history) + a2i photo
+- vision.tsx: giant statement + one-line disclaimer + pillar TITLES ONLY (no paragraph grid) + Bangla quote with one-line caption + fairing render
+- people.tsx: portrait + statement + movement line + advisors as one-line "Name — Role" list; killed founder bio block + advisor bio paragraphs
+- programs.tsx: statement + one line + 3 track names + student-program one-liners; killed journey block
+- media.tsx / final-cta.tsx: removed eyebrow / trimmed support line
+- Retired qa-eyebrow from globals.css; not-found.tsx uses qa-data line instead
+- Verified: page 18,754 → 16,696 px with far fewer words per screen; desktop captures at 8 scroll positions; mobile 390 (hero/Bidrohi/CTA/footer) no horizontal overflow; mobile menu open → Vision link → lands at section (scrollY 8672); agent-browser errors empty; dev.log all 200s; lint clean
+
+Stage Summary:
+- The site now reads as Apple-minimal: one dominant idea per screen, no eyebrows, no paragraph grids, hairline structure, generous whitespace
+- Knowledge preserved: all facts remain in src/content/* modules (single source of truth); homepage shows the quiet layer
+- Captures: research/audit/min-*.png, mob-*.png (mobile menu + navigation verified)

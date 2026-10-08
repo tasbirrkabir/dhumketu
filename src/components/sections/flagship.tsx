@@ -5,47 +5,30 @@ import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
  * FLAGSHIP WORK — one project at a time, presented editorially.
- * Four movements: Bidrohi SR (night) → Agni Bina (paper) → Boson (night)
- * → Nazrul 01 (paper). Facts are source-controlled from src/content/projects.ts.
+ * Minimalism rule per project: name → ONE sentence → one quiet fact line →
+ * (image). No fact grids, no category badges, no storytelling paragraphs.
+ * Facts are source-controlled from src/content/projects.ts.
  */
 
-function Facts({
-  items,
-  night = false,
-}: {
-  items: { label: string; value: string }[];
-  night?: boolean;
-}) {
+/** One quiet line: "Label value · Label value · Label value" */
+function FactLine({ items, night }: { items: { label: string; value: string }[]; night: boolean }) {
+  if (!items.length) return null;
   return (
-    <dl
-      className={`mt-12 grid grid-cols-2 gap-x-6 gap-y-8 border-t pt-8 sm:grid-cols-4 ${
-        night ? "border-night-line" : "border-line"
-      }`}
-    >
-      {items.map((m) => (
-        <div key={m.label}>
-          <dt className={`order-2 mt-1 text-sm ${night ? "text-chalk-2" : "text-ink-2"}`}>
-            {m.label}
-          </dt>
-          <dd
-            className={`qa-data order-1 text-lg font-medium ${
-              night ? "text-chalk" : "text-ink"
-            }`}
-          >
-            {m.value}
-          </dd>
-        </div>
+    <p className={`text-sm ${night ? "text-chalk-2" : "text-ink-2"}`}>
+      {items.map((m, i) => (
+        <span key={m.label}>
+          {i > 0 && <span className="mx-2.5 opacity-40" aria-hidden="true">·</span>}
+          <span className="opacity-70">{m.label}</span>{" "}
+          <span className={`font-medium ${night ? "text-chalk" : "text-ink"}`}>{m.value}</span>
+        </span>
       ))}
-    </dl>
+    </p>
   );
 }
 
-function CategoryLine({ children, night }: { children: string; night: boolean }) {
-  return (
-    <p className={`text-sm font-medium ${night ? "text-chalk-2" : "text-ink-2"}`}>
-      {children}
-    </p>
-  );
+/** First three metrics only — a fact line, not a table. */
+function firstFacts(project: ReturnType<typeof getProject>) {
+  return (project?.metrics ?? []).slice(0, 3).map(({ label, value }) => ({ label, value }));
 }
 
 export function Flagship() {
@@ -56,41 +39,29 @@ export function Flagship() {
 
   return (
     <section id="work" aria-label="Flagship work" className="scroll-mt-16">
-      {/* Section opener on paper */}
-      <div className="bg-paper pb-20 pt-8 sm:pb-28 lg:pb-36">
+      {/* Section opener on paper — statement only */}
+      <div className="bg-paper pb-16 pt-10 sm:pb-24 lg:pb-32">
         <Container>
-          <SectionIntro
-            eyebrow="Flagship work"
-            statement="The path to orbit runs through engines, vehicles and proof."
-          />
-          <Reveal delay={0.12}>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-2">
-              Four programs carry the mission — from the first solid boosters to a small
-              satellite launch vehicle. Presented the way engineering actually happens:
-              one system at a time.
-            </p>
-          </Reveal>
+          <SectionIntro statement="The path to orbit runs through engines, vehicles and proof." />
         </Container>
       </div>
 
       {/* 01 — Bidrohi SR · night */}
-      <article aria-label="Bidrohi SR" className="night bg-night py-24 text-chalk sm:py-32 lg:py-36">
+      <article aria-label="Bidrohi SR" className="night bg-night py-24 text-chalk sm:py-32 lg:py-40">
         <Container>
           <Reveal>
-            <div className="flex items-baseline justify-between gap-6">
-              <span className="qa-data text-sm text-chalk-2">01</span>
-              <CategoryLine night>Launch vehicle · Sub-orbital · In development</CategoryLine>
-            </div>
-            <h3 className="qa-display mt-8 text-[clamp(2.5rem,6vw,5rem)]">Bidrohi SR</h3>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-chalk-2">
+            <p className="qa-data text-sm text-chalk-2">01</p>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">Bidrohi SR</h3>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
               Bangladesh&rsquo;s first commercial sub-orbital space rocket — named after
-              Kazi Nazrul Islam&rsquo;s poem &ldquo;Bidrohi&rdquo;, the rebel. The vehicle
-              is being developed around the Agni Bina solid booster.
+              Kazi Nazrul Islam&rsquo;s poem, &ldquo;the rebel&rdquo;.
             </p>
-            <Facts night items={bidrohi?.metrics ?? []} />
+            <div className="mt-8">
+              <FactLine night items={firstFacts(bidrohi)} />
+            </div>
           </Reveal>
 
-          <ImageReveal className="mt-16 sm:mt-20">
+          <ImageReveal className="mt-14 sm:mt-16">
             <figure>
               <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
@@ -109,28 +80,24 @@ export function Flagship() {
         </Container>
       </article>
 
-      {/* 02 — Agni Bina · paper, typographic moment */}
-      <article aria-label="Agni Bina" className="bg-paper py-24 sm:py-32 lg:py-36">
+      {/* 02 — Agni Bina · paper, one typographic moment */}
+      <article aria-label="Agni Bina" className="bg-paper py-24 sm:py-32 lg:py-40">
         <Container>
           <Reveal>
-            <div className="flex items-baseline justify-between gap-6">
-              <span className="qa-data text-sm text-ink-3">02</span>
-              <CategoryLine night={false}>Solid propulsion · In development</CategoryLine>
-            </div>
-            <h3 className="qa-display mt-8 text-[clamp(2.5rem,6vw,5rem)] text-ink">
-              Agni Bina
-            </h3>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-2">
-              The 120+ kN solid rocket booster built for Bidrohi — a tribute to
-              Bangladesh&rsquo;s national poet and a symbol of self-reliant aerospace
-              power. Progress is reported at approximately 90% complete, with static
-              fire upcoming.
+            <p className="qa-data text-sm text-ink-3">02</p>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">Agni Bina</h3>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-2">
+              A 120+ kilonewton solid booster, built in Bangladesh for the Bidrohi
+              vehicle.
             </p>
+            <div className="mt-8">
+              <FactLine night={false} items={firstFacts(agni)} />
+            </div>
           </Reveal>
 
           <Reveal delay={0.1}>
             <p
-              className="qa-display mt-14 text-[clamp(3.5rem,11vw,9rem)] text-ink sm:mt-16"
+              className="qa-display mt-16 text-[clamp(3.5rem,11vw,9rem)] text-ink sm:mt-20"
               aria-label="120 plus kilonewtons of thrust"
             >
               120+&thinsp;<span className="text-ink-3">kN</span>
@@ -139,51 +106,44 @@ export function Flagship() {
               Target thrust of the Agni Bina booster
             </p>
           </Reveal>
-
-          <Reveal delay={0.14}>
-            <Facts items={agni?.metrics.filter((m) => m.label !== "Thrust") ?? []} />
-          </Reveal>
         </Container>
       </article>
 
       {/* 03 — Boson · night */}
-      <article aria-label="Boson" className="night bg-night py-24 text-chalk sm:py-32 lg:py-36">
+      <article aria-label="Boson" className="night bg-night py-24 text-chalk sm:py-32 lg:py-40">
         <Container>
           <Reveal>
-            <div className="flex items-baseline justify-between gap-6">
-              <span className="qa-data text-sm text-chalk-2">03</span>
-              <CategoryLine night>Liquid propulsion · In development</CategoryLine>
-            </div>
-            <h3 className="qa-display mt-8 text-[clamp(2.5rem,6vw,5rem)]">Boson</h3>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-chalk-2">
-              A next-generation liquid rocket engine for autonomous rocket landing —
-              LOX + kerosene, named after the physicist Satyendra Nath Bose. Purpose-built
-              for the reusable Revolation V1 platform.
+            <p className="qa-data text-sm text-chalk-2">03</p>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)]">Boson</h3>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-chalk-2">
+              A liquid rocket engine for autonomous rocket landing — LOX + kerosene,
+              named after the physicist Satyendra Nath Bose.
             </p>
-            <Facts night items={boson?.metrics ?? []} />
+            <div className="mt-8">
+              <FactLine night items={firstFacts(boson)} />
+            </div>
           </Reveal>
         </Container>
       </article>
 
-      {/* 04 — Nazrul 01 · paper + official render in night panel */}
-      <article aria-label="Nazrul 01" className="bg-paper py-24 sm:py-32 lg:py-36">
+      {/* 04 — Nazrul 01 · paper + official render on black */}
+      <article aria-label="Nazrul 01" className="bg-paper py-24 sm:py-32 lg:py-40">
         <Container>
           <Reveal>
-            <div className="flex items-baseline justify-between gap-6">
-              <span className="qa-data text-sm text-ink-3">04</span>
-              <CategoryLine night={false}>Small satellite launch vehicle · Concept</CategoryLine>
-            </div>
-            <h3 className="qa-display mt-8 text-[clamp(2.5rem,6vw,5rem)] text-ink">
+            <p className="qa-data text-sm text-ink-3">04</p>
+            <h3 className="qa-display mt-6 text-[clamp(2.5rem,6vw,5rem)] text-ink">
               Nazrul 01
             </h3>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-2">
-              A Small Satellite Launch Vehicle concept, planned around the Ibn Khaldun
-              liquid engine — dedicated launch capability for microsats and CubeSats,
-              extending toward cluster-engine configurations.
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-2">
+              A small satellite launch vehicle concept — dedicated launch capability
+              for microsats and CubeSats.
             </p>
+            <div className="mt-8">
+              <FactLine night={false} items={firstFacts(nazrul)} />
+            </div>
           </Reveal>
 
-          <ImageReveal className="mt-16 sm:mt-20">
+          <ImageReveal className="mt-14 sm:mt-16">
             <figure>
               <div className="night-voice relative aspect-[4/5] w-full overflow-hidden bg-night sm:aspect-[16/9]">
                 <Image
@@ -199,10 +159,6 @@ export function Flagship() {
               </figcaption>
             </figure>
           </ImageReveal>
-
-          <Reveal delay={0.1}>
-            <Facts items={nazrul?.metrics ?? []} />
-          </Reveal>
         </Container>
       </article>
     </section>

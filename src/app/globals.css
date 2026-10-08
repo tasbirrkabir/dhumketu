@@ -128,19 +128,6 @@ body {
   letter-spacing: 0;
 }
 
-/* Section eyebrow — quiet, one per section */
-.qa-eyebrow {
-  font-size: 0.8125rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-}
-
-.night .qa-eyebrow,
-.night-voice .qa-eyebrow {
-  color: var(--chalk-2);
-}
-
 /* Focus */
 :where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
   outline: 2px solid var(--signal);

@@ -18,14 +18,13 @@ export function Media() {
     >
       <Container>
         <Reveal>
-          <p className="qa-eyebrow">Media</p>
-          <h2 className="qa-statement mt-5 max-w-3xl text-[clamp(1.9rem,4vw,3rem)] text-ink">
+          <h2 className="qa-statement max-w-3xl text-[clamp(1.9rem,4vw,3rem)] text-ink">
             Documented across national media.
           </h2>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-ink-2">{mediaNote}</p>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-2">{mediaNote}</p>
         </Reveal>
 
-        <ul className="mt-14 sm:mt-16">
+        <ul className="mt-16 sm:mt-20">
           {featured.map((a, i) => (
             <Reveal as="li" key={a.id} delay={Math.min(i * 0.04, 0.16)}>
               <a

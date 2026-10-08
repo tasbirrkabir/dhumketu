@@ -20,8 +20,8 @@ export function FinalCta() {
 
         <Reveal delay={0.1}>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-chalk-2">
-            Build with DhumketuX — partners, universities, students and talent, all
-            working on real aerospace systems from inside Bangladesh.
+            Partners, universities, students and talent — build with us from
+            Bangladesh.
           </p>
         </Reveal>
 

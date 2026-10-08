@@ -15,15 +15,9 @@ export function Milestones() {
       className="scroll-mt-16 border-t border-line bg-paper py-24 sm:py-32 lg:py-40"
     >
       <Container>
-        <SectionIntro eyebrow="Milestones" statement="A short history of firsts." />
-        <Reveal delay={0.1}>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-ink-2">
-            From student labs to national recognition — every step is documented on the
-            public record.
-          </p>
-        </Reveal>
+        <SectionIntro statement="A short history of firsts." />
 
-        <ol className="mt-16 sm:mt-20">
+        <ol className="mt-20 sm:mt-28">
           {milestones.map((m, i) => (
             <Reveal as="li" key={m.id} delay={Math.min(i * 0.03, 0.15)}>
               <div

@@ -1,20 +1,19 @@
 import Image from "next/image";
-import { leadership, advisors, teamFacts } from "@/content/team";
+import { advisors, teamFacts } from "@/content/team";
 import { Container } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 /**
- * PEOPLE — paper movement. Founder portrait + editorial facts,
- * documentary team photograph, leadership & advisors as a text list.
+ * PEOPLE — portrait, one statement, names. Nothing else.
+ * Minimalism rule: people are presented as people (portrait + photo),
+ * advisors as one-line names — no bio paragraphs.
  */
 export function People() {
-  const founder = leadership[0];
-
   return (
     <section
       id="people"
       aria-label="People"
-      className="scroll-mt-16 border-t border-line bg-paper py-24 sm:py-32 lg:py-40"
+      className="scroll-mt-16 border-t border-line bg-paper py-28 sm:py-40 lg:py-48"
     >
       <Container>
         <div className="grid gap-14 md:grid-cols-12 md:gap-8">
@@ -37,55 +36,35 @@ export function People() {
 
           <div className="md:col-span-7 lg:col-span-7 lg:col-start-6">
             <Reveal>
-              <p className="qa-eyebrow">People</p>
-              <h2 className="qa-statement mt-5 text-[clamp(1.9rem,4.5vw,3.25rem)] text-ink">
-                {teamFacts.size} engineers and researchers, across{" "}
-                {"20+"} universities.
+              <h2 className="qa-statement text-[clamp(1.9rem,4.5vw,3.25rem)] text-ink">
+                {teamFacts.size} engineers and researchers, across 20+ universities.
               </h2>
             </Reveal>
 
             <Reveal delay={0.1}>
-              <p className="mt-7 max-w-xl text-base leading-relaxed text-ink-2">
-                {teamFacts.international}
-              </p>
-              <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-2">
+              <p className="mt-8 max-w-xl text-base leading-relaxed text-ink-2">
                 The movement behind it:{" "}
                 <span className="font-medium text-ink">{teamFacts.movement}</span>.
               </p>
             </Reveal>
 
             <Reveal delay={0.14}>
-              <div className="mt-12 border-t border-line pt-8">
-                <p className="text-sm font-medium text-ink">{founder.name}</p>
-                <p className="mt-0.5 text-sm text-ink-2">{founder.role}</p>
-                <p className="mt-3 max-w-xl text-[0.9375rem] leading-relaxed text-ink-2">
-                  {founder.bio}
-                </p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.18}>
-              <div className="mt-10 border-t border-line pt-8">
-                <p className="text-sm font-medium text-ink">Advisors</p>
-                <ul className="mt-4 space-y-5">
-                  {advisors.map((a) => (
-                    <li key={a.name}>
-                      <p className="text-[0.9375rem] font-medium text-ink">
-                        {a.name}
-                        <span className="font-normal text-ink-2"> — {a.role}</span>
-                      </p>
-                      <p className="mt-1 max-w-xl text-sm leading-relaxed text-ink-2">
-                        {a.bio}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <ul className="mt-14 border-t border-line pt-8">
+                {advisors.map((a) => (
+                  <li
+                    key={a.name}
+                    className="border-b border-line py-4 text-[0.9375rem] last:border-0"
+                  >
+                    <span className="font-medium text-ink">{a.name}</span>
+                    <span className="text-ink-2"> — {a.role}</span>
+                  </li>
+                ))}
+              </ul>
             </Reveal>
           </div>
         </div>
 
-        <ImageReveal className="mt-20 sm:mt-28">
+        <ImageReveal className="mt-24 sm:mt-32">
           <figure>
             <div className="relative aspect-[16/9] w-full overflow-hidden sm:aspect-[21/9]">
               <Image
