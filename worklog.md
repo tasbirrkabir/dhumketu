@@ -175,3 +175,26 @@ Stage Summary:
 - The site now has zero kicker/eyebrow headlines and zero em/en dashes anywhere in source or rendered copy; separators are "·" only.
 - /contact has a fully working, validated, spam-resistant contact form persisting to SQLite (ContactSubmission), reachable from every page via the ember "Book a Launch" pill → /contact#form.
 - ContactSubmission rows are readable via Prisma (no admin UI — out of scope); form copy and topics mirror the engagement routes from dhumketux.com.
+
+---
+Task ID: branding-6
+Agent: Z.ai Code (main)
+Task: Integrate the official DhumketuX logo (user-provided 857x857 PNG) across the site: header, mobile menu, footer, favicon, Apple touch icon, social OG card. Also close out the last remaining em-dash from the "remove all dashes" directive.
+
+Work Log:
+- Sampled official brand colors from the logo via sharp: field blue rgb(1,24,107) #01186B, orbit-ring red rgb(229,32,39) #E52027
+- Generated brand assets with sharp: public/media/dhumketux-logo.png (master copy), src/app/icon.png (64px favicon), src/app/apple-icon.png (180px), public/media/og-dhumketux.png (1200x630 share card: official logo centered on void bg with brand-blue radial glow + ember undertone); deleted the 437-byte placeholder src/app/icon.svg
+- site-header.tsx: desktop nav brand is now a 36px rounded-xl logo tile (ring-white/15, hover ring brighten) + "DhumketuX" wordmark, aria-label "DhumketuX home"; mobile full-screen menu bar uses the same tile + wordmark
+- site-footer.tsx: identity block now leads with a 44px logo tile + wordmark (ember X); added .glow-brand radial (left) beside the existing .glow-ember (right) so the footer glow pair echoes the logo palette (blue field + ember flame)
+- globals.css: new .glow-brand utility (logo field blue #01186B lifted to rgba(43,80,210,0.17) for dark surfaces)
+- hero.tsx: subtle .glow-brand added top-right (balances the ember glow bottom-left) tying the hero to the brand palette
+- layout.tsx: openGraph + twitter images switched to /media/og-dhumketux.png (1200x630)
+- manifest.json: registered dhumketux-logo.png + og-dhumketux.png as type "brand" with provenance "provided directly by DhumketuX"; purged remaining em-dashes from manifest titles (now " · " separators)
+- Dash sweep close-out: fixed the final em-dash in source (contact-form.tsx doc comment); verified rendered innerText of pages contains zero em/en dashes; worklog/REDESIGN.md kept as internal docs
+- Verification (agent-browser): desktop 1440 - hero header shows official logo tile, footer identity + glow pair render; mobile 390 - header + full-screen menu show the tile, scrollWidth overflow check false; /contact intact; assets /media/dhumketux-logo.png, /media/og-dhumketux.png, /icon.png, /apple-icon.png all 200 image/png; console clean (HMR + React DevTools info only), 0 page errors; bun run lint clean
+- Captures: research/audit/logo-desktop-hero.png, logo-desktop-footer.png, logo-mobile-hero.png, logo-mobile-menu.png, logo-contact.png
+
+Stage Summary:
+- The concept site now carries the official DhumketuX brand mark everywhere it represents the organization: nav, mobile menu, footer, browser tab (favicon/Apple touch), and social share card
+- Brand color presence: logo field blue enters the visual system as a subtle glow layer alongside the established ember/amber flame language, mirroring the logo itself (blue field, red ring, amber comet)
+- No content or fact changes; src/content/* untouched

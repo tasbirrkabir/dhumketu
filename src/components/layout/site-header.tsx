@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ChevronDown, Menu, X, ArrowUpRight, ArrowRight } from "lucide-react";
@@ -140,9 +141,22 @@ export function SiteHeader() {
         <div className="mx-auto flex h-16 w-full max-w-[1180px] items-center justify-between px-5 sm:px-8 lg:px-12">
           <Link
             href="/"
-            className={`text-[1.0625rem] font-semibold tracking-[-0.02em] ${linkTone}`}
+            aria-label="DhumketuX home"
+            className={`group flex items-center gap-2.5 ${linkTone}`}
           >
-            DhumketuX
+            <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15 transition-shadow duration-300 group-hover:ring-white/35">
+              <Image
+                src="/media/dhumketux-logo.png"
+                alt=""
+                fill
+                priority
+                sizes="36px"
+                className="object-cover"
+              />
+            </span>
+            <span className="text-[1.0625rem] font-semibold tracking-[-0.02em]">
+              DhumketuX
+            </span>
           </Link>
 
           <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
@@ -321,7 +335,18 @@ export function SiteHeader() {
             transition={{ duration: 0.35, ease: EASE }}
           >
             <div className="sticky top-0 z-10 flex h-16 items-center justify-between border-b border-edge bg-night px-5 sm:px-8">
-              <span className="text-[1.0625rem] font-semibold tracking-[-0.02em]">DhumketuX</span>
+              <span className="flex items-center gap-2.5">
+                <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15">
+                  <Image
+                    src="/media/dhumketux-logo.png"
+                    alt=""
+                    fill
+                    sizes="36px"
+                    className="object-cover"
+                  />
+                </span>
+                <span className="text-[1.0625rem] font-semibold tracking-[-0.02em]">DhumketuX</span>
+              </span>
               <button
                 type="button"
                 onClick={() => setMobileOpen(false)}

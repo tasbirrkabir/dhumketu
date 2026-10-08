@@ -64,7 +64,7 @@ const inputClass =
   "h-12 rounded-2xl border-edge bg-night-2/70 text-[0.9375rem] text-chalk placeholder:text-chalk-3 focus-visible:border-amber/70 focus-visible:ring-amber/20 aria-invalid:border-[#ff8a6a]/70 aria-invalid:ring-[#ff8a6a]/20";
 
 /**
- * ContactForm — the send-a-message form on /contact.
+ * ContactForm: the send-a-message form on /contact.
  * Client-side zod-style validation, honeypot spam trap, POST /api/contact,
  * inline field errors, sonner toasts and an in-place success state.
  */

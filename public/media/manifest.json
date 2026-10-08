@@ -2,8 +2,24 @@
   "note": "Authentic DhumketuX visual assets for the redesign concept. Every file originates from a DhumketuX-controlled source (dhumketux.com uploads, DhumketuX-published media) surfaced via public web image search. No third-party hardware imagery is presented as DhumketuX hardware. Renders published by DhumketuX are labeled as renders.",
   "assets": [
     {
+      "file": "dhumketux-logo.png",
+      "title": "Official DhumketuX logo",
+      "sourceUrl": "provided directly by DhumketuX (official brand asset)",
+      "originalSource": "DhumketuX",
+      "type": "brand",
+      "alt": "Official DhumketuX logo: white DHUMKETU wordmark with red X, comet and red orbit ring on deep blue"
+    },
+    {
+      "file": "og-dhumketux.png",
+      "title": "Social share card built around the official logo (generated in-repo)",
+      "sourceUrl": "generated in-repo (sharp composition of the official brand asset)",
+      "originalSource": "DhumketuX brand asset + in-repo composition",
+      "type": "brand",
+      "alt": "DhumketuX official logo centered on a dark background with a deep blue radial glow"
+    },
+    {
       "file": "nazrul-sslv-render.png",
-      "title": "Nazrul-01 SSLV — official vehicle render",
+      "title": "Nazrul-01 SSLV · official vehicle render",
       "sourceUrl": "https://dhumketux.com/nazrul-01-sslv/",
       "originalSource": "DhumketuX",
       "type": "render",
@@ -43,7 +59,7 @@
     },
     {
       "file": "founder-nahiyan-al-rahman.jpg",
-      "title": "Nahiyan Al Rahman — founder portrait",
+      "title": "Nahiyan Al Rahman · founder portrait",
       "sourceUrl": "https://dhumketux.com/our-team/",
       "originalSource": "DhumketuX",
       "type": "photograph",
@@ -51,7 +67,7 @@
     },
     {
       "file": "a2i-award-2022.jpg",
-      "title": "a2i Rocketry Innovation Challenge 2022 — winner",
+      "title": "a2i Rocketry Innovation Challenge 2022 · winner",
       "sourceUrl": "https://dhumketux.com/history/",
       "originalSource": "dhumketux.com",
       "type": "photograph",
@@ -59,7 +75,7 @@
     },
     {
       "file": "cansat-render.png",
-      "title": "CanSat — electronics render",
+      "title": "CanSat · electronics render",
       "sourceUrl": "https://dhumketux.com/cansat/",
       "originalSource": "DhumketuX",
       "type": "render",
@@ -91,7 +107,7 @@
     },
     {
       "file": "concept-night-launch.jpg",
-      "title": "Concept atmosphere — night lift-off (AI-generated)",
+      "title": "Concept atmosphere · night lift-off (AI-generated)",
       "sourceUrl": "generated in-repo (z-ai image)",
       "originalSource": "AI concept art",
       "type": "generated-concept",
@@ -99,7 +115,7 @@
     },
     {
       "file": "concept-rocket-dusk.jpg",
-      "title": "Concept atmosphere — vehicle on pad at dusk (AI-generated)",
+      "title": "Concept atmosphere · vehicle on pad at dusk (AI-generated)",
       "sourceUrl": "generated in-repo (z-ai image)",
       "originalSource": "AI concept art",
       "type": "generated-concept",
@@ -107,7 +123,7 @@
     },
     {
       "file": "concept-engine-fire.jpg",
-      "title": "Concept atmosphere — engine plume close-up (AI-generated)",
+      "title": "Concept atmosphere · engine plume close-up (AI-generated)",
       "sourceUrl": "generated in-repo (z-ai image)",
       "originalSource": "AI concept art",
       "type": "generated-concept",
@@ -115,7 +131,7 @@
     },
     {
       "file": "concept-orbit-dawn.jpg",
-      "title": "Concept atmosphere — satellite over orbital dawn (AI-generated)",
+      "title": "Concept atmosphere · satellite over orbital dawn (AI-generated)",
       "sourceUrl": "generated in-repo (z-ai image)",
       "originalSource": "AI concept art",
       "type": "generated-concept",
@@ -123,7 +139,7 @@
     },
     {
       "file": "concept-students-workshop.jpg",
-      "title": "Concept atmosphere — student engineers building (AI-generated)",
+      "title": "Concept atmosphere · student engineers building (AI-generated)",
       "sourceUrl": "generated in-repo (z-ai image)",
       "originalSource": "AI concept art",
       "type": "generated-concept",
@@ -131,7 +147,7 @@
     },
     {
       "file": "concept-mission-control.jpg",
-      "title": "Concept atmosphere — mission control (AI-generated)",
+      "title": "Concept atmosphere · mission control (AI-generated)",
       "sourceUrl": "generated in-repo (z-ai image)",
       "originalSource": "AI concept art",
       "type": "generated-concept",

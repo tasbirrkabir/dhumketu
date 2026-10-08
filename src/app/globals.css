@@ -180,6 +180,14 @@ body {
   background: radial-gradient(closest-side, rgba(244, 242, 237, 0.08), transparent 72%);
   pointer-events: none;
 }
+/* Brand glow: official logo field blue (#01186B), lifted for dark surfaces */
+.glow-brand {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  background: radial-gradient(closest-side, rgba(43, 80, 210, 0.17), transparent 72%);
+  pointer-events: none;
+}
 
 /* Starfield: faint specks for deep-space panels */
 .starfield {

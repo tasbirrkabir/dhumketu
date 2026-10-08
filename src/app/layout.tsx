@@ -35,14 +35,14 @@ export const metadata: Metadata = {
       "Rockets. Propulsion. Autonomous systems. Space technologies. Bangladesh's first private aerospace R&D organization.",
     type: "website",
     siteName: "Dhumketu Exploration Technologies Limited",
-    images: [{ url: "/media/engine-static-fire-test.jpg", width: 1280, height: 720 }],
+    images: [{ url: "/media/og-dhumketux.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "DhumketuX · Building aerospace from Bangladesh",
     description:
       "Rockets. Propulsion. Autonomous systems. Space technologies. Bangladesh's first private aerospace R&D organization.",
-    images: ["/media/engine-static-fire-test.jpg"],
+    images: ["/media/og-dhumketux.png"],
   },
 };
 

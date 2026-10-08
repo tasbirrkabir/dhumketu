@@ -47,6 +47,7 @@ export function Hero() {
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-void/75 via-void/30 to-void" />
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-void/65 via-transparent to-transparent" />
       <div aria-hidden="true" className="glow-ember bottom-[-10%] left-[8%] h-[420px] w-[620px]" />
+      <div aria-hidden="true" className="glow-brand right-[-6%] top-[6%] h-[380px] w-[560px] opacity-80" />
 
       {/* Content */}
       <motion.div

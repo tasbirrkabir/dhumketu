@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { org } from "@/content/org";
 import { projects } from "@/content/projects";
 
@@ -19,14 +20,26 @@ export function SiteFooter() {
         className="h-px w-full bg-gradient-to-r from-transparent via-[#ff5a2c]/60 to-transparent"
       />
       <div className="glow-ember bottom-[-40%] left-1/2 h-[420px] w-[820px] -translate-x-1/2" aria-hidden="true" />
+      <div className="glow-brand bottom-[-30%] left-[-6%] h-[380px] w-[640px]" aria-hidden="true" />
 
       <div className="relative mx-auto w-full max-w-[1180px] px-5 pb-10 pt-16 sm:px-8 lg:px-12 lg:pt-24">
         {/* Top row: identity + CTA */}
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-lg font-semibold tracking-[-0.02em] text-chalk">
-              Dhumketu<span className="text-ember-gradient">X</span>
-            </p>
+            <div className="flex items-center gap-3">
+              <span className="relative block h-11 w-11 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15">
+                <Image
+                  src="/media/dhumketux-logo.png"
+                  alt="Official DhumketuX logo"
+                  fill
+                  sizes="44px"
+                  className="object-cover"
+                />
+              </span>
+              <p className="text-lg font-semibold tracking-[-0.02em] text-chalk">
+                Dhumketu<span className="text-ember-gradient">X</span>
+              </p>
+            </div>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-chalk-2">
               {org.legalName}. {org.tagline}.
             </p>
