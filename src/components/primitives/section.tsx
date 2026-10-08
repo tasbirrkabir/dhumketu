@@ -4,22 +4,34 @@ import type { ReactNode } from "react";
 import { Reveal } from "./reveal";
 
 /**
- * Editorial section opener: one large statement as the heading.
+ * Editorial section opener: mission-control eyebrow + one large statement.
  */
 export function SectionIntro({
   statement,
+  eyebrow,
   night = true,
   className = "",
 }: {
   statement: string;
+  /** Mono caps identity line, e.g. "Flagship programs" */
+  eyebrow?: string;
   /** Retained for call-site compatibility; all surfaces are dark now. */
   night?: boolean;
   className?: string;
 }) {
   return (
     <div className={className}>
-      <Reveal>
-        <h2 className="qa-statement max-w-3xl text-[clamp(1.9rem,4.5vw,3.5rem)] text-chalk">
+      {eyebrow && (
+        <Reveal>
+          <p className="eyebrow">{eyebrow}</p>
+        </Reveal>
+      )}
+      <Reveal delay={0.06}>
+        <h2
+          className={`qa-statement max-w-3xl text-[clamp(1.9rem,4.5vw,3.5rem)] text-chalk ${
+            eyebrow ? "mt-5" : ""
+          }`}
+        >
           {statement}
         </h2>
       </Reveal>

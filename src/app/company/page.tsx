@@ -32,6 +32,7 @@ export default function CompanyPage() {
       <CinematicHero
         image="/media/team-rocket-library.jpg"
         alt=""
+        eyebrow="Company"
         title="The company."
         accent="One Sky, One Dream."
         lede={`${teamFacts.size} engineers and researchers across 20+ universities in Bangladesh, including BUET, KUET, RUET and CUET, with graduates and researchers from the USA, Europe, Russia, China and Japan.`}

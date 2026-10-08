@@ -20,7 +20,7 @@ function firstFacts(project: ReturnType<typeof getProject>) {
 function FactLine({ items }: { items: { label: string; value: string }[] }) {
   if (!items.length) return null;
   return (
-    <p className="text-sm text-chalk-2">
+    <p className="border-t border-edge pt-4 text-sm text-chalk-2">
       {items.map((m, i) => (
         <span key={m.label}>
           {i > 0 && <span className="mx-2.5 opacity-40" aria-hidden="true">·</span>}
@@ -65,8 +65,14 @@ function CardShell({
       {/* Title bar: index, name, status */}
       <div className="relative z-20 flex items-start justify-between gap-4 p-6 pb-0 sm:p-8 sm:pb-0">
         <div>
-          <p className="qa-data text-xs uppercase tracking-[0.16em] text-chalk-3">{index}</p>
-          <h3 className="qa-display mt-2 flex items-center gap-3 text-[clamp(1.7rem,3.4vw,2.5rem)] text-chalk">
+          <p className="qa-data flex items-center gap-2.5 text-xs uppercase tracking-[0.16em] text-chalk-3">
+            <span
+              aria-hidden="true"
+              className="inline-block h-px w-6 bg-gradient-to-r from-ember/60 to-transparent"
+            />
+            {index}
+          </p>
+          <h3 className="qa-display mt-3 flex items-center gap-3 text-[clamp(1.7rem,3.4vw,2.5rem)] text-chalk">
             {name}
             <ArrowUpRight
               className="h-[0.55em] w-[0.55em] shrink-0 text-chalk opacity-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100"
@@ -91,6 +97,7 @@ export function Flagship() {
     <section id="work" aria-label="Flagship work" className="scroll-mt-16 bg-void pb-20 pt-8 sm:pb-28">
       <Container>
         <SectionIntro
+          eyebrow="Flagship programs"
           statement="The path to orbit runs through engines, vehicles and proof."
         />
 
@@ -230,14 +237,19 @@ export function Flagship() {
         <Reveal>
           <Link
             href="/work"
-            className="group mt-12 flex items-baseline justify-between gap-6 rounded-2xl border border-edge bg-night-2 px-6 py-6 transition-colors hover:border-edge-strong sm:px-8"
+            className="panel card-lift group mt-12 flex items-center justify-between gap-6 overflow-hidden rounded-2xl px-6 py-7 sm:px-8"
           >
-            <span className="text-xl font-semibold tracking-[-0.02em] text-chalk sm:text-2xl">
-              {projects.length} systems, one engineering culture
+            <span className="min-w-0">
+              <span className="eyebrow">The catalog</span>
+              <span className="mt-3 block truncate text-xl font-semibold tracking-[-0.02em] text-chalk sm:text-2xl">
+                {projects.length} systems, one engineering culture
+              </span>
             </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-chalk">
-              Explore our work
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+            <span
+              aria-hidden="true"
+              className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-edge-strong text-chalk transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:bg-chalk group-hover:text-void"
+            >
+              <ArrowUpRight className="h-4.5 w-4.5 transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </span>
           </Link>
         </Reveal>

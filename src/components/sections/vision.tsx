@@ -40,6 +40,15 @@ export function Vision() {
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-void/60 via-transparent to-transparent" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1180px] flex-1 flex-col justify-end px-5 py-24 sm:px-8 sm:py-32 lg:px-12">
+        <motion.p
+          initial={reduced ? false : { opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, delay: 0.02, ease: EASE }}
+          className="eyebrow"
+        >
+          Vision
+        </motion.p>
         <motion.h2
           initial={reduced ? false : { opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}

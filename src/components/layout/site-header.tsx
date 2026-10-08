@@ -165,7 +165,7 @@ export function SiteHeader() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`text-[0.9375rem] font-medium transition-colors ${
+                  className={`qa-link text-[0.9375rem] font-medium transition-colors ${
                     item.activePrefixes && active(item.activePrefixes)
                       ? "text-chalk"
                       : "text-chalk-2 hover:text-chalk"
@@ -181,7 +181,7 @@ export function SiteHeader() {
                   aria-haspopup="true"
                   onClick={() => (menu === item.key ? setMenu(null) : openWith(item.key as Exclude<MenuKey, null>))}
                   onMouseEnter={() => openWith(item.key as Exclude<MenuKey, null>)}
-                  className={`inline-flex items-center gap-1 text-[0.9375rem] font-medium transition-colors ${
+                  className={`qa-link inline-flex items-center gap-1 text-[0.9375rem] font-medium transition-colors ${
                     (item.activePrefixes && active(item.activePrefixes)) || menu === item.key
                       ? "text-chalk"
                       : "text-chalk-2 hover:text-chalk"

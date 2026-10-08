@@ -154,6 +154,27 @@ body {
   letter-spacing: -0.015em;
 }
 
+/* Mission-control section label: mono caps preceded by a warm rule.
+   Gives every section an identity line, like telemetry stamps. */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--chalk-2);
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 90, 44, 0.75), rgba(255, 178, 91, 0.25), transparent);
+}
+
 /* Ghost numerals: oversized outlined section markers */
 .qa-ghost {
   position: absolute;
@@ -255,10 +276,19 @@ body {
   transform: scale(1.035);
 }
 
+/* Panel: the premium surface — lit from above, deeper than glass.
+   Vertical light gradient + inset top light, for stat tiles, bands, cards. */
+.panel {
+  position: relative;
+  background: linear-gradient(180deg, rgba(244, 242, 237, 0.072) 0%, rgba(244, 242, 237, 0.03) 36%, rgba(244, 242, 237, 0.014) 100%);
+  border: 1px solid rgba(244, 242, 237, 0.11);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
 /* Card lift: glass cards rise gently on hover, top edge catches light */
 .card-lift {
   position: relative;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-lift::before {
   content: "";
@@ -276,6 +306,9 @@ body {
   transform: translateY(-4px);
   border-color: rgba(244, 242, 237, 0.2);
   background: rgba(244, 242, 237, 0.055);
+  box-shadow:
+    0 24px 56px -30px rgba(0, 0, 0, 0.85),
+    0 0 40px -18px rgba(255, 90, 44, 0.18);
 }
 .card-lift:hover::before {
   opacity: 1;
@@ -350,6 +383,31 @@ body {
   height: 1px;
   width: 100%;
   background: linear-gradient(90deg, transparent, rgba(244, 242, 237, 0.14) 18%, rgba(244, 242, 237, 0.14) 82%, transparent);
+}
+
+/* Warm hairline: the ember seam, used where light should feel like fire */
+.hairline-ember {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent 4%, rgba(255, 90, 44, 0.4) 30%, rgba(255, 178, 91, 0.32) 55%, transparent 96%);
+}
+
+/* Numerals that headline: for stat tiles and data features */
+.qa-stat {
+  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Soft radial vignette: keeps deep fields from reading as flat black */
+.vignette::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(0, 0, 0, 0.42) 100%);
 }
 
 /* Film grain: kills the flat digital field, adds print-like texture */

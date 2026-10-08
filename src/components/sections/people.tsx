@@ -49,9 +49,9 @@ export function People() {
               <p className="qa-data mt-12 text-xs uppercase tracking-[0.16em] text-chalk-3">
                 Advisors
               </p>
-              <ul className="mt-4 space-y-2.5 border-t border-edge pt-4">
+              <ul className="mt-4 divide-y divide-edge border-t border-edge">
                 {advisors.map((a) => (
-                  <li key={a.name} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                  <li key={a.name} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
                     <span className="font-medium text-chalk">{a.name}</span>
                     <span className="text-sm text-chalk-2">{a.role}</span>
                   </li>

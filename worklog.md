@@ -301,3 +301,32 @@ Stage Summary:
 - The site keeps its strict monochrome discipline but no longer reads flat: headlines are lit from above, every surface carries film grain, every card has an edge-light that brightens on hover, buttons feel physical instead of painted, and content cards have iconographic/ghost-numeral anchors
 - Beauty levers used: light (gradient type, sheen lines, glow atmosphere), texture (grain), depth (shadows, hover lift), rhythm (icon tiles, mono chips, ghost numerals) - zero new colors, zero orange, zero HUD-label clutter
 - Reusable primitives now in globals.css: .btn-chalk, .btn-ghost, .icon-tile, .qa-ghost-num, .hairline-x, .grain
+
+---
+Task ID: style-10
+Agent: Z.ai Code (main)
+Task: "full ui desgin e aro shundor koro a to z shob" + "nothing changed" — full-site A-Z beautification pass (after prior color/CTA rounds)
+
+Work Log:
+- Visual audit via agent-browser (1440 full-page scroll capture, home + work + technology): identified the weak spots as flat mid-page surfaces — intro stat tiles read as plain gray boxes, flagship cards lacked hierarchy detail, catalog band was a bare wide bar, subpage heroes had no identity line, flat black fields felt unlit
+- globals.css design-system additions (style-10 layer):
+  (1) .eyebrow mission-control label — mono caps, letter-spacing .22em, preceded by a 28px ember→amber gradient rule; gives every section a telemetry-stamp identity line (non-text ember accent, respects "no orange text" rule)
+  (2) .panel premium surface — vertical light gradient (0.072→0.03→0.014 white), border rgba .11, inset top-light; the lit-from-above tile used by stat cards and bands
+  (3) .card-lift hover now adds depth: 0 24px 56px black drop + 0 0 40px -18px ember glow (subtle warmth on hover only)
+  (4) .hairline-ember warm seam utility, .qa-stat display-numeral class (Space Grotesk 600, tabular), .vignette radial edge-darkening utility
+- SectionIntro primitive gained eyebrow prop (Reveal-wrapped); call sites: Flagship "Flagship programs", Technology "Technology", People statement gains advisors upgrade below
+- Intro section rework: "THE COMPANY" eyebrow + statement; stat tiles = panel + card-lift + group, oversized qa-stat Counter numerals, ghost 01-04 corner numerals (qa-ghost-num), ember→amber 36px underline tick per tile, glow-brand added bottom-left for balance
+- Flagship: card index now renders as mono number with 24px ember gradient dash; FactLine gains border-t hairline; "15 systems" band rebuilt as panel card — "THE CATALOG" eyebrow, title, 48px circular arrow chip that inverts to chalk bg + void arrow on hover
+- Technology home rows: hover wash bg-white/[0.025] + rounded-xl -mx-4 px-4 full-bleed hit area
+- Vision section: eyebrow "Vision" above the giant statement (motion.p staggered before h2)
+- People: advisors list space-y → divide-y divide-edge rows with py-3 rhythm
+- CinematicHero gained eyebrow prop — all 7 subpages now open with AEROSPACE/TECHNOLOGY/PROGRAMS/COMPANY/VISION/MEDIA/CONTACT mono caps + ember dash (python exact-string insert into page.tsx files)
+- Header: primary nav links + dropdown triggers now carry qa-link underline-slide hover
+- Verification (agent-browser): all 8 routes 200; intro tiles/catalog band/eyebrows confirmed in captures at 1440; mobile 390: no horizontal overflow (sw=390), 2-col stat grid renders; 1024 header geometry clean (logoRight 186, no overflow); golden path: flagship card click → /work/bidrohi-sr navigates; console clean (HMR only), 0 page errors; bun run lint clean
+- Captures: research/audit/s10-home-* (before), s10b-{top,intro,flagship,duo,band,people,work,tech,m-top,m-intro}, s10c-{intro,band,1024}
+
+Stage Summary:
+- The site now has a consistent "mission control" identity system: every section and every subpage opens with the eyebrow stamp, every number sits on a lit panel tile, every card lifts with light + faint ember warmth
+- Orange discipline kept: ember appears only as rules/ticks/glows (non-text), all text stays chalk/chalk-2/chalk-3
+- Reusable primitives added this round: .eyebrow, .panel, .hairline-ember, .qa-stat, .vignette + SectionIntro/CinematicHero eyebrow props
+- style-10 closes the merged request: orange text removed site-wide (none found post-color-8), buttons already flat btn-chalk/btn-ghost, full-site A-Z polish applied and browser-verified

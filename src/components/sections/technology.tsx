@@ -19,6 +19,7 @@ export function Technology() {
           {/* Sticky image column */}
           <div className="lg:sticky lg:top-24 lg:self-start">
             <SectionIntro
+              eyebrow="Technology"
               statement="Eight disciplines, one test-driven engineering culture."
             />
             <ImageReveal className="mt-10">
@@ -48,9 +49,9 @@ export function Technology() {
                   <Reveal delay={Math.min(i * 0.04, 0.24)}>
                     <Link
                       href={`/technology#${c.id}`}
-                      className="group flex items-baseline gap-5 border-b border-edge py-5 transition-colors hover:border-edge-strong sm:items-center sm:gap-7"
+                      className="group -mx-4 flex items-baseline gap-5 rounded-xl border-b border-edge px-4 py-5 transition-colors hover:border-edge-strong hover:bg-white/[0.025] sm:items-center sm:gap-7"
                     >
-                      <span className="qa-data w-8 shrink-0 text-sm text-chalk-3 transition-colors group-hover:text-chalk">
+                      <span className="qa-data w-8 shrink-0 text-sm text-chalk-3 transition-colors duration-300 group-hover:text-chalk">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <span className="min-w-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1.5">

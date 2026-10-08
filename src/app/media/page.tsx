@@ -22,6 +22,7 @@ export default function MediaPage() {
       <CinematicHero
         image="/media/team-launch-rail.jpg"
         alt=""
+        eyebrow="Media"
         title="Documented in public."
         accent="National media & the archive."
         lede={mediaNote}
