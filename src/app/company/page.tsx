@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Hammer, Globe, ShieldCheck, Network, type LucideIcon } from "lucide-react";
 import { leadership, advisors, teamFacts } from "@/content/team";
 import { milestones } from "@/content/milestones";
 import { collaborationPrinciples } from "@/content/vision";
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
   description:
     "Team & leadership, history, collaborations, policy and core values, and social responsibilities of Dhumketu Exploration Technologies Limited.",
 };
+
+const COLLABORATION_ICONS: LucideIcon[] = [Hammer, Globe, ShieldCheck, Network];
 
 export default function CompanyPage() {
   const founder = leadership[0];
@@ -192,14 +195,22 @@ export default function CompanyPage() {
           </Reveal>
 
           <ul className="mt-14 grid gap-4 sm:grid-cols-2">
-            {collaborationPrinciples.map((c, i) => (
-              <Reveal as="li" key={c.title} delay={Math.min(i * 0.05, 0.15)} className="h-full">
-                <div className="card-lift h-full rounded-2xl border border-edge bg-night-2 p-5 sm:p-6">
-                  <p className="text-[0.9375rem] font-medium text-chalk">{c.title}</p>
-                  <p className="mt-1.5 text-sm leading-relaxed text-chalk-2">{c.body}</p>
-                </div>
-              </Reveal>
-            ))}
+            {collaborationPrinciples.map((c, i) => {
+              const Icon = COLLABORATION_ICONS[i % COLLABORATION_ICONS.length];
+              return (
+                <Reveal as="li" key={c.title} delay={Math.min(i * 0.05, 0.15)} className="h-full">
+                  <div className="card-lift flex h-full items-start gap-4 rounded-2xl border border-edge bg-night-2 p-5 sm:p-6">
+                    <span className="icon-tile mt-0.5 h-10 w-10" aria-hidden="true">
+                      <Icon className="h-[1.125rem] w-[1.125rem]" strokeWidth={1.5} />
+                    </span>
+                    <span>
+                      <span className="text-[0.9375rem] font-medium text-chalk">{c.title}</span>
+                      <span className="mt-1.5 block text-sm leading-relaxed text-chalk-2">{c.body}</span>
+                    </span>
+                  </div>
+                </Reveal>
+              );
+            })}
           </ul>
         </Container>
       </section>
@@ -241,7 +252,7 @@ export default function CompanyPage() {
               </h3>
               <ul className="mt-6 grid gap-4">
                 {ethicsCompliance.map((e) => (
-                  <li key={e.title} className="rounded-2xl border border-edge bg-night p-5">
+                  <li key={e.title} className="card-lift rounded-2xl border border-edge bg-night p-5">
                     <p className="text-[0.9375rem] font-medium text-chalk">{e.title}</p>
                     <p className="mt-1.5 text-sm leading-relaxed text-chalk-2">{e.body}</p>
                   </li>
@@ -254,7 +265,7 @@ export default function CompanyPage() {
               </h3>
               <ul className="mt-6 grid gap-4">
                 {safetyPolicy.map((s) => (
-                  <li key={s.title} className="rounded-2xl border border-edge bg-night p-5">
+                  <li key={s.title} className="card-lift rounded-2xl border border-edge bg-night p-5">
                     <p className="text-[0.9375rem] font-medium text-chalk">{s.title}</p>
                     <p className="mt-1.5 text-sm leading-relaxed text-chalk-2">{s.body}</p>
                   </li>

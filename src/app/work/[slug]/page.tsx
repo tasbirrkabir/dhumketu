@@ -347,14 +347,14 @@ export default async function ProjectPage({
             <div className="mt-14 flex flex-wrap items-center gap-x-9 gap-y-4">
               <Link
                 href="/work"
-                className="group inline-flex items-center gap-2 rounded-full border border-edge-strong px-7 py-3 text-[0.9375rem] font-medium text-chalk transition-colors hover:border-chalk-2"
+                className="group btn-ghost px-7 py-3 text-[0.9375rem] font-medium"
               >
                 <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-0.5" aria-hidden="true" />
                 All {projects.length} projects
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
+                className="btn-chalk px-7 py-3 text-[0.9375rem] font-semibold"
               >
                 Work with us
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

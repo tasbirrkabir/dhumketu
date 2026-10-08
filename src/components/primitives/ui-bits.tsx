@@ -161,6 +161,10 @@ export function CtaBand({
         )}
         <div aria-hidden="true" className="glow-ember left-[10%] top-[-30%] h-[300px] w-[480px]" />
         <div aria-hidden="true" className="glow-brand right-[6%] bottom-[-40%] h-[320px] w-[520px]" />
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 z-10 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent"
+        />
 
         <div className="relative z-10 flex flex-col items-start gap-8 px-6 py-14 sm:px-12 sm:py-20">
           <h2 className="qa-display max-w-[16ch] text-[clamp(2.2rem,5.4vw,4.25rem)] text-chalk">
@@ -171,7 +175,7 @@ export function CtaBand({
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <Link
               href={primary.href}
-              className="inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
+              className="btn-chalk px-7 py-3 text-[0.9375rem] font-semibold"
             >
               {primary.label}
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -179,7 +183,7 @@ export function CtaBand({
             {secondary && (
               <Link
                 href={secondary.href}
-                className="inline-flex items-center gap-2 rounded-full border border-edge-strong px-7 py-3 text-[0.9375rem] font-medium text-chalk transition-colors hover:border-chalk-2"
+                className="btn-ghost px-7 py-3 text-[0.9375rem] font-medium"
               >
                 {secondary.label}
               </Link>

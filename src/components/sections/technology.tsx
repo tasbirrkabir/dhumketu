@@ -53,7 +53,7 @@ export function Technology() {
                       <span className="qa-data w-8 shrink-0 text-sm text-chalk-3 transition-colors group-hover:text-chalk">
                         {String(i + 1).padStart(2, "0")}
                       </span>
-                      <span className="min-w-0">
+                      <span className="min-w-0 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1.5">
                         <span className="block text-lg font-semibold tracking-[-0.015em] text-chalk transition-colors group-hover:text-chalk sm:text-xl">
                           {c.title}
                         </span>
@@ -73,7 +73,7 @@ export function Technology() {
             <Reveal delay={0.1}>
               <Link
                 href="/technology"
-                className="group mt-8 inline-flex items-center gap-2 rounded-full border border-edge-strong px-6 py-3 text-[0.9375rem] font-medium text-chalk transition-colors hover:border-chalk-2"
+                className="group btn-ghost mt-8 px-6 py-3 text-[0.9375rem] font-medium"
               >
                 All technological capabilities
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />

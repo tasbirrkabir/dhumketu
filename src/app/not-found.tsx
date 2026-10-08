@@ -26,7 +26,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
+          className="mt-10 btn-chalk px-7 py-3 text-[0.9375rem] font-semibold"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           Return to base

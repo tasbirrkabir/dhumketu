@@ -66,22 +66,28 @@ export default function WorkPage() {
                   <Reveal as="li" key={p.slug} delay={Math.min(i * 0.04, 0.16)} className="h-full">
                     <Link
                       href={`/work/${p.slug}`}
-                      className="group card-lift relative flex h-full flex-col rounded-3xl border border-edge bg-night-2 p-6 sm:p-7"
+                      className="group card-lift relative flex h-full flex-col overflow-hidden rounded-3xl border border-edge bg-night-2 p-6 sm:p-7"
                     >
-                      <div className="flex items-start justify-between gap-4">
+                      <span
+                        aria-hidden="true"
+                        className="qa-ghost-num absolute -bottom-3 right-4 text-[4.25rem]"
+                      >
+                        {String(projects.indexOf(p) + 1).padStart(2, "0")}
+                      </span>
+                      <div className="relative flex items-start justify-between gap-4">
                         <span className="qa-data pt-1 text-xs uppercase tracking-[0.16em] text-chalk-3">
                           {String(projects.indexOf(p) + 1).padStart(2, "0")}
                         </span>
                         <StatusChip status={p.status} />
                       </div>
-                      <h3 className="qa-display mt-6 flex items-center gap-2 text-2xl text-chalk sm:text-[1.65rem]">
+                      <h3 className="qa-display relative mt-6 flex items-center gap-2 text-2xl text-chalk sm:text-[1.65rem]">
                         {p.name}
                         <ArrowUpRight
                           className="h-5 w-5 shrink-0 text-chalk opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
                           aria-hidden="true"
                         />
                       </h3>
-                      <p className="qa-data mt-auto pt-6 text-[11px] uppercase tracking-[0.14em] text-chalk-3">
+                      <p className="qa-data relative mt-auto max-w-[70%] pt-6 text-[11px] uppercase tracking-[0.14em] text-chalk-3">
                         {p.category}
                       </p>
                     </Link>

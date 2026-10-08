@@ -197,7 +197,7 @@ export function SiteHeader() {
             )}
             <Link
               href="/contact#form"
-              className="group inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-chalk px-4 py-1.5 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
+              className="group btn-chalk shrink-0 gap-1.5 whitespace-nowrap px-4 py-1.5 text-[0.9375rem] font-semibold"
             >
               Start a conversation
               <ArrowUpRight
@@ -230,7 +230,7 @@ export function SiteHeader() {
               transition={{ duration: 0.3, ease: EASE }}
               onMouseEnter={() => openWith(menu)}
               onMouseLeave={scheduleClose}
-              className={`absolute inset-x-0 top-full hidden border-b backdrop-blur-2xl lg:block ${
+              className={`absolute inset-x-0 top-full hidden border-b shadow-[0_48px_90px_-24px_rgba(0,0,0,0.75)] backdrop-blur-2xl lg:block ${
                 "border-edge bg-void/95"
               }`}
             >

@@ -82,14 +82,14 @@ export function Hero() {
         >
           <Link
             href="/work"
-            className="inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
+            className="btn-chalk px-7 py-3 text-[0.9375rem] font-semibold"
           >
             Explore our work
             <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
           </Link>
           <Link
             href="/vision"
-            className="inline-flex items-center gap-2 rounded-full border border-edge-strong px-7 py-3 text-[0.9375rem] font-medium text-chalk transition-colors hover:border-chalk-2"
+            className="btn-ghost px-7 py-3 text-[0.9375rem] font-medium"
           >
             Our vision
           </Link>
@@ -106,9 +106,9 @@ export function Hero() {
             { v: "3", l: "successful static-fire tests" },
             { v: "250+", l: "journal publications" },
           ].map((s) => (
-            <li key={s.l} className="glass rounded-full px-4 py-2 text-xs text-chalk-2">
-              <span className="qa-data text-chalk">{s.v}</span>
-              <span className="mx-2 text-chalk-3" aria-hidden="true">·</span>
+            <li key={s.l} className="glass-strong rounded-full px-5 py-2.5 text-[0.8125rem] text-chalk-2">
+              <span className="qa-data text-sm text-chalk">{s.v}</span>
+              <span className="mx-2.5 text-chalk-3" aria-hidden="true">·</span>
               {s.l}
             </li>
           ))}

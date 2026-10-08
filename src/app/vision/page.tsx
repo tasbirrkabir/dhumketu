@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Satellite, Globe, SatelliteDish, MoonStar, Recycle, HeartHandshake, type LucideIcon } from "lucide-react";
 import {
   visionPillars,
   visionBangladesh,
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
   description:
     "The next chapter: space billboard and orbital media, Earth observation constellations and space-based internet. Long-term ambitions from Bangladesh, marked as future vision.",
 };
+
+const PILLAR_ICONS: LucideIcon[] = [Satellite, Globe, SatelliteDish];
+const RESPONSIBLE_ICONS: LucideIcon[] = [MoonStar, Recycle, HeartHandshake];
 
 export default function VisionPage() {
   return (
@@ -45,27 +49,35 @@ export default function VisionPage() {
           </Reveal>
 
           <div className="mt-14 grid gap-5 sm:mt-20 lg:grid-cols-3">
-            {visionPillars.map((p, i) => (
-              <Reveal key={p.id} delay={0.08 + i * 0.06} className="h-full">
-                <div className="card-lift h-full rounded-3xl border border-edge bg-night-2 p-6 sm:p-7">
-                  <p className="qa-data text-xs uppercase tracking-[0.16em] text-chalk-3">
-                    {p.index}
-                  </p>
-                  <h2 className="qa-display mt-4 text-xl text-chalk sm:text-2xl">
-                    {p.title}
-                  </h2>
-                  <p className="mt-4 text-[0.9375rem] leading-relaxed text-chalk-2">{p.body}</p>
-                  <ul className="mt-6 space-y-2.5 border-t border-edge pt-5">
-                    {p.points.map((point) => (
-                      <li key={point} className="flex gap-3 text-sm leading-relaxed text-chalk-2">
-                        <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-chalk-3/70" aria-hidden="true" />
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            ))}
+            {visionPillars.map((p, i) => {
+              const Icon = PILLAR_ICONS[i % PILLAR_ICONS.length];
+              return (
+                <Reveal key={p.id} delay={0.08 + i * 0.06} className="h-full">
+                  <div className="card-lift h-full rounded-3xl border border-edge bg-night-2 p-6 sm:p-7">
+                    <div className="flex items-start justify-between gap-4">
+                      <span className="icon-tile" aria-hidden="true">
+                        <Icon className="h-5 w-5" strokeWidth={1.5} />
+                      </span>
+                      <p className="qa-data pt-1 text-xs uppercase tracking-[0.16em] text-chalk-3">
+                        {p.index}
+                      </p>
+                    </div>
+                    <h2 className="qa-display mt-5 text-xl text-chalk sm:text-2xl">
+                      {p.title}
+                    </h2>
+                    <p className="mt-4 text-[0.9375rem] leading-relaxed text-chalk-2">{p.body}</p>
+                    <ul className="mt-6 space-y-2.5 border-t border-edge pt-5">
+                      {p.points.map((point) => (
+                        <li key={point} className="flex gap-3 text-sm leading-relaxed text-chalk-2">
+                          <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-chalk-3/70" aria-hidden="true" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
 
           <Reveal delay={0.1}>
@@ -133,15 +145,23 @@ export default function VisionPage() {
                 {responsibleSpace.title}.
               </h2>
               <ul className="mt-7 grid gap-4">
-                {responsibleSpace.points.map((item) => (
-                  <li
-                    key={item.title}
-                    className="card-lift rounded-2xl border border-edge bg-night-2 p-5"
-                  >
-                    <p className="text-[0.9375rem] font-medium text-chalk">{item.title}</p>
-                    <p className="mt-1.5 max-w-xl text-sm leading-relaxed text-chalk-2">{item.body}</p>
-                  </li>
-                ))}
+                {responsibleSpace.points.map((item, i) => {
+                  const Icon = RESPONSIBLE_ICONS[i % RESPONSIBLE_ICONS.length];
+                  return (
+                    <li
+                      key={item.title}
+                      className="card-lift flex items-start gap-4 rounded-2xl border border-edge bg-night-2 p-5"
+                    >
+                      <span className="icon-tile mt-0.5 h-10 w-10" aria-hidden="true">
+                        <Icon className="h-[1.125rem] w-[1.125rem]" strokeWidth={1.5} />
+                      </span>
+                      <span>
+                        <span className="text-[0.9375rem] font-medium text-chalk">{item.title}</span>
+                        <span className="mt-1.5 block max-w-xl text-sm leading-relaxed text-chalk-2">{item.body}</span>
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </Reveal>
           </div>
@@ -177,16 +197,18 @@ export default function VisionPage() {
                 The roadmap.
               </h2>
               <dl className="mt-7 grid gap-4">
-                <div className="rounded-2xl border border-edge bg-night-2 p-6">
-                  <dt className="text-sm text-chalk-2">Suborbital flight</dt>
-                  <dd className="qa-display mt-2 text-[clamp(1.9rem,4vw,3rem)] text-chalk">
+                <div className="card-lift relative overflow-hidden rounded-2xl border border-edge bg-night-2 p-6">
+                  <span aria-hidden="true" className="qa-ghost-num absolute -top-3 right-5 text-[4.5rem]">2035</span>
+                  <dt className="relative text-sm text-chalk-2">Suborbital flight</dt>
+                  <dd className="qa-display relative mt-2 text-[clamp(1.9rem,4vw,3rem)] text-chalk">
                     Within{" "}
                     <Counter value="2035" className="text-chalk" />
                   </dd>
                 </div>
-                <div className="rounded-2xl border border-edge bg-night-2 p-6">
-                  <dt className="text-sm text-chalk-2">Human spaceflight</dt>
-                  <dd className="qa-display mt-2 text-[clamp(1.9rem,4vw,3rem)] text-chalk">
+                <div className="card-lift relative overflow-hidden rounded-2xl border border-edge bg-night-2 p-6">
+                  <span aria-hidden="true" className="qa-ghost-num absolute -top-3 right-5 text-[4.5rem]">2040</span>
+                  <dt className="relative text-sm text-chalk-2">Human spaceflight</dt>
+                  <dd className="qa-display relative mt-2 text-[clamp(1.9rem,4vw,3rem)] text-chalk">
                     Within{" "}
                     <Counter value="2040" className="text-chalk" />
                   </dd>

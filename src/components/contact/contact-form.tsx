@@ -164,7 +164,7 @@ export function ContactForm() {
         <button
           type="button"
           onClick={reset}
-          className="mt-8 inline-flex items-center gap-2 rounded-full border border-edge-strong px-6 py-3 text-[0.9375rem] font-medium text-chalk transition-colors hover:border-chalk-2"
+          className="mt-8 btn-ghost px-6 py-3 text-[0.9375rem] font-medium"
         >
           Send another message
         </button>
@@ -285,7 +285,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="group inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-chalk px-8 py-3.5 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-[background-color,opacity] duration-300 hover:bg-[#e7e4dc] disabled:cursor-not-allowed disabled:opacity-60"
+          className="group btn-chalk shrink-0 justify-center whitespace-nowrap px-8 py-3.5 text-[0.9375rem] font-semibold disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "sending" ? (
             <>

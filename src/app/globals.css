@@ -112,13 +112,19 @@ body {
   overflow-x: clip;
 }
 
-/* Display type: Space Grotesk headlines, Inter body, Apple-style tracking */
+/* Display type: Space Grotesk headlines, Inter body, Apple-style tracking.
+   Headlines carry a subtle top-light chalk gradient (background-clip) so
+   type reads as lit from above, not printed. */
 .qa-display {
   font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.032em;
   line-height: 1.04;
   font-weight: 600;
   text-wrap: balance;
+  background: linear-gradient(180deg, #fbf9f4 0%, #f4f2ed 42%, rgba(216, 213, 205, 0.85) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .qa-statement {
@@ -127,6 +133,10 @@ body {
   line-height: 1.1;
   font-weight: 600;
   text-wrap: balance;
+  background: linear-gradient(180deg, #faf8f3 0%, #f4f2ed 48%, rgba(216, 213, 205, 0.85) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Technical numerals: the only place mono appears */
@@ -156,6 +166,22 @@ body {
   -webkit-text-stroke: 1.5px rgba(244, 242, 237, 0.10);
   user-select: none;
   pointer-events: none;
+}
+
+/* Soft ghost numerals inside cards (filled, whisper-quiet) */
+.qa-ghost-num {
+  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: rgba(244, 242, 237, 0.07);
+  user-select: none;
+  pointer-events: none;
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .qa-ghost-num,
+.card-lift:hover .qa-ghost-num {
+  color: rgba(244, 242, 237, 0.14);
 }
 
 /* Glow: engine-fire warmth for night panels */
@@ -229,14 +255,113 @@ body {
   transform: scale(1.035);
 }
 
-/* Card lift: glass cards rise gently on hover */
+/* Card lift: glass cards rise gently on hover, top edge catches light */
 .card-lift {
+  position: relative;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-lift::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent 4%, rgba(244, 242, 237, 0.17) 50%, transparent 96%);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .card-lift:hover {
   transform: translateY(-4px);
   border-color: rgba(244, 242, 237, 0.2);
   background: rgba(244, 242, 237, 0.055);
+}
+.card-lift:hover::before {
+  opacity: 1;
+  background: linear-gradient(90deg, transparent 4%, rgba(244, 242, 237, 0.34) 50%, transparent 96%);
+}
+
+/* Buttons: physical, monochrome, quiet.
+   .btn-chalk — solid ivory primary with a whisper of vertical light.
+   .btn-ghost — hairline outline secondary. Padding/size stay inline.
+   (In the components layer so Tailwind utilities can override them.) */
+@layer components {
+  .btn-chalk {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background: linear-gradient(180deg, #fbf9f3 0%, #eae7db 100%);
+    color: #0b0b0d;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.65),
+      0 1px 2px rgba(0, 0, 0, 0.35),
+      0 12px 32px -14px rgba(0, 0, 0, 0.55);
+    transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.35s, transform 0.15s ease;
+  }
+  .btn-chalk:hover {
+    background: linear-gradient(180deg, #f6f3ea 0%, #e0ddd0 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.7),
+      0 2px 5px rgba(0, 0, 0, 0.3),
+      0 16px 36px -14px rgba(0, 0, 0, 0.6);
+  }
+  .btn-chalk:active {
+    transform: scale(0.98);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(244, 242, 237, 0.18);
+    background: rgba(244, 242, 237, 0.02);
+    color: var(--chalk);
+    transition: border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.35s, transform 0.15s ease;
+  }
+  .btn-ghost:hover {
+    border-color: rgba(244, 242, 237, 0.38);
+    background: rgba(244, 242, 237, 0.06);
+  }
+  .btn-ghost:active {
+    transform: scale(0.98);
+  }
+
+  /* Icon tile: the visual anchor inside content cards */
+  .icon-tile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    border-radius: 0.875rem;
+    background: linear-gradient(180deg, rgba(244, 242, 237, 0.075), rgba(244, 242, 237, 0.03));
+    border: 1px solid rgba(244, 242, 237, 0.1);
+    box-shadow: inset 0 1px 0 rgba(244, 242, 237, 0.08);
+    color: var(--chalk-2);
+  }
+}
+
+/* Gradient hairline: section seams that dissolve at the edges */
+.hairline-x {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(244, 242, 237, 0.14) 18%, rgba(244, 242, 237, 0.14) 82%, transparent);
+}
+
+/* Film grain: kills the flat digital field, adds print-like texture */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
 }
 
 /* Focus */

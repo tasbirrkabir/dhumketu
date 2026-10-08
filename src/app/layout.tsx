@@ -69,6 +69,8 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable} font-sans antialiased bg-void text-chalk`}
       >
         {children}
+        {/* Film grain: sits above the interface, below toasts; pure texture */}
+        <div aria-hidden="true" className="grain" />
         <Toaster
           position="bottom-right"
           toastOptions={{

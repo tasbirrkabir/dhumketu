@@ -54,13 +54,13 @@ export function SiteFooter() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-chalk px-5 py-2.5 text-sm font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
+              className="btn-chalk px-5 py-2.5 text-sm font-semibold"
             >
               Start a conversation
             </Link>
             <Link
               href="/work"
-              className="inline-flex items-center gap-2 rounded-full border border-edge-strong px-5 py-2.5 text-sm font-medium text-chalk transition-colors hover:border-chalk-2 hover:text-chalk"
+              className="btn-ghost px-5 py-2.5 text-sm font-medium"
             >
               Explore our work
             </Link>
@@ -76,7 +76,7 @@ export function SiteFooter() {
                 (p) =>
                   p && (
                     <li key={p.slug}>
-                      <Link href={`/work/${p.slug}`} className="text-sm text-chalk-2">
+                      <Link href={`/work/${p.slug}`} className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">
                         {p.name}
                       </Link>
                     </li>
@@ -93,21 +93,21 @@ export function SiteFooter() {
           <div>
             <p className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-3">Programs</p>
             <ul className="mt-4 space-y-2.5">
-              <li><Link href="/programs#dbf" className="text-sm text-chalk-2">Design, Build, Fly</Link></li>
-              <li><Link href="/programs#student" className="text-sm text-chalk-2">Student programs</Link></li>
-              <li><Link href="/programs#community" className="text-sm text-chalk-2">Community platforms</Link></li>
-              <li><Link href="/technology" className="text-sm text-chalk-2">Technology</Link></li>
+              <li><Link href="/programs#dbf" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Design, Build, Fly</Link></li>
+              <li><Link href="/programs#student" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Student programs</Link></li>
+              <li><Link href="/programs#community" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Community platforms</Link></li>
+              <li><Link href="/technology" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Technology</Link></li>
             </ul>
           </div>
 
           <div>
             <p className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-3">Company</p>
             <ul className="mt-4 space-y-2.5">
-              <li><Link href="/company#team" className="text-sm text-chalk-2">Team &amp; leadership</Link></li>
-              <li><Link href="/company#history" className="text-sm text-chalk-2">History</Link></li>
-              <li><Link href="/vision" className="text-sm text-chalk-2">Vision</Link></li>
-              <li><Link href="/company#values" className="text-sm text-chalk-2">Policy &amp; values</Link></li>
-              <li><Link href="/media" className="text-sm text-chalk-2">Media</Link></li>
+              <li><Link href="/company#team" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Team &amp; leadership</Link></li>
+              <li><Link href="/company#history" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">History</Link></li>
+              <li><Link href="/vision" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Vision</Link></li>
+              <li><Link href="/company#values" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Policy &amp; values</Link></li>
+              <li><Link href="/media" className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk">Media</Link></li>
             </ul>
           </div>
 
@@ -121,7 +121,7 @@ export function SiteFooter() {
                     href={s.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm text-chalk-2"
+                    className="text-sm text-chalk-2 transition-colors duration-300 hover:text-chalk"
                   >
                     {s.label}
                   </a>
@@ -131,11 +131,17 @@ export function SiteFooter() {
           </div>
         </nav>
 
-        {/* Ghost wordmark */}
+        {/* Ghost wordmark: fades out like it's sinking into the dark */}
         <p
           aria-hidden="true"
           className="qa-ghost static mt-16 select-none whitespace-nowrap text-[clamp(3.4rem,12.5vw,11rem)] leading-none"
-          style={{ position: "static", WebkitTextStroke: "1.5px rgba(244,242,237,0.08)", color: "transparent" }}
+          style={{
+            position: "static",
+            WebkitTextStroke: "1.5px rgba(244,242,237,0.09)",
+            color: "transparent",
+            WebkitMaskImage: "linear-gradient(180deg, #000 20%, transparent 92%)",
+            maskImage: "linear-gradient(180deg, #000 20%, transparent 92%)",
+          }}
         >
           DHUMKETUX
         </p>
