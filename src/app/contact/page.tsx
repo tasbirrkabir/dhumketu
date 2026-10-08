@@ -94,6 +94,7 @@ export default function ContactPage() {
             <Reveal delay={0.1} className="lg:col-span-6 lg:col-start-7">
               <div className="glass-strong relative overflow-hidden rounded-3xl p-6 text-chalk sm:p-10">
                 <div className="glow-ember right-[-15%] top-[-20%] h-[320px] w-[420px]" aria-hidden="true" />
+                <div className="glow-brand left-[-15%] bottom-[-25%] h-[300px] w-[400px]" aria-hidden="true" />
                 <div className="starfield absolute inset-0 opacity-50" aria-hidden="true" />
                 <div className="relative">
                   <h3 className="qa-display text-2xl text-chalk sm:text-[1.75rem]">

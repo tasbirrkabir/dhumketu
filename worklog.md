@@ -198,3 +198,25 @@ Stage Summary:
 - The concept site now carries the official DhumketuX brand mark everywhere it represents the organization: nav, mobile menu, footer, browser tab (favicon/Apple touch), and social share card
 - Brand color presence: logo field blue enters the visual system as a subtle glow layer alongside the established ember/amber flame language, mirroring the logo itself (blue field, red ring, amber comet)
 - No content or fact changes; src/content/* untouched
+
+---
+Task ID: branding-7
+Agent: Z.ai Code (main)
+Task: "color theme milau" - align the entire site color theme with the official logo palette (field blue #01186B, orbit-ring red #E52027, comet gold flame), sampled directly from the user-provided logo.
+
+Work Log:
+- globals.css token shift: surfaces now carry the logo field blue at near-black luminance (--void #060810, --night #0a0e1c, --night-2 #101527, --card/--popover #0f1320); accent --ember shifted from orange #ff5a2c to orbit-ring red #f0352c; --ring rgba red; glow-ember core reddened; glow-brand strengthened to rgba(53,98,245,0.24)
+- All CTA pills (hero, vision, header, footer, not-found, CtaBand ui-bits, work slug page, contact form submit) changed from orange-to-amber to the logo's ring-to-flame gradient: from-[#e52027] via-[#ff6a3d] to-[#ffb25b], with matching reddened glow shadows rgba(230,58,36,...)
+- Footer top seam gradient recolored to ring red #e52027; footer brand glow enlarged (460x760) so the blue field reads next to the ember glow
+- Added glow-brand to CtaBand (right-bottom) and /contact form panel (left-bottom): both conversion surfaces now pair blue field + ember flame like the logo
+- work/[slug] schematic line-art accent strokes/fills recolored #ff5a2c -> #e52027
+- layout.tsx Toaster background #101013 -> #0f1320 (blue-dark)
+- Regenerated public/media/og-dhumketux.png with exact logo blue #01186B radial on #060810 base
+- Ops incident: dev server died mid-session (sandbox reaped background processes); restarted reliably via Bun.spawn + unref double-fork daemonization (note: plain nohup/setsid & did NOT survive)
+- Verification (agent-browser): desktop 1440 - hero serif accent + pills show red-to-gold gradient, CtaBand shows blue+ember dual glow on blue-black panel, footer shows blue field glow; mobile 390 - no horizontal overflow; console clean, 0 page errors; bun run lint clean
+- Captures: research/audit/theme-hero.png, theme-flagship.png, theme-footer.png, theme-footer2.png, theme-work.png, theme-work-cta.png, theme-work-cta2.png, theme-contact-form.png, theme-mobile.png
+
+Stage Summary:
+- The site's color identity is now the official logo's: deep blue-black space surfaces, orbit-ring red as the signal accent, comet gold for hovers/gradient tips, cream chalk text matching the logo wordmark
+- Surfaces shifted by tokens only (one place), so glass/borders/starfields/status colors stay coherent; status semantics (go/hold/future) intentionally unchanged
+- Dev server daemonization recipe preserved in this log for future sessions

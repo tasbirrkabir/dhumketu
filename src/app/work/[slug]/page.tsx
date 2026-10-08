@@ -63,7 +63,7 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <path d="M148 60v80M172 60v80" />
           <path d="M148 118l-14 32h14M172 118l14 32h-14" />
           <path d="M148 140l-5 14M172 140l5 14" />
-          <path d="M160 158v22" stroke="#ff5a2c" strokeDasharray="3 5" />
+          <path d="M160 158v22" stroke="#e52027" strokeDasharray="3 5" />
           <path d="M160 18v8" strokeDasharray="2 4" />
         </g>
       )}
@@ -74,7 +74,7 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <path d="M148 38c0 20-20 48-32 82M172 38c0 20 20 48 32 82" />
           <path d="M116 120h88" />
           <path d="M118 22l26 14M202 22l-26 14" strokeDasharray="3 5" />
-          <path d="M134 132h52M142 144h36" stroke="#ff5a2c" strokeDasharray="3 5" />
+          <path d="M134 132h52M142 144h36" stroke="#e52027" strokeDasharray="3 5" />
         </g>
       )}
 
@@ -85,7 +85,7 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <path d="M112 60c0 14-12 32-18 54M128 60c0 14 12 32 18 54M94 114h52" />
           <path d="M152 60c0 14-12 32-18 54M168 60c0 14 12 32 18 54M134 114h52" />
           <path d="M192 60c0 14-12 32-18 54M208 60c0 14 12 32 18 54M174 114h52" />
-          <path d="M110 128h20M150 128h20M190 128h20" stroke="#ff5a2c" strokeDasharray="3 5" />
+          <path d="M110 128h20M150 128h20M190 128h20" stroke="#e52027" strokeDasharray="3 5" />
         </g>
       )}
 
@@ -97,7 +97,7 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <circle cx="222" cy="60" r="21" strokeDasharray="3 5" />
           <circle cx="98" cy="140" r="21" strokeDasharray="3 5" />
           <circle cx="222" cy="140" r="21" strokeDasharray="3 5" />
-          <circle cx="160" cy="100" r="2.5" fill="#ff5a2c" stroke="none" />
+          <circle cx="160" cy="100" r="2.5" fill="#e52027" stroke="none" />
           <path d="M152 114l-6 18M168 114l6 18" />
         </g>
       )}
@@ -107,8 +107,8 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <path d="M160 36v128" />
           <path d="M160 84L88 112v12l72-20 72 20v-12l-72-28Z" />
           <path d="M160 150l-32 18v6l32-12 32 12v-6l-32-18Z" />
-          <circle cx="160" cy="30" r="15" stroke="#ff5a2c" strokeDasharray="3 5" />
-          <circle cx="160" cy="36" r="2.5" fill="#ff5a2c" stroke="none" />
+          <circle cx="160" cy="30" r="15" stroke="#e52027" strokeDasharray="3 5" />
+          <circle cx="160" cy="36" r="2.5" fill="#e52027" stroke="none" />
         </g>
       )}
 
@@ -120,7 +120,7 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <ellipse cx="160" cy="100" rx="118" ry="46" transform="rotate(26 160 100)" strokeDasharray="4 6" />
           <rect x="242" y="52" width="12" height="8" transform="rotate(-18 248 56)" />
           <path d="M242 56l-6-6M256 56l6-6" />
-          <circle cx="52" cy="140" r="3" fill="#ff5a2c" stroke="none" />
+          <circle cx="52" cy="140" r="3" fill="#e52027" stroke="none" />
         </g>
       )}
 
@@ -130,7 +130,7 @@ function Schematic({ variant }: { variant: DxProject["diagram"] }) {
           <path d="M136 118q24 14 48 0" />
           <path d="M160 56l-34-22M160 56l34-22" />
           <path d="M112 34q48-30 96 0" strokeDasharray="3 5" />
-          <path d="M148 140q12 16 24 0" stroke="#ff5a2c" strokeDasharray="3 5" />
+          <path d="M148 140q12 16 24 0" stroke="#e52027" strokeDasharray="3 5" />
         </g>
       )}
     </svg>
@@ -354,7 +354,7 @@ export default async function ProjectPage({
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b] px-7 py-3 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(255,90,44,0.4)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_44px_rgba(255,90,44,0.6)] hover:brightness-110"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#e52027] via-[#ff6a3d] to-[#ffb25b] px-7 py-3 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(230,58,36,0.4)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_44px_rgba(230,58,36,0.6)] hover:brightness-110"
               >
                 Work with us
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

@@ -197,7 +197,7 @@ export function SiteHeader() {
             )}
             <Link
               href="/contact#form"
-              className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#ff5a2c] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(255,90,44,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(255,90,44,0.55)] hover:brightness-110"
+              className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#e52027] via-[#ff6a3d] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(230,58,36,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(230,58,36,0.55)] hover:brightness-110"
             >
               Book a Launch
               <ArrowUpRight

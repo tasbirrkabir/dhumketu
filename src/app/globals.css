@@ -4,7 +4,9 @@
 /*
   DhumketuX, "Mission Control Cinema" design tokens.
   Dark space-first surfaces + engine-fire ember accent + cinematic imagery.
-  Built to feel like a living aerospace program, not a printed page.
+  Palette aligned to the official logo: deep field blue #01186B,
+  orbit-ring red #E52027, comet gold flame. Built to feel like a living
+  aerospace program, not a printed page.
 */
 @theme inline {
   --color-background: var(--background);
@@ -47,15 +49,17 @@
 }
 
 :root {
-  --void: #060607;
-  --night: #0b0b0d;
-  --night-2: #121215;
+  /* Surfaces carry the logo field blue (#01186B) at near-black luminance */
+  --void: #060810;
+  --night: #0a0e1c;
+  --night-2: #101527;
   --chalk: #f4f2ed;
   --chalk-2: #a9a79f;
   --chalk-3: #71706a;
   --edge: rgba(244, 242, 237, 0.09);
   --edge-strong: rgba(244, 242, 237, 0.18);
-  --ember: #ff5a2c;
+  /* Accent: orbit-ring red → comet gold (official logo) */
+  --ember: #f0352c;
   --amber: #ffb25b;
   --go: #35c283;
   --hold: #e0b341;
@@ -64,9 +68,9 @@
   /* shadcn tokens mapped to the dark system */
   --background: var(--void);
   --foreground: var(--chalk);
-  --card: #101013;
+  --card: #0f1320;
   --card-foreground: var(--chalk);
-  --popover: #101013;
+  --popover: #0f1320;
   --popover-foreground: var(--chalk);
   --primary: var(--chalk);
   --primary-foreground: var(--void);
@@ -79,7 +83,7 @@
   --destructive: #ff453a;
   --border: var(--edge);
   --input: var(--edge);
-  --ring: rgba(255, 90, 44, 0.5);
+  --ring: rgba(240, 53, 44, 0.5);
   --radius: 0.75rem;
 }
 
@@ -158,12 +162,12 @@ body {
   pointer-events: none;
 }
 
-/* Glow: engine-fire warmth for night panels */
+/* Glow: engine-fire warmth for night panels (ring-red core) */
 .glow-ember {
   position: absolute;
   border-radius: 9999px;
   filter: blur(100px);
-  background: radial-gradient(closest-side, rgba(255, 90, 44, 0.22), transparent 72%);
+  background: radial-gradient(closest-side, rgba(240, 53, 44, 0.2), transparent 72%);
   pointer-events: none;
 }
 .glow-amber {
@@ -185,7 +189,7 @@ body {
   position: absolute;
   border-radius: 9999px;
   filter: blur(110px);
-  background: radial-gradient(closest-side, rgba(43, 80, 210, 0.17), transparent 72%);
+  background: radial-gradient(closest-side, rgba(53, 98, 245, 0.24), transparent 72%);
   pointer-events: none;
 }
 
