@@ -1,142 +1,103 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { org } from "@/content/org";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 /**
- * SEC.00 — HERO
- * Cinematic full-bleed atmospheric image with a restrained technical overlay.
- * Message per PRD §6: "BUILDING AEROSPACE FROM BANGLADESH."
+ * HERO — a quiet, cinematic opening.
+ * One statement, one sub-line, two text links, then a full-bleed real
+ * engine static-fire photograph. No HUD, no badges, no decoration.
  */
 export function Hero() {
-  const reduce = useReducedMotion();
-
-  const ease = [0.22, 1, 0.36, 1] as const;
-  const fadeUp = (delay: number) =>
-    reduce
-      ? {}
-      : {
-          initial: { opacity: 0, y: 28 },
-          animate: { opacity: 1, y: 0 },
-          transition: { duration: 0.9, delay, ease },
-        };
+  const reduced = useReducedMotion();
 
   return (
-    <section
-      id="top"
-      aria-label="Introduction"
-      className="relative flex min-h-[100svh] flex-col overflow-hidden bg-bg-0"
-    >
-      {/* Atmospheric concept image (decorative — not DhumketuX hardware) */}
-      <div className="absolute inset-0" aria-hidden="true">
-        <Image
-          src="/media/hero-launch.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-80"
-        />
-        {/* readability scrims */}
-        <div className="absolute inset-0 bg-gradient-to-b from-bg-0/85 via-bg-0/35 to-bg-0" />
-        <div className="absolute inset-0 bg-gradient-to-r from-bg-0/80 via-transparent to-bg-0/40" />
-      </div>
-
-      {/* corner technical metadata */}
-      <div className="pointer-events-none absolute inset-x-0 top-24 z-10 hidden md:block" aria-hidden="true">
-        <div className="mx-auto flex max-w-[1600px] justify-between px-10">
-          <p className="dx-label text-ink-2/80">{org.positioning}</p>
-          <p className="dx-label text-ink-2/80">{org.launchSite.coords}</p>
-        </div>
-      </div>
-
-      <div className="relative z-10 mx-auto flex w-full max-w-[1600px] flex-1 flex-col justify-end px-5 pb-16 pt-36 md:px-10 md:pb-24">
+    <section aria-label="Introduction" className="night relative bg-night text-chalk">
+      <div className="mx-auto flex min-h-[92svh] w-full max-w-[1180px] flex-col justify-end px-5 pb-10 pt-32 sm:px-8 sm:pb-14 lg:px-12">
         <motion.p
-          {...fadeUp(0.1)}
-          className="dx-label flex items-center gap-3 text-ink-1"
+          initial={reduced ? false : { opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
+          className="text-sm font-medium text-chalk-2"
         >
-          <span className="inline-block h-1.5 w-1.5 bg-signal" aria-hidden="true" />
-          Bangladesh · Aerospace R&D · Est. {org.founded}
+          Dhumketu Exploration Technologies Limited
         </motion.p>
 
-        <h1 className="dx-display mt-6 max-w-5xl text-[clamp(2.75rem,8.5vw,7.5rem)] font-semibold text-ink">
-          {["BUILDING", "AEROSPACE"].map((line, i) => (
-            <span key={line} className="block overflow-hidden">
-              <motion.span
-                className="block"
-                {...fadeUp(0.25 + i * 0.12)}
-              >
-                {line}
-              </motion.span>
-            </span>
-          ))}
-          <span className="block overflow-hidden">
-            <motion.span
-              className="block text-signal"
-              {...fadeUp(0.49)}
-            >
-              FROM BANGLADESH.
-            </motion.span>
-          </span>
-        </h1>
+        <motion.h1
+          initial={reduced ? false : { opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.22, ease: EASE }}
+          className="qa-display mt-6 max-w-[13ch] text-[clamp(2.9rem,8.4vw,7.25rem)] text-chalk"
+        >
+          Building aerospace from Bangladesh.
+        </motion.h1>
+
+        <motion.p
+          initial={reduced ? false : { opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.42, ease: EASE }}
+          className="mt-7 max-w-xl text-lg leading-relaxed text-chalk-2 sm:text-xl"
+        >
+          Rockets. Propulsion. Autonomous systems. Space technologies.
+        </motion.p>
 
         <motion.div
-          {...fadeUp(0.65)}
-          className="mt-10 flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between"
+          initial={reduced ? false : { opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.55, ease: EASE }}
+          className="mt-10 flex flex-wrap items-center gap-x-9 gap-y-4"
         >
-          <div className="max-w-xl">
-            <p className="text-base leading-relaxed text-ink-1 md:text-lg">
-              Dhumketu Exploration Technologies Limited builds rockets,
-              propulsion, autonomous systems and space technologies — an
-              aerospace R&D organization working toward affordable,
-              responsible access to space.
-            </p>
-            <p className="dx-label mt-4 text-ink-2">
-              Rockets · Propulsion · Autonomous Systems · Space Technologies
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Link
-              href="#work"
-              className="group inline-flex items-center justify-center gap-2 bg-signal px-7 py-4 dx-label font-medium text-bg-0 transition-opacity hover:opacity-90"
-            >
-              Explore Our Work
-              <ArrowUpRight
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                aria-hidden="true"
-              />
-            </Link>
-            <Link
-              href="#vision"
-              className="inline-flex items-center justify-center gap-2 border border-line-strong px-7 py-4 dx-label text-ink transition-colors hover:border-signal hover:text-signal"
-            >
-              Our Vision
-            </Link>
-          </div>
-        </motion.div>
-
-        {/* bottom rule with scroll cue */}
-        <motion.div
-          {...fadeUp(0.85)}
-          className="mt-14 flex items-center justify-between border-t border-line pt-5"
-        >
-          <p className="dx-label text-ink-2">
-            {org.legalName}
-          </p>
-          <Link
-            href="#proof"
-            className="group flex items-center gap-2 dx-label text-ink-2 transition-colors hover:text-ink"
-            aria-label="Scroll to overview"
+          <a
+            href="#work"
+            className="group inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk"
           >
-            Scroll
-            <ArrowDown className="h-3.5 w-3.5 animate-bounce motion-reduce:animate-none" aria-hidden="true" />
-          </Link>
+            Explore our work
+            <ArrowDown
+              className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"
+              aria-hidden="true"
+            />
+          </a>
+          <a
+            href="#vision"
+            className="group inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk-2 transition-colors hover:text-chalk"
+          >
+            Our vision
+            <ArrowUpRight
+              className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              aria-hidden="true"
+            />
+          </a>
         </motion.div>
       </div>
+
+      <motion.figure
+        initial={reduced ? false : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.5, ease: EASE }}
+        className="relative"
+      >
+        <motion.div
+          initial={reduced ? false : { scale: 1.08 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 2.2, ease: EASE }}
+          className="relative h-[52svh] w-full sm:h-[64svh]"
+        >
+          <Image
+            src="/media/engine-static-fire-test.jpg"
+            alt="Static fire test of a DhumketuX liquid rocket engine at night, flame extending across the test stand"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        </motion.div>
+        <figcaption className="pointer-events-none absolute bottom-4 left-5 text-xs text-chalk-2/90 sm:left-8 lg:left-12">
+          Liquid rocket engine static fire test — DhumketuX test stand
+        </figcaption>
+      </motion.figure>
     </section>
   );
 }

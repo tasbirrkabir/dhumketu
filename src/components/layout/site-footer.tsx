@@ -1,143 +1,83 @@
-import Link from "next/link";
-import { ArrowUpRight, Mail, Phone } from "lucide-react";
-import { DhumketuMark } from "@/components/graphics/dhumketu-mark";
 import { org } from "@/content/org";
 
-const footerNav = [
-  {
-    title: "Work",
-    links: [
-      { label: "Flagship Projects", href: "#work" },
-      { label: "Propulsion", href: "#propulsion" },
-      { label: "Milestones", href: "#milestones" },
-    ],
-  },
-  {
-    title: "Organization",
-    links: [
-      { label: "Capabilities", href: "#capabilities" },
-      { label: "Vision", href: "#vision" },
-      { label: "Team", href: "#team" },
-    ],
-  },
-  {
-    title: "Engage",
-    links: [
-      { label: "Programs", href: "#programs" },
-      { label: "Media", href: "#media" },
-      { label: "Collaborate", href: "#engage" },
-    ],
-  },
-] as const;
-
+/**
+ * Minimal night footer — identity, routes, contact, provenance notes.
+ * Sits at the end of the night CTA movement (same background, one continuous block).
+ */
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-line bg-bg-1" aria-label="Site footer">
-      {/* CTA band */}
-      <div className="border-b border-line">
-        <div className="mx-auto flex max-w-[1600px] flex-col gap-6 px-5 py-12 md:flex-row md:items-center md:justify-between md:px-10 md:py-16">
-          <div>
-            <p className="dx-label text-ink-2">Next Chapter</p>
-            <p className="dx-display mt-3 text-3xl font-semibold text-ink sm:text-4xl md:text-5xl">
-              Don&apos;t limit your challenges,
-              <br className="hidden sm:block" />{" "}
-              <span className="text-signal">challenge your limit.</span>
+    <footer className="border-t border-night-line">
+      <div className="mx-auto w-full max-w-[1180px] px-5 py-14 sm:px-8 lg:px-12">
+        <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
+          <div className="max-w-sm">
+            <p className="text-lg font-semibold tracking-[-0.02em] text-chalk">DhumketuX</p>
+            <p className="mt-2 text-sm leading-relaxed text-chalk-2">
+              {org.legalName}. {org.tagline}.
             </p>
           </div>
-          <a
-            href="#engage"
-            className="group inline-flex w-fit items-center gap-2 bg-signal px-7 py-4 dx-label font-medium text-bg-0 transition-opacity hover:opacity-90"
-          >
-            Build with DhumketuX
-            <ArrowUpRight
-              className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              aria-hidden="true"
-            />
-          </a>
-        </div>
-      </div>
 
-      {/* Main footer */}
-      <div className="mx-auto max-w-[1600px] px-5 py-12 md:px-10 md:py-16">
-        <div className="grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-5">
-            <DhumketuMark className="text-ink" />
-            <p className="mt-6 max-w-sm text-sm leading-relaxed text-ink-1">
-              {org.legalName} ({org.shortName}) — Bangladesh&apos;s first private
-              aerospace company. Rockets, propulsion, UAVs, satellite-related
-              systems and mission technologies, built from Bangladesh.
-            </p>
-            <div className="mt-8 space-y-3">
-              <a
-                href={`mailto:${org.email}`}
-                className="group flex w-fit items-center gap-3 text-sm text-ink-1 transition-colors hover:text-signal"
-              >
-                <Mail className="h-4 w-4 text-ink-2 group-hover:text-signal" aria-hidden="true" />
-                {org.email}
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-x-16 gap-y-3 sm:grid-cols-3">
+            <div className="flex flex-col gap-3">
+              <p className="text-sm font-medium text-chalk">Work</p>
+              <a href="#work" className="text-sm text-chalk-2 transition-colors hover:text-chalk">
+                Flagship projects
               </a>
               <a
-                href={`tel:${org.phone.replace(/[^+\d]/g, "")}`}
-                className="group flex w-fit items-center gap-3 text-sm text-ink-1 transition-colors hover:text-signal"
+                href="#technology"
+                className="text-sm text-chalk-2 transition-colors hover:text-chalk"
               >
-                <Phone className="h-4 w-4 text-ink-2 group-hover:text-signal" aria-hidden="true" />
-                {org.phone}
+                Technology
+              </a>
+              <a
+                href="#milestones"
+                className="text-sm text-chalk-2 transition-colors hover:text-chalk"
+              >
+                Milestones
               </a>
             </div>
-            <p className="dx-label mt-8 text-ink-2">
-              {org.launchSite.coords} — Brahmaputra char, Mymensingh
-            </p>
-          </div>
-
-          <nav
-            aria-label="Footer"
-            className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7"
-          >
-            {footerNav.map((group) => (
-              <div key={group.title}>
-                <p className="dx-label text-ink-2">{group.title}</p>
-                <ul className="mt-4 space-y-3">
-                  {group.links.map((link) => (
-                    <li key={link.label}>
-                      <Link
-                        href={link.href}
-                        className="text-sm text-ink-1 transition-colors hover:text-signal"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <div className="flex flex-col gap-3">
+              <p className="text-sm font-medium text-chalk">Company</p>
+              <a href="#people" className="text-sm text-chalk-2 transition-colors hover:text-chalk">
+                People
+              </a>
+              <a
+                href="#programs"
+                className="text-sm text-chalk-2 transition-colors hover:text-chalk"
+              >
+                Programs
+              </a>
+              <a href="#vision" className="text-sm text-chalk-2 transition-colors hover:text-chalk">
+                Vision
+              </a>
+            </div>
+            <div className="flex flex-col gap-3">
+              <p className="text-sm font-medium text-chalk">Connect</p>
+              <a
+                href="mailto:xdhumketu@gmail.com"
+                className="text-sm text-chalk-2 transition-colors hover:text-chalk"
+              >
+                Email
+              </a>
+              {org.social.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-chalk-2 transition-colors hover:text-chalk"
+                >
+                  {s.label}
+                </a>
+              ))}
+            </div>
           </nav>
         </div>
 
-        <div className="mt-14 border-t border-line pt-8">
-          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div className="space-y-2">
-              <p className="dx-label text-ink-2">
-                © {new Date().getFullYear()} {org.legalName} ({org.shortName})
-              </p>
-              <p className="max-w-2xl text-xs leading-relaxed text-ink-2">
-                Independent redesign concept prepared for presentation to
-                DhumketuX. Not the official company website. All facts,
-                figures and claims referenced from{" "}
-                <a
-                  href={org.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-ink-1 underline decoration-line-strong underline-offset-2 hover:text-signal"
-                >
-                  dhumketux.com
-                </a>
-                . Imagery shown is decorative concept art, not actual DhumketuX
-                hardware.
-              </p>
-            </div>
-            <p className="dx-label shrink-0 text-ink-2" aria-hidden="true">
-              DX·CONCEPT·01
-            </p>
-          </div>
+        <div className="mt-14 flex flex-col gap-2 border-t border-night-line pt-6 text-xs leading-relaxed text-chalk-2/80 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            Concept redesign prepared for DhumketuX — not the official DhumketuX website.
+          </p>
+          <p>Figures sourced from dhumketux.com.</p>
         </div>
       </div>
     </footer>

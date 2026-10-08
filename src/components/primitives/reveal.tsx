@@ -1,76 +1,72 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
-type RevealDirection = "up" | "down" | "left" | "right" | "none";
+const EASE = [0.16, 1, 0.3, 1] as const;
 
-interface RevealProps {
-  children: ReactNode;
-  /** Delay in seconds */
-  delay?: number;
-  direction?: RevealDirection;
-  /** Travel distance in px (when motion is allowed) */
-  distance?: number;
-  duration?: number;
-  className?: string;
-  as?: "div" | "section" | "li" | "article" | "span" | "figure" | "header" | "footer";
-}
-
-const offsets: Record<RevealDirection, { x?: number; y?: number }> = {
-  up: { y: 24 },
-  down: { y: -24 },
-  left: { x: 24 },
-  right: { x: -24 },
-  none: {},
-};
-
-/** Scroll-entrance reveal wrapper (reduced-motion aware). */
+/**
+ * Quiet entrance: fade + small rise, played once.
+ * Reduced motion: content renders fully visible, no transform.
+ */
 export function Reveal({
   children,
   delay = 0,
-  direction = "up",
-  distance,
-  duration = 0.6,
   className,
   as = "div",
-}: RevealProps) {
-  const reduce = useReducedMotion();
+}: {
+  children: ReactNode;
+  delay?: number;
+  className?: string;
+  as?: "div" | "figure" | "section" | "li" | "span";
+}) {
+  const reduced = useReducedMotion();
+  const Comp = motion[as];
 
-  const Component = motion[as] as typeof motion.div;
-
-  if (reduce) {
-    const Plain = as as "div";
-    return <Plain className={className}>{children}</Plain>;
+  if (reduced) {
+    return <Comp className={className}>{children}</Comp>;
   }
 
-  const base = offsets[direction];
-  const offset = distance !== undefined
-    ? {
-        ...(base.x !== undefined ? { x: distance } : {}),
-        ...(base.y !== undefined ? { y: distance } : {}),
-      }
-    : base;
-
-  const variants: Variants = {
-    hidden: { opacity: 0, ...offset },
-    visible: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: { duration, delay, ease: [0.22, 1, 0.36, 1] },
-    },
-  };
-
   return (
-    <Component
+    <Comp
       className={className}
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "0px 0px -80px 0px" }}
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.8, delay, ease: EASE }}
     >
       {children}
-    </Component>
+    </Comp>
   );
 }
+
+/**
+ * Cinematic settle for imagery: slow scale-down to rest.
+ */
+export function ImageReveal({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  const reduced = useReducedMotion();
+
+  if (reduced) {
+    return <div className={className}>{children}</div>;
+  }
+
+  return (
+    <motion.div
+      className={className}
+      initial={{ scale: 1.06, opacity: 0.6 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 1.4, ease: EASE }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export { EASE };

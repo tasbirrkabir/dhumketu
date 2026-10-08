@@ -44,3 +44,27 @@ Work Log:
 Stage Summary:
 - Deliverable re-certified: single-route production-quality redesign concept, lint clean, console clean, browser-verified end-to-end
 - One polish fix applied (globals.css html position:relative); no other defects found
+
+---
+Task ID: rebuild-1
+Agent: Z.ai Code (main)
+Task: FULL REBUILD of the DhumketuX concept site per the "STOP — THIS IS A REDESIGN, NOT A QA TASK" directive. Old implementation was judged too decorative (HUD labels, yellow accent, grids, bordered cards, badges). New direction: Apple-style minimalism — quiet, premium, editorial, cinematic. Old visual language is NOT a reference.
+
+Work Log:
+- Phase 1 (before coding): re-read all spec files in upload/dhumketux-docs/dhumketux-site-upgrade/ (README, AGENTS, PRD, DESIGN-SYSTEM, IA, CONTENT-MAP, TECH-SPEC, ROUTES, ASSET-MANIFEST, TASKS, QA, DECISIONS)
+- Re-verified asset inventory: reviewed all 11 files in public/media (with manifest.json provenance) + triaged research/assets thumbnails (TV-thumbnail style images rejected as unusable)
+- Wrote /home/z/my-project/REDESIGN.md — new design authority ("Quiet Aerospace"): light-first paper system #fafaf9 + night movements #0a0a09, single signal red #d0342c (<1% budget), Inter for all voice (IBM Plex Mono only for technical data), hairline rules instead of boxes, film-narrative homepage, Apple-restrained motion
+- DELETED all old components: 14 section files, 2 graphics files (diagrams, dhumketu-mark), 3 primitives
+- Rebuilt foundation: globals.css (new token system, qa-display/qa-statement/qa-data/qa-eyebrow/qa-link, no grids/no yellow), layout.tsx (Inter + IBM Plex Mono only, updated metadata/OG to real asset), reveal.tsx (reduced-motion-aware, single settle), section.tsx (Container + SectionIntro)
+- Rebuilt layout: site-header (adaptive: transparent chalk over night hero → paper/90 blur after scroll; full-screen night mobile menu), site-footer (minimal night footer with concept disclaimer + source note)
+- Rebuilt homepage as a film: hero.tsx (statement + full-bleed real engine static-fire photo, honest caption) → intro.tsx (editorial statement + inline sourced stats) → flagship.tsx (ONE PROJECT AT A TIME: 01 Bidrohi SR night+real photo, 02 Agni Bina paper+giant "120+ kN" typographic moment, 03 Boson night, 04 Nazrul 01 paper+official render on black panel) → technology.tsx (8 capabilities as hairline rows) → milestones.tsx (year/event rows + a2i award photo) → vision.tsx (night statement + 3 pillars + Bangla quote + fairing render labeled) → people.tsx (founder portrait + team facts + team photo + advisors as text) → programs.tsx (paper-2 band: DBF tracks/journey/student programs as text) → media.tsx (4 documented stories as text rows) → final-cta.tsx + footer (night)
+- Rewrote not-found.tsx in new system
+- Content layer reused unchanged: src/content/{org,projects,milestones,capabilities,team,vision,articles}.ts (all source-controlled with dhumketux.com provenance)
+
+Stage Summary:
+- Browser-verified (agent-browser): desktop 1440 (hero, intro, 4 flagship features, technology, milestones, vision, people, programs, media, CTA, footer all render), mobile 390 (menu open/navigate/close verified, no overflow), tablet 768 clean after settle
+- Fixed during verification: Nazrul tall render was cropped by object-cover → object-contain (full rocket visible, Apple product-on-black); header opacity 85→90
+- Anchor navigation lands at 64px scroll-margin on all sections; body overflow lock works; console 0 errors/warnings; lint clean
+- Difference from old build (acceptance): light-first vs dark-only, Inter editorial vs Space Grotesk+mono labels, film narrative vs HUD section stack, editorial features vs card grid+dialog, hairlines/whitespace vs bordered cards/grids, no yellow anywhere
+- New captures: research/rebuild-*.png (desktop hero/intro/bidrohi/agni/nazrul-fixed/tech/mile/vision/people/programs/end, mobile hero/menu/bidrohi/end, tablet, 404)
+- Design authority now: REDESIGN.md (supersedes DESIGN-SYSTEM.md §2)

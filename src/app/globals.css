@@ -1,11 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 /*
-  DhumketuX Design System — "Mission Control meets Editorial Aerospace"
-  Tokens follow DESIGN-SYSTEM.md. Dark-first, high contrast, restrained accents.
+  DhumketuX — "Quiet Aerospace" design tokens (REDESIGN.md §2–§4).
+  Light-first paper system + cinematic night movements + one signal red.
+  Typography does the hierarchy; no boxes, no grids, no glow.
 */
 @theme inline {
   --color-background: var(--background);
@@ -26,62 +25,61 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
 
-  /* DhumketuX palette */
-  --color-bg-0: var(--dx-bg-0);
-  --color-bg-1: var(--dx-bg-1);
-  --color-bg-2: var(--dx-bg-2);
-  --color-ink: var(--dx-text-0);
-  --color-ink-1: var(--dx-text-1);
-  --color-ink-2: var(--dx-text-2);
-  --color-line: var(--dx-line);
-  --color-line-strong: var(--dx-line-strong);
-  --color-signal: var(--dx-accent);
-  --color-ember: var(--dx-accent-2);
+  /* Quiet Aerospace palette */
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-chalk: var(--chalk);
+  --color-chalk-2: var(--chalk-2);
+  --color-night-line: var(--night-line);
+  --color-signal: var(--signal);
+  --color-go: var(--go);
 
-  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, "SFMono-Regular", monospace;
 }
 
 :root {
-  --radius: 0.25rem;
+  --paper: #fafaf9;
+  --paper-2: #f2f2ee;
+  --ink: #141412;
+  --ink-2: #6f6f68;
+  --ink-3: #9a9a92;
+  --line: rgba(20, 20, 18, 0.14);
+  --night: #0a0a09;
+  --night-2: #141412;
+  --chalk: #f5f5f1;
+  --chalk-2: #a3a39b;
+  --night-line: rgba(245, 245, 241, 0.16);
+  --signal: #d0342c;
+  --go: #0e7a4f;
 
-  /* DhumketuX core tokens (DESIGN-SYSTEM.md) */
-  --dx-bg-0: #070707;
-  --dx-bg-1: #0e0e0f;
-  --dx-bg-2: #151515;
-  --dx-text-0: #f5f5f2;
-  --dx-text-1: #b8b8b2;
-  --dx-text-2: #777772;
-  --dx-line: rgba(255, 255, 255, 0.12);
-  --dx-line-strong: rgba(255, 255, 255, 0.24);
-  --dx-accent: #e9ff4f;
-  --dx-accent-2: #ff5b35;
-
-  /* shadcn tokens mapped to the dark system (site is dark-first) */
-  --background: var(--dx-bg-0);
-  --foreground: var(--dx-text-0);
-  --card: var(--dx-bg-1);
-  --card-foreground: var(--dx-text-0);
-  --popover: var(--dx-bg-1);
-  --popover-foreground: var(--dx-text-0);
-  --primary: var(--dx-text-0);
-  --primary-foreground: var(--dx-bg-0);
-  --secondary: var(--dx-bg-2);
-  --secondary-foreground: var(--dx-text-0);
-  --muted: var(--dx-bg-2);
-  --muted-foreground: var(--dx-text-1);
-  --accent: var(--dx-bg-2);
-  --accent-foreground: var(--dx-text-0);
-  --destructive: #ff5b35;
-  --border: var(--dx-line);
-  --input: var(--dx-line-strong);
-  --ring: rgba(233, 255, 79, 0.55);
+  /* shadcn tokens mapped to the paper system */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--paper-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-2);
+  --muted-foreground: var(--ink-2);
+  --accent: var(--paper-2);
+  --accent-foreground: var(--ink);
+  --destructive: var(--signal);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: rgba(20, 20, 18, 0.4);
+  --radius: 0;
 }
 
 * {
@@ -90,12 +88,10 @@
 
 html {
   scroll-behavior: smooth;
-  /* Non-static root container: keeps framer-motion useScroll offset
-     measurements stable and silences its dev-only container warning. */
+  /* Non-static root keeps framer-motion useScroll measurements stable. */
   position: relative;
 }
 
-/* Respect reduced-motion for CSS-driven scrolling and animation */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -103,85 +99,77 @@ html {
 }
 
 body {
-  background-color: var(--dx-bg-0);
-  color: var(--dx-text-0);
+  background-color: var(--paper);
+  color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: clip;
 }
 
-/* Visible, consistent focus state */
+/* Display type — Inter, Apple-style tracking and line-height */
+.qa-display {
+  letter-spacing: -0.038em;
+  line-height: 1.02;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.qa-statement {
+  letter-spacing: -0.028em;
+  line-height: 1.08;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+/* Technical numerals — the only place mono appears */
+.qa-data {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+/* Section eyebrow — quiet, one per section */
+.qa-eyebrow {
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.night .qa-eyebrow,
+.night-voice .qa-eyebrow {
+  color: var(--chalk-2);
+}
+
+/* Focus */
 :where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--dx-accent);
-  outline-offset: 2px;
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* Technical display type */
-.dx-display {
-  font-family: var(--font-display);
-  letter-spacing: -0.02em;
-  line-height: 0.95;
-}
-
-.dx-label {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.dx-num {
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.02em;
-}
-
-/* Fine engineering grid backdrop */
-.dx-grid-bg {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 72px 72px;
-}
-
-.dx-grid-bg-fine {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-/* Custom scrollbar (long lists / dialogs) */
+/* Scrollbar */
 @supports (scrollbar-width: thin) {
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+    scrollbar-color: rgba(20, 20, 18, 0.24) transparent;
   }
 }
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--dx-bg-0);
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.16);
-  border: 2px solid var(--dx-bg-0);
-  border-radius: 8px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+
+/* Selection */
+::selection {
+  background: var(--ink);
+  color: var(--paper);
 }
 
-::selection {
-  background: var(--dx-accent);
-  color: var(--dx-bg-0);
+.night ::selection,
+.night-voice ::selection {
+  background: var(--chalk);
+  color: var(--night);
 }
 
 /* Skip link */
-.dx-skip-link {
+.qa-skip-link {
   position: fixed;
   top: 0.75rem;
   left: 0.75rem;
@@ -189,15 +177,34 @@ body {
   transform: translateY(-300%);
   transition: transform 150ms ease;
 }
-.dx-skip-link:focus-visible {
+.qa-skip-link:focus-visible {
   transform: translateY(0);
 }
 
-/* Respect reduced motion globally for CSS transitions/animations */
+/* Underline-on-hover for editorial links */
+.qa-link {
+  position: relative;
+}
+.qa-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.qa-link:hover::after,
+.qa-link:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Reduced motion — global guard */
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
   *,
   *::before,
   *::after {

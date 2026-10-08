@@ -1,14 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -25,37 +17,28 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dhumketux.com"),
-  title: "DhumketuX — Building Aerospace from Bangladesh",
+  title: "DhumketuX — Building aerospace from Bangladesh",
   description:
-    "Dhumketu Exploration Technologies Limited (DhumketuX) is Bangladesh's first private aerospace company — developing rockets, propulsion, UAVs, satellite-related systems and mission technologies from Bangladesh.",
-  keywords: [
-    "DhumketuX",
-    "aerospace Bangladesh",
-    "rocket",
-    "propulsion",
-    "SSLV",
-    "UAV",
-    "space technology",
-  ],
+    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh — developing rockets, propulsion, UAVs, satellite-related systems and mission technologies.",
   openGraph: {
-    title: "DhumketuX — Building Aerospace from Bangladesh",
+    title: "DhumketuX — Building aerospace from Bangladesh",
     description:
       "Rockets. Propulsion. Autonomous systems. Space technologies. Bangladesh's first private aerospace R&D organization.",
     type: "website",
     siteName: "Dhumketu Exploration Technologies Limited",
-    images: [{ url: "/media/hero-launch.png", width: 1344, height: 768 }],
+    images: [{ url: "/media/engine-static-fire-test.jpg", width: 1280, height: 720 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DhumketuX — Building Aerospace from Bangladesh",
+    title: "DhumketuX — Building aerospace from Bangladesh",
     description:
       "Rockets. Propulsion. Autonomous systems. Space technologies. Bangladesh's first private aerospace R&D organization.",
-    images: ["/media/hero-launch.png"],
+    images: ["/media/engine-static-fire-test.jpg"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#070707",
+  themeColor: "#fafaf9",
   width: "device-width",
   initialScale: 1,
 };
@@ -68,10 +51,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${ibmPlexMono.variable} font-sans antialiased bg-background text-foreground`}
+        className={`${inter.variable} ${ibmPlexMono.variable} font-sans antialiased bg-paper text-ink`}
       >
         {children}
-        <Toaster />
       </body>
     </html>
   );
