@@ -56,13 +56,13 @@ export function SiteFooter() {
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-5 py-2.5 text-sm font-semibold text-[#1a0c05] shadow-[0_0_28px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_40px_rgba(255,106,61,0.55)] hover:brightness-110"
             >
-              Book a Launch
+              Start a conversation
             </Link>
             <Link
               href="/work"
               className="inline-flex items-center gap-2 rounded-full border border-edge-strong px-5 py-2.5 text-sm font-medium text-chalk transition-colors hover:border-chalk-2 hover:text-chalk"
             >
-              Explore the catalog
+              Explore our work
             </Link>
           </div>
         </div>

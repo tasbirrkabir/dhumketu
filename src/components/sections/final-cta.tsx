@@ -11,8 +11,8 @@ export function FinalCta() {
       title="Build the sky with"
       accent="us."
       copy="Partners, universities, students and talent: build with us from Bangladesh."
-      primary={{ href: "/contact#form", label: "Book a Launch" }}
-      secondary={{ href: "/contact#form", label: "Start a conversation" }}
+      primary={{ href: "/contact#form", label: "Start a conversation" }}
+      secondary={{ href: "/work", label: "Explore our work" }}
       caption="Backdrop: concept art, illustrative of a mission control environment."
     />
   );

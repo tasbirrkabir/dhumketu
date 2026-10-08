@@ -236,7 +236,7 @@ export function Flagship() {
               {projects.length} systems, one engineering culture
             </span>
             <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-amber">
-              View all projects
+              Explore our work
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
             </span>
           </Link>

@@ -242,3 +242,24 @@ Stage Summary:
 - Headlines, wordmarks and ghost numerals now render in Space Grotesk, giving the site a distinctive aerospace voice (Inter body/IBM mono/Instrument serif accents unchanged)
 - Palette principle recorded in globals.css header comment: color lives in accents and light, never in the surface field
 - scripts/restart-dev.mjs is the canonical dev-server restart recipe (watcher-death recovery)
+
+---
+Task ID: cta-9
+Agent: Z.ai Code (main)
+Task: User clarification "button lekha egula bolsilam" - the earlier "font gula koro" complaint was about the BUTTON TEXTS. Rewrite the CTA label system to be honest, consistent and premium.
+
+Work Log:
+- Audited every button/CTA label in src: found "Book a Launch" x5 (header desktop, header mobile menu, footer, final-cta primary, /work CtaBand), three different labels for /work ("Explore our work" hero, "Explore the catalog" footer, "View all projects" flagship), and final-cta pointing BOTH buttons to /contact#form with different labels
+- Unified CTA system, one label per destination:
+  - Conversion (-> /contact#form): "Start a conversation" - replaces the dishonest "Book a Launch" (DhumketuX is an R&D org with static-fire tests, no bookable commercial launches); applied to header pill, mobile menu, footer, final-cta primary, /work CtaBand (/programs CtaBand already used it)
+  - Exploration (-> /work): "Explore our work" - footer secondary, flagship catalog link, final-cta secondary (new real second path instead of the duplicate contact link)
+  - Kept contextual labels: hero "Our vision", vision "Read the full vision", form "Send message", 404 "Return to base"
+- contact/page.tsx metadata description: dropped "Book a launch" opener
+- Layout hardening for the longer label: header logo Link shrink-0, nav gap-5 lg / gap-7 xl, header pill shrink-0 whitespace-nowrap - fixed the 1024px wrap-to-two-lines + logo/nav collision
+- Verification (agent-browser): 1440 pill single-line; 1024 geometry clean (logoRight 186 < homeLeft 200, pillRight 976 = content edge, pill height 34.5 = one line); mobile 390 no overflow, full-screen menu shows "Start a conversation" cleanly; footer pair renders; errors/console clean; bun run lint clean
+- Captures: research/audit/cta-1024.png (broken), cta-1024-fixed.png, cta-1440-header.png, cta-finalband.png, cta-mobile-menu.png
+
+Stage Summary:
+- Every button now says something true and human: "Start a conversation" for contact, "Explore our work" for the catalog, one voice across all 10 routes
+- Removed the fake-commercial "Book a Launch" promise and the duplicate-destination button pair in the final CTA band
+- Header survives 1024px with the longer label (no wrap, no collision)

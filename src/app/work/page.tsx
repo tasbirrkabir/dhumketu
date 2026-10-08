@@ -113,7 +113,7 @@ export default function WorkPage() {
         title="Have a mission"
         accent="in mind?"
         copy="Sounding rocket campaigns, payload launches and test services: propose a mission and the team will respond with feasibility and range requirements."
-        primary={{ href: "/contact#form", label: "Book a Launch" }}
+        primary={{ href: "/contact#form", label: "Start a conversation" }}
       />
     </Shell>
   );

@@ -11,7 +11,7 @@ import { ArrowUpRight, Clock, Mail, Phone, Globe } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact · DhumketuX",
   description:
-    "Book a launch, propose a collaboration, start a university program, join as a student or explore careers. Contact Dhumketu Exploration Technologies Limited.",
+    "Propose a collaboration, start a university program, join as a student or explore careers. Contact Dhumketu Exploration Technologies Limited.",
 };
 
 export default function ContactPage() {

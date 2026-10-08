@@ -142,7 +142,7 @@ export function SiteHeader() {
           <Link
             href="/"
             aria-label="DhumketuX home"
-            className={`group flex items-center gap-2.5 ${linkTone}`}
+            className={`group flex shrink-0 items-center gap-2.5 ${linkTone}`}
           >
             <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15 transition-shadow duration-300 group-hover:ring-white/35">
               <Image
@@ -159,7 +159,7 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
+          <nav aria-label="Primary" className="hidden items-center gap-5 lg:flex xl:gap-7">
             {items.map((item) =>
               item.href ? (
                 <Link
@@ -197,9 +197,9 @@ export function SiteHeader() {
             )}
             <Link
               href="/contact#form"
-              className="group inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(255,106,61,0.55)] hover:brightness-110"
+              className="group inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(255,106,61,0.55)] hover:brightness-110"
             >
-              Book a Launch
+              Start a conversation
               <ArrowUpRight
                 className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                 aria-hidden="true"
@@ -439,7 +439,7 @@ export function SiteHeader() {
                   onClick={() => setMobileOpen(false)}
                   className="inline-flex items-center gap-2 text-lg font-medium text-chalk"
                 >
-                  Book a Launch <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                  Start a conversation <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
                 <p className="mt-3 text-sm text-chalk-2">xdhumketu@gmail.com</p>
               </div>
