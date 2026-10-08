@@ -1,10 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, IBM_Plex_Mono, Instrument_Serif } from "next/font/google";
+import { Inter, IBM_Plex_Mono, Instrument_Serif, Space_Grotesk } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
 });
@@ -60,14 +66,14 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable} font-sans antialiased bg-void text-chalk`}
+        className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable} ${instrumentSerif.variable} font-sans antialiased bg-void text-chalk`}
       >
         {children}
         <Toaster
           position="bottom-right"
           toastOptions={{
             style: {
-              background: "#0f1320",
+              background: "#101013",
               border: "1px solid rgba(244, 242, 237, 0.14)",
               color: "#f4f2ed",
               borderRadius: "16px",

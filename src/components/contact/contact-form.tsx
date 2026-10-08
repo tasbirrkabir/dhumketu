@@ -285,7 +285,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="group inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#e52027] via-[#ff6a3d] to-[#ffb25b] px-8 py-3.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(230,58,36,0.4)] transition-[box-shadow,filter,opacity] duration-300 hover:shadow-[0_0_44px_rgba(230,58,36,0.6)] hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+          className="group inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-8 py-3.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(255,106,61,0.4)] transition-[box-shadow,filter,opacity] duration-300 hover:shadow-[0_0_44px_rgba(255,106,61,0.6)] hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "sending" ? (
             <>

@@ -17,7 +17,7 @@ export function SiteFooter() {
       {/* Ember seam */}
       <div
         aria-hidden="true"
-        className="h-px w-full bg-gradient-to-r from-transparent via-[#e52027]/60 to-transparent"
+        className="h-px w-full bg-gradient-to-r from-transparent via-[#ff5a2c]/50 to-transparent"
       />
       <div className="glow-ember bottom-[-40%] left-1/2 h-[420px] w-[820px] -translate-x-1/2" aria-hidden="true" />
       <div className="glow-brand bottom-[-30%] left-[-8%] h-[460px] w-[760px]" aria-hidden="true" />
@@ -36,7 +36,7 @@ export function SiteFooter() {
                   className="object-cover"
                 />
               </span>
-              <p className="text-lg font-semibold tracking-[-0.02em] text-chalk">
+              <p className="font-display text-lg font-semibold tracking-[-0.015em] text-chalk">
                 Dhumketu<span className="text-ember-gradient">X</span>
               </p>
             </div>
@@ -54,7 +54,7 @@ export function SiteFooter() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#e52027] via-[#ff6a3d] to-[#ffb25b] px-5 py-2.5 text-sm font-semibold text-[#1a0c05] shadow-[0_0_28px_rgba(230,58,36,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_40px_rgba(230,58,36,0.55)] hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-5 py-2.5 text-sm font-semibold text-[#1a0c05] shadow-[0_0_28px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_40px_rgba(255,106,61,0.55)] hover:brightness-110"
             >
               Book a Launch
             </Link>

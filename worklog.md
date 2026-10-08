@@ -220,3 +220,25 @@ Stage Summary:
 - The site's color identity is now the official logo's: deep blue-black space surfaces, orbit-ring red as the signal accent, comet gold for hovers/gradient tips, cream chalk text matching the logo wordmark
 - Surfaces shifted by tokens only (one place), so glass/borders/starfields/status colors stay coherent; status semantics (go/hold/future) intentionally unchanged
 - Dev server daemonization recipe preserved in this log for future sessions
+
+---
+Task ID: color-8
+Agent: Z.ai Code (main)
+Task: User feedback: "background navy blue kore felso it looks cheap font gula koro and color combination shundor koro aro" - revert the cheap navy-tinted surfaces from branding-7, upgrade typography, and refine the color combination to feel premium.
+
+Work Log:
+- Diagnosed branding-7 regressions: surfaces tinted navy (#060810/#0a0e1c/#101527/#0f1320), ember switched to harsh alarm-red #f0352c, 3-stop red pills rgba(230,58,36) glows - user read the whole thing as "cheap"
+- globals.css token revert + refine: surfaces back to neutral near-black (--void #060607, --night #0b0b0d, --night-2 #121215, --card/--popover #101013); --ember back to engine flame #ff5a2c; --ring rgba(255,90,44,0.5); glow-ember core back to rgba(255,90,44,0.22); glow-brand toned to rgba(43,80,210,0.17) (blue stays atmosphere-only, never the field)
+- Typography upgrade: added Space_Grotesk via next/font (variable --font-space-grotesk) as the display face; .qa-display/.qa-statement/.qa-ghost now render Space Grotesk 600 with adjusted tracking (-0.032em/-0.024em/-0.035em); body stays Inter, mono stays IBM Plex Mono, serif accent stays Instrument Serif; header/footer wordmarks switched to font-display utility
+- GOTCHA FIXED: @theme inline does NOT emit --font-display as a runtime variable, so plain-CSS classes referencing var(--font-display) silently fell back to Inter. Rewrote those rules to reference var(--font-space-grotesk), var(--font-inter) directly (next/font vars ARE runtime variables on body). Tailwind font-display utility still works (value inlined)
+- Bulk color sweep (python, 8 files): pill gradients from-[#e52027] via-[#ff6a3d] to-[#ffb25b] -> from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] with softened glow rgba(255,106,61,*); work/[slug] schematic SVG strokes/fills #e52027 -> #ff5a2c; footer seam via-[#e52027]/60 -> via-[#ff5a2c]/50; layout Toaster bg #0f1320 -> #101013
+- Ops: dev server file-watcher was dead (edits compiled but served stale CSS from .next; touch did not help) - fixed by killing all next processes, wiping .next, and restarting via scripts/restart-dev.mjs (Bun.spawn double-fork daemonization, now saved in-repo)
+- Regenerated public/media/og-dhumketux.png on the neutral base #060607 with subdued logo-blue radial (scripts/regen-og.mjs)
+- Verification (agent-browser): desktop 1440 + mobile 390 - h1/wordmark computed font = Space Grotesk, body bg rgb(6,6,7), no horizontal overflow on /, /work; all 8 routes 200; console clean (HMR info only), 0 page errors; bun run lint clean; zero leftover branding-7 colors in src (rg sweep empty)
+- Captures: research/audit/before-colorfix-hero.png, before-colorfix-footer.png (old navy state), colorfix2-hero.png, colorfix2-mid.png, colorfix2-footer.png, colorfix2-mobile-hero.png, colorfix2-contact.png, colorfix2-work.png
+
+Stage Summary:
+- Surfaces are neutral near-black again; brand blue exists only as glow atmosphere; flame accent is the warm engine ember (#ff5a2c -> #ffb25b) instead of alarm red
+- Headlines, wordmarks and ghost numerals now render in Space Grotesk, giving the site a distinctive aerospace voice (Inter body/IBM mono/Instrument serif accents unchanged)
+- Palette principle recorded in globals.css header comment: color lives in accents and light, never in the surface field
+- scripts/restart-dev.mjs is the canonical dev-server restart recipe (watcher-death recovery)

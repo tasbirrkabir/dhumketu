@@ -3,10 +3,10 @@
 
 /*
   DhumketuX, "Mission Control Cinema" design tokens.
-  Dark space-first surfaces + engine-fire ember accent + cinematic imagery.
-  Palette aligned to the official logo: deep field blue #01186B,
-  orbit-ring red #E52027, comet gold flame. Built to feel like a living
-  aerospace program, not a printed page.
+  Neutral near-black surfaces (color lives in accents and atmosphere,
+  never in the field), engine-fire ember accent, comet gold, and the
+  official logo's field blue kept as pure depth-of-space glow.
+  Built to feel like a living aerospace program, not a printed page.
 */
 @theme inline {
   --color-background: var(--background);
@@ -44,22 +44,23 @@
   --color-future: var(--future);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, "SFMono-Regular", monospace;
   --font-serif: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
 }
 
 :root {
-  /* Surfaces carry the logo field blue (#01186B) at near-black luminance */
-  --void: #060810;
-  --night: #0a0e1c;
-  --night-2: #101527;
+  /* Neutral deep-space surfaces; hue comes from light, not the field */
+  --void: #060607;
+  --night: #0b0b0d;
+  --night-2: #121215;
   --chalk: #f4f2ed;
   --chalk-2: #a9a79f;
   --chalk-3: #71706a;
   --edge: rgba(244, 242, 237, 0.09);
   --edge-strong: rgba(244, 242, 237, 0.18);
-  /* Accent: orbit-ring red → comet gold (official logo) */
-  --ember: #f0352c;
+  /* Accent: engine-fire ember → comet gold */
+  --ember: #ff5a2c;
   --amber: #ffb25b;
   --go: #35c283;
   --hold: #e0b341;
@@ -68,9 +69,9 @@
   /* shadcn tokens mapped to the dark system */
   --background: var(--void);
   --foreground: var(--chalk);
-  --card: #0f1320;
+  --card: #101013;
   --card-foreground: var(--chalk);
-  --popover: #0f1320;
+  --popover: #101013;
   --popover-foreground: var(--chalk);
   --primary: var(--chalk);
   --primary-foreground: var(--void);
@@ -83,7 +84,7 @@
   --destructive: #ff453a;
   --border: var(--edge);
   --input: var(--edge);
-  --ring: rgba(240, 53, 44, 0.5);
+  --ring: rgba(255, 90, 44, 0.5);
   --radius: 0.75rem;
 }
 
@@ -111,17 +112,19 @@ body {
   overflow-x: clip;
 }
 
-/* Display type: Inter, Apple-style tracking */
+/* Display type: Space Grotesk headlines, Inter body, Apple-style tracking */
 .qa-display {
-  letter-spacing: -0.038em;
-  line-height: 1.02;
+  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.032em;
+  line-height: 1.04;
   font-weight: 600;
   text-wrap: balance;
 }
 
 .qa-statement {
-  letter-spacing: -0.028em;
-  line-height: 1.08;
+  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.024em;
+  line-height: 1.1;
   font-weight: 600;
   text-wrap: balance;
 }
@@ -153,8 +156,9 @@ body {
 .qa-ghost {
   position: absolute;
   z-index: 0;
+  font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
   line-height: 0.8;
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(244, 242, 237, 0.10);
@@ -162,12 +166,12 @@ body {
   pointer-events: none;
 }
 
-/* Glow: engine-fire warmth for night panels (ring-red core) */
+/* Glow: engine-fire warmth for night panels */
 .glow-ember {
   position: absolute;
   border-radius: 9999px;
   filter: blur(100px);
-  background: radial-gradient(closest-side, rgba(240, 53, 44, 0.2), transparent 72%);
+  background: radial-gradient(closest-side, rgba(255, 90, 44, 0.22), transparent 72%);
   pointer-events: none;
 }
 .glow-amber {
@@ -184,12 +188,12 @@ body {
   background: radial-gradient(closest-side, rgba(244, 242, 237, 0.08), transparent 72%);
   pointer-events: none;
 }
-/* Brand glow: official logo field blue (#01186B), lifted for dark surfaces */
+/* Brand glow: official logo field blue (#01186B), kept as atmosphere only */
 .glow-brand {
   position: absolute;
   border-radius: 9999px;
   filter: blur(110px);
-  background: radial-gradient(closest-side, rgba(53, 98, 245, 0.24), transparent 72%);
+  background: radial-gradient(closest-side, rgba(43, 80, 210, 0.17), transparent 72%);
   pointer-events: none;
 }
 
