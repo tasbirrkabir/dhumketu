@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  DhumketuX Design System — "Mission Control meets Editorial Aerospace"
+  Tokens follow DESIGN-SYSTEM.md. Dark-first, high contrast, restrained accents.
+*/
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* DhumketuX palette */
+  --color-bg-0: var(--dx-bg-0);
+  --color-bg-1: var(--dx-bg-1);
+  --color-bg-2: var(--dx-bg-2);
+  --color-ink: var(--dx-text-0);
+  --color-ink-1: var(--dx-text-1);
+  --color-ink-2: var(--dx-text-2);
+  --color-line: var(--dx-line);
+  --color-line-strong: var(--dx-line-strong);
+  --color-signal: var(--dx-accent);
+  --color-ember: var(--dx-accent-2);
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+}
+
+:root {
+  --radius: 0.25rem;
+
+  /* DhumketuX core tokens (DESIGN-SYSTEM.md) */
+  --dx-bg-0: #070707;
+  --dx-bg-1: #0e0e0f;
+  --dx-bg-2: #151515;
+  --dx-text-0: #f5f5f2;
+  --dx-text-1: #b8b8b2;
+  --dx-text-2: #777772;
+  --dx-line: rgba(255, 255, 255, 0.12);
+  --dx-line-strong: rgba(255, 255, 255, 0.24);
+  --dx-accent: #e9ff4f;
+  --dx-accent-2: #ff5b35;
+
+  /* shadcn tokens mapped to the dark system (site is dark-first) */
+  --background: var(--dx-bg-0);
+  --foreground: var(--dx-text-0);
+  --card: var(--dx-bg-1);
+  --card-foreground: var(--dx-text-0);
+  --popover: var(--dx-bg-1);
+  --popover-foreground: var(--dx-text-0);
+  --primary: var(--dx-text-0);
+  --primary-foreground: var(--dx-bg-0);
+  --secondary: var(--dx-bg-2);
+  --secondary-foreground: var(--dx-text-0);
+  --muted: var(--dx-bg-2);
+  --muted-foreground: var(--dx-text-1);
+  --accent: var(--dx-bg-2);
+  --accent-foreground: var(--dx-text-0);
+  --destructive: #ff5b35;
+  --border: var(--dx-line);
+  --input: var(--dx-line-strong);
+  --ring: rgba(233, 255, 79, 0.55);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dx-bg-0);
+  color: var(--dx-text-0);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+/* Visible, consistent focus state */
+:where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--dx-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Technical display type */
+.dx-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+.dx-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dx-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Fine engineering grid backdrop */
+.dx-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.dx-grid-bg-fine {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar (long lists / dialogs) */
+@supports (scrollbar-width: thin) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dx-bg-0);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border: 2px solid var(--dx-bg-0);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::selection {
+  background: var(--dx-accent);
+  color: var(--dx-bg-0);
+}
+
+/* Skip link */
+.dx-skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  transform: translateY(-300%);
+  transition: transform 150ms ease;
+}
+.dx-skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+/* Respect reduced motion globally for CSS transitions/animations */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

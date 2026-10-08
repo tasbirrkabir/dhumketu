@@ -1,0 +1,251 @@
+TITLE: History of DhumketuX – Bangladesh’s First Private Aerospace Company
+URL: https://dhumketux.com/history/
+
+History 
+ Skip to content 
+ Home 
+ Aerospace 
+ Launch Vehicle 
+ Bayanno 
+ Ekushey 21 
+ Bidrohi SR 
+ Nazrul -01 SSLV 
+ Space Billboard 
+ Reusable Rocket 
+ Satellite 
+ CANSAT 
+ Cube Satellite 
+ Micro Satellite 
+ Weather Balloon 
+ R & D Technology 
+ Sub-systems 
+ Solid Propulsion 
+ Liquid Propulsion 
+ Thrusters 
+ Test Launch – 1st Rocket 
+ Aviation 
+ Drone 
+ VTOL Manned Drone 
+ SkyBlade Xero Prototype 
+ SkyBlade X4 VTOL Drone 
+ Cargo Airship 
+ ultralight aircraft  
+ Helicopter 
+ Services 
+ About Us 
+ Media 
+ Space Articles 
+ Media News 
+ Our Social Media 
+ Donate Our Programs 
+ Team & Leadership 
+ Investments opportunities 
+ Careers 
+ Vision 
+ History 
+ Collaborations 
+ Social Responsibilities 
+ Technological Capabilities 
+ Our Policy and Core Values 
+ Contact Us 
+ Our Programs 
+ Our Community Platforms 
+ DhumketuX Community 
+ DhumketuX Community – Junior Team 
+ Rocketry Community Bangladesh 
+ Campus TechTalks 
+ FPGA & VLSI Community Bangladesh 
+ Advance Robotics “ROS & ROS2” Community Bangladesh 
+ VTOL Drone Community Bangladesh 
+ Bangladesh Aerospace & Aviation Association (BAAA) 
+ Bangladesh Aerospace Exploration & Research Center (BAXRC) 
+ Student virtual lab 
+ 🔍 Find Your Name 
+ DhumketuX Internship Program 
+ Campus-Industry Collaboration 
+ Student Rocket Program 
+ Student Satellite Program 
+ “Design, Build, Fly” DBF Program 
+ Donate Students Program 
+ Student Startup Business 
+ Shop 
+ Book A Launch 
+ Home 
+ Aerospace 
+ Launch Vehicle 
+ Bayanno 
+ Ekushey 21 
+ Bidrohi SR 
+ Nazrul -01 SSLV 
+ Space Billboard 
+ Reusable Rocket 
+ Satellite 
+ CANSAT 
+ Cube Satellite 
+ Micro Satellite 
+ Weather Balloon 
+ R & D Technology 
+ Sub-systems 
+ Solid Propulsion 
+ Liquid Propulsion 
+ Thrusters 
+ Test Launch – 1st Rocket 
+ Aviation 
+ Drone 
+ VTOL Manned Drone 
+ SkyBlade Xero Prototype 
+ SkyBlade X4 VTOL Drone 
+ Cargo Airship 
+ ultralight aircraft  
+ Helicopter 
+ Services 
+ About Us 
+ Media 
+ Space Articles 
+ Media News 
+ Our Social Media 
+ Donate Our Programs 
+ Team & Leadership 
+ Investments opportunities 
+ Careers 
+ Vision 
+ History 
+ Collaborations 
+ Social Responsibilities 
+ Technological Capabilities 
+ Our Policy and Core Values 
+ Contact Us 
+ Our Programs 
+ Our Community Platforms 
+ DhumketuX Community 
+ DhumketuX Community – Junior Team 
+ Rocketry Community Bangladesh 
+ Campus TechTalks 
+ FPGA & VLSI Community Bangladesh 
+ Advance Robotics “ROS & ROS2” Community Bangladesh 
+ VTOL Drone Community Bangladesh 
+ Bangladesh Aerospace & Aviation Association (BAAA) 
+ Bangladesh Aerospace Exploration & Research Center (BAXRC) 
+ Student virtual lab 
+ 🔍 Find Your Name 
+ DhumketuX Internship Program 
+ Campus-Industry Collaboration 
+ Student Rocket Program 
+ Student Satellite Program 
+ “Design, Build, Fly” DBF Program 
+ Donate Students Program 
+ Student Startup Business 
+ Shop 
+ Book A Launch 
+ Menu 
+ 📜 History · Dhumketu Exploration Technologies Ltd.
+ History of DhumketuX – Bangladesh’s First Private Aerospace Company
+ Dhumketu Exploration Technologies Ltd. (DhumketuX) started as a bold idea: can Bangladesh design, build and test its own rockets, UAVs and satellite-related systems using local talent and infrastructure? Over the years, that idea has grown into a full ecosystem of labs, projects, internships and international recognition.
+ ধূমকেতুএক্স এর যাত্রা শুরু হয়েছিল কয়েকজন কৌতূহলী শিক্ষার্থীর হাতে বানানো ছোট রকেট, ইলেকট্রনিক্স প্রজেক্ট আর ল্যাব পরীক্ষার মাধ্যমে। আজ একই যাত্রা বাংলাদেশের প্রথম প্রাইভেট অ্যারোস্পেস কোম্পানি হিসেবে রকেট, UAV এবং স্যাটেলাইট সংশ্লিষ্ট প্রযুক্তি তৈরি ও পরীক্ষার একটি পূর্ণাঙ্গ প্ল্যাটফর্মে পরিণত হয়েছে।
+ 1. Early Roots – From Curiosity to Experiments
+ Before DhumketuX existed as a company, it lived as a mindset—small labs, hobby projects and self-funded experiments in electronics, model rockets and RC platforms. Early efforts focused on:
+ Basic rocket and propulsion trials with improvised test setups
+ RC aircraft and UAV experiments by student and hobby groups
+ A small but dedicated network of builders who preferred lab time over only theory
+ এই সময়টাতে জন্ম নেয় ধূমকেতুএক্স এর মূল সংস্কৃতি: build → test → document → improve .
+ 2. Formation of DhumketuX – Vision Becomes a Company
+ As experiments became more serious, it was clear that a formal structure was needed. Dhumketu Exploration Technologies Ltd. (DhumketuX) was created as Bangladesh’s first private aerospace-focused company with a clear mission:
+ Unify rocketry, UAV and satellite-related work under one platform
+ Build systems end-to-end: concept, design, testing and iteration
+ Collaborate with universities, institutions and global experts in a structured way
+ 3. Early Rocket & UAV Programs
+ Once the company structure was in place, DhumketuX moved into more disciplined rocket and UAV programs :
+ 🚀 Rocket Test Programs
+ Design and fabrication of experimental rocket airframes
+ Static test stands for thrust and propulsion validation
+ Instrumented launches to capture trajectory and flight data
+ ✈️ UAV Platforms & Autonomy
+ Fixed-wing and multirotor platforms for aerial missions
+ Integration of propulsion, avionics and mission payloads
+ Initial work on autopilot, waypoint navigation and telemetry
+ 4. Ecosystem, Labs & Community Programs
+ As projects matured, DhumketuX grew into a broader aerospace ecosystem :
+ Dedicated labs and workshops for propulsion, avionics and integration
+ Seminars, MoUs and joint work with universities and institutions
+ Advisors from local and international aerospace-related industries
+ Between 2022–2024 , the DhumketuX Community program engaged students across Bangladesh with structured training and project-based learning in rocketry, UAVs, avionics and mission software.
+ NB: The DhumketuX community organization–based program officially ended in 2024 (active 2022–2024). We no longer issue certificates under the “DhumketuX Community” name. All current training and certification now operates directly under Dhumketu Exploration Technologies Ltd. 
+ 5. Structured Internships, Training & Experience Certification
+ To standardize learning and contributions, DhumketuX introduced a formal Experience Certification System for industrial training, internships and trainee engineer tracks.
+ Industrial Training: short-term introductory programs focused on culture and fundamentals.
+ Internships (Short & Long): project-based contributions with hourly and timeline targets.
+ Trainee Engineer Tracks: long-term involvement in design, testing, documentation and iteration.
+ Certificates are issued only after full completion of the agreed timeline, verified participation and strict NDA/confidentiality compliance. If a participant does not complete the terms and time period, the internship may be automatically cancelled and no certificate is provided.
+ 6. Expanding Domains – Rockets, UAVs & Satellite-Related Systems
+ Over time, DhumketuX evolved from a rocket-focused initiative into a multi-domain aerospace platform:
+ Rocket Systems & Propulsion Testbeds – static thrust stands, sounding rocket configurations and structured launch campaigns.
+ UAV Platforms & Autonomy – fixed-wing and multirotor UAVs with integrated avionics and mission-specific payloads.
+ Satellite & Space-Related Systems – early-stage ground segment concepts, mission modelling and data-centric tools.
+ Avionics & Telemetry – flight computers, sensor suites, RF links and ground control dashboards.
+ 7. Social Responsibility & STEM Outreach
+ Alongside engineering work, DhumketuX invests heavily in STEM outreach to inspire the next generation:
+ Seminars and workshops at universities and institutes
+ Guidance for student groups building rockets, UAVs and space-related projects
+ Outreach events geared toward school and college students
+ 8. Key Achievements
+ Over a relatively short history, DhumketuX has already marked several major “firsts” for Bangladesh’s aerospace journey.
+ 🛰️ First Private Aerospace Company in Bangladesh
+ DhumketuX is widely recognized as Bangladesh’s first private company dedicated to rocketry, UAVs and satellite-related systems, operating as a commercial civilian space and aerospace R&D platform.
+ 🔥 Bangladesh’s First Rocket Engine Test
+ The Red Chili 01 solid rocket motor is documented as the first rocket engine to be developed and statically tested in Bangladesh, with multiple firings validating local propulsion capability.
+ 🚀 First Rocket Launch in Bangladesh History
+ On 7 February 2023 , the DhumketuX Junior Team launched Putimach 01 (পুটিমাছ ০১) from the Brahmaputra char, Mymensingh, reaching roughly 1 km altitude at a 75° launch angle—widely remembered as the first recorded rocket launch in Bangladesh.
+ 🏆 Bangladesh’s 1st Rocketry Challenge Winner (A2i 2022)
+ DhumketuX won Bangladesh’s first rocketry challenge under the A2i Innovation 2022 competition, highlighted as “ Bangladesh’s 1st Rocketry Challenge Winner! 🚀 | DhumketuX Makes History | A2i Innovation 2022 ”.
+ 🛰️ Bidrohi – First Commercial Sub-Orbital Rocket Concept
+ The Bidrohi sub-orbital rocket concept was introduced as Bangladesh’s first commercial sub-orbital rocket initiative, symbolizing long-term ambitions in access-to-space technologies.
+ 🌍 DhumketuX on the Global Stage – IISS Singapore 2025
+ DhumketuX represented Bangladesh at the IISS Singapore 2025 event, showcased in media as “ DhumketuX Represents Bangladesh at Global Space Stage | IISS Singapore 2025 | Historic Moment! ” — a key milestone in international visibility.
+ 9. Timeline of Milestones
+ A milestone-style view of the journey—from early roots to national “firsts” and global representation.
+ 🌱 Before 2018 – Foundations
+ Student-led projects, small labs and hobby rockets/RC platforms laid the cultural foundation of DhumketuX—hands-on, curious and documentation-focused.
+ 🚀 2018 – Formation of DhumketuX
+ Dhumketu Exploration Technologies Ltd. is founded as Bangladesh’s first private aerospace company, unifying rocketry, UAV and satellite-related work under one umbrella.
+ 🔥 2021–2022 – Engine Breakthrough & National Recognition
+ Red Chili 01 solid rocket motor becomes the first documented rocket engine to be tested in Bangladesh.
+ DhumketuX wins Bangladesh’s 1st Rocketry Challenge at A2i Innovation 2022: “Bangladesh’s 1st Rocketry Challenge Winner! 🚀 | DhumketuX Makes History | A2i Innovation 2022”.
+ 🧪 2022–2023 – From Engines to Flights
+ Scaling of UAV and avionics development, creating integrated testbeds.
+ 7 February 2023: Launch of Putimach 01 to ~1 km altitude at 75° from Brahmaputra char, marking the first rocket launch in Bangladesh history within the DhumketuX ecosystem.
+ 🛰️ 2023–2024 – Ecosystem Building & Bidrohi
+ Expansion of labs, test infrastructure and internship/trainee systems.
+ DhumketuX Community runs structured programs across universities (2022–2024).
+ Unveiling of Bidrohi as Bangladesh’s first commercial sub-orbital rocket concept.
+ 🌍 2025 & Beyond – Global Stage & Future Systems
+ DhumketuX represents Bangladesh at IISS Singapore 2025 , appearing under titles such as “DhumketuX Represents Bangladesh at Global Space Stage | IISS Singapore 2025 | Historic Moment!”.
+ Ongoing development of new sounding rockets, advanced UAVs and satellite-related ground/data systems.
+ Deepening collaborations with universities, labs and international partners.
+ 10. Today & the Road Ahead
+ Today, DhumketuX stands as a growing aerospace platform from Bangladesh—combining rocketry, UAVs, satellite-related systems, avionics and software under one integrated engineering culture. The long-term goal is clear: build reliable technologies, mature test infrastructure and create opportunities so that future engineers can work on real aerospace systems from inside Bangladesh .
+ ইতিহাস এখনো লেখা শেষ হয়নি—ধূমকেতুএক্স এর প্রতিটি নতুন টেস্ট, নতুন রকেট, নতুন UAV আর নতুন প্রজেক্টই এই টাইমলাইনকে সামনে এগিয়ে নিচ্ছে।
+ DhumketuX Journey – Milestone Timeline
+ A quick view of how DhumketuX grew from small lab experiments to Bangladesh’s first private aerospace company with national “firsts” and global recognition.
+ 1
+ Foundations – Before 2018
+ Small labs, DIY rockets, RC platforms and electronics projects by students. Here the core culture of DhumketuX was born: build → test → document → improve .
+ 2
+ DhumketuX is Born – 2018
+ Formation of Dhumketu Exploration Technologies Ltd. as Bangladesh’s first private aerospace company , unifying rocketry, UAV and satellite-related work under one platform.
+ 3
+ Engine Breakthrough – 2021–2022
+ Development and static testing of the Red Chili 01 solid rocket motor—the first documented rocket engine test in Bangladesh—and the foundation for structured rocket experiments.
+ 4
+ Bangladesh’s 1st Rocketry Challenge Winner – 2022
+ DhumketuX wins Bangladesh’s 1st Rocketry Challenge (A2i Innovation 2022), celebrated as “Bangladesh’s 1st Rocketry Challenge Winner! 🚀 | DhumketuX Makes History | A2i Innovation 2022”.
+ 5
+ First Rocket Launch & Bidrohi Era – 2023–2024
+ 7 Feb 2023: Putimach 01 (পুটিমাছ ০১) reaches ~1 km altitude—remembered as the first rocket launch in Bangladesh’s history within the DhumketuX ecosystem. The Bidrohi sub-orbital rocket concept is introduced, and labs, internships and experience certification expand.
+ 6
+ Global Stage & Next Chapter – 2025 & Beyond
+ DhumketuX represents Bangladesh on the global space stage (e.g., IISS Singapore 2025 ) and continues pushing new sounding rockets, advanced UAVs and satellite-related systems—writing the next chapters of Bangladesh’s aerospace story.
+ DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
+ +880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil

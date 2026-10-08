@@ -1,0 +1,204 @@
+TITLE: “Design, Build, Fly” DBF Program
+URL: https://dhumketux.com/design-build-fly-program/
+
+“Design, Build, Fly” DBF Program 
+ Help us to reach the sky, your little contribution means a lot to us! DONATE US 
+ ✕ 
+ Skip to content 
+ Home 
+ Aerospace 
+ Launch Vehicle 
+ Bayanno 
+ Ekushey 21 
+ Bidrohi SR 
+ Nazrul -01 SSLV 
+ Space Billboard 
+ Reusable Rocket 
+ Satellite 
+ CANSAT 
+ Cube Satellite 
+ Micro Satellite 
+ Weather Balloon 
+ R & D Technology 
+ Sub-systems 
+ Solid Propulsion 
+ Liquid Propulsion 
+ Thrusters 
+ Test Launch – 1st Rocket 
+ Aviation 
+ Drone 
+ VTOL Manned Drone 
+ SkyBlade Xero Prototype 
+ SkyBlade X4 VTOL Drone 
+ Cargo Airship 
+ ultralight aircraft  
+ Helicopter 
+ Services 
+ About Us 
+ Media 
+ Space Articles 
+ Media News 
+ Our Social Media 
+ Donate Our Programs 
+ Team & Leadership 
+ Investments opportunities 
+ Careers 
+ Vision 
+ History 
+ Collaborations 
+ Social Responsibilities 
+ Technological Capabilities 
+ Our Policy and Core Values 
+ Contact Us 
+ Our Programs 
+ Our Community Platforms 
+ DhumketuX Community 
+ DhumketuX Community – Junior Team 
+ Rocketry Community Bangladesh 
+ Campus TechTalks 
+ FPGA & VLSI Community Bangladesh 
+ Advance Robotics “ROS & ROS2” Community Bangladesh 
+ VTOL Drone Community Bangladesh 
+ Bangladesh Aerospace & Aviation Association (BAAA) 
+ Bangladesh Aerospace Exploration & Research Center (BAXRC) 
+ Student virtual lab 
+ 🔍 Find Your Name 
+ DhumketuX Internship Program 
+ Campus-Industry Collaboration 
+ Student Rocket Program 
+ Student Satellite Program 
+ “Design, Build, Fly” DBF Program 
+ Donate Students Program 
+ Student Startup Business 
+ Shop 
+ Book A Launch 
+ Home 
+ Aerospace 
+ Launch Vehicle 
+ Bayanno 
+ Ekushey 21 
+ Bidrohi SR 
+ Nazrul -01 SSLV 
+ Space Billboard 
+ Reusable Rocket 
+ Satellite 
+ CANSAT 
+ Cube Satellite 
+ Micro Satellite 
+ Weather Balloon 
+ R & D Technology 
+ Sub-systems 
+ Solid Propulsion 
+ Liquid Propulsion 
+ Thrusters 
+ Test Launch – 1st Rocket 
+ Aviation 
+ Drone 
+ VTOL Manned Drone 
+ SkyBlade Xero Prototype 
+ SkyBlade X4 VTOL Drone 
+ Cargo Airship 
+ ultralight aircraft  
+ Helicopter 
+ Services 
+ About Us 
+ Media 
+ Space Articles 
+ Media News 
+ Our Social Media 
+ Donate Our Programs 
+ Team & Leadership 
+ Investments opportunities 
+ Careers 
+ Vision 
+ History 
+ Collaborations 
+ Social Responsibilities 
+ Technological Capabilities 
+ Our Policy and Core Values 
+ Contact Us 
+ Our Programs 
+ Our Community Platforms 
+ DhumketuX Community 
+ DhumketuX Community – Junior Team 
+ Rocketry Community Bangladesh 
+ Campus TechTalks 
+ FPGA & VLSI Community Bangladesh 
+ Advance Robotics “ROS & ROS2” Community Bangladesh 
+ VTOL Drone Community Bangladesh 
+ Bangladesh Aerospace & Aviation Association (BAAA) 
+ Bangladesh Aerospace Exploration & Research Center (BAXRC) 
+ Student virtual lab 
+ 🔍 Find Your Name 
+ DhumketuX Internship Program 
+ Campus-Industry Collaboration 
+ Student Rocket Program 
+ Student Satellite Program 
+ “Design, Build, Fly” DBF Program 
+ Donate Students Program 
+ Student Startup Business 
+ Shop 
+ Book A Launch 
+ Menu 
+ Campus–Industry Collaboration
+ “Design, Build, Fly” Program
+ A project-based journey where student teams design, build and fly real aerospace systems in collaboration with DhumketuX , BAXRC and Rocketry Bangladesh —covering rockets, UAVs and CanSat missions.
+ Download Mission Brief (PDF) 
+ Apply as a University Team 
+ Replace this image with your own program banner or flight-day photograph.
+ Three Design, Build, Fly Tracks
+ Every cycle, student teams choose one or more of these tracks. Mission rules change annually, forcing real engineering trade-offs—just like global Design/Build/Fly challenges.
+ 🚀
+ Rocket Track
+ Design experimental rocket structures and payload bays. Build flight-worthy hardware. Fly on DhumketuX-provided launch vehicles under professional range safety.
+ Sub-scale rockets & payload modules
+ Altitude, trajectory & data-quality scoring
+ DhumketuX handles propellants & launch
+ 🛩️
+ UAV Track
+ Design, build and fly electric fixed-wing or VTOL drones within mission constraints for payload, speed, endurance and landing accuracy.
+ Mission profiles announced yearly
+ Focus on safety, robustness & efficiency
+ Great foundation for future UAS careers
+ 🛰️
+ CanSat & Mini-Satellite Track
+ Build CanSat or mini-satellite payloads for rocket, drone or balloon deployment. Learn mission design, sensing, telemetry and data analysis.
+ Co-organized with Rocketry Bangladesh & BAXRC
+ Ideal entry point to the Student Satellite Program
+ Strong focus on documentation and data quality
+ Program Journey — From Concept to Flight
+ Each cycle follows a structured, AIAA-style Design–Build–Fly pipeline with design reviews, testing, and a national fly-off event.
+ Step 1
+ Call for Proposals
+ Universities form cross-disciplinary teams, choose a track and submit a concept note with a faculty advisor.
+ Step 2
+ Preliminary Design Review
+ Teams submit a Preliminary Design Report covering mission requirements, sizing, simulations and safety strategy.
+ Step 3
+ Build & Ground Tests
+ Teams fabricate hardware, complete static, taxi or drop tests and clear safety checklists before flight.
+ Step 4
+ National Fly-Off
+ Teams execute mission flights under official timing and scoring, supervised by DhumketuX range officers.
+ Step 5
+ Reporting & Awards
+ Teams submit final reports and data. Awards recognize design excellence, innovation, safety and teamwork.
+ Program Partners
+ DhumketuX leads mission design, launch support and industry standards. BAXRC provides academic governance, ethics and safety frameworks. Rocketry Bangladesh drives student outreach, workshops and community flight activities.
+ Cross-university collaboration & mentorship
+ Access to DhumketuX test infrastructure where approved
+ Gateway into advanced BAXRC research programs
+ Safety, NDA & IP
+ Education-only, non-weaponized: all flights and experiments are for learning and research under strict safety and ethics policies.
+ No aerospace chemicals or propellants are sold or handed over to institutions or individuals. All energetic operations are managed directly by DhumketuX.
+ Teams sign a Non-Disclosure Agreement (NDA) to protect sensitive design and test data while still enabling academic publication with appropriate redactions.
+ Core system IP (launch systems, proprietary avionics, mission software, etc.) remains with Dhumketu Exploration Technologies Ltd. (DhumketuX) . Student teams retain authorship of their reports and papers.
+ Turn Your Campus into an Aerospace Innovation Lab
+ If your university wants to launch a rocket, UAV or CanSat team with industry-grade mentoring, the “Design, Build, Fly” program is your gateway. Join DhumketuX, BAXRC and Rocketry Bangladesh in shaping the next generation of aerospace innovators.
+ Request MoU / Program Details 
+ Contact Program Team 
+ DON'T LIMIT YOUR CHALLENGES, CHALLENGE YOUR LIMIT
+ +880 1861-640549
+xdhumketu@gmail.com
+For Australians seeking quality online casino experiences, https://thepokies115.eu.com/ provides trusted reviews, attractive promotions, and comprehensive gaming guides.
+ © 2026 |Dhumketu Exploration Technologies Limited (DhumketuX)| Developed by Adil
