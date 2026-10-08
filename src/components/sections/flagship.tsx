@@ -69,7 +69,7 @@ function CardShell({
           <h3 className="qa-display mt-2 flex items-center gap-3 text-[clamp(1.7rem,3.4vw,2.5rem)] text-chalk">
             {name}
             <ArrowUpRight
-              className="h-[0.55em] w-[0.55em] shrink-0 text-amber opacity-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100"
+              className="h-[0.55em] w-[0.55em] shrink-0 text-chalk opacity-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:opacity-100"
               aria-hidden="true"
             />
           </h3>
@@ -144,7 +144,7 @@ export function Flagship() {
                 <div className="glow-ember right-[-20%] top-[16%] h-[300px] w-[380px]" aria-hidden="true" />
                 <div className="relative z-10 flex flex-1 items-center justify-center px-6 py-14 sm:px-8">
                   <p className="qa-display text-center text-[clamp(3.2rem,7vw,5.5rem)]" aria-label="120 plus kilonewtons of thrust">
-                    <span className="text-ember-gradient">120+</span>
+                    <span className="text-chalk">120+</span>
                     <span className="text-chalk-2">&thinsp;kN</span>
                   </p>
                 </div>
@@ -235,7 +235,7 @@ export function Flagship() {
             <span className="text-xl font-semibold tracking-[-0.02em] text-chalk sm:text-2xl">
               {projects.length} systems, one engineering culture
             </span>
-            <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-amber">
+            <span className="inline-flex shrink-0 items-center gap-2 text-[0.9375rem] font-medium text-chalk">
               Explore our work
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
             </span>

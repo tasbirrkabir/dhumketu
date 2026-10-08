@@ -50,11 +50,11 @@ export function Technology() {
                       href={`/technology#${c.id}`}
                       className="group flex items-baseline gap-5 border-b border-edge py-5 transition-colors hover:border-edge-strong sm:items-center sm:gap-7"
                     >
-                      <span className="qa-data w-8 shrink-0 text-sm text-chalk-3 transition-colors group-hover:text-amber">
+                      <span className="qa-data w-8 shrink-0 text-sm text-chalk-3 transition-colors group-hover:text-chalk">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <span className="min-w-0">
-                        <span className="block text-lg font-semibold tracking-[-0.015em] text-chalk transition-colors group-hover:text-amber sm:text-xl">
+                        <span className="block text-lg font-semibold tracking-[-0.015em] text-chalk transition-colors group-hover:text-chalk sm:text-xl">
                           {c.title}
                         </span>
                         <span className="mt-1 block text-sm leading-relaxed text-chalk-2">
@@ -62,7 +62,7 @@ export function Technology() {
                         </span>
                       </span>
                       <ArrowUpRight
-                        className="ml-auto h-4 w-4 shrink-0 self-center text-chalk-3 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-amber group-hover:opacity-100"
+                        className="ml-auto h-4 w-4 shrink-0 self-center text-chalk-3 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-chalk group-hover:opacity-100"
                         aria-hidden="true"
                       />
                     </Link>

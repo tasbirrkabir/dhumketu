@@ -139,7 +139,7 @@ export default function CompanyPage() {
                     i === milestones.length - 1 ? "border-b" : ""
                   }`}
                 >
-                  <p className="qa-data text-[0.9375rem] text-amber">{m.year}</p>
+                  <p className="qa-data text-[0.9375rem] text-chalk-2">{m.year}</p>
                   <div>
                     <h3 className="text-xl font-semibold tracking-[-0.015em] text-chalk sm:text-[1.375rem]">
                       {m.title}

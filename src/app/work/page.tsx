@@ -77,7 +77,7 @@ export default function WorkPage() {
                       <h3 className="qa-display mt-6 flex items-center gap-2 text-2xl text-chalk sm:text-[1.65rem]">
                         {p.name}
                         <ArrowUpRight
-                          className="h-5 w-5 shrink-0 text-amber opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
+                          className="h-5 w-5 shrink-0 text-chalk opacity-0 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
                           aria-hidden="true"
                         />
                       </h3>

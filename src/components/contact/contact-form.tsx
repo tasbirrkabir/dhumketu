@@ -17,7 +17,7 @@ import {
 import { EASE } from "@/components/primitives/reveal";
 
 const TOPICS = [
-  "Book a launch",
+  "Propose a mission",
   "Collaboration",
   "University program",
   "Careers",
@@ -149,14 +149,14 @@ export function ContactForm() {
         className="flex min-h-[420px] flex-col items-start justify-center"
       >
         <span className="glow-ember right-[-10%] top-[-10%] h-[240px] w-[320px]" aria-hidden="true" />
-        <CheckCircle2 className="h-12 w-12 text-amber" aria-hidden="true" />
+        <CheckCircle2 className="h-12 w-12 text-go" aria-hidden="true" />
         <h3 className="qa-display mt-6 text-3xl text-chalk sm:text-4xl">
           Message received.
         </h3>
         <p className="mt-4 max-w-md text-[0.9375rem] leading-relaxed text-chalk-2">
           Thank you for reaching out. The team reads every message and typically
           responds within a few working days. For urgent mission inquiries, use{" "}
-          <a href="mailto:xdhumketu@gmail.com" className="qa-link text-amber">
+          <a href="mailto:xdhumketu@gmail.com" className="qa-link text-chalk">
             xdhumketu@gmail.com
           </a>
           .
@@ -251,7 +251,7 @@ export function ContactForm() {
                 <SelectItem
                   key={t}
                   value={t}
-                  className="rounded-xl text-[0.9375rem] text-chalk focus:bg-night-2 focus:text-amber"
+                  className="rounded-xl text-[0.9375rem] text-chalk focus:bg-night-2 focus:text-chalk"
                 >
                   {t}
                 </SelectItem>
@@ -285,7 +285,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="group inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-8 py-3.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(255,106,61,0.4)] transition-[box-shadow,filter,opacity] duration-300 hover:shadow-[0_0_44px_rgba(255,106,61,0.6)] hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+          className="group inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-chalk px-8 py-3.5 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-[background-color,opacity] duration-300 hover:bg-[#e7e4dc] disabled:cursor-not-allowed disabled:opacity-60"
         >
           {status === "sending" ? (
             <>

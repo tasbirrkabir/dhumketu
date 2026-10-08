@@ -84,7 +84,7 @@
   --destructive: #ff453a;
   --border: var(--edge);
   --input: var(--edge);
-  --ring: rgba(255, 90, 44, 0.5);
+  --ring: rgba(244, 242, 237, 0.55);
   --radius: 0.75rem;
 }
 
@@ -144,14 +144,6 @@ body {
   letter-spacing: -0.015em;
 }
 
-/* Ember gradient text: hero accent words & key figures */
-.text-ember-gradient {
-  background: linear-gradient(100deg, var(--ember) 0%, var(--amber) 55%, #ffd9a0 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 /* Ghost numerals: oversized outlined section markers */
 .qa-ghost {
   position: absolute;
@@ -202,10 +194,10 @@ body {
   background-image:
     radial-gradient(1px 1px at 22% 18%, rgba(244, 242, 237, 0.55) 50%, transparent 51%),
     radial-gradient(1px 1px at 68% 34%, rgba(244, 242, 237, 0.35) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 84% 12%, rgba(255, 178, 91, 0.4) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 84% 12%, rgba(244, 242, 237, 0.42) 50%, transparent 51%),
     radial-gradient(1px 1px at 41% 62%, rgba(244, 242, 237, 0.28) 50%, transparent 51%),
     radial-gradient(1px 1px at 12% 78%, rgba(244, 242, 237, 0.4) 50%, transparent 51%),
-    radial-gradient(1.5px 1.5px at 57% 86%, rgba(255, 178, 91, 0.3) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 57% 86%, rgba(244, 242, 237, 0.32) 50%, transparent 51%),
     radial-gradient(1px 1px at 91% 64%, rgba(244, 242, 237, 0.32) 50%, transparent 51%),
     radial-gradient(1px 1px at 33% 40%, rgba(244, 242, 237, 0.22) 50%, transparent 51%);
   background-size: 640px 640px;
@@ -249,7 +241,7 @@ body {
 
 /* Focus */
 :where(a, button, [role="button"], input, textarea, select, summary, [tabindex]):focus-visible {
-  outline: 2px solid var(--ember);
+  outline: 2px solid rgba(244, 242, 237, 0.8);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -264,8 +256,8 @@ body {
 
 /* Selection */
 ::selection {
-  background: var(--ember);
-  color: #fff7ef;
+  background: #f4f2ed;
+  color: #0b0b0d;
 }
 
 /* Skip link */

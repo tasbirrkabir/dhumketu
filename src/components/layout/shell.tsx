@@ -8,7 +8,7 @@ import { SiteFooter } from "./site-footer";
 export function Shell({ children }: { children: React.ReactNode }) {
   return (
     <div id="top" className="flex min-h-screen flex-col bg-void text-chalk">
-      <a href="#main" className="qa-skip-link bg-ember px-4 py-2 text-sm font-medium text-[#1a0c05]">
+      <a href="#main" className="qa-skip-link bg-chalk px-4 py-2 text-sm font-medium text-[#0b0b0d]">
         Skip to content
       </a>
       <SiteHeader />

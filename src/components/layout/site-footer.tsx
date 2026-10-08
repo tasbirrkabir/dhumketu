@@ -37,7 +37,7 @@ export function SiteFooter() {
                 />
               </span>
               <p className="font-display text-lg font-semibold tracking-[-0.015em] text-chalk">
-                Dhumketu<span className="text-ember-gradient">X</span>
+                DhumketuX
               </p>
             </div>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-chalk-2">
@@ -54,7 +54,7 @@ export function SiteFooter() {
           <div className="flex flex-wrap items-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-5 py-2.5 text-sm font-semibold text-[#1a0c05] shadow-[0_0_28px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_40px_rgba(255,106,61,0.55)] hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-full bg-chalk px-5 py-2.5 text-sm font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
             >
               Start a conversation
             </Link>
@@ -76,14 +76,14 @@ export function SiteFooter() {
                 (p) =>
                   p && (
                     <li key={p.slug}>
-                      <Link href={`/work/${p.slug}`} className="text-sm text-chalk-2 transition-colors hover:text-amber">
+                      <Link href={`/work/${p.slug}`} className="text-sm text-chalk-2">
                         {p.name}
                       </Link>
                     </li>
                   ),
               )}
               <li>
-                <Link href="/work" className="text-sm font-medium text-chalk transition-colors hover:text-amber">
+                <Link href="/work" className="text-sm font-medium text-chalk">
                   All projects
                 </Link>
               </li>
@@ -93,35 +93,35 @@ export function SiteFooter() {
           <div>
             <p className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-3">Programs</p>
             <ul className="mt-4 space-y-2.5">
-              <li><Link href="/programs#dbf" className="text-sm text-chalk-2 transition-colors hover:text-amber">Design, Build, Fly</Link></li>
-              <li><Link href="/programs#student" className="text-sm text-chalk-2 transition-colors hover:text-amber">Student programs</Link></li>
-              <li><Link href="/programs#community" className="text-sm text-chalk-2 transition-colors hover:text-amber">Community platforms</Link></li>
-              <li><Link href="/technology" className="text-sm text-chalk-2 transition-colors hover:text-amber">Technology</Link></li>
+              <li><Link href="/programs#dbf" className="text-sm text-chalk-2">Design, Build, Fly</Link></li>
+              <li><Link href="/programs#student" className="text-sm text-chalk-2">Student programs</Link></li>
+              <li><Link href="/programs#community" className="text-sm text-chalk-2">Community platforms</Link></li>
+              <li><Link href="/technology" className="text-sm text-chalk-2">Technology</Link></li>
             </ul>
           </div>
 
           <div>
             <p className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-3">Company</p>
             <ul className="mt-4 space-y-2.5">
-              <li><Link href="/company#team" className="text-sm text-chalk-2 transition-colors hover:text-amber">Team &amp; leadership</Link></li>
-              <li><Link href="/company#history" className="text-sm text-chalk-2 transition-colors hover:text-amber">History</Link></li>
-              <li><Link href="/vision" className="text-sm text-chalk-2 transition-colors hover:text-amber">Vision</Link></li>
-              <li><Link href="/company#values" className="text-sm text-chalk-2 transition-colors hover:text-amber">Policy &amp; values</Link></li>
-              <li><Link href="/media" className="text-sm text-chalk-2 transition-colors hover:text-amber">Media</Link></li>
+              <li><Link href="/company#team" className="text-sm text-chalk-2">Team &amp; leadership</Link></li>
+              <li><Link href="/company#history" className="text-sm text-chalk-2">History</Link></li>
+              <li><Link href="/vision" className="text-sm text-chalk-2">Vision</Link></li>
+              <li><Link href="/company#values" className="text-sm text-chalk-2">Policy &amp; values</Link></li>
+              <li><Link href="/media" className="text-sm text-chalk-2">Media</Link></li>
             </ul>
           </div>
 
           <div>
             <p className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-3">Connect</p>
             <ul className="mt-4 space-y-2.5">
-              <li><Link href="/contact" className="text-sm font-medium text-chalk transition-colors hover:text-amber">Contact</Link></li>
+              <li><Link href="/contact" className="text-sm font-medium text-chalk">Contact</Link></li>
               {org.social.map((s) => (
                 <li key={s.label}>
                   <a
                     href={s.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm text-chalk-2 transition-colors hover:text-amber"
+                    className="text-sm text-chalk-2"
                   >
                     {s.label}
                   </a>

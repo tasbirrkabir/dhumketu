@@ -5,7 +5,7 @@ import { db } from "@/lib/db";
 export const runtime = "nodejs";
 
 const TOPICS = [
-  "Book a launch",
+  "Propose a mission",
   "Collaboration",
   "University program",
   "Careers",

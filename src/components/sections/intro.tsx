@@ -25,7 +25,7 @@ export function Intro() {
 
         <Reveal delay={0.1}>
           <p className="mt-8 text-base text-chalk-2">
-            <span className="qa-serif text-amber">{org.meaning}</span> The name carries
+            <span className="qa-serif">{org.meaning}</span> The name carries
             the ambition: something built here, seen everywhere.
           </p>
         </Reveal>
@@ -38,7 +38,7 @@ export function Intro() {
                 className="glass card-lift rounded-2xl p-5 sm:p-6"
               >
                 <dd className="order-1 text-3xl font-semibold tracking-[-0.02em] text-chalk sm:text-4xl">
-                  <Counter value={s.value} className="text-ember-gradient" />
+                  <Counter value={s.value} className="text-chalk" />
                 </dd>
                 <dt className="order-2 mt-2 text-sm leading-snug text-chalk-2">{s.label}</dt>
               </div>

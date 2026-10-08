@@ -42,7 +42,7 @@ export default function TechnologyPage() {
                   <ul className="mt-7 space-y-3 border-t border-edge pt-6">
                     {c.points.map((point) => (
                       <li key={point} className="flex gap-3 text-[0.9375rem] leading-relaxed text-chalk-2">
-                        <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-ember/70" aria-hidden="true" />
+                        <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-chalk-3/70" aria-hidden="true" />
                         {point}
                       </li>
                     ))}

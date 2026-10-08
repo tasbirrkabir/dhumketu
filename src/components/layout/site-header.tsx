@@ -197,7 +197,7 @@ export function SiteHeader() {
             )}
             <Link
               href="/contact#form"
-              className="group inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-4 py-1.5 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_24px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_32px_rgba(255,106,61,0.55)] hover:brightness-110"
+              className="group inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-chalk px-4 py-1.5 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
             >
               Start a conversation
               <ArrowUpRight
@@ -246,7 +246,7 @@ export function SiteHeader() {
                               <Link
                                 href={slug(p.slug)}
                                 onClick={closeAll}
-                                className="group inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk transition-colors hover:text-amber"
+                                className="group inline-flex items-center gap-2 text-[0.9375rem] font-medium text-chalk"
                               >
                                 {p.name}
                                 <ArrowRight
@@ -288,7 +288,7 @@ export function SiteHeader() {
                           <Link
                             href={l.href}
                             onClick={closeAll}
-                            className="qa-link text-lg font-medium text-chalk transition-colors hover:text-amber"
+                            className="qa-link text-lg font-medium text-chalk"
                           >
                             {l.label}
                           </Link>

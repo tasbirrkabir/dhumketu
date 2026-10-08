@@ -263,3 +263,21 @@ Stage Summary:
 - Every button now says something true and human: "Start a conversation" for contact, "Explore our work" for the catalog, one voice across all 10 routes
 - Removed the fake-commercial "Book a Launch" promise and the duplicate-destination button pair in the final CTA band
 - Header survives 1024px with the longer label (no wrap, no collision)
+
+---
+Task ID: flat-10
+Agent: Z.ai Code (main)
+Task: User: "what ekhono orange color lekha and button onek kisu ase thats cheap" - the flame-gradient pills themselves read as cheap; kill all orange text and over-decorated buttons site-wide.
+
+Work Log:
+- Button system flattened to premium monochrome: every primary CTA (header pill, hero, vision, CtaBand, footer, contact submit, work slug, 404) went from orange gradient + glow shadow + brightness hover to flat bg-chalk / text-[#0b0b0d] / hover:bg-[#e7e4dc] - no gradient, no glow, no brightness trick; secondaries stay ghost outline (regex bulk pass, 18 files)
+- Total de-orange of text: all text-amber and text-ember-gradient instances replaced (grep-verified 0 remaining): headline serif accent words now plain chalk Instrument Serif italic (hero "aerospace", vision "Bangladesh", CtaBand/page-hero accents), footer wordmark X plain, intro counters + flagship 120+ chalk, technology/intro hover states chalk, header mega-menu hover amber removed, media/work arrow icons chalk, company/programs/marquee years chalk-2, contact success check -> text-go green, focus:text-amber -> chalk, vision page badge pill chalk, decorative ember bullet dots -> chalk-3, skip link chalk
+- globals.css: deleted unused .text-ember-gradient utility; ::selection chalk bg / dark text; :focus-visible outline chalk; --ring chalk-based; starfield amber specks -> chalk
+- Copy leftovers caught in screenshots: contact form heading "Book a launch, or just say hello." -> "Propose a mission, or just say hello."; TOPICS list renamed "Book a launch" -> "Propose a mission" in BOTH contact-form.tsx and api/contact/route.ts (kept in sync for zod validation)
+- Orange remaining on site by design: official logo tile (brand asset, untouchable), ambient glow-ember/glow-amber atmosphere (blurred light, not UI), semantic status colors (go green / hold amber dots), og card
+- Verification: agent-browser 1440 + 390 - hero/contact/footer/work captured (flat-*.png); mobile + contact no horizontal overflow; "Book a launch" absent / "Propose a mission" present in rendered text; contact API smoke test with renamed topic -> 201 (row deleted after); console clean; bun run lint clean
+
+Stage Summary:
+- The visual language is now strict monochrome premium: chalk-on-near-black, Space Grotesk display, flat chalk primary buttons, ghost secondaries, zero orange UI chrome
+- Warmth survives only as cinematic imagery, ambient glow light, the official logo, and semantic status dots
+- Reusable primary-CTA recipe: inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]

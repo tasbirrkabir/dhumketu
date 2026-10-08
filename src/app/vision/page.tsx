@@ -38,7 +38,7 @@ export default function VisionPage() {
       >
         <Container>
           <Reveal>
-            <p className="glass inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-sm font-medium text-amber">
+            <p className="glass inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-sm font-medium text-chalk">
               <StatusDot tone="planned" />
               Future vision, not current capabilities.
             </p>
@@ -58,7 +58,7 @@ export default function VisionPage() {
                   <ul className="mt-6 space-y-2.5 border-t border-edge pt-5">
                     {p.points.map((point) => (
                       <li key={point} className="flex gap-3 text-sm leading-relaxed text-chalk-2">
-                        <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-ember/70" aria-hidden="true" />
+                        <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-chalk-3/70" aria-hidden="true" />
                         {point}
                       </li>
                     ))}
@@ -121,7 +121,7 @@ export default function VisionPage() {
               <ul className="mt-8 space-y-3">
                 {visionBangladesh.points.map((point) => (
                   <li key={point} className="flex gap-3 text-[0.9375rem] leading-relaxed text-chalk-2">
-                    <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-ember/70" aria-hidden="true" />
+                    <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-chalk-3/70" aria-hidden="true" />
                     {point}
                   </li>
                 ))}
@@ -165,7 +165,7 @@ export default function VisionPage() {
               <ul className="mt-8 space-y-3">
                 {spaceCenter.sectors.map((sector) => (
                   <li key={sector} className="flex gap-3 text-[0.9375rem] leading-relaxed text-chalk-2">
-                    <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-ember/70" aria-hidden="true" />
+                    <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-chalk-3/70" aria-hidden="true" />
                     {sector}
                   </li>
                 ))}
@@ -181,14 +181,14 @@ export default function VisionPage() {
                   <dt className="text-sm text-chalk-2">Suborbital flight</dt>
                   <dd className="qa-display mt-2 text-[clamp(1.9rem,4vw,3rem)] text-chalk">
                     Within{" "}
-                    <Counter value="2035" className="text-ember-gradient" />
+                    <Counter value="2035" className="text-chalk" />
                   </dd>
                 </div>
                 <div className="rounded-2xl border border-edge bg-night-2 p-6">
                   <dt className="text-sm text-chalk-2">Human spaceflight</dt>
                   <dd className="qa-display mt-2 text-[clamp(1.9rem,4vw,3rem)] text-chalk">
                     Within{" "}
-                    <Counter value="2040" className="text-ember-gradient" />
+                    <Counter value="2040" className="text-chalk" />
                   </dd>
                 </div>
               </dl>

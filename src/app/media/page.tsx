@@ -48,7 +48,7 @@ export default function MediaPage() {
                 >
                   <span className="qa-data text-sm text-chalk-3">{a.date}</span>
                   <span>
-                    <span className="block max-w-2xl text-xl font-semibold leading-snug tracking-[-0.015em] text-chalk transition-colors group-hover:text-amber sm:text-2xl">
+                    <span className="block max-w-2xl text-xl font-semibold leading-snug tracking-[-0.015em] text-chalk transition-colors group-hover:text-chalk sm:text-2xl">
                       {a.title}
                     </span>
                     <span className="mt-2 block max-w-2xl text-[0.9375rem] leading-relaxed text-chalk-2">
@@ -58,7 +58,7 @@ export default function MediaPage() {
                   <span className="inline-flex items-center gap-2 self-start text-sm text-chalk-2 sm:justify-self-end">
                     {a.category}
                     <ArrowUpRight
-                      className="h-3.5 w-3.5 text-amber transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                      className="h-3.5 w-3.5 text-chalk transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                       aria-hidden="true"
                     />
                   </span>
@@ -93,7 +93,7 @@ export default function MediaPage() {
                 >
                   <span className="qa-data text-sm text-chalk-3">{a.date}</span>
                   <span>
-                    <span className="block max-w-2xl text-xl font-semibold leading-snug tracking-[-0.015em] text-chalk transition-colors group-hover:text-amber sm:text-2xl">
+                    <span className="block max-w-2xl text-xl font-semibold leading-snug tracking-[-0.015em] text-chalk transition-colors group-hover:text-chalk sm:text-2xl">
                       {a.title}
                     </span>
                     <span className="mt-2 block max-w-2xl text-[0.9375rem] leading-relaxed text-chalk-2">
@@ -103,7 +103,7 @@ export default function MediaPage() {
                   <span className="inline-flex items-center gap-2 self-start text-sm text-chalk-2 sm:justify-self-end">
                     {a.category}
                     <ArrowUpRight
-                      className="h-3.5 w-3.5 text-amber transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                      className="h-3.5 w-3.5 text-chalk transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                       aria-hidden="true"
                     />
                   </span>
@@ -140,7 +140,7 @@ export default function MediaPage() {
                     {s.label}
                   </span>
                   <ArrowUpRight
-                    className="h-5 w-5 shrink-0 text-amber transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    className="h-5 w-5 shrink-0 text-chalk transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                     aria-hidden="true"
                   />
                 </a>

@@ -37,7 +37,7 @@ export default function ProgramsPage() {
             {programs.dbf.tracks.map((t, i) => (
               <Reveal key={t.id} delay={0.08 + i * 0.06} className="h-full">
                 <div className="card-lift h-full rounded-3xl border border-edge bg-night-2 p-6 sm:p-7">
-                  <p className="qa-data text-xs uppercase tracking-[0.16em] text-amber">
+                  <p className="qa-data text-xs uppercase tracking-[0.16em] text-chalk-2">
                     0{i + 1}
                   </p>
                   <h3 className="qa-display mt-4 text-xl text-chalk sm:text-[1.35rem]">
@@ -61,7 +61,7 @@ export default function ProgramsPage() {
                     key={j.step}
                     className="card-lift rounded-2xl border border-edge bg-night-2 p-5"
                   >
-                    <p className="qa-data text-xs text-amber">{j.step}</p>
+                    <p className="qa-data text-xs text-chalk-2">{j.step}</p>
                     <p className="mt-3 text-[0.9375rem] font-medium text-chalk">{j.title}</p>
                     <p className="mt-1.5 text-sm leading-relaxed text-chalk-2">{j.body}</p>
                   </li>

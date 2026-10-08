@@ -62,10 +62,10 @@ export function Marquee({ items }: { items: { year: string; title: string }[] })
     <div className="flex shrink-0 items-center" aria-hidden={ariaHidden || undefined}>
       {items.map((m, i) => (
         <span key={`${m.title}-${i}`} className="flex items-center whitespace-nowrap">
-          <span className="qa-data text-xs uppercase tracking-[0.14em] text-amber">{m.year}</span>
+          <span className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-2">{m.year}</span>
           <span className="mx-4 text-chalk-3" aria-hidden="true">/</span>
           <span className="text-sm font-medium text-chalk-2">{m.title}</span>
-          <span className="mx-8 inline-block h-1 w-1 rounded-full bg-ember/70" aria-hidden="true" />
+          <span className="mx-8 inline-block h-1 w-1 rounded-full bg-chalk-3/70" aria-hidden="true" />
         </span>
       ))}
     </div>
@@ -102,7 +102,7 @@ export function ArrowLink({
     <Link
       href={href}
       className={`group inline-flex items-center gap-2 text-[0.9375rem] font-medium ${
-        tone === "ember" ? "text-amber" : "text-chalk"
+        "text-chalk"
       } ${className}`}
     >
       {children}
@@ -165,13 +165,13 @@ export function CtaBand({
         <div className="relative z-10 flex flex-col items-start gap-8 px-6 py-14 sm:px-12 sm:py-20">
           <h2 className="qa-display max-w-[16ch] text-[clamp(2.2rem,5.4vw,4.25rem)] text-chalk">
             {title}
-            {accent ? <span className="qa-serif font-normal text-ember-gradient"> {accent}</span> : null}
+            {accent ? <span className="qa-serif font-normal"> {accent}</span> : null}
           </h2>
           <p className="max-w-xl text-lg leading-relaxed text-chalk-2">{copy}</p>
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <Link
               href={primary.href}
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-7 py-3 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(255,106,61,0.4)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_44px_rgba(255,106,61,0.6)] hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
             >
               {primary.label}
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

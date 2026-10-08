@@ -330,7 +330,7 @@ export default async function ProjectPage({
                         {r.name}
                       </span>
                       <ArrowUpRight
-                        className="h-5 w-5 shrink-0 text-amber transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                        className="h-5 w-5 shrink-0 text-chalk transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                         aria-hidden="true"
                       />
                     </span>
@@ -354,7 +354,7 @@ export default async function ProjectPage({
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-7 py-3 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(255,106,61,0.4)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_44px_rgba(255,106,61,0.6)] hover:brightness-110"
+                className="inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
               >
                 Work with us
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

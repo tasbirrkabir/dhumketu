@@ -85,7 +85,7 @@ export default function ContactPage() {
               </ul>
 
               <p className="qa-data mt-8 flex items-center gap-2 text-sm text-chalk-3">
-                <Clock className="h-4 w-4 text-amber" aria-hidden="true" />
+                <Clock className="h-4 w-4 text-chalk-2" aria-hidden="true" />
                 Typical response time: a few working days.
               </p>
             </Reveal>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                 <div className="starfield absolute inset-0 opacity-50" aria-hidden="true" />
                 <div className="relative">
                   <h3 className="qa-display text-2xl text-chalk sm:text-[1.75rem]">
-                    Book a launch, or just say hello.
+                    Propose a mission, or just say hello.
                   </h3>
                   <p className="mt-3 max-w-md text-[0.9375rem] leading-relaxed text-chalk-2">
                     Pick a topic, tell the team what you have in mind and they
@@ -137,14 +137,14 @@ export default function ContactPage() {
                 >
                   <span className="qa-data text-sm text-chalk-3">{r.index}</span>
                   <span>
-                    <span className="block text-xl font-semibold tracking-[-0.015em] text-chalk transition-colors group-hover:text-amber sm:text-2xl">
+                    <span className="block text-xl font-semibold tracking-[-0.015em] text-chalk transition-colors group-hover:text-chalk sm:text-2xl">
                       {r.title}
                     </span>
                     <span className="mt-2 block max-w-2xl text-[0.9375rem] leading-relaxed text-chalk-2">
                       {r.body}
                     </span>
                   </span>
-                  <span className="inline-flex items-center gap-1.5 self-start text-sm font-medium text-amber sm:justify-self-end">
+                  <span className="inline-flex items-center gap-1.5 self-start text-sm font-medium text-chalk-2 sm:justify-self-end">
                     {r.cta}
                     <ArrowUpRight
                       className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"

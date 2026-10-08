@@ -19,14 +19,14 @@ export default function NotFound() {
           404
         </p>
         <h1 className="qa-display mt-8 max-w-[16ch] text-[clamp(2rem,5vw,3.75rem)]">
-          This signal is out of <span className="qa-serif font-normal text-ember-gradient">range.</span>
+          This signal is out of <span className="qa-serif font-normal">range.</span>
         </h1>
         <p className="mt-5 max-w-md text-lg leading-relaxed text-chalk-2">
           The page you requested does not exist, but the mission continues.
         </p>
         <Link
           href="/"
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-7 py-3 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_32px_rgba(255,106,61,0.4)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_44px_rgba(255,106,61,0.6)] hover:brightness-110"
+          className="mt-10 inline-flex items-center gap-2 rounded-full bg-chalk px-7 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           Return to base

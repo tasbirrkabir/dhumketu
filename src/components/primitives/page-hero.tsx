@@ -76,7 +76,7 @@ export function CinematicHero({
             {accent ? (
               <>
                 {" "}
-                <span className="qa-serif font-normal text-ember-gradient">{accent}</span>
+                <span className="qa-serif font-normal">{accent}</span>
               </>
             ) : null}
           </h1>

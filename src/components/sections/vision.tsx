@@ -48,7 +48,7 @@ export function Vision() {
           className="qa-display mt-6 max-w-[16ch] text-[clamp(2.4rem,6.4vw,5.5rem)]"
         >
           A spacefaring{" "}
-          <span className="qa-serif font-normal text-ember-gradient">Bangladesh</span>,
+          <span className="qa-serif font-normal">Bangladesh</span>,
           reached responsibly.
         </motion.h2>
 
@@ -78,7 +78,7 @@ export function Vision() {
         >
           <Link
             href="/vision"
-            className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff5a2c] via-[#ff7a3a] to-[#ffb25b] px-6 py-3 text-[0.9375rem] font-semibold text-[#1a0c05] shadow-[0_0_28px_rgba(255,106,61,0.35)] transition-[box-shadow,filter] duration-300 hover:shadow-[0_0_40px_rgba(255,106,61,0.55)] hover:brightness-110"
+            className="group inline-flex items-center gap-2 rounded-full bg-chalk px-6 py-3 text-[0.9375rem] font-semibold text-[#0b0b0d] transition-colors duration-300 hover:bg-[#e7e4dc]"
           >
             Read the full vision
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
