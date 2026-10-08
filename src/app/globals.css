@@ -90,6 +90,16 @@
 
 html {
   scroll-behavior: smooth;
+  /* Non-static root container: keeps framer-motion useScroll offset
+     measurements stable and silences its dev-only container warning. */
+  position: relative;
+}
+
+/* Respect reduced-motion for CSS-driven scrolling and animation */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {

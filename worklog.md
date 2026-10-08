@@ -24,3 +24,23 @@ Stage Summary:
 - All facts sourced from dhumketux.com with visible provenance; zero fabricated metrics, no fake telemetry, concept disclaimers in footer and image captions (DECISIONS.md D-007)
 - Lint passes clean; dev server renders 200 with no runtime errors
 - Research artifacts: /home/z/my-project/research/ (page captures + QA screenshots)
+
+---
+Task ID: 2
+Agent: Z.ai Code (main agent)
+Task: Post-continuation re-verification of completed DhumketuX redesign + final polish
+
+Work Log:
+- Confirmed prior build intact: 14 section components, layout, primitives, graphics, 7 content modules, 5 concept-atmosphere images in public/media
+- Confirmed dev server healthy (GET / 200, no runtime errors in dev.log; metadataBase warning predates the fix already present in layout.tsx)
+- Agent Browser re-verification pass:
+  * Desktop 1440 / tablet 1024 / mobile 390: all render, zero horizontal overflow
+  * All 13 section anchors resolve (missing: []); main footer bottom = document height (gap 0)
+  * Golden path: project dialog open → related-project navigation → close; filter tabs (aria-selected, row filtering to 2 liquid-propulsion projects); mobile menu open → nav link → correct 56px scroll offset below sticky header
+- Fixed last console warning: framer-motion useScroll dev warning fired because default scroll container (html) was position:static → added position:relative + prefers-reduced-motion scroll-behavior guard in globals.css
+- Re-verified fresh console: 0 warnings, 0 page errors
+- Final visual captures: final-desktop-hero.png, final-desktop-vision.png, final-mobile-team.png in /research
+
+Stage Summary:
+- Deliverable re-certified: single-route production-quality redesign concept, lint clean, console clean, browser-verified end-to-end
+- One polish fix applied (globals.css html position:relative); no other defects found
