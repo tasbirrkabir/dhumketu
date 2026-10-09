@@ -20,7 +20,7 @@ export function Technology() {
           <div className="lg:sticky lg:top-24 lg:self-start">
             <SectionIntro
               eyebrow="Technology"
-              statement="Eight disciplines, one test-driven engineering culture."
+              statement={"Eight disciplines, one test\u2011driven engineering culture."}
             />
             <ImageReveal className="mt-10">
               <figure>

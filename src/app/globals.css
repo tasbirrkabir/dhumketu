@@ -121,7 +121,7 @@ body {
   line-height: 1.04;
   font-weight: 600;
   text-wrap: balance;
-  background: linear-gradient(180deg, #fbf9f4 0%, #f4f2ed 42%, rgba(216, 213, 205, 0.85) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f4f2ed 38%, rgba(202, 199, 190, 0.88) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -133,7 +133,7 @@ body {
   line-height: 1.1;
   font-weight: 600;
   text-wrap: balance;
-  background: linear-gradient(180deg, #faf8f3 0%, #f4f2ed 48%, rgba(216, 213, 205, 0.85) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f4f2ed 44%, rgba(202, 199, 190, 0.88) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -280,9 +280,38 @@ body {
    Vertical light gradient + inset top light, for stat tiles, bands, cards. */
 .panel {
   position: relative;
-  background: linear-gradient(180deg, rgba(244, 242, 237, 0.072) 0%, rgba(244, 242, 237, 0.03) 36%, rgba(244, 242, 237, 0.014) 100%);
-  border: 1px solid rgba(244, 242, 237, 0.11);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(244, 242, 237, 0.078) 0%, rgba(244, 242, 237, 0.032) 36%, rgba(244, 242, 237, 0.016) 100%);
+  border: 1px solid rgba(244, 242, 237, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+/* Section spotlight: a quiet pool of top light that gives every opening
+   section depth without turning the field into a colored surface. */
+.spot {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(58% 46% at 50% 0%, rgba(244, 242, 237, 0.075) 0%, rgba(244, 242, 237, 0.028) 42%, transparent 72%);
+}
+.spot-ember {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(50% 40% at 50% 0%, rgba(255, 90, 44, 0.09) 0%, rgba(255, 178, 91, 0.035) 45%, transparent 74%);
+}
+
+/* Cinematic settle: one slow Ken-Burns breath on hero imagery at load. */
+@keyframes kenburns-settle {
+  from { transform: scale(1.09); }
+  to { transform: scale(1.02); }
+}
+.anim-kenburns {
+  animation: kenburns-settle 2.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim-kenburns { animation: none; transform: scale(1.02); }
 }
 
 /* Card lift: glass cards rise gently on hover, top edge catches light */
@@ -314,6 +343,22 @@ body {
   opacity: 1;
   background: linear-gradient(90deg, transparent 4%, rgba(244, 242, 237, 0.34) 50%, transparent 96%);
 }
+/* Light sweep: a soft sheen travels across the card on hover.
+   Pure CSS, GPU-cheap, and it makes every surface feel polished. */
+.card-lift::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  background: linear-gradient(115deg, transparent 30%, rgba(244, 242, 237, 0.09) 46%, rgba(244, 242, 237, 0.14) 50%, rgba(244, 242, 237, 0.09) 54%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-lift:hover::after {
+  transform: translateX(120%);
+}
 
 /* Buttons: physical, monochrome, quiet.
    .btn-chalk — solid ivory primary with a whisper of vertical light.
@@ -334,11 +379,12 @@ body {
     transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.35s, transform 0.15s ease;
   }
   .btn-chalk:hover {
-    background: linear-gradient(180deg, #f6f3ea 0%, #e0ddd0 100%);
+    background: linear-gradient(180deg, #fdfbf6 0%, #eeeadd 100%);
+    transform: translateY(-1px);
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.7),
-      0 2px 5px rgba(0, 0, 0, 0.3),
-      0 16px 36px -14px rgba(0, 0, 0, 0.6);
+      inset 0 1px 0 rgba(255, 255, 255, 0.75),
+      0 4px 10px rgba(0, 0, 0, 0.3),
+      0 18px 40px -14px rgba(0, 0, 0, 0.62);
   }
   .btn-chalk:active {
     transform: scale(0.98);
@@ -357,6 +403,7 @@ body {
   .btn-ghost:hover {
     border-color: rgba(244, 242, 237, 0.38);
     background: rgba(244, 242, 237, 0.06);
+    transform: translateY(-1px);
   }
   .btn-ghost:active {
     transform: scale(0.98);
@@ -392,13 +439,18 @@ body {
   background: linear-gradient(90deg, transparent 4%, rgba(255, 90, 44, 0.4) 30%, rgba(255, 178, 91, 0.32) 55%, transparent 96%);
 }
 
-/* Numerals that headline: for stat tiles and data features */
+/* Numerals that headline: for stat tiles and data features.
+   Lit from above like the display type, so numbers feel machined. */
 .qa-stat {
   font-family: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1;
   font-variant-numeric: tabular-nums;
+  background: linear-gradient(180deg, #ffffff 0%, #f0ede4 55%, rgba(198, 195, 186, 0.9) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Soft radial vignette: keeps deep fields from reading as flat black */
@@ -492,6 +544,24 @@ body {
 }
 .marquee:hover .marquee-track {
   animation-play-state: paused;
+}
+
+/* Stat console: hairline-divided data strip used for the hero/intro stats */
+.stat-console {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.stat-console > * + * {
+  border-left: 1px solid rgba(244, 242, 237, 0.1);
+}
+@media (max-width: 640px) {
+  .stat-console {
+    grid-template-columns: 1fr;
+  }
+  .stat-console > * + * {
+    border-left: 0;
+    border-top: 1px solid rgba(244, 242, 237, 0.1);
+  }
 }
 
 /* Slow pulse for live indicators */

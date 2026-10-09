@@ -30,10 +30,10 @@ export function Reveal({
   return (
     <Comp
       className={className}
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.8, delay, ease: EASE }}
+      initial={{ opacity: 0, y: 26, filter: "blur(6px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      viewport={{ once: true, margin: "-70px" }}
+      transition={{ duration: 0.9, delay, ease: EASE }}
     >
       {children}
     </Comp>

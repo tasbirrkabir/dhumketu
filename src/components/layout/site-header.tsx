@@ -132,19 +132,25 @@ export function SiteHeader() {
     <>
       <header
         aria-label="Site"
-        className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,border-color,backdrop-filter] duration-500 ${
+        className={`fixed inset-x-0 top-0 z-50 transition-[background-color,color,border-color,box-shadow,backdrop-filter] duration-500 ${
           dark
-            ? "border-b border-edge bg-void/85 text-chalk backdrop-blur-xl"
+            ? "border-b border-edge bg-void/85 text-chalk shadow-[0_24px_60px_-40px_rgba(0,0,0,0.9)] backdrop-blur-xl"
             : "border-b border-transparent bg-transparent text-chalk"
         }`}
       >
+        {dark && (
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/12 to-transparent"
+          />
+        )}
         <div className="mx-auto flex h-16 w-full max-w-[1180px] items-center justify-between px-5 sm:px-8 lg:px-12">
           <Link
             href="/"
             aria-label="DhumketuX home"
             className={`group flex shrink-0 items-center gap-2.5 ${linkTone}`}
           >
-            <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15 transition-shadow duration-300 group-hover:ring-white/35">
+            <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15 transition-all duration-300 group-hover:ring-white/40 group-hover:shadow-[0_0_24px_-6px_rgba(255,106,61,0.45)]">
               <Image
                 src="/media/dhumketux-logo.png"
                 alt=""
@@ -197,7 +203,7 @@ export function SiteHeader() {
             )}
             <Link
               href="/contact#form"
-              className="group btn-chalk shrink-0 gap-1.5 whitespace-nowrap px-4 py-1.5 text-[0.9375rem] font-semibold"
+              className="group btn-chalk shrink-0 gap-1.5 whitespace-nowrap px-4.5 py-2 text-[0.9375rem] font-semibold"
             >
               Start a conversation
               <ArrowUpRight

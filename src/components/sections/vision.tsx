@@ -54,7 +54,7 @@ export function Vision() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1, delay: 0.08, ease: EASE }}
-          className="qa-display mt-6 max-w-[16ch] text-[clamp(2.4rem,6.4vw,5.5rem)]"
+          className="qa-display mt-7 max-w-[15ch] text-[clamp(2.6rem,6.8vw,6rem)]"
         >
           A spacefaring{" "}
           <span className="qa-serif font-normal">Bangladesh</span>,

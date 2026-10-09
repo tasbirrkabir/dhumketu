@@ -28,8 +28,8 @@ export function SectionIntro({
       )}
       <Reveal delay={0.06}>
         <h2
-          className={`qa-statement max-w-3xl text-[clamp(1.9rem,4.5vw,3.5rem)] text-chalk ${
-            eyebrow ? "mt-5" : ""
+          className={`qa-statement max-w-4xl text-[clamp(2rem,4.8vw,3.75rem)] text-chalk ${
+            eyebrow ? "mt-6" : ""
           }`}
         >
           {statement}

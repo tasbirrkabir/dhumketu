@@ -330,3 +330,30 @@ Stage Summary:
 - Orange discipline kept: ember appears only as rules/ticks/glows (non-text), all text stays chalk/chalk-2/chalk-3
 - Reusable primitives added this round: .eyebrow, .panel, .hairline-ember, .qa-stat, .vignette + SectionIntro/CinematicHero eyebrow props
 - style-10 closes the merged request: orange text removed site-wide (none found post-color-8), buttons already flat btn-chalk/btn-ghost, full-site A-Z polish applied and browser-verified
+
+---
+Task ID: style-10
+Agent: Z.ai Code (main)
+Task: Full-website A–Z beautification ("make the website more beautiful" / "not buttons — the whole website")
+
+Work Log:
+- Audited every layout/section/primitive/page file; confirmed text-ember-gradient fully gone (only hairline ember accents remain).
+- globals.css: brighter top-lit gradients on .qa-display/.qa-statement; .qa-stat now gradient-lit numerals; new .spot/.spot-ember section spotlights; .anim-kenburns cinematic settle; .card-lift light-sweep sheen (::after) on hover; button hover lift (-1px); .stat-console hairline-divided strip; panel/anchor refinements.
+- primitives/reveal.tsx: cinematic blur-settle entrance (y 26 + blur 6→0, 0.9s) site-wide.
+- primitives/section.tsx: SectionIntro statements enlarged (clamp 2→3.75rem, max-w-4xl).
+- primitives/ui-bits.tsx: CtaBand grander (taller, ember spotlight, bigger type/buttons, caption hairline, card-lift sheen); Marquee ember dot separators + taller band.
+- primitives/page-hero.tsx: Ken-Burns settle on hero image, top spotlight, bigger title (clamp→6.5rem), bottom hairline seam. Lifts all 7 inner-page heroes.
+- sections/hero.tsx: rebuilt — official legal-name eyebrow, headline up to 7.75rem, two-tier lede, larger CTAs, stat pills replaced by glass-strong stat-console (hairline-divided telemetry strip).
+- sections/intro.tsx: rebuilt — 4 stat cards → single panel "mission console" with hairline-divided cells, ghost indices, gradient numerals; mobile border logic fixed (2-col → 1-col).
+- sections/flagship.tsx: ember spotlight, larger catalog panel (3xl type, 14×14 arrow), rhythm up.
+- sections/technology.tsx: non-breaking hyphen in "test‑driven" stops ugly mid-word break in sticky statement.
+- sections/vision.tsx: headline scaled to clamp→6rem.
+- site-header.tsx: scrolled state gets top light seam + deep drop shadow; logo ring gains warm hover glow; CTA pill slightly larger.
+- site-footer.tsx: roomier rhythm (pt-20/28, sitemap pt-14), ghost wordmark mt-20, provenance line in mono.
+- Dev server fully refreshed (pkill + rm -rf .next + restart-dev.mjs).
+- agent-browser verified: / , /work , /technology , /programs , /company , /vision , /media , /contact , /work/bidrohi-sr , 404 — all render, zero console/page errors; mega-menu hover works; 1440/1024/390 no overflow; footer pushes naturally; screenshots in research/audit/style10-*.png.
+
+Stage Summary:
+- Whole-site visible upgrade, not button-level: every page now opens with a cinematic Ken-Burns hero + larger display type; content settles in with blur reveals; cards carry a traveling light-sweep on hover; stats read as mission-console telemetry; CTA bands feel like launch announcements.
+- Design language unchanged (neutral near-black surfaces + ember accents in light only); no new content, no orange text, no HUD labels; reduced-motion fully guarded.
+- Key decisions: stat console replaces pill grids; blur-settle Reveal is the single motion signature; non-breaking hyphen utility pattern for compound words in display type.

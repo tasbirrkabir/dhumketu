@@ -94,14 +94,15 @@ export function Flagship() {
   const nazrul = getProject("nazrul-01");
 
   return (
-    <section id="work" aria-label="Flagship work" className="scroll-mt-16 bg-void pb-20 pt-8 sm:pb-28">
+    <section id="work" aria-label="Flagship work" className="relative scroll-mt-16 bg-void pb-28 pt-14 sm:pb-36">
+      <div aria-hidden="true" className="spot-ember opacity-70" />
       <Container>
         <SectionIntro
           eyebrow="Flagship programs"
           statement="The path to orbit runs through engines, vehicles and proof."
         />
 
-        <div className="mt-14 grid gap-5 lg:mt-16">
+        <div className="mt-16 grid gap-5 lg:mt-20">
           {/* 01: Bidrohi SR · full-width cinematic */}
           <Reveal>
             <CardShell
@@ -237,19 +238,19 @@ export function Flagship() {
         <Reveal>
           <Link
             href="/work"
-            className="panel card-lift group mt-12 flex items-center justify-between gap-6 overflow-hidden rounded-2xl px-6 py-7 sm:px-8"
+            className="panel card-lift group mt-14 flex items-center justify-between gap-6 overflow-hidden rounded-[1.75rem] px-6 py-8 sm:px-9"
           >
             <span className="min-w-0">
               <span className="eyebrow">The catalog</span>
-              <span className="mt-3 block truncate text-xl font-semibold tracking-[-0.02em] text-chalk sm:text-2xl">
+              <span className="mt-3 block truncate text-2xl font-semibold tracking-[-0.02em] text-chalk sm:text-3xl">
                 {projects.length} systems, one engineering culture
               </span>
             </span>
             <span
               aria-hidden="true"
-              className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-edge-strong text-chalk transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:bg-chalk group-hover:text-void"
+              className="grid h-14 w-14 shrink-0 place-items-center rounded-full border border-edge-strong text-chalk transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:bg-chalk group-hover:text-void"
             >
-              <ArrowUpRight className="h-4.5 w-4.5 transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              <ArrowUpRight className="h-5 w-5 transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </span>
           </Link>
         </Reveal>

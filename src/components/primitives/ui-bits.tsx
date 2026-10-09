@@ -62,24 +62,24 @@ export function Marquee({ items }: { items: { year: string; title: string }[] })
     <div className="flex shrink-0 items-center" aria-hidden={ariaHidden || undefined}>
       {items.map((m, i) => (
         <span key={`${m.title}-${i}`} className="flex items-center whitespace-nowrap">
-          <span className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-2">{m.year}</span>
-          <span className="mx-4 text-chalk-3" aria-hidden="true">/</span>
+          <span className="qa-data text-[0.6875rem] uppercase tracking-[0.18em] text-chalk-3">{m.year}</span>
+          <span className="mx-4 text-chalk-3/70" aria-hidden="true">/</span>
           <span className="text-sm font-medium text-chalk-2">{m.title}</span>
-          <span className="mx-8 inline-block h-1 w-1 rounded-full bg-chalk-3/70" aria-hidden="true" />
+          <span className="mx-8 inline-block h-1 w-1 rounded-full bg-ember/50" aria-hidden="true" />
         </span>
       ))}
     </div>
   );
 
   return (
-    <div className="marquee relative overflow-hidden border-y border-edge bg-night py-4">
+    <div className="marquee relative overflow-hidden border-y border-edge bg-night py-5">
       <div className="marquee-track flex w-max">
         {row(false)}
         {row(true)}
       </div>
       {/* Edge fades */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-void to-transparent" />
-      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-void to-transparent" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-void to-transparent" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 w-28 bg-gradient-to-l from-void to-transparent" />
     </div>
   );
 }
@@ -140,18 +140,18 @@ export function CtaBand({
   const reduced = useReducedMotion();
 
   return (
-    <section aria-label="Call to action" className="px-5 pb-20 pt-10 sm:px-8 lg:px-12 lg:pb-28">
+    <section aria-label="Call to action" className="px-5 pb-24 pt-12 sm:px-8 lg:px-12 lg:pb-32">
       <motion.div
         initial={reduced ? false : { opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.9, ease: EASE }}
-        className="relative mx-auto w-full max-w-[1180px] overflow-hidden rounded-3xl border border-edge"
+        className="card-lift relative mx-auto w-full max-w-[1180px] overflow-hidden rounded-[2rem] border border-edge"
       >
         {image ? (
           <>
             <Image src={image} alt={imageAlt} fill sizes="(max-width: 1180px) 100vw, 1180px" className="object-cover" />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-void/60 via-void/45 to-void/85" />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-void/62 via-void/48 to-void/88" />
           </>
         ) : (
           <>
@@ -159,15 +159,16 @@ export function CtaBand({
             <div aria-hidden="true" className="starfield absolute inset-0 opacity-70" />
           </>
         )}
+        <div aria-hidden="true" className="spot-ember" />
         <div aria-hidden="true" className="glow-ember left-[10%] top-[-30%] h-[300px] w-[480px]" />
         <div aria-hidden="true" className="glow-brand right-[6%] bottom-[-40%] h-[320px] w-[520px]" />
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 z-10 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent"
+          className="absolute inset-x-0 top-0 z-10 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"
         />
 
-        <div className="relative z-10 flex flex-col items-start gap-8 px-6 py-14 sm:px-12 sm:py-20">
-          <h2 className="qa-display max-w-[16ch] text-[clamp(2.2rem,5.4vw,4.25rem)] text-chalk">
+        <div className="relative z-10 flex flex-col items-start gap-9 px-6 py-16 sm:px-12 sm:py-24 lg:py-28">
+          <h2 className="qa-display max-w-[15ch] text-[clamp(2.5rem,6.2vw,5rem)] text-chalk">
             {title}
             {accent ? <span className="qa-serif font-normal"> {accent}</span> : null}
           </h2>
@@ -175,7 +176,7 @@ export function CtaBand({
           <div className="mt-2 flex flex-wrap items-center gap-4">
             <Link
               href={primary.href}
-              className="btn-chalk px-7 py-3 text-[0.9375rem] font-semibold"
+              className="btn-chalk px-7 py-3.5 text-base font-semibold"
             >
               {primary.label}
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -183,13 +184,15 @@ export function CtaBand({
             {secondary && (
               <Link
                 href={secondary.href}
-                className="btn-ghost px-7 py-3 text-[0.9375rem] font-medium"
+                className="btn-ghost px-7 py-3.5 text-base font-medium"
               >
                 {secondary.label}
               </Link>
             )}
           </div>
-          {caption && <p className="text-[11px] text-chalk-3">{caption}</p>}
+          {caption && (
+            <p className="mt-1 border-t border-edge pt-5 text-[11px] leading-relaxed text-chalk-3">{caption}</p>
+          )}
         </div>
       </motion.div>
     </section>

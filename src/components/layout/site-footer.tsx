@@ -22,7 +22,7 @@ export function SiteFooter() {
       <div className="glow-ember bottom-[-40%] left-1/2 h-[420px] w-[820px] -translate-x-1/2" aria-hidden="true" />
       <div className="glow-brand bottom-[-30%] left-[-8%] h-[460px] w-[760px]" aria-hidden="true" />
 
-      <div className="relative mx-auto w-full max-w-[1180px] px-5 pb-10 pt-16 sm:px-8 lg:px-12 lg:pt-24">
+      <div className="relative mx-auto w-full max-w-[1180px] px-5 pb-10 pt-20 sm:px-8 lg:px-12 lg:pt-28">
         {/* Top row: identity + CTA */}
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div>
@@ -40,7 +40,7 @@ export function SiteFooter() {
                 DhumketuX
               </p>
             </div>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-chalk-2">
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-chalk-2">
               {org.legalName}. {org.tagline}.
             </p>
             <p className="mt-6 text-sm text-chalk-2">
@@ -68,7 +68,7 @@ export function SiteFooter() {
         </div>
 
         {/* Sitemap */}
-        <nav aria-label="Footer" className="mt-14 grid grid-cols-2 gap-10 border-t border-edge pt-12 sm:grid-cols-4">
+        <nav aria-label="Footer" className="mt-14 grid grid-cols-2 gap-10 border-t border-edge pt-14 sm:grid-cols-4">
           <div>
             <p className="qa-data text-xs uppercase tracking-[0.14em] text-chalk-3">Aerospace</p>
             <ul className="mt-4 space-y-2.5">
@@ -134,7 +134,7 @@ export function SiteFooter() {
         {/* Ghost wordmark: fades out like it's sinking into the dark */}
         <p
           aria-hidden="true"
-          className="qa-ghost static mt-16 select-none whitespace-nowrap text-[clamp(3.4rem,12.5vw,11rem)] leading-none"
+          className="qa-ghost static mt-20 select-none whitespace-nowrap text-[clamp(3.4rem,12.5vw,11rem)] leading-none"
           style={{
             position: "static",
             WebkitTextStroke: "1.5px rgba(244,242,237,0.09)",
@@ -146,9 +146,9 @@ export function SiteFooter() {
           DHUMKETUX
         </p>
 
-        <div className="flex flex-col gap-2 border-t border-edge py-6 text-xs leading-relaxed text-chalk-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-2 flex flex-col gap-2 border-t border-edge py-6 text-xs leading-relaxed text-chalk-3 sm:flex-row sm:items-center sm:justify-between">
           <p>Concept redesign prepared for DhumketuX, not the official DhumketuX website.</p>
-          <p>Figures sourced from dhumketux.com.</p>
+          <p className="qa-data">Figures sourced from dhumketux.com</p>
         </div>
       </div>
     </footer>

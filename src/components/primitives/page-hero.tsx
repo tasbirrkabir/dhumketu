@@ -60,12 +60,15 @@ export function CinematicHero({
         className="absolute inset-0"
         aria-hidden="true"
       >
-        <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
+        <div className="anim-kenburns absolute inset-0">
+          <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />
+        </div>
       </motion.div>
 
       {/* Scrims: legibility from any viewport */}
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-void/80 via-void/35 to-void" />
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-void/70 via-transparent to-void/30" />
+      <div aria-hidden="true" className="spot" />
 
       {/* Content */}
       <div
@@ -74,8 +77,8 @@ export function CinematicHero({
         }`}
       >
         <Reveal>
-          {eyebrow && <p className="eyebrow mb-6">{eyebrow}</p>}
-          <h1 className="qa-display max-w-[14ch] text-[clamp(2.7rem,6.8vw,5.75rem)] text-chalk">
+          {eyebrow && <p className="eyebrow mb-7">{eyebrow}</p>}
+          <h1 className="qa-display max-w-[13ch] text-[clamp(2.9rem,7.4vw,6.5rem)] text-chalk">
             {title}
             {accent ? (
               <>
@@ -108,6 +111,9 @@ export function CinematicHero({
         )}
         {children}
       </div>
+
+      {/* Seam: the hero dissolves into the page */}
+      <div aria-hidden="true" className="hairline-x absolute inset-x-0 bottom-0 z-10" />
 
       {/* Caption + scroll cue */}
       {caption && (
