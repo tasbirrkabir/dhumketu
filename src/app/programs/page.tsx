@@ -22,7 +22,6 @@ export default function ProgramsPage() {
       <CinematicHero
         image="/media/concept-students-workshop.jpg"
         alt=""
-        eyebrow="Programs"
         title="Design, build, fly."
         accent="The national pipeline."
         lede={`Together with ${programs.dbf.partners.slice(1).join(" and ")}, the "Design, Build, Fly" program gives university teams a real aerospace pipeline from proposal to national fly-off.`}

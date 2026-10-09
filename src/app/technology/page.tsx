@@ -20,7 +20,6 @@ export default function TechnologyPage() {
       <CinematicHero
         image="/media/concept-engine-fire.jpg"
         alt=""
-        eyebrow="Technology"
         title="Technological capabilities."
         accent="From raw propellant to mission data."
         lede="Every system is developed in-house and tested in Bangladesh: rockets, propulsion, avionics, autonomy and the ground segment that ties them together."

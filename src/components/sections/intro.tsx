@@ -16,10 +16,7 @@ export function Intro() {
       <div className="glow-brand left-[-16%] bottom-[6%] h-[420px] w-[600px] opacity-60" aria-hidden="true" />
       <Container>
         <Reveal>
-          <p className="eyebrow">The company</p>
-        </Reveal>
-        <Reveal delay={0.06}>
-          <p className="mt-7 max-w-4xl text-[clamp(1.6rem,3.2vw,2.5rem)] leading-[1.32] tracking-[-0.015em] text-chalk">
+          <p className="max-w-4xl text-[clamp(1.6rem,3.2vw,2.5rem)] leading-[1.32] tracking-[-0.015em] text-chalk">
             DhumketuX is a commercial civilian space company from Bangladesh:
             <span className="text-chalk-2">
               {" "}

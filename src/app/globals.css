@@ -154,27 +154,6 @@ body {
   letter-spacing: -0.015em;
 }
 
-/* Mission-control section label: mono caps preceded by a warm rule.
-   Gives every section an identity line, like telemetry stamps. */
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--chalk-2);
-}
-.eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 1.75rem;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(255, 90, 44, 0.75), rgba(255, 178, 91, 0.25), transparent);
-}
-
 /* Ghost numerals: oversized outlined section markers */
 .qa-ghost {
   position: absolute;

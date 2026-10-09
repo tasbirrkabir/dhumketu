@@ -20,7 +20,6 @@ export default function ContactPage() {
       <CinematicHero
         image="/media/concept-mission-control.jpg"
         alt=""
-        eyebrow="Contact"
         title="Start the conversation."
         accent="Partners, universities, students, talent."
         lede="One team, one inbox: reach DhumketuX directly for launches, collaborations, programs and careers."

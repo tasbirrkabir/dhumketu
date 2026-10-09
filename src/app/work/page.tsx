@@ -37,7 +37,6 @@ export default function WorkPage() {
       <CinematicHero
         image="/media/concept-rocket-dusk.jpg"
         alt=""
-        eyebrow="Aerospace"
         title="The full catalog."
         accent={`${projects.length} systems, one engineering culture.`}
         lede="Launch vehicles, propulsion, reusable systems, satellites and aviation, developed in Bangladesh and documented on the public record."

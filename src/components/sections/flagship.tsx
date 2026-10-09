@@ -98,7 +98,6 @@ export function Flagship() {
       <div aria-hidden="true" className="spot-ember opacity-70" />
       <Container>
         <SectionIntro
-          eyebrow="Flagship programs"
           statement="The path to orbit runs through engines, vehicles and proof."
         />
 
@@ -241,8 +240,7 @@ export function Flagship() {
             className="panel card-lift group mt-14 flex items-center justify-between gap-6 overflow-hidden rounded-[1.75rem] px-6 py-8 sm:px-9"
           >
             <span className="min-w-0">
-              <span className="eyebrow">The catalog</span>
-              <span className="mt-3 block truncate text-2xl font-semibold tracking-[-0.02em] text-chalk sm:text-3xl">
+              <span className="block truncate text-2xl font-semibold tracking-[-0.02em] text-chalk sm:text-3xl">
                 {projects.length} systems, one engineering culture
               </span>
             </span>

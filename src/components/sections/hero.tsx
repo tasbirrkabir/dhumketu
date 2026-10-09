@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { org } from "@/content/org";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -59,20 +58,11 @@ export function Hero() {
         style={reduced ? undefined : { opacity: fade }}
         className="relative z-10 mx-auto flex w-full max-w-[1180px] flex-1 flex-col justify-end px-5 pb-14 pt-32 sm:px-8 sm:pb-16 lg:px-12"
       >
-        <motion.p
-          initial={reduced ? false : { opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.12, ease: EASE }}
-          className="eyebrow"
-        >
-          {org.legalName}
-        </motion.p>
-
         <motion.h1
           initial={reduced ? false : { opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1, delay: 0.24, ease: EASE }}
-          className="qa-display mt-7 max-w-[12ch] text-[clamp(3rem,8.8vw,7.75rem)]"
+          transition={{ duration: 1.1, delay: 0.12, ease: EASE }}
+          className="qa-display max-w-[12ch] text-[clamp(3.25rem,9.2vw,8.25rem)]"
         >
           Building{" "}
           <span className="qa-serif font-normal">aerospace</span>{" "}

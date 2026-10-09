@@ -357,3 +357,26 @@ Stage Summary:
 - Whole-site visible upgrade, not button-level: every page now opens with a cinematic Ken-Burns hero + larger display type; content settles in with blur reveals; cards carry a traveling light-sweep on hover; stats read as mission-console telemetry; CTA bands feel like launch announcements.
 - Design language unchanged (neutral near-black surfaces + ember accents in light only); no new content, no orange text, no HUD labels; reduced-motion fully guarded.
 - Key decisions: stat console replaces pill grids; blur-settle Reveal is the single motion signature; non-breaking hyphen utility pattern for compound words in display type.
+
+---
+Task ID: style-10
+Agent: Z.ai Code (main)
+Task: Remove all page-start eyebrow headlines (user-marked "— DHUMKETU EXPLORATION TECHNOLOGIES LIMITED") site-wide + continue style-10 beautification ("make the website more beautifull").
+
+Work Log:
+- Located every eyebrow/kicker instance via rg: hero, intro, vision, flagship (x2), technology, SectionIntro primitive, CinematicHero primitive, 7 interior pages.
+- hero.tsx: removed legalName eyebrow block (org import dropped), headline bump to clamp(3.25rem,9.2vw,8.25rem) @ 132px on 1440, delay tightened.
+- intro.tsx / vision.tsx: removed "The company" / "Vision" eyebrows + orphan mt-7.
+- flagship.tsx: removed "Flagship programs" SectionIntro eyebrow + "The catalog" span.
+- technology.tsx: removed "Technology" SectionIntro eyebrow.
+- section.tsx (SectionIntro): eyebrow prop + rendering removed; statement upgraded to clamp(2.25rem,5.2vw,4.25rem) max-w-5xl.
+- page-hero.tsx (CinematicHero): eyebrow prop removed from destructure/type/render; title upgraded to clamp(3rem,7.8vw,7rem) @ 112px.
+- 7 pages (work/technology/programs/company/vision/media/contact): eyebrow props removed.
+- globals.css: .eyebrow + .eyebrow::before rules deleted.
+- Fresh dev server (pkill + rm -rf .next + restart-dev.mjs). Lint clean.
+- agent-browser verified all 8 routes @1440: eyebrow count 0 everywhere, no overflowX, h1 renders 132px (home) / 112px (interior). Mobile 390 clean. 1024 header: logo-nav gap 10px, no collision. Console clean, no page errors. Screenshots: research/audit/style10-*.png.
+
+Stage Summary:
+- The user-marked "— DHUMKETU EXPLORATION TECHNOLOGIES LIMITED" hero line and every sibling mono-caps kicker are gone from all 8 routes; page openings are now pure cinematic headline-first compositions.
+- Visible type-scale upgrade on every page opening (home hero 132px, interior heroes 112px, section statements up to 68px).
+- Zero em-dash/eyebrow residue in user-visible content (remaining "—" are code comments only).

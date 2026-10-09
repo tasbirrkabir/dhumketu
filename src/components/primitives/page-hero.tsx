@@ -23,7 +23,6 @@ export function CinematicHero({
   caption,
   children,
   tall = false,
-  eyebrow,
 }: {
   image: string;
   alt: string;
@@ -36,8 +35,6 @@ export function CinematicHero({
   caption?: string;
   children?: ReactNode;
   tall?: boolean;
-  /** Mono caps identity line above the title */
-  eyebrow?: string;
 }) {
   const ref = useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
@@ -77,8 +74,7 @@ export function CinematicHero({
         }`}
       >
         <Reveal>
-          {eyebrow && <p className="eyebrow mb-7">{eyebrow}</p>}
-          <h1 className="qa-display max-w-[13ch] text-[clamp(2.9rem,7.4vw,6.5rem)] text-chalk">
+          <h1 className="qa-display max-w-[13ch] text-[clamp(3rem,7.8vw,7rem)] text-chalk">
             {title}
             {accent ? (
               <>

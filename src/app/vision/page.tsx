@@ -29,7 +29,6 @@ export default function VisionPage() {
       <CinematicHero
         image="/media/concept-orbit-dawn.jpg"
         alt=""
-        eyebrow="Vision"
         title="The next chapter."
         accent="Constellations, connectivity, orbital media."
         lede="Our long-term vision: build space billboard, Earth observation and space-based internet constellations from Bangladesh and Asia that serve global customers, responsibly and sustainably."
