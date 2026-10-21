@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { advisors, teamFacts } from "@/content/team";
@@ -20,8 +20,8 @@ export function People() {
             <figure>
               <div className="img-quiet relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-edge">
                 <Image
-                  src="/media/founder-nahiyan-al-rahman.jpg"
-                  alt="Portrait of Nahiyan Al Rahman, founder of DhumketuX"
+                  src="/media/founder-Alex Morgan-al-rahman.jpg"
+                  alt="Portrait of Alex Morgan, founder of DEMOSPACE"
                   fill
                   sizes="(max-width: 1024px) 100vw, 420px"
                   className="object-cover"
@@ -29,7 +29,7 @@ export function People() {
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-void/60 via-transparent to-transparent" />
               </div>
               <figcaption className="mt-3 text-[11px] text-chalk-3">
-                Nahiyan Al Rahman · Founder, DhumketuX
+                Alex Morgan · Founder, DEMOSPACE
               </figcaption>
             </figure>
           </ImageReveal>
@@ -77,7 +77,7 @@ export function People() {
             <div className="img-quiet relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-edge sm:aspect-[21/9]">
               <Image
                 src="/media/team-rocket-library.jpg"
-                alt="DhumketuX team in branded hoodies around a DhumketuX rocket on a launch rail in front of the Mymensingh library building"
+                alt="DEMOSPACE team in branded hoodies around a DEMOSPACE rocket on a launch rail in front of the Flight Test Range library building"
                 fill
                 sizes="(max-width: 1180px) 100vw, 1180px"
                 className="object-cover"
@@ -85,7 +85,7 @@ export function People() {
               <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-void/45 via-transparent to-transparent" />
             </div>
             <figcaption className="mt-3 text-[11px] text-chalk-3">
-              The team with a DhumketuX rocket, Mymensingh
+              The team with a DEMOSPACE rocket, Flight Test Range
             </figcaption>
           </figure>
         </ImageReveal>

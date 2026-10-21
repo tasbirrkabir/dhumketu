@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Rocket, Flame, Plane, Cpu, RadioTower, Orbit, Layers, Gauge, type LucideIcon } from "lucide-react";
 import { capabilityStack } from "@/content/capabilities";
 import { Shell } from "@/components/layout/shell";
@@ -9,7 +9,7 @@ import { Reveal } from "@/components/primitives/reveal";
 const CAPABILITY_ICONS: LucideIcon[] = [Rocket, Flame, Plane, Cpu, RadioTower, Orbit, Layers, Gauge];
 
 export const metadata: Metadata = {
-  title: "Technological Capabilities · DhumketuX",
+  title: "Technological Capabilities · DEMOSPACE",
   description:
     "One engineering stack: rocket systems, propulsion, UAV autonomy, avionics, telemetry, simulation, materials and test, developed in-house and tested in Bangladesh.",
 };

@@ -1,4 +1,4 @@
-import { org } from "@/content/org";
+﻿import { org } from "@/content/org";
 import { Container } from "@/components/primitives/section";
 import { Reveal } from "@/components/primitives/reveal";
 import { Counter } from "@/components/primitives/ui-bits";
@@ -10,14 +10,14 @@ import { Counter } from "@/components/primitives/ui-bits";
  */
 export function Intro() {
   return (
-    <section aria-label="About DhumketuX" className="relative overflow-hidden bg-void py-28 sm:py-36 lg:py-44">
+    <section aria-label="About DEMOSPACE" className="relative overflow-hidden bg-void py-28 sm:py-36 lg:py-44">
       <div aria-hidden="true" className="spot" />
       <div className="glow-ember right-[-14%] top-[0%] h-[380px] w-[560px] opacity-70" aria-hidden="true" />
       <div className="glow-brand left-[-16%] bottom-[6%] h-[420px] w-[600px] opacity-60" aria-hidden="true" />
       <Container>
         <Reveal>
           <p className="max-w-4xl text-[clamp(1.6rem,3.2vw,2.5rem)] leading-[1.32] tracking-[-0.015em] text-chalk">
-            DhumketuX is a commercial civilian space company from Bangladesh:
+            DEMOSPACE is a commercial civilian space company from Bangladesh:
             <span className="text-chalk-2">
               {" "}
               rockets, propulsion, UAVs and satellite systems, built for affordable and

@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+﻿import { NextResponse } from "next/server";
 import { z } from "zod";
 import { db } from "@/lib/db";
 
@@ -72,7 +72,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         error:
-          "Something went wrong on our side. Please try again, or email xdhumketu@gmail.com directly.",
+          "Something went wrong on our side. Please try again, or email demo@demospace.example.com directly.",
       },
       { status: 500 },
     );

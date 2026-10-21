@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { articles, mediaNote } from "@/content/articles";
 import { org } from "@/content/org";
 import { Shell } from "@/components/layout/shell";
@@ -8,7 +8,7 @@ import { Reveal } from "@/components/primitives/reveal";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Media · DhumketuX",
+  title: "Media · DEMOSPACE",
   description:
     "Space articles, media news and social media: Bangladesh's first private aerospace organization documented across national media.",
 };
@@ -25,7 +25,7 @@ export default function MediaPage() {
         title="Documented in public."
         accent="National media & the archive."
         lede={mediaNote}
-        caption="DhumketuX team with the Bidrohi rocket on its launch rail, Mymensingh"
+        caption="DEMOSPACE team with the Bidrohi rocket on its launch rail, Flight Test Range"
       />
 
       {/* Media news */}

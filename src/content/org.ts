@@ -1,49 +1,48 @@
 /**
- * DhumketuX: organization-level facts.
- * Every value is traceable to a page on https://dhumketux.com (captured 2026-02).
- * Unverifiable items are marked with a neutral fallback in the UI.
+ * DemoSpace: organization-level facts (Demo Universe).
+ * Configured as a demonstration aerospace platform.
  */
 
 export const org = {
-  legalName: "Dhumketu Exploration Technologies Limited",
-  shortName: "DhumketuX",
-  meaning: "Dhumketu, “comet” in Bangla.",
-  tagline: "An Aerospace Research & Development Company of South Asia",
-  founded: 2018,
-  founder: "Nahiyan Al Rahman",
+  legalName: "DemoSpace Aerospace Technologies Limited",
+  shortName: "DemoSpace",
+  meaning: "DemoSpace, “Modular Commercial Aerospace & Suborbital Systems”.",
+  tagline: "Commercial Aerospace Research, Propulsion & Orbital Technologies",
+  founded: 2020,
+  founder: "Alex Morgan",
   description:
-    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh. It develops small satellite launch vehicles, rocket propulsion, UAVs, satellite-related systems and mission technologies, working toward space access that is affordable, environmentally responsible and globally competitive.",
+    "DemoSpace Aerospace Technologies Limited (DemoSpace) is a commercial civilian aerospace company developing small satellite launch vehicles, advanced rocket propulsion, autonomous UAVs, and mission technologies toward accessible, sustainable space access.",
   stats: [
-    { label: "Founded", value: "2018", source: "https://dhumketux.com/" },
-    { label: "Team", value: "50+", source: "https://dhumketux.com/" },
+    { label: "Founded", value: "2020", source: "DemoSpace Records" },
+    { label: "Engineering Team", value: "75+", source: "DemoSpace Records" },
     {
-      label: "Successful tests",
-      value: "3",
-      source: "https://dhumketux.com/",
+      label: "Hot Fire Tests",
+      value: "40+",
+      source: "DemoSpace Records",
     },
     {
-      label: "Journal publications",
-      value: "250+",
-      source: "https://dhumketux.com/",
+      label: "Technical Papers",
+      value: "100+",
+      source: "DemoSpace Records",
     },
   ] as const,
   contact: {
-    email: "xdhumketu@gmail.com",
-    emailCertification: "certification@dhumketux.com",
-    phone: "+880 1861-640549",
-    website: "https://dhumketux.com",
-    source: "https://dhumketux.com/contact/",
+    email: "demo@demospace.example.com",
+    emailCertification: "certification@demospace.example.com",
+    phone: "+1 (555) 019-2834",
+    website: "https://demospace.example.com",
+    source: "https://demospace.example.com/contact/",
   },
   social: [
-    { label: "Facebook", href: "https://www.facebook.com/dhumketux" },
-    { label: "YouTube", href: "https://www.youtube.com/@dhumketux" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/company/dhumketux/" },
+    { label: "X / Twitter", href: "https://twitter.com/demo" },
+    { label: "LinkedIn", href: "https://linkedin.com/company/demo" },
+    { label: "YouTube", href: "https://youtube.com/@demo" },
   ],
   domains: [
     { id: "launch", label: "Launch Vehicles" },
-    { id: "propulsion", label: "Propulsion" },
-    { id: "space", label: "Satellites & Space Systems" },
-    { id: "aerial", label: "UAVs & Aviation" },
+    { id: "propulsion", label: "Propulsion Systems" },
+    { id: "space", label: "Satellites & Orbital Systems" },
+    { id: "aerial", label: "Autonomous UAVs" },
   ] as const,
 } as const;
 

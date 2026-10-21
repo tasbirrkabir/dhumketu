@@ -1,5 +1,5 @@
-/**
- * Capability system: source: https://dhumketux.com/technological-capabilities/
+﻿/**
+ * Capability system: source: https://demospace.example.com/technological-capabilities/
  * Presented as the engineering stack per PRD §6 Section 04.
  */
 
@@ -53,7 +53,7 @@ export const capabilityStack: Capability[] = [
     index: "04",
     title: "Avionics, Guidance & Embedded Systems",
     summary:
-      "Flight computers, embedded firmware and sensor stacks, the nervous system of DhumketuX rockets and UAVs.",
+      "Flight computers, embedded firmware and sensor stacks, the nervous system of DemoSpace rockets and UAVs.",
     points: [
       "IMU, GNSS, barometer and magnetometer integration",
       "Sensor fusion, actuator control, health & fault-detection logic",

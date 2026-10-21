@@ -1,109 +1,109 @@
-{
-  "note": "Authentic DhumketuX visual assets for the redesign concept. Every file originates from a DhumketuX-controlled source (dhumketux.com uploads, DhumketuX-published media) surfaced via public web image search. No third-party hardware imagery is presented as DhumketuX hardware. Renders published by DhumketuX are labeled as renders.",
+﻿{
+  "note": "Authentic DemoSpace visual assets for the redesign concept. Every file originates from a DemoSpace-controlled source (DemoSpace.com uploads, DemoSpace-published media) surfaced via public web image search. No third-party hardware imagery is presented as DemoSpace hardware. Renders published by DemoSpace are labeled as renders.",
   "assets": [
     {
-      "file": "dhumketux-logo.png",
-      "title": "Official DhumketuX logo",
-      "sourceUrl": "provided directly by DhumketuX (official brand asset)",
-      "originalSource": "DhumketuX",
+      "file": "DemoSpace-logo.png",
+      "title": "Official DemoSpace logo",
+      "sourceUrl": "provided directly by DemoSpace (official brand asset)",
+      "originalSource": "DemoSpace",
       "type": "brand",
-      "alt": "Official DhumketuX logo: white DHUMKETU wordmark with red X, comet and red orbit ring on deep blue"
+      "alt": "Official DemoSpace logo: white DemoSpace wordmark with red X, comet and red orbit ring on deep blue"
     },
     {
-      "file": "og-dhumketux.png",
+      "file": "og-DemoSpace.png",
       "title": "Social share card built around the official logo (generated in-repo)",
       "sourceUrl": "generated in-repo (sharp composition of the official brand asset)",
-      "originalSource": "DhumketuX brand asset + in-repo composition",
+      "originalSource": "DemoSpace brand asset + in-repo composition",
       "type": "brand",
-      "alt": "DhumketuX official logo centered on a dark background with a deep blue radial glow"
+      "alt": "DemoSpace official logo centered on a dark background with a deep blue radial glow"
     },
     {
       "file": "nazrul-sslv-render.png",
       "title": "Nazrul-01 SSLV · official vehicle render",
-      "sourceUrl": "https://dhumketux.com/nazrul-01-sslv/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/nazrul-01-sslv/",
+      "originalSource": "DemoSpace",
       "type": "render",
-      "alt": "DhumketuX Nazrul-01 small satellite launch vehicle render, white two-stage rocket with Bangladeshi flag markings"
+      "alt": "DemoSpace Nazrul-01 small satellite launch vehicle render, white two-stage rocket with Bangladeshi flag markings"
     },
     {
       "file": "fairing-deployment-render.png",
       "title": "Payload fairing separation render",
-      "sourceUrl": "https://dhumketux.com/nazrul-01-sslv/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/nazrul-01-sslv/",
+      "originalSource": "DemoSpace",
       "type": "render",
-      "alt": "Render of a DhumketuX payload fairing separating in flight, exposing a small satellite above Earth"
+      "alt": "Render of a DemoSpace payload fairing separating in flight, exposing a small satellite above Earth"
     },
     {
       "file": "engine-static-fire-test.jpg",
       "title": "Liquid engine static fire test with thrust trace",
-      "sourceUrl": "https://dhumketux.com/liquid-propulsion/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/liquid-propulsion/",
+      "originalSource": "DemoSpace",
       "type": "photograph",
-      "alt": "Static fire test of a DhumketuX liquid rocket engine at night with a thrust measurement trace overlaid"
+      "alt": "Static fire test of a DemoSpace liquid rocket engine at night with a thrust measurement trace overlaid"
     },
     {
       "file": "team-launch-rail.jpg",
-      "title": "DhumketuX team with Bidrohi rocket on launch rail",
-      "sourceUrl": "https://dhumketux.com/",
-      "originalSource": "dhumketux.com",
+      "title": "DemoSpace team with Bidrohi rocket on launch rail",
+      "sourceUrl": "https://DemoSpace.com/",
+      "originalSource": "DemoSpace.com",
       "type": "photograph",
-      "alt": "DhumketuX team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh"
+      "alt": "DemoSpace team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh"
     },
     {
       "file": "team-rocket-library.jpg",
-      "title": "DhumketuX team with rocket, Mymensingh",
-      "sourceUrl": "https://dhumketux.com/our-team/",
-      "originalSource": "The Business Standard (DhumketuX team photo)",
+      "title": "DemoSpace team with rocket, Mymensingh",
+      "sourceUrl": "https://DemoSpace.com/our-team/",
+      "originalSource": "The Business Standard (DemoSpace team photo)",
       "type": "photograph",
-      "alt": "DhumketuX team in branded hoodies around a DhumketuX rocket on a launch rail in front of the Mymensingh library building"
+      "alt": "DemoSpace team in branded hoodies around a DemoSpace rocket on a launch rail in front of the Mymensingh library building"
     },
     {
-      "file": "founder-nahiyan-al-rahman.jpg",
-      "title": "Nahiyan Al Rahman · founder portrait",
-      "sourceUrl": "https://dhumketux.com/our-team/",
-      "originalSource": "DhumketuX",
+      "file": "founder-Alex Morgan-al-rahman.jpg",
+      "title": "Alex Morgan · founder portrait",
+      "sourceUrl": "https://DemoSpace.com/our-team/",
+      "originalSource": "DemoSpace",
       "type": "photograph",
-      "alt": "Portrait of Nahiyan Al Rahman, founder of DhumketuX"
+      "alt": "Portrait of Alex Morgan, founder of DemoSpace"
     },
     {
       "file": "a2i-award-2022.jpg",
-      "title": "a2i Rocketry Innovation Challenge 2022 · winner",
-      "sourceUrl": "https://dhumketux.com/history/",
-      "originalSource": "dhumketux.com",
+      "title": "National Aerospace Innovation Challenge · winner",
+      "sourceUrl": "https://DemoSpace.com/history/",
+      "originalSource": "DemoSpace.com",
       "type": "photograph",
-      "alt": "Nahiyan Al Rahman Oli receiving the winner award at Bangladesh's a2i Rocketry Innovation Challenge 2022"
+      "alt": "Alex Morgan receiving the winner award at Bangladesh's National Aerospace Innovation Challenge"
     },
     {
       "file": "cansat-render.png",
       "title": "CanSat · electronics render",
-      "sourceUrl": "https://dhumketux.com/cansat/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/cansat/",
+      "originalSource": "DemoSpace",
       "type": "render",
-      "alt": "Render of the DhumketuX CanSat cylindrical electronics stack with exposed circuit boards"
+      "alt": "Render of the DemoSpace CanSat cylindrical electronics stack with exposed circuit boards"
     },
     {
       "file": "cubesat-render.png",
       "title": "Bangla 01 CubeSat render",
-      "sourceUrl": "https://dhumketux.com/cube-satellite/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/cube-satellite/",
+      "originalSource": "DemoSpace",
       "type": "render",
-      "alt": "Render of the DhumketuX Bangla 01 1U CubeSat with body-mounted solar panels"
+      "alt": "Render of the DemoSpace Bangla 01 1U CubeSat with body-mounted solar panels"
     },
     {
       "file": "delivery-drone-render.jpg",
       "title": "Delivery UAV render",
-      "sourceUrl": "https://dhumketux.com/drone/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/drone/",
+      "originalSource": "DemoSpace",
       "type": "render",
-      "alt": "Render of a DhumketuX quadcopter delivery drone carrying a cargo box"
+      "alt": "Render of a DemoSpace quadcopter delivery drone carrying a cargo box"
     },
     {
       "file": "vtol-concept-render.jpg",
       "title": "VTOL passenger aircraft concept",
-      "sourceUrl": "https://dhumketux.com/drone/",
-      "originalSource": "DhumketuX",
+      "sourceUrl": "https://DemoSpace.com/drone/",
+      "originalSource": "DemoSpace",
       "type": "render",
-      "alt": "Concept render of a DhumketuX electric VTOL passenger aircraft over a city skyline"
+      "alt": "Concept render of a DemoSpace electric VTOL passenger aircraft over a city skyline"
     },
     {
       "file": "concept-night-launch.jpg",

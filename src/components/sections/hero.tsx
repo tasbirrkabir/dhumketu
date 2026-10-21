@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -139,7 +139,7 @@ export function Hero() {
         </motion.div>
         <p className="max-w-[52ch] text-right text-[11px] leading-relaxed text-chalk-3">
           Concept visualization of a Bidrohi-class lift-off, illustrative art, not an
-          actual DhumketuX launch photograph.
+          actual DEMOSPACE launch photograph.
         </p>
       </motion.div>
     </section>

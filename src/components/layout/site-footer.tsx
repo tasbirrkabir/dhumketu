@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 import { org } from "@/content/org";
 import { projects } from "@/content/projects";
@@ -29,15 +29,15 @@ export function SiteFooter() {
             <div className="flex items-center gap-3">
               <span className="relative block h-11 w-11 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15">
                 <Image
-                  src="/media/dhumketux-logo.png"
-                  alt="Official DhumketuX logo"
+                  src="/media/DEMOSPACE-logo.png"
+                  alt="Official DEMOSPACE logo"
                   fill
                   sizes="44px"
                   className="object-cover"
                 />
               </span>
               <p className="font-display text-lg font-semibold tracking-[-0.015em] text-chalk">
-                DhumketuX
+                DEMOSPACE
               </p>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-chalk-2">
@@ -143,12 +143,12 @@ export function SiteFooter() {
             maskImage: "linear-gradient(180deg, #000 20%, transparent 92%)",
           }}
         >
-          DHUMKETUX
+          DEMOSPACE
         </p>
 
         <div className="mt-2 flex flex-col gap-2 border-t border-edge py-6 text-xs leading-relaxed text-chalk-3 sm:flex-row sm:items-center sm:justify-between">
-          <p>Concept redesign prepared for DhumketuX, not the official DhumketuX website.</p>
-          <p className="qa-data">Figures sourced from dhumketux.com</p>
+          <p>Concept redesign prepared for DEMOSPACE, not the official DEMOSPACE website.</p>
+          <p className="qa-data">Figures sourced from demospace.example.com</p>
         </div>
       </div>
     </footer>

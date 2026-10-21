@@ -1,8 +1,5 @@
 /**
- * Policy & core values + social responsibilities: source:
- *   https://dhumketux.com/our-policy/
- *   https://dhumketux.com/social-responsibilities/
- * Claims preserved as published; emoji decorations stripped.
+ * Policy & core values + social responsibilities (Demo Universe).
  */
 
 export interface CoreValue {
@@ -12,91 +9,91 @@ export interface CoreValue {
 }
 
 export const policyIntro =
-  "Engineering with integrity, safety and responsibility. DhumketuX is building long-term capability in rocketry, UAVs, satellite-related systems, avionics and mission software from Bangladesh, guided by policies that prioritize safety, ethics, responsible technology use and national capacity building.";
+  "Engineering with integrity, safety and responsibility. DemoSpace is building long-term capability in suborbital rocketry, autonomous UAVs, satellite systems, avionics and mission software, guided by policies prioritizing rigorous safety, open documentation, and ethical innovation.";
 
 export const coreValues: CoreValue[] = [
   {
     id: "integrity",
     title: "Integrity & Transparency",
-    body: "Honest communication, realistic claims and traceable decisions. We avoid exaggeration and let data, documentation and results speak for themselves.",
+    body: "Honest communication, verified claims and traceable engineering decisions. We avoid exaggeration and let verified telemetry, documentation and test results speak for themselves.",
   },
   {
     id: "safety",
     title: "Safety First",
-    body: "No test, schedule or publicity is more important than safety. Every team member has the right to stop a test if something looks or feels unsafe.",
+    body: "No test, schedule or milestone is more important than personnel safety. Every team member has the absolute authority to halt a test if an unsafe condition appears.",
   },
   {
     id: "excellence",
     title: "Engineering Excellence & Discipline",
-    body: "Systems that work reliably in the real world: strong fundamentals, iterative improvement and a documentation-first mindset.",
+    body: "Systems designed to function reliably in physical environments: robust mathematical fundamentals, iterative testing, and a documentation-first culture.",
   },
   {
     id: "learning",
-    title: "Learning, Curiosity & Humility",
-    body: "We learn from experiments, tests and mistakes. Questions are welcome, feedback is valued and better ideas can come from anyone on the team.",
+    title: "Curiosity & Scientific Humility",
+    body: "We learn continuously from bench tests, anomalies, and successful missions. Open technical inquiry is welcomed and constructive critique is embraced across all disciplines.",
   },
   {
     id: "national",
-    title: "National Capacity Building",
-    body: "DhumketuX is part of a wider ecosystem: building skills, tools and know-how inside Bangladesh through projects, labs and structured programs.",
+    title: "Capacity Building & Ecosystem Support",
+    body: "DemoSpace is dedicated to growing technical talent: cultivating aerospace skills, modern tooling, and practical know-how through open labs and structured programs.",
   },
   {
     id: "respect",
-    title: "Respect & Collaboration",
-    body: "We work in multidisciplinary teams and treat each other with respect, no ego, no discrimination, just shared focus on building high-quality systems.",
+    title: "Collaboration & Open Culture",
+    body: "Multidisciplinary collaboration across propulsion, structures, avionics, and software with mutual respect and a shared drive to build world-class aerospace systems.",
   },
   {
     id: "sustainability",
-    title: "Responsibility & Sustainability",
-    body: "We think long-term about the impact of our technologies, minimizing unnecessary risk and waste while designing systems that can be maintained and upgraded.",
+    title: "Environmental Responsibility",
+    body: "Long-term design considerations to minimize unnecessary waste, employ cleaner propellant chemistries, and engineer modular systems that can be safely recovered and reused.",
   },
 ] as const;
 
 export const ethicsCompliance = [
   {
     title: "Legal & Regulatory Compliance",
-    body: "Respect for all applicable laws and regulations of Bangladesh, working with relevant authorities and institutions where needed.",
+    body: "Adherence to all national civil aviation, spectrum licensing, and range safety regulations, coordinating transparently with oversight bodies.",
   },
   {
-    title: "NDA, Confidentiality & IP",
-    body: "Many projects require signed NDAs. Internal designs, test data, code and documents are not shared externally without written approval; IP ownership is defined clearly in contracts and MoUs.",
+    title: "Confidentiality & Intellectual Property",
+    body: "Strict data confidentiality and IP safeguards on proprietary propulsion and telemetry designs, with clear commercial and academic collaboration agreements.",
   },
   {
-    title: "Anti-Corruption & Fair Practice",
-    body: "Zero tolerance for unethical shortcuts or hidden deals. Structured processes for collaborations and procurement, selection based on merit, work ethic and fit.",
+    title: "Fair Practice & Merit-Based Operations",
+    body: "Zero tolerance for unethical practices or shortcuts. Transparent evaluations, merit-based talent recruitment, and equitable vendor partnerships.",
   },
 ] as const;
 
 export const safetyPolicy = [
   {
-    title: "Safety principles",
-    body: "No experiment is worth risking life or long-term health. Any team member can call a stop; safety is prioritized over timelines or publicity.",
+    title: "Fundamental Safety Principle",
+    body: "No experiment justifies taking unnecessary physical risks. Any team member can call an immediate range hold, and safety always overrides project timelines.",
   },
   {
-    title: "Labs, workshops & test sites",
-    body: "Written procedures and checklists for critical operations, mandatory PPE, and controlled access to high-risk areas during sensitive tests.",
+    title: "Laboratories & Test Ranges",
+    body: "Standardized operating procedures (SOPs) and pre-fire checklists for all energetic tasks, required PPE, and automated remote ignition perimeters.",
   },
   {
-    title: "Documentation & incident learning",
-    body: "Logging of tests, anomalies, near-misses and incidents, root cause analysis and corrective measures, with procedures updated from lessons learned.",
+    title: "Incident Logging & Continuous Learning",
+    body: "Rigorous root-cause anomaly investigations, telemetry reviews, and checklist revisions following every test campaign to eliminate latent failure modes.",
   },
 ] as const;
 
 export const socialResponsibility = [
   {
     title: "STEM & Aerospace Education",
-    body: "Talks and campus seminars on rocketry, UAVs, satellite systems and mission control; workshops and demonstrations that turn theory into hands-on experience; learning roadmaps for independent study.",
+    body: "Free campus lectures and hands-on workshops exploring rocketry fundamentals, satellite telemetry, and autonomous drone design to inspire future aerospace leaders.",
   },
   {
-    title: "Youth Development & Skill-Building",
-    body: "Structured industrial training, internships and trainee engineer tracks, with real responsibilities on meaningful modules and mentorship from experienced engineers.",
+    title: "Trainee Engineering & Mentorship",
+    body: "Structured undergraduate trainee tracks providing hands-on experience on real aerospace modules under the direct mentorship of senior engineers.",
   },
   {
-    title: "Ethical & Responsible Innovation",
-    body: "Safety, law, NDA and ethical use of technology ahead of shortcuts. DhumketuX does not sell or supply aerospace chemicals to third parties: such work is performed only under DhumketuX lead, infrastructure and conditions.",
+    title: "Responsible Technology Stewardship",
+    body: "Strict civilian-only technology focus. Energetic chemistry and propulsion manufacturing take place exclusively in controlled, certified testing facilities.",
   },
   {
-    title: "Community Engagement & Inclusion",
-    body: "Engaging schools, campuses and communities across Bangladesh, not only a few major institutions, to help build a culture around technology, not just a company.",
+    title: "Community & Academic Outreach",
+    body: "Supporting university clubs, high school science competitions, and open-source aerospace software initiatives.",
   },
 ] as const;

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { projects, statusMeta, type DxProject } from "@/content/projects";
@@ -9,9 +9,9 @@ import { Reveal } from "@/components/primitives/reveal";
 import { StatusDot, CtaBand } from "@/components/primitives/ui-bits";
 
 export const metadata: Metadata = {
-  title: "Projects · DhumketuX",
+  title: "Projects · DEMOSPACE",
   description:
-    "The full DhumketuX catalog: launch vehicles, solid and liquid propulsion, reusable systems, satellites and aviation. Every figure sourced from dhumketux.com.",
+    "The full DEMOSPACE catalog: launch vehicles, solid and liquid propulsion, reusable systems, satellites and aviation. Every figure sourced from demospace.example.com.",
 };
 
 const GROUPS: { title: string; categories: DxProject["category"][] }[] = [
@@ -40,7 +40,7 @@ export default function WorkPage() {
         title="The full catalog."
         accent={`${projects.length} systems, one engineering culture.`}
         lede="Launch vehicles, propulsion, reusable systems, satellites and aviation, developed in Bangladesh and documented on the public record."
-        caption="Concept art, illustrative pad scene, not a DhumketuX photograph."
+        caption="Concept art, illustrative pad scene, not a DEMOSPACE photograph."
       />
 
       {GROUPS.map((group) => {
@@ -109,7 +109,7 @@ export default function WorkPage() {
                   {meta.label}
                 </li>
               ))}
-              <li className="text-chalk-3">All figures sourced from dhumketux.com</li>
+              <li className="text-chalk-3">All figures sourced from demospace.example.com</li>
             </ul>
           </Reveal>
         </Container>

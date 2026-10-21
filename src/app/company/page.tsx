@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Hammer, Globe, ShieldCheck, Network, type LucideIcon } from "lucide-react";
 import { leadership, advisors, teamFacts } from "@/content/team";
@@ -17,9 +17,9 @@ import { Container } from "@/components/primitives/section";
 import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 
 export const metadata: Metadata = {
-  title: "Company · DhumketuX",
+  title: "Company · DEMOSPACE",
   description:
-    "Team & leadership, history, collaborations, policy and core values, and social responsibilities of Dhumketu Exploration Technologies Limited.",
+    "Team & leadership, history, collaborations, policy and core values, and social responsibilities of DemoSpace Aerospace Technologies Limited.",
 };
 
 const COLLABORATION_ICONS: LucideIcon[] = [Hammer, Globe, ShieldCheck, Network];
@@ -35,7 +35,7 @@ export default function CompanyPage() {
         title="The company."
         accent="One Sky, One Dream."
         lede={`${teamFacts.size} engineers and researchers across 20+ universities in Bangladesh, including BUET, KUET, RUET and CUET, with graduates and researchers from the USA, Europe, Russia, China and Japan.`}
-        caption="DhumketuX team with a rocket, Mymensingh (dhumketux.com)"
+        caption="DEMOSPACE team with a rocket, Flight Test Range (demospace.example.com)"
       />
 
       {/* Team & leadership */}
@@ -52,8 +52,8 @@ export default function CompanyPage() {
               <figure>
                 <div className="img-quiet relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-edge">
                   <Image
-                    src="/media/founder-nahiyan-al-rahman.jpg"
-                    alt="Portrait of Nahiyan Al Rahman, founder of DhumketuX"
+                    src="/media/founder-Alex Morgan-al-rahman.jpg"
+                    alt="Portrait of Alex Morgan, founder of DEMOSPACE"
                     fill
                     sizes="(max-width: 768px) 100vw, 480px"
                     className="object-cover"
@@ -103,7 +103,7 @@ export default function CompanyPage() {
               <div className="img-quiet relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-edge sm:aspect-[21/9]">
                 <Image
                   src="/media/team-rocket-library.jpg"
-                  alt="DhumketuX team in branded hoodies around a DhumketuX rocket on a launch rail in front of the Mymensingh library building"
+                  alt="DEMOSPACE team in branded hoodies around a DEMOSPACE rocket on a launch rail in front of the Flight Test Range library building"
                   fill
                   sizes="(max-width: 768px) 100vw, 1180px"
                   className="object-cover"
@@ -114,7 +114,7 @@ export default function CompanyPage() {
                 />
               </div>
               <figcaption className="mt-3 text-xs text-chalk-3">
-                The DhumketuX team, Mymensingh, Bangladesh
+                The DEMOSPACE team, Flight Test Facility
               </figcaption>
             </figure>
           </ImageReveal>
@@ -156,8 +156,8 @@ export default function CompanyPage() {
                         <figure className="max-w-xl">
                           <div className="img-quiet relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-edge">
                             <Image
-                              src="/media/a2i-award-2022.jpg"
-                              alt="Nahiyan Al Rahman Oli receiving the winner award at Bangladesh's a2i Rocketry Innovation Challenge 2022"
+                              src="/media/National Innovation Program-award-2022.jpg"
+                              alt="Alex Morgan receiving the winner award at the National Aerospace Innovation Challenge"
                               fill
                               sizes="(max-width: 768px) 100vw, 576px"
                               className="object-cover"
@@ -168,7 +168,7 @@ export default function CompanyPage() {
                             />
                           </div>
                           <figcaption className="mt-3 text-xs text-chalk-3">
-                            a2i Rocketry Innovation Challenge 2022 winner
+                            National Aerospace Innovation Challenge 1st Prize Winner
                           </figcaption>
                         </figure>
                       </ImageReveal>

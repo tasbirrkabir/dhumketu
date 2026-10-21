@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Satellite, Globe, SatelliteDish, MoonStar, Recycle, HeartHandshake, type LucideIcon } from "lucide-react";
 import {
@@ -15,7 +15,7 @@ import { Reveal, ImageReveal } from "@/components/primitives/reveal";
 import { StatusDot, Counter } from "@/components/primitives/ui-bits";
 
 export const metadata: Metadata = {
-  title: "Vision · DhumketuX",
+  title: "Vision · DEMOSPACE",
   description:
     "The next chapter: space billboard and orbital media, Earth observation constellations and space-based internet. Long-term ambitions from Bangladesh, marked as future vision.",
 };
@@ -98,7 +98,7 @@ export default function VisionPage() {
               <div className="img-quiet relative aspect-[16/9] w-full overflow-hidden rounded-3xl border border-edge sm:aspect-[21/9]">
                 <Image
                   src="/media/fairing-deployment-render.png"
-                  alt="Official render of a DhumketuX payload fairing separating in flight, exposing a small satellite above Earth"
+                  alt="Official render of a DEMOSPACE payload fairing separating in flight, exposing a small satellite above Earth"
                   fill
                   sizes="(max-width: 768px) 100vw, 1180px"
                   className="object-cover"
@@ -109,7 +109,7 @@ export default function VisionPage() {
                 />
               </div>
               <figcaption className="mt-3 text-xs text-chalk-3">
-                Payload fairing deployment · official render, DhumketuX
+                Payload fairing deployment · official render, DEMOSPACE
               </figcaption>
             </figure>
           </ImageReveal>
@@ -215,7 +215,7 @@ export default function VisionPage() {
                 </div>
               </dl>
               <p className="mt-5 text-xs text-chalk-3">
-                Future-vision goals as published in the DhumketuX FAQ ({roadmapGoals.source.replace("https://", "").replace(" (FAQ: future vision)", "")}).
+                Future-vision goals as published in the DEMOSPACE FAQ ({roadmapGoals.source.replace("https://", "").replace(" (FAQ: future vision)", "")}).
               </p>
             </Reveal>
           </div>

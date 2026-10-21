@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Users, Rocket, Presentation, Microchip, Bot, PlaneTakeoff, Landmark, Building2, FlaskConical, Briefcase, GraduationCap, type LucideIcon } from "lucide-react";
 import { programs } from "@/content/team";
 import { Shell } from "@/components/layout/shell";
@@ -11,7 +11,7 @@ const COMMUNITY_ICONS: LucideIcon[] = [Users, Rocket, Presentation, Microchip, B
 const STUDENT_ICONS: LucideIcon[] = [FlaskConical, Briefcase, GraduationCap];
 
 export const metadata: Metadata = {
-  title: "Programs · DhumketuX",
+  title: "Programs · DEMOSPACE",
   description:
     "Design, Build, Fly: the national pipeline. DBF tracks, the program journey, student programs and community platforms, with BAXRC and Rocketry Bangladesh.",
 };

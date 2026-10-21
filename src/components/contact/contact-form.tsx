@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, type FormEvent } from "react";
 import { motion, useReducedMotion } from "framer-motion";
@@ -127,7 +127,7 @@ export function ContactForm() {
       setStatus("idle");
     } catch {
       toast.error(
-        "Network error: could not reach the server. Please try again, or email xdhumketu@gmail.com.",
+        "Network error: could not reach the server. Please try again, or email demo@demospace.example.com.",
       );
       setStatus("idle");
     }
@@ -156,8 +156,8 @@ export function ContactForm() {
         <p className="mt-4 max-w-md text-[0.9375rem] leading-relaxed text-chalk-2">
           Thank you for reaching out. The team reads every message and typically
           responds within a few working days. For urgent mission inquiries, use{" "}
-          <a href="mailto:xdhumketu@gmail.com" className="qa-link text-chalk">
-            xdhumketu@gmail.com
+          <a href="mailto:demo@demospace.example.com" className="qa-link text-chalk">
+            demo@demospace.example.com
           </a>
           .
         </p>
@@ -303,7 +303,7 @@ export function ContactForm() {
           )}
         </button>
         <p className="text-xs leading-relaxed text-chalk-3 sm:max-w-[230px] sm:text-right">
-          Your message goes straight to the DhumketuX inbox.
+          Your message goes straight to the DEMOSPACE inbox.
           <br className="hidden sm:block" /> No newsletters, no spam.
         </p>
       </div>

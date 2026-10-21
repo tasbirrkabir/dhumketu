@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { getProject, projects, statusMeta, type DxStatus } from "@/content/projects";
@@ -114,14 +114,14 @@ export function Flagship() {
               <figure className="relative mt-6 aspect-[16/10] w-full sm:aspect-[21/9]">
                 <Image
                   src="/media/team-launch-rail.jpg"
-                  alt="DhumketuX team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh"
+                  alt="DEMOSPACE team members standing with the Bidrohi rocket mounted on its launch rail in Flight Test Range"
                   fill
                   sizes="(max-width: 1180px) 100vw, 1180px"
                   className="object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
                 />
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-night-2 via-transparent to-void/30" />
                 <figcaption className="absolute bottom-4 right-5 text-[11px] text-chalk-2/80">
-                  The team with the Bidrohi rocket on its launch rail, Mymensingh
+                  The team with the Bidrohi rocket on its launch rail, Flight Test Range
                 </figcaption>
               </figure>
               <div className="p-6 sm:p-8">
@@ -179,7 +179,7 @@ export function Flagship() {
                 <figure className="relative mt-6 aspect-[16/10] w-full">
                   <Image
                     src="/media/engine-static-fire-test.jpg"
-                    alt="Static fire test of a DhumketuX liquid rocket engine at night"
+                    alt="Static fire test of a DEMOSPACE liquid rocket engine at night"
                     fill
                     sizes="(max-width: 1180px) 100vw, 590px"
                     className="object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
@@ -213,7 +213,7 @@ export function Flagship() {
               <div className="relative z-10 night-voice mx-auto flex aspect-[16/10] w-full max-w-3xl items-center justify-center px-8 pt-8 sm:pt-10">
                 <Image
                   src="/media/nazrul-sslv-render.png"
-                  alt="Official render of the DhumketuX Nazrul-01 small satellite launch vehicle"
+                  alt="Official render of the DEMOSPACE Nazrul-01 small satellite launch vehicle"
                   width={720}
                   height={900}
                   sizes="(max-width: 1180px) 90vw, 720px"
@@ -225,7 +225,7 @@ export function Flagship() {
                   A small satellite launch vehicle concept: dedicated launch capability
                   for microsats and CubeSats.
                 </p>
-                <p className="text-[11px] text-chalk-3">Official vehicle render · DhumketuX</p>
+                <p className="text-[11px] text-chalk-3">Official vehicle render · DEMOSPACE</p>
               </div>
             </CardShell>
           </Reveal>

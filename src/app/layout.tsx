@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Inter, IBM_Plex_Mono, Instrument_Serif, Space_Grotesk } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
@@ -31,24 +31,24 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dhumketux.com"),
-  title: "DhumketuX · Building aerospace from Bangladesh",
+  metadataBase: new URL("https://demospace.example.com"),
+  title: "DEMOSPACE · Building aerospace from Bangladesh",
   description:
-    "Dhumketu Exploration Technologies Limited (DhumketuX) is a commercial civilian space company from Bangladesh, developing rockets, propulsion, UAVs, satellite-related systems and mission technologies.",
+    "DemoSpace Aerospace Technologies Limited (DEMOSPACE) is a commercial civilian space company from Bangladesh, developing rockets, propulsion, UAVs, satellite-related systems and mission technologies.",
   openGraph: {
-    title: "DhumketuX · Building aerospace from Bangladesh",
+    title: "DEMOSPACE · Building aerospace from Bangladesh",
     description:
       "Rockets. Propulsion. Autonomous systems. Space technologies. Bangladesh's first private aerospace R&D organization.",
     type: "website",
-    siteName: "Dhumketu Exploration Technologies Limited",
-    images: [{ url: "/media/og-dhumketux.png", width: 1200, height: 630 }],
+    siteName: "DemoSpace Aerospace Technologies Limited",
+    images: [{ url: "/media/og-DEMOSPACE.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DhumketuX · Building aerospace from Bangladesh",
+    title: "DEMOSPACE · Building aerospace from Bangladesh",
     description:
       "Rockets. Propulsion. Autonomous systems. Space technologies. Bangladesh's first private aerospace R&D organization.",
-    images: ["/media/og-dhumketux.png"],
+    images: ["/media/og-DEMOSPACE.png"],
   },
 };
 

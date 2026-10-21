@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -18,7 +18,7 @@ const bySlug = (list: string[]) =>
     .filter((p): p is (typeof projects)[number] => Boolean(p));
 
 /**
- * Primary navigation: mirrors the real dhumketux.com menu tree
+ * Primary navigation: mirrors the real demospace.example.com menu tree
  * (Aerospace / Programs / About-Company / Media) reorganized into
  * two patterns: a full-width mega panel (Aerospace) and compact
  * dropdown panels (Programs, Company, Media).
@@ -147,12 +147,12 @@ export function SiteHeader() {
         <div className="mx-auto flex h-16 w-full max-w-[1180px] items-center justify-between px-5 sm:px-8 lg:px-12">
           <Link
             href="/"
-            aria-label="DhumketuX home"
+            aria-label="DEMOSPACE home"
             className={`group flex shrink-0 items-center gap-2.5 ${linkTone}`}
           >
             <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15 transition-all duration-300 group-hover:ring-white/40 group-hover:shadow-[0_0_24px_-6px_rgba(255,106,61,0.45)]">
               <Image
-                src="/media/dhumketux-logo.png"
+                src="/media/DEMOSPACE-logo.png"
                 alt=""
                 fill
                 priority
@@ -161,7 +161,7 @@ export function SiteHeader() {
               />
             </span>
             <span className="font-display text-[1.0625rem] font-semibold tracking-[-0.015em]">
-              DhumketuX
+              DEMOSPACE
             </span>
           </Link>
 
@@ -314,7 +314,7 @@ export function SiteHeader() {
                       )}
                       {menu === "media" && (
                         <p className="max-w-[36ch] text-sm leading-relaxed text-chalk-2">
-                          National television, press and the DhumketuX archive: every milestone documented at the source.
+                          National television, press and the DEMOSPACE archive: every milestone documented at the source.
                         </p>
                       )}
                     </div>
@@ -344,14 +344,14 @@ export function SiteHeader() {
               <span className="flex items-center gap-2.5">
                 <span className="relative block h-9 w-9 shrink-0 overflow-hidden rounded-xl ring-1 ring-white/15">
                   <Image
-                    src="/media/dhumketux-logo.png"
+                    src="/media/DEMOSPACE-logo.png"
                     alt=""
                     fill
                     sizes="36px"
                     className="object-cover"
                   />
                 </span>
-                <span className="font-display text-[1.0625rem] font-semibold tracking-[-0.015em]">DhumketuX</span>
+                <span className="font-display text-[1.0625rem] font-semibold tracking-[-0.015em]">DEMOSPACE</span>
               </span>
               <button
                 type="button"
@@ -447,7 +447,7 @@ export function SiteHeader() {
                 >
                   Start a conversation <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
-                <p className="mt-3 text-sm text-chalk-2">xdhumketu@gmail.com</p>
+                <p className="mt-3 text-sm text-chalk-2">demo@demospace.example.com</p>
               </div>
             </nav>
           </motion.div>

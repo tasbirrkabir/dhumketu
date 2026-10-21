@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { org } from "@/content/org";
 import { engageRoutes } from "@/content/vision";
 import { Shell } from "@/components/layout/shell";
@@ -9,9 +9,9 @@ import { ContactForm } from "@/components/contact/contact-form";
 import { ArrowUpRight, Clock, Mail, Phone, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact · DhumketuX",
+  title: "Contact · DEMOSPACE",
   description:
-    "Propose a collaboration, start a university program, join as a student or explore careers. Contact Dhumketu Exploration Technologies Limited.",
+    "Propose a collaboration, start a university program, join as a student or explore careers. Contact DemoSpace Aerospace Technologies Limited.",
 };
 
 export default function ContactPage() {
@@ -22,7 +22,7 @@ export default function ContactPage() {
         alt=""
         title="Start the conversation."
         accent="Partners, universities, students, talent."
-        lede="One team, one inbox: reach DhumketuX directly for launches, collaborations, programs and careers."
+        lede="One team, one inbox: reach DEMOSPACE directly for launches, collaborations, programs and careers."
         caption="Concept art, illustrative mission control environment."
       />
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
               </h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-chalk-2">
                 Write to the team directly, or use the form. Every message lands
-                in the DhumketuX inbox and gets a human reply.
+                in the DEMOSPACE inbox and gets a human reply.
               </p>
 
               <ul className="mt-9 grid gap-4">
@@ -79,7 +79,7 @@ export default function ContactPage() {
                     rel="noreferrer"
                     className="qa-link mt-2 inline-block text-lg font-medium text-chalk"
                   >
-                    dhumketux.com
+                    demospace.example.com
                   </a>
                 </li>
               </ul>

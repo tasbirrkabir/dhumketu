@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -13,24 +13,24 @@ import { StatusDot } from "@/components/primitives/ui-bits";
 const MEDIA: Record<string, { src: string; alt: string; caption: string; contain?: boolean }> = {
   "bidrohi-sr": {
     src: "/media/team-launch-rail.jpg",
-    alt: "DhumketuX team members standing with the Bidrohi rocket mounted on its launch rail in Mymensingh",
-    caption: "The team with the Bidrohi rocket on its launch rail, Mymensingh",
+    alt: "DEMOSPACE team members standing with the Bidrohi rocket mounted on its launch rail in Flight Test Range",
+    caption: "The team with the Bidrohi rocket on its launch rail, Flight Test Range",
   },
   "agni-bina": {
     src: "/media/engine-static-fire-test.jpg",
-    alt: "Static fire test of a DhumketuX liquid rocket engine at night, flame extending across the test stand",
-    caption: "DhumketuX propulsion test campaign, static fire at the test stand",
+    alt: "Static fire test of a DEMOSPACE liquid rocket engine at night, flame extending across the test stand",
+    caption: "DEMOSPACE propulsion test campaign, static fire at the test stand",
   },
   "nazrul-01": {
     src: "/media/nazrul-sslv-render.png",
-    alt: "Official render of the DhumketuX Nazrul-01 small satellite launch vehicle, white two-stage rocket with Bangladeshi flag markings",
-    caption: "Official vehicle render · DhumketuX",
+    alt: "Official render of the DEMOSPACE Nazrul-01 small satellite launch vehicle, white two-stage rocket with Bangladeshi flag markings",
+    caption: "Official vehicle render · DEMOSPACE",
     contain: true,
   },
   "space-billboard": {
     src: "/media/fairing-deployment-render.png",
-    alt: "Official render of a DhumketuX payload fairing separating in flight, exposing a small satellite above Earth",
-    caption: "Payload fairing deployment · official render, DhumketuX",
+    alt: "Official render of a DEMOSPACE payload fairing separating in flight, exposing a small satellite above Earth",
+    caption: "Payload fairing deployment · official render, DEMOSPACE",
   },
 };
 
@@ -148,9 +148,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const project = getProject(slug);
-  if (!project) return { title: "Project · DhumketuX" };
+  if (!project) return { title: "Project · DEMOSPACE" };
   return {
-    title: `${project.name} · DhumketuX`,
+    title: `${project.name} · DEMOSPACE`,
     description: project.summary,
   };
 }
@@ -364,7 +364,7 @@ export default async function ProjectPage({
 
           <Reveal delay={0.16}>
             <p className="mt-16 border-t border-edge pt-6 text-xs text-chalk-3">
-              Status: {statusMeta[project.status].label}. Figures sourced from dhumketux.com.
+              Status: {statusMeta[project.status].label}. Figures sourced from demospace.example.com.
             </p>
           </Reveal>
         </Container>

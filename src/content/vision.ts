@@ -1,6 +1,5 @@
 /**
- * Vision: source: https://dhumketux.com/vision/
- * All pillars are clearly future-facing per DECISIONS.md D-003.
+ * Vision: Demo Universe Strategic Pillars & Roadmap.
  */
 
 export interface VisionPillar {
@@ -12,17 +11,17 @@ export interface VisionPillar {
 }
 
 export const visionIntro =
-  "Our long-term vision is clear: build space billboard, Earth observation and space-based internet constellations from Bangladesh and Asia that serve global customers, connecting people, data and brands through responsible, sustainable space infrastructure.";
+  "Our long-term vision is clear: build responsive orbital infrastructure, Earth observation constellations and space-based data networks that connect communities, scientists and global enterprises through responsible, sustainable space technology.";
 
 export const visionPillars: VisionPillar[] = [
   {
     id: "orbital-media",
     index: "P-01",
-    title: "Space Billboard & Orbital Media",
-    body: "A formation of small satellites acting as “pixels” in orbit, creating temporary patterns and messages in the sky. A responsible orbital-media platform for global and Asian brands, with strict control over visibility, brightness and orbital safety.",
+    title: "Orbital Formation & Research Beacons",
+    body: "Coordinated formations of micro-satellites acting as synchronised nodes in low Earth orbit, demonstrating high-precision optical tracking, relative positioning, and safe orbital slot coordination.",
     points: [
       "High-precision formation flying",
-      "Scheduled visibility windows",
+      "Scheduled visibility & telemetry windows",
       "Compliance with international space guidelines",
     ],
   },
@@ -30,129 +29,129 @@ export const visionPillars: VisionPillar[] = [
     id: "earth-observation",
     index: "P-02",
     title: "Earth Observation Constellations",
-    body: "Small satellite constellations providing frequent coverage over key Asian geographies, coastal regions and global economic corridors, delivering not just pictures, but analytics and insights-as-a-service.",
+    body: "Small satellite constellations providing frequent revisits across coastal corridors, agricultural zones, and critical infrastructure, delivering multispectral imaging and real-time analytics-as-a-service.",
     points: [
       "Crop & food-system monitoring",
-      "Coastal & river change detection",
-      "Smart-city & infrastructure analytics",
+      "Coastal & hydrological change detection",
+      "Smart infrastructure & environmental metrics",
     ],
   },
   {
     id: "space-internet",
     index: "P-03",
-    title: "Space-Based Internet Service",
-    body: "Regional LEO connectivity constellations extending high-speed internet to remote, coastal and disaster-prone areas, especially across Asia, while supporting maritime and aviation connectivity.",
+    title: "Space-Based Data Relays",
+    body: "Regional LEO data relay nodes extending low-latency telemetry and backup communications to remote research stations, maritime vessels, and disaster-relief operations.",
     points: [
       "Backup connectivity during outages",
-      "Links for remote schools & clinics",
-      "Hybrid with fiber, 5G & community Wi-Fi",
+      "Telemetry links for field sensor networks",
+      "Hybrid routing with terrestrial and mesh networks",
     ],
   },
 ] as const;
 
 export const visionBangladesh = {
-  title: "Space vision originating from Bangladesh",
-  body: "While the markets are global and Asian, the engineering and mission-design roots are firmly in Bangladesh, building real satellite hardware, software and operations from here, and creating high-skilled jobs in aerospace, electronics, software, AI and data science.",
+  title: "Commercial Space Engineering Roots",
+  body: "While the mission scope is global, the core propulsion development and vehicle integration are driven by our dedicated aerospace engineering division, creating high-skilled technical opportunities in propulsion physics, avionics firmware, composites, and simulation modeling.",
   points: [
-    "Better flood, river and cyclone monitoring via EO constellations",
-    "Space-based internet as backup for char areas, coastal zones and remote communities",
-    "New economic opportunities through orbital media, data services and local partnerships",
+    "High-cadence environmental and meteorological monitoring via EO payloads",
+    "Resilient satellite telemetry links for remote and coastal communities",
+    "Open educational pipelines in aerodynamics, propulsion and spacecraft design",
   ],
-  bn: "বাংলাদেশের জন্য আমাদের স্বপ্ন: নিজের স্যাটেলাইট কনস্টেলেশন দিয়ে বন্যা-ঘূর্ণিঝড়-কৃষি-নগর পরিকল্পনার ডাটা, দূরবর্তী অঞ্চলে ইন্টারনেট আর বিশ্বব্যাপী ব্র্যান্ডিং প্ল্যাটফর্ম, সবকিছুই যেন বাংলাদেশ থেকে পরিচালিত হয়।",
+  bn: "ভবিষ্যত মহাকাশ প্রযুক্তির জন্য আমাদের রূপকল্প: সাশ্রয়ী সাব-অরবিটাল ও অরবিটাল সিস্টেমের মাধ্যমে আধুনিক ডেটা নেটওয়ার্ক ও বিজ্ঞানভিত্তিক গবেষণার সম্প্রসারণ।",
 } as const;
 
 export const responsibleSpace = {
-  title: "Doing space the right way",
+  title: "Responsible Space Stewardship",
   points: [
     {
-      title: "Protecting the night sky",
-      body: "Orbital media designed with controlled brightness and limited visibility windows.",
+      title: "Preserving Astronomical Observations",
+      body: "Orbital payloads designed with low-albedo coatings, controlled optical reflection, and predictable orbital windows.",
     },
     {
-      title: "Minimizing orbital debris",
-      body: "Following debris-mitigation standards with clear end-of-life and de-orbit strategies.",
+      title: "Debris Mitigation Standards",
+      body: "Full adherence to orbital debris reduction guidelines with verified passivated depletion and de-orbit hardware.",
     },
     {
-      title: "Ethical data & connectivity",
-      body: "Respecting privacy and regulations, supporting fair access for education and public-good projects.",
+      title: "Open Scientific Collaboration",
+      body: "Democratizing telemetry access for university research departments and public educational institutions.",
     },
   ],
 } as const;
 
 export const spaceCenter = {
-  title: "Bangladesh Space Center (BSC)",
-  body: "Proposed by Nahiyan Al Rahman, Founder & CEO of DhumketuX, the Bangladesh Space Center is envisioned as a national hub for aerospace research, education and innovation, with a student & general sector and an academic & research sector, positioning Bangladesh as a rising space power.",
+  title: "Commercial Aerospace Innovation Center",
+  body: "Spearheaded by DemoSpace leadership, the Aerospace Innovation Center is envisioned as a regional hub for civilian aerospace research, education and propulsion testing, uniting academic institutions and engineers to advance low-cost orbital access.",
   sectors: [
-    "Student & General Sector: inspiring young minds, building a skilled generation ready for space and science",
-    "Academic & Research Sector: bringing together universities, scientists and engineers to push the boundaries of aerospace technology",
+    "Student & General Sector: inspiring future scientists with hands-on rocketry, avionics and telemetry labs",
+    "Academic & Research Sector: bringing together universities and aerospace engineers to advance propulsion and airframe materials",
   ],
 } as const;
 
 export const roadmapGoals = {
-  suborbital: "Suborbital · within 2035",
-  human: "Human spaceflight · within 2040",
-  source: "https://dhumketux.com/ (FAQ: future vision)",
+  suborbital: "Suborbital · within 2030",
+  human: "Commercial orbital payload delivery · within 2035",
+  source: "DemoSpace Technical Roadmap",
 } as const;
 
-/** Collaboration routes: source: https://dhumketux.com/collaborations/ + homepage */
+/** Collaboration routes */
 export const engageRoutes = [
   {
     id: "partner",
     index: "E-01",
     title: "Partner",
-    body: "Universities, industry, agencies and international partners: joint R&D, labs, test infrastructure and mission software built together.",
+    body: "Universities, industry, and international research organizations: joint R&D, labs, static test stands and mission telemetry software.",
     cta: "Propose a collaboration",
-    href: "mailto:xdhumketu@gmail.com?subject=Collaboration%20Proposal",
+    href: "mailto:demo@demospace.example.com?subject=Collaboration%20Proposal",
   },
   {
     id: "sponsor",
     index: "E-02",
     title: "Sponsor / Invest",
-    body: "Sponsor the rocket mission or the Solar Sail Billboard Project, with global visibility, media coverage and recognition as a leader in space innovation.",
+    body: "Support suborbital sounding rocket campaigns or atmospheric research payloads with prominent mission branding and research recognition.",
     cta: "Become a sponsor",
-    href: "mailto:xdhumketu@gmail.com?subject=Sponsorship",
+    href: "mailto:demo@demospace.example.com?subject=Sponsorship",
   },
   {
     id: "university",
     index: "E-03",
     title: "University",
-    body: "MoUs, Design-Build-Fly teams, student virtual labs and campus-industry collaboration for departments building serious aerospace tracks.",
+    body: "Institutional MoUs, Design-Build-Fly competitions, student virtual labs and faculty joint research for departments expanding aerospace curriculums.",
     cta: "Start a program",
-    href: "mailto:xdhumketu@gmail.com?subject=University%20Program",
+    href: "mailto:demo@demospace.example.com?subject=University%20Program",
   },
   {
     id: "student",
     index: "E-04",
     title: "Student",
-    body: "Internships, industrial training and trainee engineer tracks, project-based contributions with real hardware, labs and mentorship.",
+    body: "Engineering internships, hardware trainee tracks, and hands-on contributions across propulsion, structures, avionics, and telemetry.",
     cta: "Join a program",
-    href: "mailto:xdhumketu@gmail.com?subject=Student%20Program",
+    href: "mailto:demo@demospace.example.com?subject=Student%20Program",
   },
   {
     id: "talent",
     index: "E-05",
     title: "Talent",
-    body: "Engineers, scientists, designers and entrepreneurs: work on real aerospace systems from inside Bangladesh.",
+    body: "Aerospace engineers, firmware developers, structures specialists and systems architects passionate about next-generation flight.",
     cta: "Explore careers",
-    href: "mailto:xdhumketu@gmail.com?subject=Careers",
+    href: "mailto:demo@demospace.example.com?subject=Careers",
   },
 ] as const;
 
 export const collaborationPrinciples = [
   {
     title: "Real hardware, real labs",
-    body: "Rockets, UAVs, satellite tools, test systems and mission software developed in the same ecosystem, not slideware.",
+    body: "Rocketry test stands, UAV airframes, satellite telemetry boards and flight simulation tools designed and tested iteratively.",
   },
   {
-    title: "Local roots, global mindset",
-    body: "Focused on Bangladesh, built to global expectations, meaningful impact in South Asia with a technology-first approach.",
+    title: "Rigorous engineering mindset",
+    body: "Built to stringent aerospace standards with verifiable engineering documentation and flight-readiness reviews.",
   },
   {
     title: "NDA & professionalism",
-    body: "Confidentiality, IP boundaries and institutional reputation respected; sensitive activities stay under strict internal controls.",
+    body: "Complete intellectual property safeguarding, ethical testing protocols, and trusted institutional agreements.",
   },
   {
-    title: "Long-term ecosystem view",
-    body: "A sustainable aerospace and space-tech ecosystem, not one-off publicity projects.",
+    title: "Long-term ecosystem vision",
+    body: "Dedicated to creating durable, sustainable aerospace infrastructure rather than transient demonstrations.",
   },
 ] as const;
